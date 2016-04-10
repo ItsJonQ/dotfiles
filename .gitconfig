@@ -9,10 +9,15 @@
 
 [alias]
   a = add
+  aa = add .
+  ap = add -p
   b = branch
+  ba = branch -a
   c = commit --verbose
   co = checkout
+  cob = checkout -b
   d = diff
+  db = branch -D
   f = fetch
   fp = fetch -p
   h = help
