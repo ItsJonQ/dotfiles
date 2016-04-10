@@ -15,6 +15,7 @@
   ba = branch -a
   c = commit --verbose
   co = checkout
+  coa = checkout .
   cob = checkout -b
   d = diff
   db = branch -D
@@ -24,6 +25,7 @@
   l = log
   lol = log --graph --pretty=oneline
   m = merge
+  nb = checkout -b
   p = pull
   ps = push
   pr = pull-request
@@ -37,6 +39,7 @@
 
 [branch]
   autosetupmerge = always
+  autosetuprebase = never
 
 [color]
   ui = true
