@@ -48,7 +48,7 @@ filetype plugin indent on    " required
 
 " =============================================
 
- 
+
 " Vim Directories
 set directory=~/.vim/tmp//
 set backupdir=~/.vim/backup//
@@ -252,6 +252,22 @@ nmap <silent> <leader>es :nohl<cr>
 " emmet
 imap <c-y><leader> <c-y>,
 
+" delete spaces
+nnoremap <leader>DD :call <SID>StripTrailingWhitespaces()<CR>
+nnoremap <leader>DB :g/^$/d<cr>
+
+" functions
+function! <SID>StripTrailingWhitespaces()
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  %s/\s\+$//e
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
 
 " =============================================
 " Plugin enhancement
@@ -279,7 +295,7 @@ if executable('ag')
   " note we extract the column as well as the file and line number
   set grepprg=ag\ --nogroup\ --nocolor\ --column
   set grepformat=%f:%l:%c%m
-  nnoremap <leader>a :Ag 
+  nnoremap <leader>a :Ag
 endif
 
 " optimization
