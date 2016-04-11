@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>
+      Happy Hacker Emulation
+    </name>
+
+    <item>
+      <name>
+        HHKB Arrows ( FN + [, /, ' = Up, Left, Down, Right )
+      </name>
+      <identifier>
+        hhkb.remap.arrows_fn
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT, ModifierFlag::FN,
+        KeyCode::CURSOR_UP
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::FN,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SLASH, ModifierFlag::FN,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::FN,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        HHKB Capslock to Control
+      </name>
+      <identifier>
+        hhkb.remap.capslock_to_control
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CAPSLOCK,
+        KeyCode::CONTROL_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        HHKB Capslock ( FN + Control L )
+      </name>
+      <identifier>
+        hhkb.remap.capslock_fn
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CONTROL_L, ModifierFlag::FN,
+        KeyCode::CAPSLOCK
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        HHKB Delete ( Delete to Backslash(\), Vice Versa )
+      </name>
+      <identifier>
+        hhkb.remap.delete_to_backslash
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE,
+        KeyCode::BACKSLASH
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH,
+        KeyCode::DELETE
+      </autogen>
+    </item>
+
+   <item>
+      <name>
+        HHKB Arrows ( Ctrl + [, /, ' = Up, Left, Down, Right )
+      </name>
+      <identifier>
+        hhkb.remap.arrows_ctrl
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_UP
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SLASH, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+    </item>
+
+
+    <item>
+      <name>
+        HHKB Page Up/Down ( FN + L / FN + . )
+      </name>
+      <identifier>
+        hhkb.remap.page_up_down_fn
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::FN,
+        KeyCode::PAGEUP
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DOT, ModifierFlag::FN,
+        KeyCode::PAGEDOWN
+      </autogen>
+    </item>
+
+
+    <item>
+      <name>
+        HHKB Home/End ( FN + K / FN + , )
+      </name>
+      <identifier>
+        hhkb.remap.home_end_fn
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::FN,
+        KeyCode::HOME
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::COMMA, ModifierFlag::FN,
+        KeyCode::END
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        HHKB Print Screen ( FN + I )
+      </name>
+      <identifier>
+        hhkb.remap.print_screen_fn
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::I, ModifierFlag::FN,
+        KeyCode::F13
+      </autogen>
+    </item>
+
+  </item>
+
+  <item>
+    <name>
+      Better Poker II
+    </name>
+
+    <item>
+      <name>
+        CTRL + Backspace to ~
+      </name>
+      <identifier>
+        bp2.remap.ctrl_backspace_to_tilde
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, ModifierFlag::CONTROL_L,
+        KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        CTRL + \ to /
+      </name>
+      <identifier>
+        bp2.remap.ctrl_backslash_to_slash
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, ModifierFlag::CONTROL_L,
+        KeyCode::SLASH
+      </autogen>
+    </item>
+  </item>
+
+</root>
+
