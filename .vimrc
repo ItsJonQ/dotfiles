@@ -14,6 +14,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
+Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
@@ -175,6 +176,7 @@ nnoremap <leader>W :wq<CR>
 
 " Doubletap / Selecting
 nmap <leader><leader> V
+nmap <leader><leader> <esc>
 vmap <leader><leader> <Esc>
 nmap <leader>A ggVG
 nmap <leader>sa ggVG
@@ -186,11 +188,13 @@ vmap <leader>f /
 
 " copy / paste
 vmap <Leader>y "+y
-vmap <Leader>d "+d
 nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+" delete
+nmap <leader>dw diW
 
 " refresh
 nmap <leader>R :e<cr>
@@ -201,8 +205,18 @@ vmap <leader>/ gc
 nmap <leader>c gcc
 vmap <leader>c gc
 
+" marks
+nmap <leader>g `
+nmap <leader>] ]`
+nmap <leader>[ [`
+nmap <leader>M m/
+
 " folding
-nnoremap zz za
+nnoremap zf za
+
+" positioning
+nnoremap zj zt8<c-y>
+nnoremap zc z.
 
 " indenting
 nmap T :retab<cr>
@@ -211,6 +225,10 @@ nmap > >>
 vmap > ><cr>gv
 nmap < <<
 vmap < <<cr>gv
+
+" new lines
+nmap <leader>n o<esc>
+nmap <leader>N O<esc>
 
 " sort
 vmap <leader>o :sort<cr>
@@ -233,7 +251,9 @@ noremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 nnoremap J }
+vnoremap J }
 nnoremap K {
+vnoremap K {
 
 " better movement
 nnoremap B ^
