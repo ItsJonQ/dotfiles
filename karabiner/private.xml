@@ -173,21 +173,49 @@
 
     <item>
       <name>
-        Escape to Backquote
+        Escape to Backquote (`)
       </name>
       <identifier>
         bp2.remap.escape_to_backquote
       </identifier>
       <autogen>
         __KeyToKey__
-        KeyCode::ESCAPE,
+        KeyCode::ESCAPE, ModifierFlag::NONE,
         KeyCode::BACKQUOTE
       </autogen>
     </item>
 
     <item>
       <name>
-        CTRL + Backspace to ~
+        Shift+Escape to Tilde (~)
+      </name>
+      <identifier>
+        bp2.remap.shift_escape_to_backquote
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::ESCAPE, ModifierFlag::SHIFT_L,
+        KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        Control + C to Escape
+      </name>
+      <identifier>
+        bp2.remap.control_c_escape
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::C, ModifierFlag::CONTROL_L,
+        KeyCode::ESCAPE
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        Control + Backspace to Tilde (~)
       </name>
       <identifier>
         bp2.remap.ctrl_backspace_to_tilde
@@ -201,7 +229,7 @@
 
     <item>
       <name>
-        CTRL + \ to /
+        Control + \ to /
       </name>
       <identifier>
         bp2.remap.ctrl_backslash_to_slash
@@ -213,20 +241,6 @@
       </autogen>
     </item>
 
-    <item>
-      <name>
-        CTRL + ` to Escape
-      </name>
-      <identifier>
-        bp2.remap.ctrl_backquote_to_escape
-      </identifier>
-      <autogen>
-        __KeyToKey__
-        KeyCode::BACKQUOTE, ModifierFlag::CONTROL_L,
-        KeyCode::ESCAPE
-      </autogen>
-    </item>
   </item>
-
 </root>
 
