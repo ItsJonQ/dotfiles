@@ -168,8 +168,22 @@
 
   <item>
     <name>
-      Better Poker II
+      Better Keyboard Q
     </name>
+
+    <item>
+      <name>
+        Escape to Backquote
+      </name>
+      <identifier>
+        bp2.remap.escape_to_backquote
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::ESCAPE,
+        KeyCode::BACKQUOTE
+      </autogen>
+    </item>
 
     <item>
       <name>
@@ -196,6 +210,20 @@
         __KeyToKey__
         KeyCode::BACKSLASH, ModifierFlag::CONTROL_L,
         KeyCode::SLASH
+      </autogen>
+    </item>
+
+    <item>
+      <name>
+        CTRL + ` to Escape
+      </name>
+      <identifier>
+        bp2.remap.ctrl_backquote_to_escape
+      </identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKQUOTE, ModifierFlag::CONTROL_L,
+        KeyCode::ESCAPE
       </autogen>
     </item>
   </item>
