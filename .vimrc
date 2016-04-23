@@ -20,10 +20,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
@@ -109,6 +107,10 @@ au BufRead,BufNewFile *.tpl set filetype=html
 " Theme
 " set term=xterm-256color
 
+" syntax enable
+syntax on
+syntax off
+
 set t_Co=256
 color onedark
 
@@ -125,10 +127,6 @@ else
   hi LineNr ctermbg=None
   hi Normal ctermbg=None
 endif
-
-syntax enable
-syntax on
-" syntax off
 
 " Cursor / highlighting
 set cursorline
