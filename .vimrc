@@ -14,14 +14,17 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
+Plugin 'godlygeek/tabular'
 Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -29,6 +32,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " Themes
 Plugin 'chriskempson/base16-vim'
+Plugin 'fxn/vim-monochrome'
 Plugin 'joshdick/onedark.vim'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'mhartington/oceanic-next'
@@ -94,6 +98,9 @@ set foldlevelstart=10
 set foldmethod=indent
 set foldnestmax=10
 
+" File types
+au BufRead,BufNewFile *.tpl set filetype=html
+
 
 " =============================================
 " Look and feel
@@ -101,8 +108,6 @@ set foldnestmax=10
 
 " Theme
 " set term=xterm-256color
-syntax enable
-syntax on
 
 set t_Co=256
 color onedark
@@ -112,7 +117,7 @@ if has("gui_running")
   color onedark
   set columns=80 lines=40
   set gfn=*
-  set guifont=Monaco:h12
+  set guifont=Roboto\ Mono:h12
 else
   " set background=dark
   hi ColorColumn ctermbg=233
@@ -121,6 +126,9 @@ else
   hi Normal ctermbg=None
 endif
 
+syntax enable
+syntax on
+" syntax off
 
 " Cursor / highlighting
 set cursorline
@@ -166,6 +174,7 @@ nnoremap q <Nop>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>Q :q!<cr>
 imap jj <Esc>
+imap kk <Esc>
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
@@ -175,23 +184,29 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>W :wq<CR>
 
 " Doubletap / Selecting
-nmap <leader><leader> V
-nmap <leader><leader> <esc>
-vmap <leader><leader> <Esc>
+" nmap <leader><leader> V
+nmap <leader><leader> <Esc>
+" vmap <leader><leader> <Esc>
 nmap <leader>A ggVG
 nmap <leader>sa ggVG
 noremap <leader>sp `[v`]
+vnoremap u <nop>
 
 " searching
 nmap <leader>f /
 vmap <leader>f /
+nnoremap <c-d> *N
 
 " copy / paste
 vmap <Leader>y "+y
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
+nmap <Leader>p "+pg`]
+nmap <Leader>P "+Pg`]
+vmap <Leader>p "+pg`]
+vmap <Leader>P "+Pg`]
+
+" moving
+nmap <leader>J :m +1<cr>
+nmap <leader>K :m -2<cr>
 
 " delete
 nmap <leader>dw diW
@@ -210,21 +225,21 @@ nmap <leader>g `
 nmap <leader>] ]`
 nmap <leader>[ [`
 nmap <leader>M m/
+nmap <c-m> `
 
 " folding
 nnoremap zf za
 
 " positioning
 nnoremap zj zt8<c-y>
-nnoremap zc z.
 
 " indenting
 nmap T :retab<cr>
 vmap T :retab<cr>
 nmap > >>
-vmap > ><cr>gv
+vmap > >gv
 nmap < <<
-vmap < <<cr>gv
+vmap < <gv
 
 " new lines
 nmap <leader>n o<esc>
@@ -232,10 +247,12 @@ nmap <leader>N O<esc>
 
 " sort
 vmap <leader>o :sort<cr>
+vmap gss :sort<cr>
+nmap gsip vip:sort<cr>
 
 " multiple cursors
 let g:multi_cursor_quit_key='<c-c>'
-nnoremap <c-c> :call multiple_cursors#quit()<cr>
+nnoremap <c-c> <silent> :call multiple_cursors#quit()<cr>
 
 " formatting
 nmap Q gqap
@@ -251,30 +268,50 @@ noremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 nnoremap J }
+nnoremap <c-j> }
 vnoremap J }
 nnoremap K {
+nnoremap <c-k> {
 vnoremap K {
 
-" better movement
+" better word movement
 nnoremap B ^
+vnoremap B ^
 nnoremap E $
+vnoremap E $
 nnoremap W $
+vnoremap W $
 
 " better window navigation
-map <silent> <leader>h :wincmd h<cr>
-map <silent> <leader>j :wincmd j<cr>
-map <silent> <leader>k :wincmd k<cr>
-map <silent> <leader>l :wincmd l<cr>
+" map <silent> <leader>h :wincmd h<cr>
+" map <silent> <leader>j :wincmd j<cr>
+" map <silent> <leader>k :wincmd k<cr>
+" map <silent> <leader>l :wincmd l<cr>
 
 " clear search
 nmap <silent> <leader>es :nohl<cr>
 
 " emmet
-imap <c-y><leader> <c-y>,
+imap <c-a><leader> <c-y>,
+
+" tabularize
+nmap gte :Tabularize /=/<cr>
+vmap gte :Tabularize /=/<cr>
+nmap gtc :Tabularize /:/<cr>
+vmap gtc :Tabularize /:/<cr>
+
+
+" nerdTre
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let g:NERDTreeHijackNetrw=0
+map <c-a>n :NERDTreeToggle<CR>
 
 " delete spaces
-nnoremap <leader>DD :call <SID>StripTrailingWhitespaces()<CR>
-nnoremap <leader>DB :g/^$/d<cr>
+nnoremap <leader>DD cc<esc>
+nnoremap gdd cc<esc>
+nnoremap <leader>DS :call <SID>StripTrailingWhitespaces()<CR>
+nnoremap gds :call <SID>StripTrailingWhitespaces()<CR>
 
 " functions
 function! <SID>StripTrailingWhitespaces()
@@ -321,4 +358,3 @@ endif
 " optimization
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_components,*/node_modules,*/.vagrant,*/.github,*/.asset-cache,*/.grunt,*/tmp,*/.tmp,_site,dev,tmp,.publish,*/.grunt-tmp,*/site/css
-
