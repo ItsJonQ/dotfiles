@@ -10,30 +10,26 @@ call vundle#begin()
 
 " Enhancements
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'editorconfig/editorconfig-vim'
 Plugin 'ervandew/supertab'
 Plugin 'godlygeek/tabular'
 Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 
 
 " Themes
-Plugin 'chriskempson/base16-vim'
-Plugin 'fxn/vim-monochrome'
 Plugin 'joshdick/onedark.vim'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 Plugin 'mhartington/oceanic-next'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
 
 " Syntax highlighting
@@ -91,6 +87,7 @@ set noswapfile
 set wildmenu
 
 " Folding
+set fdc=1
 set foldenable
 set foldlevelstart=10
 set foldmethod=indent
@@ -98,6 +95,13 @@ set foldnestmax=10
 
 " File types
 au BufRead,BufNewFile *.tpl set filetype=html
+
+" Fix for airline
+set laststatus=2
+
+" Performance boost
+" Use old regex engin
+set re=1
 
 
 " =============================================
@@ -109,23 +113,30 @@ au BufRead,BufNewFile *.tpl set filetype=html
 
 " syntax enable
 syntax on
-syntax off
 
 set t_Co=256
 color onedark
 
 " MacVim
 if has("gui_running")
+  syntax on
   color onedark
   set columns=80 lines=40
   set gfn=*
-  set guifont=Roboto\ Mono:h12
+  set guifont=Monaco:h12
 else
+  syntax off
   " set background=dark
   hi ColorColumn ctermbg=233
   hi CursorLine ctermbg=233
+  hi FoldColumn ctermfg=242
   hi LineNr ctermbg=None
   hi Normal ctermbg=None
+
+  " Ubuntu colors
+  " hi ColorColumn ctermbg=53
+  " hi CursorLine ctermbg=53
+  " hi LineNr ctermfg=241
 endif
 
 " Cursor / highlighting
@@ -156,6 +167,9 @@ set mouse=a
 " Typography
 set linespace=5
 
+" Fix backspace
+set backspace=2
+
 
 " =============================================
 " Keyboard remaps
@@ -169,8 +183,8 @@ let mapleader = "\<Space>"
 
 " Reset
 nnoremap q <Nop>
-nnoremap <leader>q :q<cr>
-nnoremap <leader>Q :q!<cr>
+" nnoremap <leader>q :q<cr>
+" nnoremap <leader>Q :q!<cr>
 imap jj <Esc>
 imap kk <Esc>
 
@@ -178,12 +192,12 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Saving / Quiting
-nnoremap <leader>w :w<CR>
-nnoremap <leader>W :wq<CR>
+" nnoremap <leader>w :w<CR>
+" nnoremap <leader>W :wq<CR>
 
 " Doubletap / Selecting
 " nmap <leader><leader> V
-nmap <leader><leader> <Esc>
+" nmap <leader><leader> <Esc>
 " vmap <leader><leader> <Esc>
 nmap <leader>A ggVG
 nmap <leader>sa ggVG
@@ -206,27 +220,12 @@ vmap <Leader>P "+Pg`]
 nmap <leader>J :m +1<cr>
 nmap <leader>K :m -2<cr>
 
-" delete
-nmap <leader>dw diW
-
 " refresh
 nmap <leader>R :e<cr>
 
 " commenting
-nmap <leader>/ gcc
-vmap <leader>/ gc
 nmap <leader>c gcc
 vmap <leader>c gc
-
-" marks
-nmap <leader>g `
-nmap <leader>] ]`
-nmap <leader>[ [`
-nmap <leader>M m/
-nmap <c-m> `
-
-" folding
-nnoremap zf za
 
 " positioning
 nnoremap zj zt8<c-y>
@@ -247,10 +246,6 @@ nmap <leader>N O<esc>
 vmap <leader>o :sort<cr>
 vmap gss :sort<cr>
 nmap gsip vip:sort<cr>
-
-" multiple cursors
-let g:multi_cursor_quit_key='<c-c>'
-nnoremap <c-c> <silent> :call multiple_cursors#quit()<cr>
 
 " formatting
 nmap Q gqap
@@ -280,36 +275,29 @@ vnoremap E $
 nnoremap W $
 vnoremap W $
 
-" better window navigation
-" map <silent> <leader>h :wincmd h<cr>
-" map <silent> <leader>j :wincmd j<cr>
-" map <silent> <leader>k :wincmd k<cr>
-" map <silent> <leader>l :wincmd l<cr>
+" file explorer
+command E Ex
+nnoremap <c-a>n :vs .<cr>
+vnoremap <c-a>n :vs .<cr>
+nnoremap <c-a>N :sp .<cr>
+vnoremap <c-a>N :sp .<cr>
 
 " clear search
 nmap <silent> <leader>es :nohl<cr>
+nmap <silent> <leader>hl :nohl<cr>
 
 " emmet
-imap <c-a><leader> <c-y>,
+imap <c-a>e <c-y>,
 
 " tabularize
-nmap gte :Tabularize /=/<cr>
-vmap gte :Tabularize /=/<cr>
-nmap gtc :Tabularize /:/<cr>
-vmap gtc :Tabularize /:/<cr>
-
-
-" nerdTre
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-let g:NERDTreeHijackNetrw=0
-map <c-a>n :NERDTreeToggle<CR>
+" nmap gte :Tabularize /=/<cr>
+" vmap gte :Tabularize /=/<cr>
+" nmap gtc :Tabularize /:/<cr>
+" vmap gtc :Tabularize /:/<cr>
 
 " delete spaces
-nnoremap <leader>DD cc<esc>
-nnoremap gdd cc<esc>
-nnoremap <leader>DS :call <SID>StripTrailingWhitespaces()<CR>
-nnoremap gds :call <SID>StripTrailingWhitespaces()<CR>
+nnoremap <leader>dd cc<esc>
+nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
 
 " functions
 function! <SID>StripTrailingWhitespaces()
@@ -327,6 +315,10 @@ endfunction
 " =============================================
 " Plugin enhancement
 " =============================================
+
+" indentLine
+let g:indentLine_leadingSpaceChar='.'
+let g:indentLine_color_term = 237
 
 " ctrl-p
 set runtimepath^=~/.vim/bundle/ctrlp.vim
