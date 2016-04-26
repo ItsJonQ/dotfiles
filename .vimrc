@@ -1,14 +1,29 @@
+" .vimrc
+" Author: Q <itsjonq@gmail.com>
+" Source: https://github.com/ItsJonQ/dotfiles
+" =============================================================================
+" vim:fdm=marker
+" Above setting enables .vimrc folding
+
+" Normalize =============================================================== {{{
+
+" Reset {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" =============================================
-" Vundle
-" =============================================
+" }}}
+
+" }}}
+" Vundle ================================================================== {{{
+
+" Setup start {{{
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Enhancements
+" }}}
+" Enhancements {{{
+
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
@@ -18,21 +33,21 @@ Plugin 'godlygeek/tabular'
 Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
-Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 
+" }}}
+" Themes {{{
 
-" Themes
 Plugin 'joshdick/onedark.vim'
 Plugin 'mhartington/oceanic-next'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
-
-" Syntax highlighting
+" }}}
+" Syntax highlighting {{{
 Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
 Plugin 'StanAngeloff/php.vim'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -40,81 +55,134 @@ Plugin 'evidens/vim-twig'
 Plugin 'groenewege/vim-less'
 Plugin 'mustache/vim-mustache-handlebars'
 
+" }}}
+" Setup end {{{
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" }}}
 
-" =============================================
+" }}}
+" Basic options =========================================================== {{{
 
+" Airline {{{
 
-" Vim Directories
+set laststatus=2
+
+" }}}
+" Autocomplete {{{
+
+set wildmenu
+
+" }}}
+" Backspace {{{
+
+set backspace=2
+
+" }}}
+" Buffer {{{
+
+set hidden
+
+" }}}
+" Directories {{{
+
 set directory=~/.vim/tmp//
 set backupdir=~/.vim/backup//
 set undodir=~/.vim/undo//
 
+" }}}
+" File types {{{
 
-" =============================================
-" VIM behaviour
-" =============================================
+au BufRead,BufNewFile *.tpl set filetype=html
 
-" Hides buffers instead of closing them
-set hidden
+" }}}
+" Folding {{{
 
-" Searching
+set fdc=1
+set fdm=marker
+set foldenable
+set foldlevelstart=10
+set foldmethod=indent
+set foldnestmax=10
+
+" }}}
+" Indentation {{{
+
+let g:gitgutter_sign_column_always = 1
+let g:indentLine_leadingSpaceEnabled = 1
+set autoindent
+set colorcolumn=80
+set copyindent
+set expandtab
+set list
+set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
+set number
+set relativenumber
+set shiftwidth=2
+set smarttab
+set softtabstop=2
+set tabstop=2
+
+" }}}
+" Mouse {{{
+
+set mouse=a
+
+" }}}
+" Regex {{{
+
+set re=1
+
+" }}}
+" Searching {{{
+
 set hlsearch
 set ignorecase
 set incsearch
 set showmatch
 set smartcase
 
-" Undo/Redo
-set history=1000
-set undolevels=1000
+" }}}
+" Sounds {{{
 
-" Terminal/Window
-set title
-
-" Sounds
 set visualbell
 set noerrorbells
 
-" Disabling swap
+" }}}
+" Swap {{{
+
 set nobackup
 set noswapfile
 
-" Autocomplete for command menu
-set wildmenu
+" }}}
+" Window {{{
 
-" Folding
-set fdc=1
-set foldenable
-set foldlevelstart=10
-set foldmethod=indent
-set foldnestmax=10
+set title
 
-" File types
-au BufRead,BufNewFile *.tpl set filetype=html
+" }}}
+" Undo/Redo {{{
 
-" Fix for airline
-set laststatus=2
+set history=1000
+set undolevels=1000
 
-" Performance boost
-" Use old regex engin
-set re=1
+" }}}
 
+" }}}
+" Appearance ============================================================== {{{
 
-" =============================================
-" Look and feel
-" =============================================
+" Basic {{{
 
-" Theme
 " set term=xterm-256color
 
-" syntax enable
+" Syntax / color
 syntax on
-
 set t_Co=256
+
+" }}}
+" Color scheme {{{
+
 color onedark
 
 " MacVim
@@ -139,125 +207,45 @@ else
   " hi LineNr ctermfg=241
 endif
 
-" Cursor / highlighting
+" }}}
+" Cursor / highlighting {{{
+
 set cursorline
 set showmatch
 
-" Indentation
-set autoindent
-set copyindent
-set expandtab
-set number
-set shiftwidth=2
-set smarttab
-set softtabstop=2
-set tabstop=2
+" }}}
+" Typography {{{
 
-" Extra indentation
-let g:gitgutter_sign_column_always = 1
-let g:indentLine_leadingSpaceEnabled = 1
-set colorcolumn=80
-set list
-set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
-set relativenumber
-
-" Enable mouse
-set mouse=a
-
-" Typography
 set linespace=5
 
-" Fix backspace
-set backspace=2
+" }}}
 
+" }}}
+" Keyboard shortcuts ====================================================== {{{
 
-" =============================================
-" Keyboard remaps
-" =============================================
+" Basic {{{
 
-" Turn of Gitgutter keys
-let g:gitgutter_map_keys = 0
+" vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Leader
 let mapleader = "\<Space>"
 
-" Reset
+" Reset 
 nnoremap q <Nop>
-" nnoremap <leader>q :q<cr>
-" nnoremap <leader>Q :q!<cr>
-imap jj <Esc>
-imap kk <Esc>
 
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+" }}}
+" Arrow keys {{{
 
-" Saving / Quiting
-" nnoremap <leader>w :w<CR>
-" nnoremap <leader>W :wq<CR>
-
-" Doubletap / Selecting
-" nmap <leader><leader> V
-" nmap <leader><leader> <Esc>
-" vmap <leader><leader> <Esc>
-nmap <leader>A ggVG
-nmap <leader>sa ggVG
-noremap <leader>sp `[v`]
-vnoremap u <nop>
-
-" searching
-nmap <leader>f /
-vmap <leader>f /
-nnoremap <c-d> *N
-
-" copy / paste
-vmap <Leader>y "+y
-nmap <Leader>p "+pg`]
-nmap <Leader>P "+Pg`]
-vmap <Leader>p "+pg`]
-vmap <Leader>P "+Pg`]
-
-" moving
-nmap <leader>J :m +1<cr>
-nmap <leader>K :m -2<cr>
-
-" refresh
-nmap <leader>R :e<cr>
-
-" commenting
-nmap <leader>c gcc
-vmap <leader>c gc
-
-" positioning
-nnoremap zj zt8<c-y>
-
-" indenting
-nmap T :retab<cr>
-vmap T :retab<cr>
-nmap > >>
-vmap > >gv
-nmap < <<
-vmap < <gv
-
-" new lines
-nmap <leader>n o<esc>
-nmap <leader>N O<esc>
-
-" sort
-vmap <leader>o :sort<cr>
-vmap gss :sort<cr>
-nmap gsip vip:sort<cr>
-
-" formatting
-nmap Q gqap
-vmap Q gq
-
-" disable arrow keys
 noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
 
-" better arrow key movement
+" }}}
+" Better movement: Arrows {{{
+
 nnoremap j gj
 nnoremap k gk
 nnoremap J }
@@ -267,7 +255,9 @@ nnoremap K {
 nnoremap <c-k> {
 vnoremap K {
 
-" better word movement
+" }}}
+" Better movement: Words {{{
+
 nnoremap B ^
 vnoremap B ^
 nnoremap E $
@@ -275,31 +265,122 @@ vnoremap E $
 nnoremap W $
 vnoremap W $
 
-" file explorer
+" }}}
+" Commenting {{{
+
+nmap <leader>c gcc
+vmap <leader>c gc
+
+" }}}
+" Copy / paste {{{
+
+vmap <Leader>y "+y
+nmap <Leader>p "+pg`]
+nmap <Leader>P "+Pg`]
+vmap <Leader>p "+pg`]
+vmap <Leader>P "+Pg`]
+
+" }}}
+" Delete {{{
+
+nnoremap <leader>dd cc<esc>
+nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
+
+" }}}
+" Escape {{{
+
+imap jj <Esc>
+imap kk <Esc>
+
+" }}}
+" File explorer {{{
+
 command E Ex
 nnoremap <c-a>n :vs .<cr>
 vnoremap <c-a>n :vs .<cr>
 nnoremap <c-a>N :sp .<cr>
 vnoremap <c-a>N :sp .<cr>
 
-" clear search
+" }}}
+" Formatting {{{
+
+nmap Q gqap
+vmap Q gq
+
+" }}}
+" Indenting {{{
+
+nmap T :retab<cr>
+vmap T :retab<cr>
+nmap > >>
+vmap > >gv
+nmap < <<
+vmap < <gv
+
+" }}}
+" Movement {{{
+
+nmap <leader>J :m +1<cr>
+nmap <leader>K :m -2<cr>
+
+" }}}
+" New lines {{{
+
+nmap <leader>n o<esc>
+nmap <leader>N O<esc>
+
+" }}}
+" Positioning {{{
+
+nnoremap zj zt8<c-y>
+
+" }}}
+" Search {{{
+
 nmap <silent> <leader>es :nohl<cr>
 nmap <silent> <leader>hl :nohl<cr>
+nmap <leader>f /
+vmap <leader>f /
+nnoremap <c-d> *N
 
-" emmet
+" }}}
+" Selecting {{{
+
+nmap <leader>A ggVG
+nmap <leader>sa ggVG
+noremap <leader>sp `[v`]
+vnoremap u <nop>
+
+" }}}
+" Sort {{{
+vmap <leader>o :sort<cr>
+vmap gss :sort<cr>
+nmap gsip vip:sort<cr>
+
+" }}}
+" Plugins {{{
+
+" Emmet {{{
+
 imap <c-a>e <c-y>,
 
-" tabularize
+" }}}
+" GitGutter {{{
+
+let g:gitgutter_map_keys = 0
+
+" }}}
+" Tabularize {{{
+
 " nmap gte :Tabularize /=/<cr>
 " vmap gte :Tabularize /=/<cr>
 " nmap gtc :Tabularize /:/<cr>
 " vmap gtc :Tabularize /:/<cr>
 
-" delete spaces
-nnoremap <leader>dd cc<esc>
-nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
+" }}}
+" Functions {{{
 
-" functions
+" function :: Delete trailing white space
 function! <SID>StripTrailingWhitespaces()
   " Preparation: save last search, and cursor position.
   let _s=@/
@@ -312,15 +393,22 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
-" =============================================
-" Plugin enhancement
-" =============================================
+" }}}
 
-" indentLine
+" }}}
+
+" }}}
+" Plugin settings ========================================================= {{{
+
+" indentLine {{{
+
 let g:indentLine_leadingSpaceChar='.'
+let g:indentLine_char='.'
 let g:indentLine_color_term = 237
 
-" ctrl-p
+" }}}
+" ctrl-p {{{
+
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " make ctrl-p use silver searcher!
@@ -337,7 +425,8 @@ else
     \ }
 endif
 
-" silver searcher
+" }}}
+" silver searcher {{{
 if executable('ag')
   " note we extract the column as well as the file and line number
   set grepprg=ag\ --nogroup\ --nocolor\ --column
@@ -348,3 +437,7 @@ endif
 " optimization
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_components,*/node_modules,*/.vagrant,*/.github,*/.asset-cache,*/.grunt,*/tmp,*/.tmp,_site,dev,tmp,.publish,*/.grunt-tmp,*/site/css
+
+" }}}
+
+" }}}
