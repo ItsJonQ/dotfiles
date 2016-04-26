@@ -44,6 +44,7 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'joshdick/onedark.vim'
 Plugin 'mhartington/oceanic-next'
+Plugin 'pbrisbin/vim-colors-off'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
 " }}}
@@ -183,28 +184,55 @@ set t_Co=256
 " }}}
 " Color scheme {{{
 
-color onedark
-
 " MacVim
 if has("gui_running")
+
   syntax on
   color onedark
+
   set columns=80 lines=40
   set gfn=*
   set guifont=Monaco:h12
+
 else
+
   syntax off
-  " set background=dark
-  hi ColorColumn ctermbg=233
-  hi CursorLine ctermbg=233
-  hi FoldColumn ctermfg=242
-  hi LineNr ctermbg=None
-  hi Normal ctermbg=None
+  color onedark
+  color off
+
+  set background=light
+
+  " Background based tweaks
+  if(&background == "light")
+
+    let g:indentLine_color_term = 251
+    hi ColorColumn ctermbg=254
+    hi CursorLine ctermbg=254
+    hi FoldColumn ctermfg=248
+    hi LineNr ctermbg=None
+    hi Normal ctermbg=None
+    hi Search ctermfg=234 ctermbg=228
+    hi IncSearch ctermfg=234 ctermbg=220
+
+  elseif(&background == "dark")
+
+  else
+
+    let g:indentLine_color_term = 237
+
+    hi ColorColumn ctermbg=233
+    hi CursorLine ctermbg=233
+    hi FoldColumn ctermfg=242
+    hi LineNr ctermbg=None
+    hi Normal ctermbg=None
+
+  endif
 
   " Ubuntu colors
   " hi ColorColumn ctermbg=53
   " hi CursorLine ctermbg=53
   " hi LineNr ctermfg=241
+
 endif
 
 " }}}
@@ -225,14 +253,14 @@ set linespace=5
 
 " Basic {{{
 
+" Leader
+let mapleader = "\<Space>"
+
 " vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-" Leader
-let mapleader = "\<Space>"
-
-" Reset 
+" Reset
 nnoremap q <Nop>
 
 " }}}
@@ -264,6 +292,8 @@ nnoremap E $
 vnoremap E $
 nnoremap W $
 vnoremap W $
+nnoremap H ^
+nnoremap L $
 
 " }}}
 " Commenting {{{
@@ -283,7 +313,8 @@ vmap <Leader>P "+Pg`]
 " }}}
 " Delete {{{
 
-nnoremap <leader>dd cc<esc>
+nnoremap D d$
+vnoremap <leader>dd cc<esc>
 nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
 
 " }}}
@@ -300,6 +331,15 @@ nnoremap <c-a>n :vs .<cr>
 vnoremap <c-a>n :vs .<cr>
 nnoremap <c-a>N :sp .<cr>
 vnoremap <c-a>N :sp .<cr>
+
+" }}}
+" Folding {{{
+
+nnoremap <cr> za
+nnoremap <space><space> za
+nnoremap zl zMzr
+nnoremap zf mzzMzvzz
+nnoremap zO zczO
 
 " }}}
 " Formatting {{{
@@ -326,6 +366,7 @@ nmap <leader>K :m -2<cr>
 " }}}
 " New lines {{{
 
+nnoremap <leader><cr> o<esc>
 nmap <leader>n o<esc>
 nmap <leader>N O<esc>
 
@@ -339,16 +380,20 @@ nnoremap zj zt8<c-y>
 
 nmap <silent> <leader>es :nohl<cr>
 nmap <silent> <leader>hl :nohl<cr>
-nmap <leader>f /
+nmap <silent> <leader>, :nohl<cr>
+vmap <leader>f /
 vmap <leader>f /
 nnoremap <c-d> *N
+nnoremap * *N
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 " }}}
 " Selecting {{{
 
 nmap <leader>A ggVG
 nmap <leader>sa ggVG
-noremap <leader>sp `[v`]
+noremap gp `[v`]
 vnoremap u <nop>
 
 " }}}
@@ -404,7 +449,6 @@ endfunction
 
 let g:indentLine_leadingSpaceChar='.'
 let g:indentLine_char='.'
-let g:indentLine_color_term = 237
 
 " }}}
 " ctrl-p {{{
