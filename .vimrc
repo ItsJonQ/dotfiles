@@ -282,6 +282,14 @@ noremap <left> <nop>
 noremap <right> <nop>
 
 " }}}
+" Buffers {{{
+
+nnoremap gb :ls<cr>
+nnoremap B :ls<cr>
+nnoremap <c-b> :ls<cr>
+vnoremap <c-b> :ls<cr>
+
+"}}}
 " Better movement: Arrows {{{
 
 nnoremap j gj
@@ -296,29 +304,23 @@ vnoremap K {
 " }}}
 " Better movement: Words {{{
 
-nnoremap B ^
-vnoremap B ^
-nnoremap E $
-vnoremap E $
-nnoremap W $
-vnoremap W $
 nnoremap H ^
 nnoremap L $
 
 " }}}
 " Commenting {{{
 
-nmap <leader>c gcc
-vmap <leader>c gc
+nnoremap <silent> <leader>c :Commentary<cr>
+vnoremap <silent> <leader>c :Commentary<cr>
 
 " }}}
 " Copy / paste {{{
 
-vmap <Leader>y "+y
-nmap <Leader>p "+pg`]
-nmap <Leader>P "+Pg`]
-vmap <Leader>p "+pg`]
-vmap <Leader>P "+Pg`]
+vnoremap <Leader>y "+y
+nnoremap <Leader>p "+pg`]
+vnoremap <Leader>P "+Pg`]
+nnoremap <Leader>p "+pg`]
+vnoremap <Leader>P "+Pg`]
 
 " }}}
 " Delete {{{
@@ -341,6 +343,8 @@ nnoremap <c-a>n :vs .<cr>
 vnoremap <c-a>n :vs .<cr>
 nnoremap <c-a>N :sp .<cr>
 vnoremap <c-a>N :sp .<cr>
+nnoremap <c-e> :Ex<space>
+vnoremap <c-e> :Ex<space>
 
 " }}}
 " Folding {{{
@@ -353,14 +357,14 @@ nnoremap zO zczO
 " }}}
 " Formatting {{{
 
-nmap Q gqap
-vmap Q gq
+nnoremap Q gqap
+vnoremap Q gq
 
 " }}}
 " Indenting {{{
 
-nmap T :retab<cr>
-vmap T :retab<cr>
+nnoremap T :retab<cr>
+vnoremap T :retab<cr>
 nmap > >>
 vmap > >gv
 nmap < <<
@@ -413,6 +417,7 @@ vnoremap u <nop>
 
 " }}}
 " Sort {{{
+
 vmap <leader>o :sort<cr>
 vmap gss :sort<cr>
 nmap gsip vip:sort<cr>
@@ -460,13 +465,13 @@ endfunction
 " }}}
 " Plugin settings ========================================================= {{{
 
-" indentLine {{{
+" ctrlp {{{
 
-let g:indentLine_leadingSpaceChar='.'
-let g:indentLine_char='.'
-
-" }}}
-" ctrl-p {{{
+set buftype=
+let g:ctrlp_dont_split = 'netrw'
+let g:ctrlp_open_new_file = 0
+let g:ctrlp_reuse_window = 1
+let g:ctrlp_split_window = 0
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
@@ -484,7 +489,11 @@ else
     \ }
 endif
 
-set buftype=
+" }}}
+" indentLine {{{
+
+let g:indentLine_leadingSpaceChar='.'
+let g:indentLine_char='.'
 
 " }}}
 " silver searcher {{{
@@ -498,11 +507,6 @@ endif
 " optimization
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_components,*/node_modules,*/.vagrant,*/.github,*/.asset-cache,*/.grunt,*/tmp,*/.tmp,_site,dev,tmp,.publish,*/.grunt-tmp,*/site/css
-
-" }}}
-" SimpleNote {{{"
-
-" source ~/.simplenoterc
 
 " }}}
 
