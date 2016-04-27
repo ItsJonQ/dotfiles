@@ -5,6 +5,10 @@
 " vim:fdm=marker
 " Above setting enables .vimrc folding
 
+" Getting start!
+" Press zl, and watch all the things fold :)
+" Press zf to focus on a specific section
+
 " Normalize =============================================================== {{{
 
 " Reset {{{
@@ -144,6 +148,7 @@ set mouse=a
 
 set lazyredraw
 set re=1
+set synmaxcol=200
 set ttyfast
 
 " }}}
@@ -208,9 +213,9 @@ else
 
   syntax off
   color onedark
-  color off
+  " color off
 
-  set background=light
+  set background=dark
 
   " Background based tweaks
   if(&background == "light")
@@ -219,26 +224,25 @@ else
     hi ColorColumn ctermbg=254
     hi CursorLine ctermbg=254
     hi FoldColumn ctermfg=248
-    hi LineNr ctermbg=None
-    hi Normal ctermbg=None
     hi Pmenu ctermbg=254 ctermfg=239
-    hi PmenuSel ctermbg=220 ctermfg=239
-    hi Search ctermbg=228 ctermfg=234
-    hi IncSearch ctermbg=220 ctermfg=234
 
   elseif(&background == "dark")
-
-  else
 
     let g:indentLine_color_term = 237
 
     hi ColorColumn ctermbg=233
     hi CursorLine ctermbg=233
     hi FoldColumn ctermfg=242
-    hi LineNr ctermbg=None
-    hi Normal ctermbg=None
 
   endif
+
+  hi LineNr ctermbg=None
+  hi Normal ctermbg=None
+
+  hi IncSearch ctermbg=214 ctermfg=234
+  hi PmenuSel ctermbg=214 ctermfg=234
+  hi Search ctermbg=220 ctermfg=234
+  hi Visual ctermbg=33 ctermfg=234
 
   " Ubuntu colors
   " hi ColorColumn ctermbg=53
@@ -517,4 +521,12 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_componen
 " }}}
 
 " }}}
+" Performance boost ====================================================== {{{
 
+" *Sigh* Is the performance boost worth it?
+" set nocursorcolumn
+" set nocursorline
+" set norelativenumber
+syntax sync minlines=256
+
+" }}}
