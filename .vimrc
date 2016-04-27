@@ -37,7 +37,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
-Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
 
 " }}}
 " Themes {{{
@@ -57,6 +58,11 @@ Plugin 'groenewege/vim-less'
 Plugin 'mustache/vim-mustache-handlebars'
 
 " }}}
+" Apps {{{
+
+" Plugin 'mrtazz/simplenote.vim'
+
+" }}}
 " Setup end {{{
 
 call vundle#end()            " required
@@ -70,6 +76,8 @@ filetype plugin indent on    " required
 " Airline {{{
 
 set laststatus=2
+let g:airline_theme='powerlineish'
+set cmdheight=1
 
 " }}}
 " Autocomplete {{{
@@ -211,8 +219,10 @@ else
     hi FoldColumn ctermfg=248
     hi LineNr ctermbg=None
     hi Normal ctermbg=None
-    hi Search ctermfg=234 ctermbg=228
-    hi IncSearch ctermfg=234 ctermbg=220
+    hi Pmenu ctermbg=254 ctermfg=239
+    hi PmenuSel ctermbg=220 ctermfg=239
+    hi Search ctermbg=228 ctermfg=234
+    hi IncSearch ctermbg=220 ctermfg=234
 
   elseif(&background == "dark")
 
@@ -313,15 +323,15 @@ vmap <Leader>P "+Pg`]
 " }}}
 " Delete {{{
 
-nnoremap D d$
+nnoremap D cc<esc>
 vnoremap <leader>dd cc<esc>
 nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
 
 " }}}
 " Escape {{{
 
-imap jj <Esc>
-imap kk <Esc>
+" imap jj <Esc>
+" imap kk <Esc>
 
 " }}}
 " File explorer {{{
@@ -335,7 +345,6 @@ vnoremap <c-a>N :sp .<cr>
 " }}}
 " Folding {{{
 
-nnoremap <cr> za
 nnoremap <space><space> za
 nnoremap zl zMzr
 nnoremap zf mzzMzvzz
@@ -366,7 +375,8 @@ nmap <leader>K :m -2<cr>
 " }}}
 " New lines {{{
 
-nnoremap <leader><cr> o<esc>
+nnoremap <cr> o<esc>
+nnoremap <leader><cr> O<esc>
 nmap <leader>n o<esc>
 nmap <leader>N O<esc>
 
@@ -374,6 +384,11 @@ nmap <leader>N O<esc>
 " Positioning {{{
 
 nnoremap zj zt8<c-y>
+
+" }}}
+" Saving {{{
+
+" nnoremap s :w<cr>
 
 " }}}
 " Search {{{
@@ -469,6 +484,8 @@ else
     \ }
 endif
 
+set buftype=
+
 " }}}
 " silver searcher {{{
 if executable('ag')
@@ -481,6 +498,11 @@ endif
 " optimization
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_components,*/node_modules,*/.vagrant,*/.github,*/.asset-cache,*/.grunt,*/tmp,*/.tmp,_site,dev,tmp,.publish,*/.grunt-tmp,*/site/css
+
+" }}}
+" SimpleNote {{{"
+
+" source ~/.simplenoterc
 
 " }}}
 
