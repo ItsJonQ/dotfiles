@@ -37,8 +37,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " }}}
 " Themes {{{
@@ -140,9 +140,11 @@ set tabstop=2
 set mouse=a
 
 " }}}
-" Regex {{{
+" Performance {{{
 
+set lazyredraw
 set re=1
+set ttyfast
 
 " }}}
 " Searching {{{
@@ -288,6 +290,10 @@ nnoremap gb :ls<cr>
 nnoremap B :ls<cr>
 nnoremap <c-b> :ls<cr>
 vnoremap <c-b> :ls<cr>
+nnoremap <leader>b :ls<cr>
+vnoremap <leader>b :ls<cr>
+nnoremap <leader>q :bd<cr>
+vnoremap <leader>q :bd<cr>
 
 "}}}
 " Better movement: Arrows {{{
@@ -511,3 +517,4 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_componen
 " }}}
 
 " }}}
+
