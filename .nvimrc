@@ -1,0 +1,32 @@
+set nocompatible
+filetype plugin on
+
+# Basic settings
+set autoindent
+set cole=0
+set copyindent
+set expandtab
+set fdc=1
+set fdm=marker
+set foldenable
+set foldlevelstart=10
+set foldmethod=indent
+set foldnestmax=10
+set hidden
+set history=1000
+set lazyredraw
+set list
+set nobackup
+set nobackup
+set noswapfile
+set noswapfile
+set number
+set shiftwidth=2
+set smartcase
+set smarttab
+set softtabstop=2
+set synmaxcol=200
+set tabstop=2
+set title
+set ttyfast
+set undolevels=1000
