@@ -14,7 +14,6 @@ set foldnestmax=10
 set hidden
 set history=1000
 set lazyredraw
-set list
 set nobackup
 set nobackup
 set noswapfile
