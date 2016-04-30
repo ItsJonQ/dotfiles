@@ -1,7 +1,6 @@
 set nocompatible
 filetype plugin on
 
-# Basic settings
 set autoindent
 set cole=0
 set copyindent
