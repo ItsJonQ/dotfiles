@@ -119,6 +119,7 @@ set undodir=~/.vim/undo//
 
 autocmd BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.tpl set filetype=html
+au BufRead,BufNewFile *.twig set filetype=html
 
 
 " }}}
@@ -158,7 +159,7 @@ set mouse=a
 " Performance {{{
 
 set lazyredraw
-set re=1
+" set re=1
 set synmaxcol=200
 set ttyfast
 
@@ -301,7 +302,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Reset
-nnoremap q <nop>
+" nnoremap q <nop>
 
 " Best/worst remapping
 nnoremap ; :
@@ -591,7 +592,7 @@ if executable('ag')
   " note we extract the column as well as the file and line number
   set grepprg=ag\ --nogroup\ --nocolor\ --column
   set grepformat=%f:%l:%c%m
-  nnoremap <c-a> :Ag<space>
+  nnoremap <c-f> :Ag<space>
 endif
 
 " optimization
@@ -606,7 +607,7 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_componen
 " *Sigh* Is the performance boost worth it?
 " set nocursorcolumn
 " set nocursorline
-set norelativenumber
+" set norelativenumber
 syntax sync minlines=256
 
 " }}}
@@ -620,4 +621,3 @@ nnoremap J <nop>
 nnoremap K <nop>
 
 " }}}
-
