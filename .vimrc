@@ -408,9 +408,9 @@ vnoremap <silent> <leader>c :Commentary<cr>
 " Copy / paste {{{
 
 vnoremap <Leader>y "+y
-nnoremap <Leader>p "+pg`]
-vnoremap <Leader>P "+Pg`]
-nnoremap <Leader>p "+pg`]
+nnoremap <Leader>p "+Pg`]
+vnoremap <Leader>p "+Pg`]
+nnoremap <Leader>P "+Pg`]
 vnoremap <Leader>P "+Pg`]
 
 " }}}
@@ -676,3 +676,4 @@ syntax sync minlines=256
 " Quick notes ============================================================ {{{
 nnoremap ,q :e ~/Dropbox/Apps/PlainText\ 2/Quick\ Notes/vim.md<cr>
 " }}}
+
