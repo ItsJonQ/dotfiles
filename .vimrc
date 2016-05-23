@@ -69,9 +69,11 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'evidens/vim-twig'
 Plugin 'groenewege/vim-less'
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'mxw/vim-jsx'
 Plugin 'othree/html5.vim'
-Plugin 'pangloss/vim-javascript'
+" Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 
 " }}}
@@ -214,6 +216,9 @@ set undolevels=1000
 " Basic {{{
 
 " set term=xterm-256color
+" if (has("termguicolors"))
+  " set termguicolors
+" endif
 
 " Syntax / color
 syntax on
@@ -221,6 +226,9 @@ set t_Co=256
 
 " }}}
 " Color scheme {{{
+
+let g:onedark_termcolors=16
+
 
 " MacVim
 if has("gui_running")
@@ -377,6 +385,8 @@ nnoremap ,] :bn<cr>
 
 nnoremap j gj
 nnoremap k gk
+nnoremap J jzz
+nnoremap K kzz
 nnoremap } }zz
 nnoremap { {zz
 
@@ -472,8 +482,8 @@ nnoremap '' ''zz
 " }}}
 " Movement {{{
 
-nnoremap J :m +1<cr>
-nnoremap K :m -2<cr>
+nnoremap <s-down> :m +1<cr>
+nnoremap <s-up> :m -2<cr>
 nnoremap G Gzz
 
 " }}}
