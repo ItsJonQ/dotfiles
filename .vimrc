@@ -38,12 +38,18 @@ Plugin 'godlygeek/tabular'
 Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
+" Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-vinegar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/BufOnly.vim'
 
 " }}}
 " Themes {{{
@@ -51,6 +57,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'joshdick/onedark.vim'
 Plugin 'mhartington/oceanic-next'
 Plugin 'pbrisbin/vim-colors-off'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'w0ng/vim-hybrid'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
 " }}}
@@ -62,6 +70,8 @@ Plugin 'cespare/vim-toml'
 Plugin 'evidens/vim-twig'
 Plugin 'groenewege/vim-less'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'othree/html5.vim'
+Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
 
 " }}}
@@ -159,7 +169,8 @@ set mouse=a
 " Performance {{{
 
 set lazyredraw
-" set re=1
+set re=1
+set scrolljump=5
 set synmaxcol=200
 set ttyfast
 
@@ -224,26 +235,33 @@ if has("gui_running")
 else
 
   color onedark
+  " color molokai
+  " color off
 
-  if(g:colors_name != "onedark")
+  hi LineNr ctermbg=None
+  hi Normal ctermbg=None
+
+  if(g:colors_name == "off")
 
     syntax off
-    set background=dark
+    " set background=dark
+    set background=light
 
     " Background based tweaks
     if(&background == "light")
 
       let g:indentLine_color_term = 251
-      hi ColorColumn ctermbg=254
-      hi CursorLine ctermbg=254
+      hi ColorColumn ctermbg=253
+      hi CursorLine ctermbg=253
       hi FoldColumn ctermfg=248
+      hi Normal ctermbg=254
       hi Pmenu ctermbg=254 ctermfg=239
 
     elseif(&background == "dark")
 
       let g:indentLine_color_term = 237
 
-      hi ColorColumn ctermbg=233
+      hi ColorColumn ctermbg=0
       hi CursorLine ctermbg=233
       hi FoldColumn ctermfg=242
 
@@ -253,20 +271,24 @@ else
 
     let g:indentLine_color_term = 237
 
-    hi ColorColumn ctermbg=233
+    hi ColorColumn ctermbg=0
     hi CursorLine ctermbg=233
     hi FoldColumn ctermfg=242
 
   endif
 
-  hi LineNr ctermbg=None
-  hi Normal ctermbg=None
+  if(g:colors_name == "pencil")
+    set background=light
+    hi Normal ctermbg=254
 
-  " General color enhancements
-  hi IncSearch ctermbg=214 ctermfg=234
-  hi PmenuSel ctermbg=214 ctermfg=234
-  hi Search ctermbg=220 ctermfg=234
-  hi Visual ctermbg=33 ctermfg=234
+    let g:indentLine_color_term = 251
+
+    hi ColorColumn ctermbg=254
+    hi CursorLine ctermbg=254
+    hi FoldColumn ctermfg=248
+    hi LineNr ctermfg=250
+    hi Pmenu ctermbg=253 ctermfg=239
+  endif
 
   " Ubuntu colors
   " hi ColorColumn ctermbg=53
@@ -274,6 +296,12 @@ else
   " hi LineNr ctermfg=241
 
 endif
+
+" General color enhancements
+hi IncSearch ctermbg=214 ctermfg=234
+hi PmenuSel ctermbg=214 ctermfg=234
+hi Search ctermbg=220 ctermfg=234
+hi Visual ctermbg=33 ctermfg=234
 
 
 " }}}
@@ -305,28 +333,26 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " nnoremap q <nop>
 
 " Best/worst remapping
-nnoremap ; :
-vnoremap ; :
+" nnoremap ; :
+" vnoremap ; :
 
 " }}}
 " Arrow keys {{{
 
-noremap <up> <nop>
-noremap <down> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
+" noremap <up> <nop>
+" noremap <down> <nop>
+" noremap <left> <nop>
+" noremap <right> <nop>
 
 " }}}
 " Buffers {{{
 
 nnoremap gb :ls<cr>:buffer<space>
-nnoremap B :ls<cr>
-nnoremap <c-b>b :ls<cr>
-vnoremap <c-b>b :ls<cr>
+nnoremap ,b :b#<cr>
+nnoremap <c-b>b :ls<cr>:buffer<space>
+vnoremap <c-b>b :ls<cr>:buffer<space>
 " nnoremap L :bn<cr>
-" vnoremap L :bn<cr>
 " nnoremap H :bp<cr>
-" vnoremap H :bp<cr>
 nnoremap <c-b>n :bn<cr>
 vnoremap <c-b>n :bn<cr>
 nnoremap <c-b>p :bp<cr>
@@ -335,12 +361,15 @@ nnoremap <c-b>d :bd<cr>
 vnoremap <c-b>d :bd<cr>
 nnoremap <c-b>q :bd<cr>
 vnoremap <c-b>q :bd<cr>
-nnoremap <c-b>o :only<cr>
-vnoremap <c-b>o :only<cr>
-nnoremap <leader>b :ls<cr>
-vnoremap <leader>b :ls<cr>
+nnoremap <c-b>o :BufOnly<cr>
+vnoremap <c-b>o :BufOnly<cr>
 nnoremap <leader>q :bd<cr>
 vnoremap <leader>q :bd<cr>
+nnoremap <leader>[ :bp<cr>
+nnoremap <leader>] :bn<cr>
+nnoremap <leader>o :BufOnly<cr>
+nnoremap ,[ :bp<cr>
+nnoremap ,] :bn<cr>
 
 
 "}}}
@@ -348,12 +377,20 @@ vnoremap <leader>q :bd<cr>
 
 nnoremap j gj
 nnoremap k gk
-" nnoremap J }
-" vnoremap J }
-" nnoremap K {
-" vnoremap K {
 nnoremap } }zz
 nnoremap { {zz
+
+" }}}
+" Better movement: Windows {{{
+
+nnoremap <up> <c-w>k
+nnoremap <down> <c-w>j
+nnoremap <left> <c-w>h
+nnoremap <right> <c-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
 
 " }}}
 " Better movement: Words {{{
@@ -385,24 +422,19 @@ nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
 " }}}
 " Escape {{{
 
-" imap jj <Esc>
+imap jj <Esc>
 " imap kk <Esc>
 
 " }}}
 " File explorer {{{
 
 " command E Ex
-nnoremap <c-,>n :vs .<cr>
-vnoremap <c-,>n :vs .<cr>
-nnoremap <c-,>N :sp .<cr>
-vnoremap <c-,>N :sp .<cr>
 nnoremap <c-e> :Ex<space>
 vnoremap <c-e> :Ex<space>
 
 " }}}
 " Folding {{{
 
-" nnoremap <space><space> za
 nnoremap zl zMzr
 nnoremap zf mzzMzvzz
 nnoremap zO zczO
@@ -440,8 +472,6 @@ nnoremap '' ''zz
 " }}}
 " Movement {{{
 
-nmap <leader>J :m +1<cr>
-nmap <leader>K :m -2<cr>
 nnoremap J :m +1<cr>
 nnoremap K :m -2<cr>
 nnoremap G Gzz
@@ -457,11 +487,6 @@ nmap <leader>N O<esc>
 " Positioning {{{
 
 nnoremap zj ''zz
-
-" }}}
-" Saving {{{
-
-" nnoremap s :w<cr>
 
 " }}}
 " Scrolling {{{
@@ -489,17 +514,24 @@ vnoremap % y:%s/\<<c-r>=expand('<c-r>"')<cr>\>/
 " Selecting {{{
 
 nnoremap <leader>a ggVG
-nmap <leader>A ggVG
-nmap <leader>sa ggVG
 noremap gp `[v`]
 vnoremap u <nop>
 
 " }}}
 " Sort {{{
 
-vmap <leader>o :sort<cr>
-vmap gss :sort<cr>
-nmap gsip vip:sort<cr>
+vnoremap gss :sort<cr>
+nnoremap gsip vip:sort<cr>
+nnoremap gsit vit:sort<cr>
+nnoremap gsi[ vi[:sort<cr>
+nnoremap gsi{ vi{:sort<cr>
+nnoremap gsi( vi(:sort<cr>
+
+" }}}
+" {{{ Splitting
+
+nnoremap <c-w>\ :vs<cr>
+nnoremap <c-w>- :sp<cr>
 
 " }}}
 " Plugins {{{
@@ -509,9 +541,20 @@ nmap gsip vip:sort<cr>
 imap <c-,>e <c-y>,
 
 " }}}
+" Fugitive {{{
+"
+"
+nnoremap gi :Git<space>
+"
+" }}}
 " GitGutter {{{
 
 let g:gitgutter_map_keys = 0
+
+" }}}
+" {{{ NerdTree
+
+map ,n :NERDTreeToggle<CR>
 
 " }}}
 " Tabularize {{{
@@ -587,6 +630,18 @@ let g:vim_markdown_frontmatter = 1
 let g:vim_markdown_new_list_item_indent = 2
 
 " }}}
+" {{{ MiniBufExplorer
+
+if !exists('g:miniBufExplStatusLineText')
+  let g:miniBufExplStatusLineText = "-Buffers-"
+endif
+
+" }}}
+" {{{ NerdTree
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" }}}
 " silver searcher {{{
 if executable('ag')
   " note we extract the column as well as the file and line number
@@ -615,9 +670,9 @@ syntax sync minlines=256
 
 " Stop doing these commands!!!!
 
-" Use } instead
-nnoremap J <nop>
-" Use { instead
-nnoremap K <nop>
 
+
+" }}}
+" Quick notes ============================================================ {{{
+nnoremap ,q :e ~/Dropbox/Apps/PlainText\ 2/Quick\ Notes/vim.md<cr>
 " }}}
