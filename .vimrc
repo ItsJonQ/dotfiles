@@ -22,6 +22,12 @@ filetype off                  " required
 
 " Setup start {{{
 
+" if has('nvim')
+"   let s:editor_root=expand("~/.nvim")
+" else
+"   let s:editor_root=expand("~/.vim")
+" endif
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -32,14 +38,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'fholgado/minibufexpl.vim'
 Plugin 'ervandew/supertab'
 Plugin 'godlygeek/tabular'
 Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
 " Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
@@ -50,33 +55,36 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/BufOnly.vim'
+Plugin 'vim-scripts/CursorLineCurrentWindow'
 
 " }}}
 " Themes {{{
 
 Plugin 'joshdick/onedark.vim'
-Plugin 'mhartington/oceanic-next'
+Plugin 'joshdick/airline-onedark.vim'
 Plugin 'pbrisbin/vim-colors-off'
-Plugin 'reedes/vim-colors-pencil'
 Plugin 'w0ng/vim-hybrid'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
 " }}}
-" Syntax highlighting {{{
+" Syntax highlighting {{{"{{{
 Plugin 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
 Plugin 'StanAngeloff/php.vim'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'evidens/vim-twig'
 Plugin 'groenewege/vim-less'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'mxw/vim-jsx'
 Plugin 'othree/html5.vim'
-" Plugin 'pangloss/vim-javascript'
 Plugin 'plasticboy/vim-markdown'
+" Javascript syntax
+" Plugin 'jelera/vim-javascript-syntax'
+Plugin 'bigfish/vim-js-context-coloring'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'othree/yajs.vim'
+" Plugin 'pangloss/vim-javascript'
 
-" }}}
+" }}}"}}}
 " Apps {{{
 
 " Plugin 'mrtazz/simplenote.vim'
@@ -95,7 +103,8 @@ filetype plugin indent on    " required
 " Airline {{{
 
 set laststatus=2
-let g:airline_theme='powerlineish'
+let g:airline_theme='onedark'
+let g:airline#extensions#tabline#enabled = 1
 set cmdheight=1
 
 " }}}
@@ -137,7 +146,7 @@ au BufRead,BufNewFile *.twig set filetype=html
 " }}}
 " Folding {{{
 
-set fdc=1
+set fdc=0
 set fdm=marker
 set foldenable
 set foldlevelstart=10
@@ -215,20 +224,16 @@ set undolevels=1000
 
 " Basic {{{
 
-" set term=xterm-256color
-" if (has("termguicolors"))
-  " set termguicolors
-" endif
-
 " Syntax / color
 syntax on
-set t_Co=256
+if $TERM == "xterm-256color"
+  set t_Co=256
+endif
 
 " }}}
 " Color scheme {{{
 
 let g:onedark_termcolors=16
-
 
 " MacVim
 if has("gui_running")
@@ -243,15 +248,18 @@ if has("gui_running")
 else
 
   color onedark
+  " color solarized
   " color molokai
   " color off
 
   hi LineNr ctermbg=None
   hi Normal ctermbg=None
 
-  if(g:colors_name == "off")
+  " set background=dark
 
-    syntax off
+  if (g:colors_name == "off")
+
+    " syntax off
     " set background=dark
     set background=light
 
@@ -270,18 +278,24 @@ else
       let g:indentLine_color_term = 237
 
       hi ColorColumn ctermbg=0
-      hi CursorLine ctermbg=233
+      hi CursorLine ctermbg=236
       hi FoldColumn ctermfg=242
 
     endif
 
   else
 
+    set background=dark
+
     let g:indentLine_color_term = 237
 
     hi ColorColumn ctermbg=0
-    hi CursorLine ctermbg=233
+    hi CursorLine ctermbg=236
     hi FoldColumn ctermfg=242
+    hi NonText ctermfg=237 ctermbg=None
+
+    hi LineNr ctermbg=None
+    hi Normal ctermbg=None
 
   endif
 
@@ -298,10 +312,12 @@ else
     hi Pmenu ctermbg=253 ctermfg=239
   endif
 
-  " Ubuntu colors
-  " hi ColorColumn ctermbg=53
-  " hi CursorLine ctermbg=53
-  " hi LineNr ctermfg=241
+  if(g:colors_name == "onedark")
+    set background=dark
+    hi LineNr ctermbg=None
+    " hi Normal ctermbg=None
+    hi CursorLine ctermbg=8
+  endif
 
 endif
 
@@ -310,7 +326,6 @@ hi IncSearch ctermbg=214 ctermfg=234
 hi PmenuSel ctermbg=214 ctermfg=234
 hi Search ctermbg=220 ctermfg=234
 hi Visual ctermbg=33 ctermfg=234
-
 
 " }}}
 " Cursor / highlighting {{{
@@ -338,27 +353,24 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Reset
-" nnoremap q <nop>
 
 " Best/worst remapping
 " nnoremap ; :
 " vnoremap ; :
 
 " }}}
-" Arrow keys {{{
-
-" noremap <up> <nop>
-" noremap <down> <nop>
-" noremap <left> <nop>
-" noremap <right> <nop>
-
-" }}}
 " Buffers {{{
 
-nnoremap gb :ls<cr>:buffer<space>
-nnoremap ,b :b#<cr>
+nnoremap gbb :ls<cr>:buffer<space>
+nnoremap gb- :ls<cr>:sb<space>
+nnoremap gb\ :ls<cr>:vert sb<space>
+nnoremap ,b :ls<cr>:buffer<space>
 nnoremap <c-b>b :ls<cr>:buffer<space>
 vnoremap <c-b>b :ls<cr>:buffer<space>
+nnoremap <c-b>- :ls<cr>:sb<space>
+vnoremap <c-b>- :ls<cr>:sb<space>
+nnoremap <c-b>\ :ls<cr>:vert sb<space>
+vnoremap <c-b>\ :ls<cr>:vert sb<space>
 " nnoremap L :bn<cr>
 " nnoremap H :bp<cr>
 nnoremap <c-b>n :bn<cr>
@@ -371,6 +383,8 @@ nnoremap <c-b>q :bd<cr>
 vnoremap <c-b>q :bd<cr>
 nnoremap <c-b>o :BufOnly<cr>
 vnoremap <c-b>o :BufOnly<cr>
+nnoremap <c-b>O :sba<cr>
+vnoremap <c-b>O :sba<cr>
 nnoremap <leader>q :bd<cr>
 vnoremap <leader>q :bd<cr>
 nnoremap <leader>[ :bp<cr>
@@ -378,6 +392,8 @@ nnoremap <leader>] :bn<cr>
 nnoremap <leader>o :BufOnly<cr>
 nnoremap ,[ :bp<cr>
 nnoremap ,] :bn<cr>
+nnoremap ,- :sba<cr>
+nnoremap ,\ :vert sba<cr>
 
 
 "}}}
@@ -411,6 +427,8 @@ nnoremap W $
 " }}}
 " Commenting {{{
 
+nnoremap <silent>gc :Commentary<cr>
+vnoremap <silent>gc :Commentary<cr>
 nnoremap <silent> <leader>c :Commentary<cr>
 vnoremap <silent> <leader>c :Commentary<cr>
 
@@ -433,7 +451,6 @@ nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
 " Escape {{{
 
 imap jj <Esc>
-" imap kk <Esc>
 
 " }}}
 " File explorer {{{
@@ -496,7 +513,7 @@ nmap <leader>N O<esc>
 " }}}
 " Positioning {{{
 
-nnoremap zj ''zz
+" nnoremap zj ''zz
 
 " }}}
 " Scrolling {{{
@@ -530,12 +547,12 @@ vnoremap u <nop>
 " }}}
 " Sort {{{
 
-vnoremap gss :sort<cr>
+nnoremap gsi( vi(:sort<cr>
+nnoremap gsi[ vi[:sort<cr>
 nnoremap gsip vip:sort<cr>
 nnoremap gsit vit:sort<cr>
-nnoremap gsi[ vi[:sort<cr>
 nnoremap gsi{ vi{:sort<cr>
-nnoremap gsi( vi(:sort<cr>
+vnoremap gss :sort<cr>
 
 " }}}
 " {{{ Splitting
@@ -565,6 +582,12 @@ let g:gitgutter_map_keys = 0
 " {{{ NerdTree
 
 map ,n :NERDTreeToggle<CR>
+
+" }}}
+" {{{ Silver Searcher
+
+nnoremap <silent> <s-left> :cprev<cr>
+nnoremap <silent> <s-right> :cnext<cr>
 
 " }}}
 " Tabularize {{{
@@ -597,13 +620,22 @@ endfunction
 " }}}
 " Plugin settings ========================================================= {{{
 
+" Airline {{{
+
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+
+" }}}
 " ctrlp {{{
 
-set buftype=
+" set buftype=
 let g:ctrlp_dont_split = 'netrw'
 let g:ctrlp_open_new_file = 0
-let g:ctrlp_reuse_window = 1
 let g:ctrlp_split_window = 0
+" let g:ctrlp_reuse_window = 1
+let g:ctrlp_reuse_window  = 'startify'
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
@@ -665,6 +697,9 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/bower_components,*/node_modules,*/.vagrant,*/.github,*/.asset-cache,*/.grunt,*/tmp,*/.tmp,_site,dev,tmp,.publish,*/.grunt-tmp,*/site/css
 
 " }}}
+" {{{ Syntax highlighting (othree)
+
+let g:used_javascript_libs = 'underscore,backbone,jquery,requirejs,react,handlebars'
 
 " }}}
 " Performance boost ====================================================== {{{
@@ -679,8 +714,6 @@ syntax sync minlines=256
 " Vim Training =========================================================== {{{
 
 " Stop doing these commands!!!!
-
-
 
 " }}}
 " Quick notes ============================================================ {{{
