@@ -78,9 +78,9 @@ Plugin 'othree/html5.vim'
 Plugin 'plasticboy/vim-markdown'
 " Javascript syntax
 " Plugin 'jelera/vim-javascript-syntax'
-Plugin 'bigfish/vim-js-context-coloring'
+" Plugin 'bigfish/vim-js-context-coloring'
 Plugin 'mxw/vim-jsx'
-Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'othree/yajs.vim'
 " Plugin 'pangloss/vim-javascript'
 
@@ -102,9 +102,8 @@ filetype plugin indent on    " required
 
 " Airline {{{
 
+set encoding=utf-8
 set laststatus=2
-let g:airline_theme='onedark'
-let g:airline#extensions#tabline#enabled = 1
 set cmdheight=1
 
 " }}}
@@ -622,10 +621,19 @@ endfunction
 
 " Airline {{{
 
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
+let g:airline_theme='onedark'
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 1
+
+" let g:airline_left_sep = '»'
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '«'
+" let g:airline_right_sep = '◀'
+
+let g:airline_left_sep = ''
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_sep = ''
 
 " }}}
 " ctrlp {{{
