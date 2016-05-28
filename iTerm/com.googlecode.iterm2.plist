@@ -1246,13 +1246,13 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>127 227 228 325 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>169 -9 1259 350 0 0 1440 877 </string>
+	<string>169 33 1259 350 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>32 405 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>426 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1105 70 809 762 0 0 1920 1177 </string>
+	<string>248 208 937 573 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>720 52 718 825 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -1933,7 +1933,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Regular 13</string>
+			<string>Menlo-Regular 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
