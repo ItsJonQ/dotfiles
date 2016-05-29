@@ -39,6 +39,15 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Speed up window resize animation
+defaults write NSGlobalDomain NSWindowResizeTime -float 0.003
+
+# Disable open/close window animations
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+
+# Disable Quicklook animations
+defaults write NSGlobalDomain QLPanelAnimationDuration -float 0
+
 
 
 ###############################################################################
@@ -71,6 +80,9 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
+
+# Disable Mission Control animation
+defaults write com.apple.dock expose-animation-duration -float 0.1
 
 
 
@@ -187,6 +199,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
   General -bool true \
   OpenWith -bool true \
   Privileges -bool true
+
+# Disable "Get Info" animation
+defaults write com.apple.finder DisableAllAnimations -bool true
 
 
 
