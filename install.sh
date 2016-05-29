@@ -1,6 +1,6 @@
 # install.sh
 # @itsjonq
-# Installs and setups all the things!
+# Installs and setups all the things
 
 # Ask for the administrator password upfront
 sudo -v
