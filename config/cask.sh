@@ -7,6 +7,9 @@ echo "Starting brew cask install…"
 # Add cask to brew
 brew tap caskroom/cask
 
+# Update firest
+brew cask update
+
 # Install apps!
 brew cask install 1password
 brew cask install alfred
@@ -28,6 +31,9 @@ brew cask install spotify
 brew cask install sublime-text
 brew cask install telegram
 brew cask install vlc
+
+# Cleanup!
+brew cask cleanup
 
 echo "Brew cask installation complete!"
 
