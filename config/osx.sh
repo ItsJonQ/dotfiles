@@ -7,7 +7,7 @@
 # Ask for the administrator password upfront
 sudo -v
 
-echo "Starting OS X setup"
+echo "Starting OS X setup…"
 
 
 ###############################################################################

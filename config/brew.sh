@@ -6,7 +6,7 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/brew.sh
 # ============================================================================
 
-echo "Starting brew setup"
+echo "Starting brew setup…"
 
 # Make sure we’re using the latest Homebrew.
 brew update
