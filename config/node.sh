@@ -7,6 +7,9 @@ echo "Starting npm setup…"
 # This speeds things up!
 npm set progress=false
 
+# Update all global node packages
+npm update -g
+
 # Install global npm things
 npm install babel -g
 npm install bower -g
