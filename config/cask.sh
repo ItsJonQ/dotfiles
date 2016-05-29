@@ -4,6 +4,9 @@
 
 echo "Starting brew cask install…"
 
+# Add cask to brew
+brew tap caskroom/cask
+
 # Install apps!
 brew cask install 1password
 brew cask install dropbox
