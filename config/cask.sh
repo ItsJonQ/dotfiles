@@ -12,6 +12,7 @@ brew cask install 1password
 brew cask install dropbox
 brew cask install firefox
 brew cask install flux
+brew cask install insync
 brew cask install google-chrome
 brew cask install karabiner
 brew cask install licecap
