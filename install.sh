@@ -1,3 +1,6 @@
+# install.sh
+# Installs and setups all the things
+
 # Ask for the administrator password upfront
 sudo -v
 
