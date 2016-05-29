@@ -1198,9 +1198,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>1</string>
-	<key>NSColorPickerPageableNameListDefaults</key>
-	<string>1Apple</string>
+	<string>6</string>
 	<key>NSColorPickerSlidersDefaults</key>
 	<string>1</string>
 	<key>NSFontPanelAttributes</key>
@@ -1208,7 +1206,7 @@
 	<key>NSNavLastRootDirectory</key>
 	<string>~/Sites/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 459}</string>
+	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 521}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
@@ -1238,23 +1236,52 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>3</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>127 227 228 325 0 0 1440 877 </string>
+	<string>904 172 228 309 0 0 1920 1177 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>169 33 1259 350 0 0 1440 877 </string>
+	<string>880 173 748 397 0 0 1920 1177 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>32 405 606 456 0 0 1440 877 </string>
+	<string>677 325 606 456 0 0 1920 1177 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>755 683 384 129 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>426 363 620 392 0 0 1440 877 </string>
+	<string>666 588 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>248 208 937 573 0 0 1440 877 </string>
+	<string>498 200 913 768 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>720 52 718 825 0 0 1440 877 </string>
+	<string>2241 1736 585 401 0 0 3840 2137 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>1088 469 665 498 0 0 1920 1200 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>1067 171 665 476 0 0 1920 1058 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>340 197 650 476 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>499 246 650 476 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>575 130 650 476 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>716 411 665 476 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>1103 212 665 476 0 0 1920 1178 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>569 583 665 476 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2124,24 +2151,26 @@
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
-	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
-	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
-	<integer>0</integer>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>F1609F75-3ADF-4A0A-90A1-D9FDC273C069</string>
+	<string>09109D04-FCEC-457E-9562-EB9D8A0E798F</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
+	<key>NoSyncTimeOfFirstLaunchForIncompatibilityWarnings</key>
+	<real>485706789.33095998</real>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>485794482.255193</real>
+	<real>485706790.61899698</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>478450717.02556199</real>
+	<real>477590650.38740802</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>485793283.41381401</real>
+	<real>485633029.090442</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2190,9 +2219,9 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/helpscout/Sites/dotfiles/iTerm</string>
+	<string>/Users/Jon/Sites/dotfiles/iTerm</string>
 	<key>PromptOnQuit</key>
-	<true/>
+	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>RightCommand</key>
@@ -2206,11 +2235,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly.xml?shard=50</string>
+	<string>https://iterm2.com/appcasts/nightly.xml?shard=22</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-27T14:35:50Z</date>
+	<date>2016-05-29T02:23:58Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
