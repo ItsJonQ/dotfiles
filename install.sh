@@ -1,4 +1,5 @@
 # install.sh
+# @itsjonq
 # Installs and setups all the things
 
 # Ask for the administrator password upfront
