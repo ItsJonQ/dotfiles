@@ -1,3 +1,8 @@
+# .gitconfig
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
+
 [user]
   name = ItsJonQ
   email = itsjonq@gmail.com

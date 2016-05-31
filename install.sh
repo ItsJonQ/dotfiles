@@ -1,5 +1,7 @@
 # install.sh
-# @itsjonq
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
 # Installs and setups all the things!
 
 # Ask for the administrator password upfront
