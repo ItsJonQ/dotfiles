@@ -11,7 +11,6 @@
   excludesfile = ~/.gitignore_global
   editor = vim
 
-
 [alias]
   a = add
   aa = add .
@@ -22,6 +21,7 @@
   co = checkout
   coa = checkout .
   cob = checkout -b
+  cl = clone
   d = diff
   db = branch -D
   f = fetch
@@ -32,8 +32,9 @@
   m = merge
   nb = checkout -b
   p = pull
-  ps = push
   pr = pull-request
+  psh = push
+  push = push
   r = reset
   rb = rebase
   redo = commit --amend --no-edit
@@ -45,6 +46,9 @@
 [branch]
   autosetupmerge = always
   autosetuprebase = never
+
+[credential]
+  helper = osxkeychain
 
 [color]
   ui = true
