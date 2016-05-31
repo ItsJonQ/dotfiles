@@ -16,6 +16,7 @@ npm install bower -g
 npm install express -g
 npm install grunt-cli -g
 npm install gulp-cli -g
+npm install pm2 -g
 npm install webpack -g
 npm install yo -g
 
