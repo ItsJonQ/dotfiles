@@ -2,7 +2,6 @@
 " Author: Q <itsjonq@gmail.com>
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
-
 " novimrc :p
 " Minimal vim setup
 
