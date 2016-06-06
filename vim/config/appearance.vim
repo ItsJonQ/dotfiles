@@ -17,36 +17,33 @@ endif
 " let g:onedark_termcolors=16
 " let g:hybrid_custom_term_colors = 1
 let base16colorspace=256
+"
+color base16-tomorrow
+set background=dark
+
 
 " MacVim
 if has("gui_running")
 
   syntax on
-  color onedark
-
   set columns=80 lines=40
   set gfn=*
-  set guifont=Monaco:h12
+  set guifont=Menlo:h13
 
 else
-
-  color base16-ocean
-  set background=dark
-
   " let g:indentLine_color_term = 237
 
   " hi ColorColumn ctermbg=0
   " hi FoldColumn ctermfg=242
   " hi NonText ctermfg=237 ctermbg=None
 
-  hi LineNr ctermbg=None
   " hi Normal ctermbg=None
   " hi CursorLine ctermbg=8
-
 endif
 
 " General color enhancements
 hi IncSearch ctermbg=214 ctermfg=234
+hi LineNr ctermbg=None
 hi PmenuSel ctermbg=214 ctermfg=234
 hi Search ctermbg=220 ctermfg=234
 hi Visual ctermbg=33 ctermfg=234
