@@ -27,7 +27,6 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
 " Plugin 'scrooloose/syntastic'
-Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
@@ -37,7 +36,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/BufOnly.vim'
-Plugin 'vim-scripts/CursorLineCurrentWindow'
+" Plugin 'vim-scripts/CursorLineCurrentWindow'
 
 " }}}
 " Themes {{{
@@ -47,6 +46,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'joshdick/airline-onedark.vim'
 Plugin 'pbrisbin/vim-colors-off'
+Plugin 'tomasr/molokai'
 Plugin 'w0ng/vim-hybrid'
 
 " }}}

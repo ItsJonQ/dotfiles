@@ -10,7 +10,7 @@ BASE16_DIR="$HOME/.config/base16-shell"
 BASE16_CONFIG="$HOME/.vim/.base16"
 
 # Base16 Shell
-BASE16_SHELL="$BASE16_DIR/base16-ocean.dark.sh"
+BASE16_SHELL="$BASE16_DIR/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 color() {
@@ -60,7 +60,7 @@ dark() {
   if [ "$1" ]; then
     color dark "$1"
   else
-    color dark ocean
+    color dark tomorrow
   fi
 }
 
@@ -68,7 +68,7 @@ light() {
   if [ "$1" ]; then
     color light "$1"
   else
-    color light ocean
+    color light tomorrow
   fi
 }
 
@@ -84,5 +84,5 @@ if [[ -s "$BASE16_CONFIG" ]]; then
   fi
 else
   # Default.
-  dark ocean
+  dark tomorrow
 fi

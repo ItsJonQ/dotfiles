@@ -61,7 +61,6 @@ set foldnestmax=10
 let g:gitgutter_sign_column_always = 1
 let g:indentLine_leadingSpaceEnabled = 1
 set autoindent
-set colorcolumn=80
 set copyindent
 set expandtab
 set list
@@ -72,6 +71,8 @@ set shiftwidth=2
 set smarttab
 set softtabstop=2
 set tabstop=2
+set textwidth=80
+set colorcolumn=+1
 
 " }}}
 " Mouse {{{
@@ -83,7 +84,7 @@ set mouse=a
 
 set lazyredraw
 set re=1
-set scrolljump=5
+set scrolljump=10
 set synmaxcol=200
 set ttyfast
 syntax sync minlines=256

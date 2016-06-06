@@ -46,16 +46,19 @@ else
 endif
 
 " General color enhancements
-" hi IncSearch ctermbg=214 ctermfg=234
-" hi PmenuSel ctermbg=214 ctermfg=234
-" hi Search ctermbg=220 ctermfg=234
-" hi Visual ctermbg=33 ctermfg=234
+hi IncSearch ctermbg=214 ctermfg=234
+hi PmenuSel ctermbg=214 ctermfg=234
+hi Search ctermbg=220 ctermfg=234
+hi Visual ctermbg=33 ctermfg=234
 
 " }}}
 " Cursor / highlighting {{{
 
 set cursorline
 set showmatch
+
+" Hide match color
+hi MatchParen cterm=none ctermbg=None ctermfg=None
 
 " }}}
 " Typography {{{
