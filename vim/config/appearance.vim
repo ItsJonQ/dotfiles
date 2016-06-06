@@ -39,7 +39,7 @@ else
   " hi FoldColumn ctermfg=242
   " hi NonText ctermfg=237 ctermbg=None
 
-  " hi LineNr ctermbg=None
+  hi LineNr ctermbg=None
   " hi Normal ctermbg=None
   " hi CursorLine ctermbg=8
 
