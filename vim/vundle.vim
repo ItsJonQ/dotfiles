@@ -43,6 +43,7 @@ Plugin 'vim-scripts/CursorLineCurrentWindow'
 " Themes {{{
 
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'joshdick/airline-onedark.vim'
 Plugin 'pbrisbin/vim-colors-off'
