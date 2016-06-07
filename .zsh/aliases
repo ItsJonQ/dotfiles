@@ -59,7 +59,7 @@ subl() {
 }
 
 # Google Drive
-alias drive='cd ~/Google\ Drive'
+alias drive='cd ~/Drive'
 
 # Simplenote
 alias note='notes && :e .'
