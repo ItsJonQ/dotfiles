@@ -60,8 +60,8 @@ defaults write com.apple.dock tilesize -int 20
 # Set the dock icon's hover size
 defaults write com.apple.dock largesize -float 36
 
-# Set the dock position to the bottom side of the screen
-defaults write com.apple.dock orientation -string "bottom"
+# Set the dock position to the left side of the screen
+defaults write com.apple.dock orientation -string "left"
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
