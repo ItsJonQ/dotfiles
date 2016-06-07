@@ -12,6 +12,8 @@ export TERM=xterm-256color
 BASE16_DIR="$HOME/.config/base16-shell"
 BASE16_CONFIG="$HOME/.vim/.base16"
 
+BASE16_SHADE="dark"
+
 # Base16 Shell
 BASE16_SHELL="$BASE16_DIR/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
@@ -65,6 +67,7 @@ dark() {
   else
     color dark tomorrow
   fi
+  BASE16_SHADE="dark"
 }
 
 light() {
@@ -73,6 +76,7 @@ light() {
   else
     color light tomorrow
   fi
+  BASE16_SHADE="light"
 }
 
 if [[ -s "$BASE16_CONFIG" ]]; then
@@ -89,3 +93,5 @@ else
   # Default.
   dark tomorrow
 fi
+
+export BASE16_SHADE

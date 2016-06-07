@@ -21,6 +21,14 @@ let base16colorspace=256
 color base16-tomorrow
 set background=dark
 
+if $BASE16_SHADE == "dark"
+  set background=dark
+endif
+
+if $BASE16_SHADE == "light"
+  set background=light
+endif
+
 
 " MacVim
 if has("gui_running")
