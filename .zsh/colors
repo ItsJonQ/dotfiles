@@ -74,7 +74,7 @@ light() {
   if [ "$1" ]; then
     color light "$1"
   else
-    color light tomorrow
+    color light ocean
   fi
   BASE16_SHADE="light"
 }
