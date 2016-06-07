@@ -9,7 +9,7 @@
 #################################################
 
 # Use Macvim instead of vim by default
-alias vim='mvim -v'
+# alias vim='mvim -v'
 
 # Profile (ZSH)
 alias profile='vim ~/.zprofile'
