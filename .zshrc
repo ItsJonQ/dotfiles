@@ -18,17 +18,18 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 
 
-#
 # Prompt
-#
 autoload -U colors
 colors
 
 
-#
-# Dotfiles
-#
-source $HOME/dotfiles/.zsh/colors
+# .zsh Configs
+DOTFILES_ZSH="$HOME/dotfiles/.zsh"
+if [ -d "$DOTFILES_ZSH" ]; then
+  for file in $DOTFILES_ZSH/*; do
+    source $file
+  done
+fi
 
 
 # rbenv
@@ -37,3 +38,4 @@ eval "$(rbenv init -)"
 
 # Travis CI
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+

@@ -1,0 +1,203 @@
+# Aliases
+# .zshrc
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
+
+#################################################
+# ZSH / VIM / Git
+#################################################
+
+# Use Macvim instead of vim by default
+alias vim='mvim -v'
+
+# Profile (ZSH)
+alias profile='vim ~/.zprofile'
+alias zrc='vim ~/.zshrc'
+
+#Z Profile (BASH)
+alias bashprofile='vim ~/.bash_profile'
+
+# Go home!
+alias rt="root"
+
+# Vim
+alias cleanswap='rm -rfv ~/.vim/tmp/*'
+alias mvimrc='mvim ~/.vimrc'
+alias nvimrc='vim ~/.nvimrc'
+alias vimrc='cd ~/dotfiles/vim && vim .'
+alias vndl='vundle'
+alias vundle='vim +PluginInstall +qall'
+
+# Reload
+alias reload='. ~/.zprofile && echo "ZSH config reloaded from ~/.zprofile"'
+alias rl='reload'
+
+# Git
+alias gitrc='vim ~/.gitconfig'
+alias g='git'
+
+#Ctags
+alias ctags="`brew --prefix`/bin/ctags"
+
+# Silver Searcher
+alias ag='ag --path-to-agignore ~/.agignore'
+
+
+#################################################
+# Applications
+#################################################
+
+# Browers
+chrome() {
+  open -a "Google Chrome"
+}
+
+# Sublime
+subl() {
+  open $1 -a "Sublime Text"
+}
+
+# Google Drive
+alias drive='cd ~/Google\ Drive'
+
+# Simplenote
+alias note='notes && :e .'
+alias n='note'
+
+# Simulate vim
+alias :q='exit'
+alias :e='vim'
+
+# Vim without vimrc
+alias nvim='vim -u ~/.nvimrc'
+alias ne='nvim'
+
+# YouTube CLI
+alias youtube='mpsyt'
+alias yt='youtube'
+
+
+#################################################
+# Web
+#################################################
+
+
+# Bookmarks
+alias gmail='open https://mail.google.com/mail/ca/u/0/\#inbox'
+alias paper='open https://paper.dropbox.com/\?role\=work'
+
+
+#################################################
+# Command line
+#################################################
+
+# Clean
+alias cleanDS="find . -type f -name '*.DS_Store' -ls -delete"
+alias cleands='cleanDS'
+
+# Tree
+alias t='tree -L 1'
+alias tt='tree -L 2'
+
+alias t1='tree -L 1'
+alias t2='tree -L 2'
+alias t3='tree -L 3'
+alias t4='tree -L 4'
+
+# Activity
+alias cpu="top -o cpu"
+alias ram="top -o rsize"
+
+
+#################################################
+# Development
+#################################################
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+
+
+# Vagrant
+alias vu='vagrant up'
+alias vd='vagrant suspend'
+alias vdx='vagrant destroy'
+alias vs='vagrant status'
+alias vsh='vagrant ssh'
+
+
+# NPM
+# Clear Cache
+alias nom='rm -rf node_modules && npm cache clear && npm i'
+#Bower - Clear Cache
+alias bom="rm -rf bower_components/* && bower cache clean && bower install"
+
+
+#Bundle
+alias bx='bundle exec'
+
+
+#Ember - Server
+alias ems='ember server --ssl=false'
+
+
+#################################################
+# Fun Stuff
+#################################################
+weather() {
+  WEATHER=$(ansiweather -l Toronto)
+  print $WEATHER
+  say $WEATHER
+}
+
+
+#################################################
+# Directories & Files
+#################################################
+
+# Notes
+alias notes='cd ~/Dropbox/Apps/PlainText\ 2/'
+
+# Projects
+alias project='cd ~/Sites'
+alias p='project'
+
+# Common Directories
+alias dt='cd ~/Desktop'
+alias dl='cd ~/Downloads'
+alias d='cd ~/Drive'
+alias db='cd ~/Dropbox'
+
+# Personal
+alias df='cd ~/dotfiles'
+alias q='p && cd jonquach'
+
+# Better LS
+
+#Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+  colorflag="--color"
+else # OS X `ls`
+  colorflag="-G"
+fi
+
+# List all files colorized in long format
+alias l="ls -lF ${colorflag}"
+
+# List all files colorized in long format, including dot files
+alias la="ls -laF ${colorflag}"
+
+# List only directories
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+
+# Always use color output for `ls`
+alias ls="command ls ${colorflag}"
+export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"

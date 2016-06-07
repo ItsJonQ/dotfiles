@@ -1,4 +1,8 @@
 # Git
+# .zshrc
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
 
 plugins=(git)
 
