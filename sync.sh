@@ -9,6 +9,7 @@ for file in $HOME/dotfiles/.*; do
     F=`basename "$file"`
     rsync -ah --no-perms "$F" "$HOME"/"$F"
   fi
-  echo "Dotfiles updated!"
 done
+
+echo "Dotfiles updated!"
 
