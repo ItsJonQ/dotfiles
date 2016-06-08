@@ -11,8 +11,7 @@
 alias ali='vim ~/dotfiles/zsh/aliases'
 
 # Sync up dotfiles
-alias sync='cd ~/dotfiles && git pull && sh bootstrap.sh'
-alias synca='cd ~/dotfiles && git pull && sh bootstrap.sh && sh config/osx.sh'
+alias sync='cd ~/dotfiles && git pull && sh bootstrap.sh && sh config/osx.sh'
 
 # Use Macvim instead of vim by default
 # alias vim='mvim -v'
