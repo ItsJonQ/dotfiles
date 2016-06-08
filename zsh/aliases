@@ -8,6 +8,9 @@
 # ZSH / VIM / Git
 #################################################
 
+# Sync up dotfiles
+alias sync='sh ~/dotfiles/bootstrap.sh'
+
 # Use Macvim instead of vim by default
 # alias vim='mvim -v'
 
