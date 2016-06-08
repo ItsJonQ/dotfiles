@@ -71,8 +71,8 @@ set shiftwidth=2
 set smarttab
 set softtabstop=2
 set tabstop=2
-set textwidth=80
-set colorcolumn=+1
+" set textwidth=80
+set colorcolumn=80
 
 " }}}
 " Mouse {{{
