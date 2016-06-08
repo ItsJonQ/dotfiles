@@ -8,10 +8,11 @@
 # ZSH / VIM / Git
 #################################################
 
-alias ali='vim ~/dotfiles/zsh/aliases'
+alias al='vim ~/dotfiles/zsh/aliases'
+alias ali='al'
 
 # Sync up dotfiles
-alias sn='sh ~/dotfiles/sync.sh'
+alias s='sh ~/dotfiles/sync.sh'
 alias sync='cd ~/dotfiles && git pull && sh bootstrap.sh'
 alias sync!='sync && sh config/osx.sh'
 
@@ -37,7 +38,7 @@ alias vndl='vundle'
 alias vundle='vim +PluginInstall +qall'
 
 # Reload
-alias reload='. ~/.zprofile && echo "ZSH config reloaded from ~/.zprofile"'
+alias reload='. ~/.zshrc && echo "ZSH config reloaded from ~/.zshrc"'
 alias rl='reload'
 
 # Git
