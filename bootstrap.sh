@@ -4,9 +4,10 @@
 # =============================================================================
 # Add dotfiles to root
 
-for file in "$HOME/dotfiles/.*"; do
+for file in $HOME/dotfiles/.*; do
   if [[ -f $file ]]; then
-    rsync -ah --no-perms "$file" ~/"$file"
-    echo Added "$file" to ~/;
+    F=`basename "$file"`
+    rsync -ah --no-perms "$F" "$HOME"/"$F"
+    echo Added "$F" to "$HOME";
   fi
 done
