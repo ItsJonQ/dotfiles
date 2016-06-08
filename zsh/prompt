@@ -7,3 +7,5 @@
 # Prompt
 autoload -U colors
 colors
+
+echo "👋  Have a great day Q!"
