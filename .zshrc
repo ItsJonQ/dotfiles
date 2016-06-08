@@ -16,3 +16,5 @@ if [ -d "$DOTFILES_ZSH" ]; then
     source $file
   done
 fi
+
+sh "$HOME/dotfiles/sync.sh"

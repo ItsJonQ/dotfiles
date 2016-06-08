@@ -11,5 +11,5 @@ for file in $HOME/dotfiles/.*; do
   fi
 done
 
-echo "Dotfiles updated!"
-
+# Prompt feedback
+# echo "Dotfiles synced."

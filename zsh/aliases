@@ -13,7 +13,7 @@ alias ali='al'
 
 # Sync up dotfiles
 alias s='sh ~/dotfiles/sync.sh'
-alias sync='cd ~/dotfiles && git pull && sh bootstrap.sh'
+alias sync='git -C ~/dotfiles pull && sh ~/dotfiles/bootstrap.sh'
 alias sync!='sync && sh config/osx.sh'
 
 # Use Macvim instead of vim by default
