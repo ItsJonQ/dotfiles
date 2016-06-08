@@ -9,7 +9,7 @@
 #################################################
 
 # Sync up dotfiles
-alias sync='cd ~/dotfiles && sh bootstrap.sh'
+alias sync='cd ~/dotfiles && git pull && sh bootstrap.sh'
 
 # Use Macvim instead of vim by default
 # alias vim='mvim -v'
