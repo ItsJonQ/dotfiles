@@ -8,12 +8,17 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-eval "$(rbenv init -)"
+rbenv() {
+  eval "$(rbenv init -)"
+  rbenv "$@"
+}
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm() {
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+  nvm $@
+}
 
 # Travis CI
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
-
