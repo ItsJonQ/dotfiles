@@ -9,21 +9,6 @@ ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
 
-# User configuration
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-
-
-# Vim as default editor
-# export EDITOR="/usr/local/bin/vim"
-export VISUAL=vim
-export EDITOR="$VISUAL"
-
-
-# Prompt
-autoload -U colors
-colors
-
-
 # zsh Configs
 DOTFILES_ZSH="$HOME/dotfiles/zsh"
 if [ -d "$DOTFILES_ZSH" ]; then
@@ -31,16 +16,3 @@ if [ -d "$DOTFILES_ZSH" ]; then
     source $file
   done
 fi
-
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-eval "$(rbenv init -)"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Travis CI
-[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
-

@@ -1,0 +1,9 @@
+# Prompt
+# .zshrc
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
+
+# Prompt
+autoload -U colors
+colors

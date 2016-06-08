@@ -1,0 +1,10 @@
+# Editor
+# .zshrc
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
+
+# Vim as default editor
+# export EDITOR="/usr/local/bin/vim"
+export VISUAL=vim
+export EDITOR="$VISUAL"
