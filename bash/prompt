@@ -1,7 +1,11 @@
 # Prompt
-# .zshrc
+# bash
 # Author: Q <itsjonq@gmail.com>
 # Source: https://github.com/ItsJonQ/dotfiles
 # =============================================================================
 
-echo "👋  Have a great day Q!"
+PS1="Q@"; # username
+PS1+="\[${green}\]\w";
+PS1+="\n";
+PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+export PS1;

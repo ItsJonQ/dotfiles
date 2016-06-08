@@ -1,7 +1,8 @@
-# Prompt
+# Shell
 # .zshrc
 # Author: Q <itsjonq@gmail.com>
 # Source: https://github.com/ItsJonQ/dotfiles
 # =============================================================================
 
-echo "👋  Have a great day Q!"
+autoload -U colors
+colors
