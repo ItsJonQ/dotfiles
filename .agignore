@@ -1,0 +1,11 @@
+# .agignore
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
+
+node_modules
+bower_components
+
+init.pkg.js
+
+old/**/*
