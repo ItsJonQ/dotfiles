@@ -6,6 +6,12 @@
 node_modules
 bower_components
 
+# Work related ignores
+.vagrant
 *.pkg.js
+build/puphpet
+one-offs
+site/sumo
+vendor-reference
 
-old/**/*
+old
