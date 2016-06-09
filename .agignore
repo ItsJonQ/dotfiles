@@ -6,6 +6,6 @@
 node_modules
 bower_components
 
-init.pkg.js
+*.pkg.js
 
 old/**/*
