@@ -6,6 +6,9 @@
 node_modules
 bower_components
 
+images
+img
+
 # Work related ignores
 .vagrant
 *.pkg.js
