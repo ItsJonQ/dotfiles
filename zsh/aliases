@@ -149,6 +149,10 @@ alias bx='bundle exec'
 alias ems='ember server --ssl=false'
 
 
+# Get SSH Key
+alias ssh-copy='pbcopy < ~/.ssh/id_rsa.pub'
+
+
 #################################################
 # Fun Stuff
 #################################################

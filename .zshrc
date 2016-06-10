@@ -18,3 +18,6 @@ if [ -d "$DOTFILES_ZSH" ]; then
     source $file
   done
 fi
+
+# .zprofile
+source "$HOME/.zprofile"
