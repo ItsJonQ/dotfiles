@@ -34,8 +34,9 @@ alias cleanswap='rm -rfv ~/.vim/tmp/*'
 alias mvimrc='mvim ~/.vimrc'
 alias nvimrc='vim ~/.nvimrc'
 alias vimrc='cd ~/dotfiles/vim && vim .'
-alias vndl='vundle'
 alias vundle='vim +PluginInstall +qall'
+alias vndl='vundle'
+alias vndl!='vim +PluginUpdate +qall'
 
 # Reload
 alias reload='. ~/.zshrc && . ~/.zprofile && echo "ZSH config reloaded from ~/.zshrc"'
