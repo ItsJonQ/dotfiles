@@ -105,6 +105,11 @@ set visualbell
 set noerrorbells
 
 " }}}
+" Splits {{{
+
+set splitright
+
+" }}}
 " Swap {{{
 
 set nobackup

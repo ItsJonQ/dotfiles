@@ -3,12 +3,9 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-" set buftype=
-let g:ctrlp_dont_split = 'netrw'
-let g:ctrlp_open_new_file = 0
-let g:ctrlp_split_window = 0
-" let g:ctrlp_reuse_window = 1
-let g:ctrlp_reuse_window  = 'startify'
+let g:ctrlp_open_new_file = 'r'
+let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
+
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
