@@ -104,6 +104,7 @@ alias paper='open https://paper.dropbox.com/\?role\=work'
 # Clean
 alias cleanDS="find . -type f -name '*.DS_Store' -ls -delete"
 alias cleands='cleanDS'
+alias dsa='cleanDS'
 
 # Tree
 alias t='tree -L 1'
