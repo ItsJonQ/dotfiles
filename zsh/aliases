@@ -170,7 +170,7 @@ weather() {
 #################################################
 
 # Notes
-alias notes='cd ~/Dropbox/Apps/PlainText\ 2/'
+alias notes='cd ~/Dropbox/Apps/Notes/'
 
 # Projects
 alias project='cd ~/Sites'
