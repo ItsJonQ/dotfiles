@@ -43,6 +43,7 @@ set undodir=~/.vim/undo//
 autocmd BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.tpl set filetype=html
 au BufRead,BufNewFile *.twig set filetype=html
+autocmd Filetype ruby setlocal foldmethod=syntax|set nocursorline|set norelativenumber
 
 
 " }}}
