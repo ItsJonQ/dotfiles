@@ -12,6 +12,7 @@ export TERM=xterm-256color
 BASE16_DIR="$HOME/.config/base16-shell"
 BASE16_CONFIG="$HOME/.base16"
 
+BASE16_COLOR="tomorrow"
 BASE16_SHADE="dark"
 
 # Base16 Shell
@@ -64,6 +65,7 @@ color() {
 dark() {
   if [ "$1" ]; then
     color dark "$1"
+    BASE16_COLOR="$1"
   else
     color dark tomorrow
   fi
@@ -73,6 +75,7 @@ dark() {
 light() {
   if [ "$1" ]; then
     color light "$1"
+    BASE16_COLOR="$1"
   else
     color light ocean
   fi
@@ -94,4 +97,5 @@ else
   dark tomorrow
 fi
 
+export BASE16_COLOR
 export BASE16_SHADE

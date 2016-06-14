@@ -18,8 +18,24 @@ endif
 " let g:hybrid_custom_term_colors = 1
 let base16colorspace=256
 "
-color base16-ocean
+color base16-tomorrow
 set background=dark
+
+if $BASE16_COLOR == "default"
+  color base16-default
+end
+
+if $BASE16_COLOR == "ocean"
+  color base16-ocean
+end
+
+if $BASE16_COLOR == "solarized"
+  color base16-solarized
+end
+
+if $BASE16_COLOR == "tomorrow"
+  color base16-tomorrow
+end
 
 if $BASE16_SHADE == "dark"
   set background=dark
