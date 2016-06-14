@@ -3,6 +3,12 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
+" Appearance {{{
+
+set cursorline
+set showmatch
+
+" }}}
 " Airline {{{
 
 set encoding=utf-8
@@ -43,7 +49,7 @@ set undodir=~/.vim/undo//
 autocmd BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.tpl set filetype=html
 au BufRead,BufNewFile *.twig set filetype=html
-autocmd Filetype ruby setlocal foldmethod=syntax|set nocursorline|set norelativenumber
+autocmd Filetype ruby setlocal foldmethod=indent|set nocursorline|set norelativenumber
 
 
 " }}}
@@ -67,7 +73,7 @@ set expandtab
 set list
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 set number
-set relativenumber
+" set relativenumber
 set shiftwidth=2
 set smarttab
 set softtabstop=2

@@ -57,11 +57,6 @@ hi Search ctermbg=220 ctermfg=234
 hi Visual ctermbg=33 ctermfg=234
 
 " }}}
-" Cursor / highlighting {{{
-
-set cursorline
-set showmatch
-
 " Hide match color
 hi MatchParen cterm=none ctermbg=None ctermfg=None
 
