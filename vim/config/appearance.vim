@@ -70,7 +70,7 @@ hi IncSearch ctermbg=214 ctermfg=234
 hi LineNr ctermbg=None
 hi PmenuSel ctermbg=214 ctermfg=234
 hi Search ctermbg=220 ctermfg=234
-hi Visual ctermbg=33 ctermfg=234
+" hi Visual ctermbg=33 ctermfg=234
 
 " }}}
 " Hide match color

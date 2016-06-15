@@ -3,8 +3,8 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-vnoremap <leader>dd cc<esc>
 nnoremap <leader>ds :call <SID>StripTrailingWhitespaces()<CR>
+nnoremap dsa :call <SID>StripTrailingWhitespaces()<CR>
 
 " function :: Delete trailing white space
 function! <SID>StripTrailingWhitespaces()
