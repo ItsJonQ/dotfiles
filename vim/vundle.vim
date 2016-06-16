@@ -19,7 +19,7 @@ call vundle#begin()
 
 Plugin 'Konfekt/FastFold'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Yggdroot/indentLine'
+" Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
@@ -39,6 +39,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/BufOnly.vim'
 " Plugin 'vim-scripts/CursorLineCurrentWindow'
+Plugin 'wincent/loupe'
 
 " }}}
 " Themes {{{

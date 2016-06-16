@@ -37,6 +37,7 @@
   push = push
   r = reset
   rb = rebase
+  rm = clean
   redo = commit --amend --no-edit
   s = status
   ss = status --short --branch

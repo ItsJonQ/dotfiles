@@ -8,6 +8,9 @@
 # ZSH / VIM / Git
 #################################################
 
+# Use Macvim as Vim
+alias vim='mvim -v'
+
 alias al='vim ~/dotfiles/zsh/aliases'
 alias ali='al'
 
