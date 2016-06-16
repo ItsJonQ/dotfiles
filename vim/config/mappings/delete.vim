@@ -18,13 +18,9 @@ function! <SID>StripTrailingWhitespaces()
   let @/=_s
   call cursor(l, c)
 
-  call TrimEndLines()
-endfunction
-
 " function :: Delete empty line at the end of file
 " Source:
 " http://stackoverflow.com/questions/7495932/how-can-i-trim-blank-lines-at-the-end-of-file-in-vim
-function TrimEndLines()
   let save_cursor = getpos(".")
   :silent! %s#\($\n\s*\)\+\%$##
   call setpos('.', save_cursor)
