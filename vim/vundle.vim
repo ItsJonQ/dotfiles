@@ -39,6 +39,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/BufOnly.vim'
 " Plugin 'vim-scripts/CursorLineCurrentWindow'
+Plugin 'wincent/loupe'
 
 " }}}
 " Themes {{{
