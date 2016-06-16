@@ -9,7 +9,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 rbenv() {
-  eval "$(rbenv init -)"
+  eval "$(command rbenv init -)"
   rbenv "$@"
 }
 
