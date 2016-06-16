@@ -11,6 +11,7 @@ vmap <leader>f /
 " nnoremap <c-d> *N
 nnoremap * *N
 vnoremap * y/<C-R>"<CR>N
+nnoremap c* *Ncgn
 nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap % :%s/\<<C-r>=expand('<cword>')<CR>\>/
