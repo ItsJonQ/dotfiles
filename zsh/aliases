@@ -15,7 +15,6 @@ alias al='vim ~/dotfiles/zsh/aliases'
 alias ali='al'
 
 # Sync up dotfiles
-alias s='sh ~/dotfiles/sync.sh'
 alias sync='cd ~/dotfiles && git pull && sh ~/dotfiles/bootstrap.sh'
 alias sync!='sync && sh config/osx.sh'
 
