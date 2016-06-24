@@ -15,7 +15,6 @@ alias al='vim ~/dotfiles/zsh/aliases'
 alias ali='al'
 
 # Sync up dotfiles
-alias s='sh ~/dotfiles/sync.sh'
 alias sync='cd ~/dotfiles && git pull && sh ~/dotfiles/bootstrap.sh'
 alias sync!='sync && sh config/osx.sh'
 
@@ -108,6 +107,7 @@ alias paper='open https://paper.dropbox.com/\?role\=work'
 alias cleanDS="find . -type f -name '*.DS_Store' -ls -delete"
 alias cleands='cleanDS'
 alias dsa='cleanDS'
+alias cleanrb="find . -type f -name 'config.rb' -ls -delete"
 
 # Tree
 alias t='tree -L 1'
