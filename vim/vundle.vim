@@ -40,6 +40,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'wincent/loupe'
+Plugin 'wincent/terminus'
 
 " }}}
 " Themes {{{
