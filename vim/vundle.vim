@@ -44,13 +44,13 @@ Plugin 'wincent/loupe'
 " }}}
 " Themes {{{
 
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'joshdick/airline-onedark.vim'
-Plugin 'pbrisbin/vim-colors-off'
-Plugin 'tomasr/molokai'
-Plugin 'w0ng/vim-hybrid'
+" Plugin 'pbrisbin/vim-colors-off'
+" Plugin 'tomasr/molokai'
+" Plugin 'w0ng/vim-hybrid'
 
 " }}}
 " Syntax highlighting {{{"{{{
