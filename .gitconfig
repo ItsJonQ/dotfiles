@@ -18,6 +18,7 @@
   b = branch
   ba = branch -a
   c = commit --verbose
+  cam = commit --amend
   co = checkout
   coa = checkout .
   cob = checkout -b
