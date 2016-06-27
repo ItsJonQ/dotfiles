@@ -11,6 +11,8 @@
 # Use Macvim as Vim
 alias vim='mvim -v'
 
+alias df='cd ~/dotfiles'
+
 alias al='vim ~/dotfiles/zsh/aliases'
 alias ali='al'
 
@@ -45,7 +47,7 @@ alias reload='. ~/.zshrc && . ~/.zprofile && echo "ZSH config reloaded from ~/.z
 alias rl='reload'
 
 # Git
-alias gitrc='vim ~/.gitconfig'
+alias gitrc='vim ~/dotfiles/.gitconfig'
 alias g='git'
 
 #Ctags
