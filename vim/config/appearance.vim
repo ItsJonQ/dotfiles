@@ -17,7 +17,7 @@ endif
 " let g:onedark_termcolors=16
 " let g:hybrid_custom_term_colors = 1
 let base16colorspace=256
-"
+
 color base16-ocean
 set background=dark
 
