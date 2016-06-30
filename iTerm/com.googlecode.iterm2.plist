@@ -1168,7 +1168,7 @@
 	<key>HideMenuBarInFullscreen</key>
 	<true/>
 	<key>HideScrollbar</key>
-	<false/>
+	<true/>
 	<key>HideTab</key>
 	<true/>
 	<key>HighlightTabLabels</key>
@@ -1198,13 +1198,17 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSColorPanelMode</key>
-	<string>6</string>
+	<string>1</string>
+	<key>NSColorPickerPageableNameListDefaults</key>
+	<string>1Apple</string>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
+	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 521}</string>
 	<key>NSNavPanelExpandedStateForSaveMode</key>
@@ -1240,35 +1244,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSColorPanel</key>
-	<string>307 274 228 309 0 0 1440 877 </string>
+	<string>127 227 228 325 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>259 143 684 378 0 0 1440 877 </string>
+	<string>46 69 1259 367 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>235 421 606 456 0 0 1440 877 </string>
-	<key>NSWindow Frame SUStatusFrame</key>
-	<string>540 561 400 129 0 0 1440 877 </string>
+	<string>62 421 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>430 363 620 392 0 0 1440 877 </string>
+	<string>426 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>29 279 665 577 0 0 1440 877 </string>
+	<string>29 14 1409 863 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>653 191 665 577 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1088 469 665 498 0 0 1920 1200 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1067 171 665 476 0 0 1920 1058 </string>
-	<key>NSWindow Frame iTerm Window 4</key>
-	<string>340 197 650 476 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 5</key>
-	<string>499 246 650 476 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 6</key>
-	<string>575 130 650 476 0 0 1440 878 </string>
-	<key>NSWindow Frame iTerm Window 7</key>
-	<string>716 411 665 476 0 0 1920 1178 </string>
-	<key>NSWindow Frame iTerm Window 8</key>
-	<string>1103 212 665 476 0 0 1920 1178 </string>
-	<key>NSWindow Frame iTerm Window 9</key>
-	<string>569 583 665 476 0 0 1920 1178 </string>
+	<string>535 110 905 752 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2143,25 +2129,21 @@
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
-	<integer>1</integer>
-	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
-	<true/>
+	<integer>0</integer>
 	<key>NoSyncInstallationId</key>
-	<string>8E2E7A54-509A-4FAD-B0F3-C9C1FDEC5155</string>
+	<string>F1609F75-3ADF-4A0A-90A1-D9FDC273C069</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
-	<key>NoSyncTimeOfFirstLaunchForIncompatibilityWarnings</key>
-	<real>485701227.28655702</real>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>485701229.31849098</real>
+	<real>485794482.255193</real>
 	<key>NoSyncTimeOfLastPromo</key>
-	<real>453392557.35523999</real>
+	<real>478450717.02556199</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>485659169.30226898</real>
+	<real>485793283.41381401</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -2210,7 +2192,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/Jon/dotfiles/iTerm</string>
+	<string>/Users/helpscout/dotfiles/iTerm</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2228,11 +2210,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/nightly.xml?shard=65</string>
+	<string>https://iterm2.com/appcasts/nightly.xml?shard=50</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-28T02:46:22Z</date>
+	<date>2016-06-30T15:09:42Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
