@@ -83,7 +83,7 @@ hi MatchParen cterm=none ctermbg=None ctermfg=None
 " Typography {{{
 
 " Italic comments
-highlight Comment cterm=italic
+" highlight Comment cterm=italic
 
 set linespace=5
 
