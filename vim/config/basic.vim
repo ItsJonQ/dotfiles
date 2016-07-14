@@ -50,6 +50,7 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 au BufRead,BufNewFile *.tpl set filetype=html
 au BufRead,BufNewFile *.twig set filetype=html
 autocmd Filetype ruby setlocal foldmethod=indent|set nocursorline|set norelativenumber
+au FileType gitcommit set tw=0
 
 
 " }}}
