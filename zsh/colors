@@ -7,10 +7,10 @@
 # Source
 # https://github.com/wincent/wincent/tree/aa1c4a87ac246a0f400268d1f7b2783aedd4068b/roles/dotfiles/files/.zsh
 
-# export TERM=xterm-256color
-export TERM=xterm-256color-italic
+export TERM=xterm-256color
+# export TERM=xterm-256color-italic
 
-BASE16_DIR="$HOME/.config/base16-shell"
+BASE16_DIR="$HOME/dotfiles/zsh/base16-shell"
 BASE16_CONFIG="$HOME/.base16"
 
 BASE16_COLOR="tomorrow"
