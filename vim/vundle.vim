@@ -46,8 +46,9 @@ Plugin 'wincent/terminus'
 " }}}
 " Themes {{{
 
+Plugin 'ItsJonQ/base16-vim'
 " Plugin 'altercation/vim-colors-solarized'
-Plugin 'chriskempson/base16-vim'
+" Plugin 'chriskempson/base16-vim'
 " Plugin 'joshdick/onedark.vim'
 Plugin 'joshdick/airline-onedark.vim'
 " Plugin 'pbrisbin/vim-colors-off'
