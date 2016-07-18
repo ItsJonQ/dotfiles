@@ -5,7 +5,7 @@
 
 " Appearance {{{
 
-set cursorline
+" set cursorline
 set showmatch
 
 " }}}
