@@ -30,12 +30,13 @@ if $BASE16_COLOR == "ocean"
 end
 
 if $BASE16_COLOR == "solarized"
-  if $BASE16_SHADE == "dark"
-    color base16-solarized-dark
-  end
-  if $BASE16_SHADE == "light"
-    color base16-solarized-light
-  end
+  color base16-solarized
+  " if $BASE16_SHADE == "dark"
+  "   color base16-solarized-dark
+  " end
+  " if $BASE16_SHADE == "light"
+  "   color base16-solarized-light
+  " end
 end
 
 if $BASE16_COLOR == "tomorrow"
