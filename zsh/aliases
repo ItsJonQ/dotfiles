@@ -9,7 +9,7 @@
 #################################################
 
 # Use Macvim as Vim
-alias vim='mvim -v'
+# alias vim='mvim -v'
 
 alias df='cd ~/dotfiles'
 
