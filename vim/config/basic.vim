@@ -6,7 +6,8 @@
 " Appearance {{{
 
 " set cursorline
-set showmatch
+" set showmatch
+set noshowmatch
 
 " }}}
 " Airline {{{

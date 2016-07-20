@@ -17,14 +17,14 @@ call vundle#begin()
 " }}}
 " Enhancements {{{
 
-Plugin 'Konfekt/FastFold'
+" Plugin 'Konfekt/FastFold'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
 " Plugin 'godlygeek/tabular'
-Plugin 'kshenoy/vim-signature'
+" Plugin 'kshenoy/vim-signature'
 Plugin 'mattn/emmet-vim'
 Plugin 'rking/ag.vim'
 " Plugin 'scrooloose/syntastic'
@@ -39,9 +39,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/BufOnly.vim'
-Plugin 'vim-scripts/JavaScript-Indent'
+" Plugin 'vim-scripts/JavaScript-Indent'
 Plugin 'wincent/loupe'
-" Plugin 'wincent/terminus'
+Plugin 'wincent/terminus'
 
 " }}}
 " Themes {{{
