@@ -17,7 +17,7 @@ call vundle#begin()
 " }}}
 " Enhancements {{{
 
-" Plugin 'Konfekt/FastFold'
+Plugin 'Konfekt/FastFold'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
