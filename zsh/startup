@@ -1,0 +1,7 @@
+# Startup
+# .zshrc
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
+
+npm set progress=false
