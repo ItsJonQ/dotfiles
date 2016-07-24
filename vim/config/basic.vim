@@ -75,7 +75,7 @@ set expandtab
 set list
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 set number
-" set relativenumber
+set relativenumber
 set shiftwidth=2
 set smarttab
 set softtabstop=2
@@ -93,11 +93,13 @@ set mouse=a
 " Performance {{{
 
 set lazyredraw
+set nocompatible
 set re=1
 set scrolljump=10
 set synmaxcol=200
 set ttyfast
 syntax sync minlines=256
+let loaded_matchparen = 1
 
 " }}}
 " Searching {{{

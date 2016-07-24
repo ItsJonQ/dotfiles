@@ -5,9 +5,10 @@
 
 if executable('ag')
   " note we extract the column as well as the file and line number
-  set grepprg=ag\ --nogroup\ --nocolor\ --column
-  set grepformat=%f:%l:%c%m
-  nnoremap <c-f> :Ag<space>
+  " set grepprg=ag\ --nogroup\ --nocolor\ --column
+  " set grepformat=%f:%l:%c%m
+  let g:ackprg = 'ag --vimgrep'
+  nnoremap <c-f> :Ack<space>
 endif
 
 " optimization
