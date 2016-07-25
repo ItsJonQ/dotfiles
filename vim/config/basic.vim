@@ -75,7 +75,7 @@ set expandtab
 set list
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 set number
-set relativenumber
+" set relativenumber
 set shiftwidth=2
 set smarttab
 set softtabstop=2
