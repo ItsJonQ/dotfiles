@@ -18,7 +18,7 @@ endif
 " let g:hybrid_custom_term_colors = 1
 let base16colorspace=256
 
-color base16-monokai
+color base16-ocean
 set background=dark
 
 if $BASE16_COLOR == "default"
