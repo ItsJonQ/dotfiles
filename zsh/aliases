@@ -141,6 +141,10 @@ alias vdx='vagrant destroy'
 alias vs='vagrant status'
 alias vsh='vagrant ssh'
 
+# Vagrant boxes
+# LAMP stack
+# Source: https://gist.github.com/JeffreyWay/af0ee7311abfde3e3b73
+alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrantfile' http://bit.ly/1mE3Qt9 && vagrant up"
 
 # NPM
 # Clear Cache
