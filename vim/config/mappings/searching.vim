@@ -13,3 +13,5 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap % :%s/\<<C-r>=expand('<cword>')<CR>\>/
 vnoremap % y:%s/\<<c-r>=expand('<c-r>"')<cr>\>/
+nnoremap <leader>5 :%s/
+vnoremap <leader>5 y:%s/\<<c-r>=expand('<c-r>"')<cr>\>/
