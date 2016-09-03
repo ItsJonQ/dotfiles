@@ -1,5 +1,5 @@
 #!/bin/sh
-# Base16 One Dark - Shell color setup script
+# Base16 One - Shell color setup script
 # Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -25,7 +25,7 @@ color14=$color06 # Base 0C - Bright Cyan
 color15="ef/f1/f5" # Base 07 - Bright White
 color16="d0/87/70" # Base 09
 color17="be/50/46" # Base 0F
-color18="34/3d/46" # Base 01
+color18="2c/32/3c" # Base 01
 color19="4f/5b/66" # Base 02
 color20="a7/ad/ba" # Base 04
 color21="df/e1/e8" # Base 06
@@ -120,3 +120,4 @@ unset color21
 unset color_foreground
 unset color_background
 unset color_cursor
+
