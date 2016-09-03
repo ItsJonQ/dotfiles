@@ -1,9 +1,10 @@
+
 #!/bin/sh
 # Base16 One Dark - Shell color setup script
 # Jon Q (http://jonquach.com)
 
-# This script doesn't support linux console (use 'vconsole' template instead)
 if [ "${TERM%%-*}" = 'linux' ]; then
+    # This script doesn't support linux console (use 'vconsole' template instead)
     return 2>/dev/null || exit 0
 fi
 
@@ -34,7 +35,7 @@ color_background="28/2c/34" # Base 00
 color_cursor="c0/c5/ce" # Base 05
 
 if [ -n "$TMUX" ]; then
-  # Tell tmux to pass the escape sequences through
+  # tell tmux to pass the escape sequences through
   # (Source: http://permalink.gmane.org/gmane.comp.terminal-emulators.tmux.user/1324)
   printf_template="\033Ptmux;\033\033]4;%d;rgb:%s\007\033\\"
   printf_template_var="\033Ptmux;\033\033]%d;rgb:%s\007\033\\"
@@ -79,13 +80,13 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg C0C5CE # forground
-  printf $printf_template_custom Ph 1B2B34 # background
-  printf $printf_template_custom Pi C0C5CE # bold color
-  printf $printf_template_custom Pj 4F5B66 # selection color
-  printf $printf_template_custom Pk C0C5CE # selected text color
-  printf $printf_template_custom Pl C0C5CE # cursor
-  printf $printf_template_custom Pm 1B2B34 # cursor text
+  printf $printf_template_custom Pg c0c5ce # forground
+  printf $printf_template_custom Ph 282c34 # background
+  printf $printf_template_custom Pi c0c5ce # bold color
+  printf $printf_template_custom Pj 4f5b66 # selection color
+  printf $printf_template_custom Pk c0c5ce # selected text color
+  printf $printf_template_custom Pl c0c5ce # cursor
+  printf $printf_template_custom Pm 282c34 # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background
