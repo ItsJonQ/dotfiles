@@ -86,6 +86,9 @@ alias :e='vim'
 alias nvim='vim -u ~/.nvimrc'
 alias ne='nvim'
 
+# Vagrant
+alias v='vagrant'
+
 # YouTube CLI
 alias youtube='mpsyt'
 alias yt='youtube'
