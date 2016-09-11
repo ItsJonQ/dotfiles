@@ -54,6 +54,7 @@ Plugin 'ItsJonQ/base16-vim'
 Plugin 'joshdick/onedark.vim'
 " Plugin 'joshdick/airline-onedark.vim'
 " Plugin 'pbrisbin/vim-colors-off'
+Plugin 'rakr/vim-one'
 " Plugin 'tomasr/molokai'
 " Plugin 'w0ng/vim-hybrid'
 
