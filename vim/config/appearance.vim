@@ -37,6 +37,14 @@ let base16colorspace=256
 color base16-one
 set background=dark
 
+if $BASE16_SHADE == "dark"
+  set background=dark
+endif
+
+if $BASE16_SHADE == "light"
+  set background=light
+endif
+
 if $BASE16_COLOR == "default"
   color base16-default
 end
@@ -60,14 +68,6 @@ end
 if $BASE16_COLOR == "tomorrow"
   color base16-tomorrow
 end
-
-if $BASE16_SHADE == "dark"
-  set background=dark
-endif
-
-if $BASE16_SHADE == "light"
-  set background=light
-endif
 
 
 " MacVim
