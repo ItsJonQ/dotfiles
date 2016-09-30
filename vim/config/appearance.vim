@@ -69,6 +69,10 @@ if $BASE16_COLOR == "one"
   color base16-one
 end
 
+if $BASE16_COLOR == "monone"
+  color base16-monone
+end
+
 if $BASE16_COLOR == "tomorrow"
   color base16-tomorrow
 end
