@@ -81,10 +81,11 @@ end
 " MacVim
 if has("gui_running")
 
-  syntax on
   set columns=80 lines=40
   set gfn=*
   set guifont=Source\ Code\ Pro\ Light:h14
+  " Force base16-one
+  color base16-one
 
 else
   " let g:indentLine_color_term = 237
