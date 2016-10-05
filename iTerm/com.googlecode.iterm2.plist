@@ -1153,6 +1153,8 @@
 	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>EnableDivisionView</key>
+	<true/>
 	<key>EnableRendezvous</key>
 	<false/>
 	<key>FocusFollowsMouse</key>
@@ -1250,7 +1252,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>127 227 228 325 0 0 1440 877 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>373 132 822 337 0 0 1440 877 </string>
+	<string>29 33 1411 710 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>120 721 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -1258,9 +1260,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>29 408 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>532 160 796 473 0 0 1440 877 </string>
+	<string>361 353 770 429 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>135 170 650 577 0 0 1440 877 </string>
+	<string>155 93 650 577 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>95 281 650 400 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1944,8 +1946,12 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>SourceCodePro-Light 14</string>
+			<key>Open Toolbelt</key>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
+			<key>Prevent Opening in a Tab</key>
+			<false/>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -2096,6 +2102,8 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>0</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -2224,7 +2232,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-10T16:11:14Z</date>
+	<date>2016-10-05T00:20:00Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2244,7 +2252,7 @@
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
 	<key>TabStyle</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -2272,7 +2280,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.20160823-nightly</string>
+	<string>3.0.20161002-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
