@@ -178,6 +178,7 @@ weather() {
 }
 
 alias sp='spotify'
+alias spa='spotify play album'
 
 
 #################################################
