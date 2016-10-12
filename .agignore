@@ -15,6 +15,7 @@ img
 build/puphpet
 one-offs
 site/sumo
+site/vendors
 vendor-reference
 
 old

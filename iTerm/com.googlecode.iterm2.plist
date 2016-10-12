@@ -1260,9 +1260,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>29 408 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>361 353 770 429 0 0 1440 877 </string>
+	<string>212 202 918 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>155 93 650 577 0 0 1440 877 </string>
+	<string>29 36 706 841 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>95 281 650 400 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1946,6 +1946,8 @@
 			<true/>
 			<key>Normal Font</key>
 			<string>SourceCodePro-Light 14</string>
+			<key>Only The Default BG Color Uses Transparency</key>
+			<false/>
 			<key>Open Toolbelt</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -2232,13 +2234,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-05T00:20:00Z</date>
+	<date>2016-10-08T16:59:39Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
