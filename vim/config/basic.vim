@@ -7,7 +7,8 @@
 
 set colorcolumn=80
 let &colorcolumn=join(range(81,999),",")
-set cursorline
+" set cursorline
+set nocursorline
 " set showmatch
 set noshowmatch
 
