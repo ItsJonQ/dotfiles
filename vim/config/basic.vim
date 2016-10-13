@@ -5,7 +5,9 @@
 
 " Appearance {{{
 
-" set cursorline
+set colorcolumn=80
+let &colorcolumn=join(range(81,999),",")
+set cursorline
 " set showmatch
 set noshowmatch
 
@@ -24,7 +26,8 @@ set wildmenu
 " }}}
 " Backspace {{{
 
-set backspace=2
+" set backspace=2
+set backspace=indent,start,eol
 
 " }}}
 " Buffer {{{
@@ -74,15 +77,25 @@ set copyindent
 set expandtab
 set list
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
+set nojoinspaces
 set number
 " set relativenumber
 set shiftwidth=2
 set smarttab
 set softtabstop=2
 set tabstop=2
+set shiftround
 " set textwidth=80
-set colorcolumn=80
-" let &colorcolumn=join(range(81,999),",")
+
+if has('linebreak')
+  let &showbreak='⤷ '
+endif
+if has('linebreak')
+  set breakindent
+  if exists('&breakindentopt')
+    set breakindentopt=shift:2
+  endif
+endif
 
 " }}}
 " Mouse {{{
@@ -102,6 +115,12 @@ syntax sync minlines=256
 let loaded_matchparen = 1
 
 " }}}
+" Scrolling {{{
+
+set scrolloff=3
+set sidescrolloff=3
+
+" }}}
 " Searching {{{
 
 set hlsearch
@@ -109,6 +128,7 @@ set ignorecase
 set incsearch
 set showmatch
 set smartcase
+set switchbuf=usetab
 
 " }}}
 " Sounds {{{
