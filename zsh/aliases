@@ -21,7 +21,9 @@ alias sync='cd ~/dotfiles && git pull && sh ~/dotfiles/bootstrap.sh'
 alias sync!='sync && sh config/osx.sh'
 
 # Use Macvim instead of vim by default
-# alias vim='mvim -v'
+if which mvim >/dev/null; then
+  alias vim='mvim -v'
+fi
 
 # Profile (ZSH)
 alias profile='vim ~/.zprofile'
