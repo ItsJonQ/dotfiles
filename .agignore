@@ -14,7 +14,11 @@ img
 *.pkg.js
 build/puphpet
 one-offs
-site/sumo
+site/sumo/css
+site/sumo/images
+site/sumo/lib
+site/sumo/modules
+site/sumo/vendors
 site/vendors
 vendor-reference
 

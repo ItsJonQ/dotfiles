@@ -55,6 +55,9 @@ alias g='git'
 #Ctags
 alias ctags="`brew --prefix`/bin/ctags"
 
+# Rails
+alias ra="rails"
+
 # Silver Searcher
 alias ag='ag --path-to-agignore ~/.agignore'
 
