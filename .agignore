@@ -9,6 +9,8 @@ bower_components
 images
 img
 
+.git
+
 # Work related ignores
 .vagrant
 *.pkg.js
