@@ -53,13 +53,18 @@ if $BASE16_COLOR == "grayscale"
   color base16-grayscale
 end
 
-if $BASE16_COLOR == "paraiso"
-  color base16-paraiso
+if $BASE16_COLOR == "monokai"
+  color base16-monokai
 end
 
 if $BASE16_COLOR == "ocean"
   color base16-ocean
 end
+
+if $BASE16_COLOR == "paraiso"
+  color base16-paraiso
+end
+
 
 if $BASE16_COLOR == "solarized"
   color base16-solarized
