@@ -57,6 +57,10 @@ if $BASE16_COLOR == "monokai"
   color base16-monokai
 end
 
+if $BASE16_COLOR == "duokai"
+  color base16-duokai
+end
+
 if $BASE16_COLOR == "ocean"
   color base16-ocean
 end
