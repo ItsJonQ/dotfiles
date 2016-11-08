@@ -45,47 +45,9 @@ if $BASE16_SHADE == "light"
   set background=light
 endif
 
-if $BASE16_COLOR == "default"
-  color base16-default
-end
-
-if $BASE16_COLOR == "grayscale"
-  color base16-grayscale
-end
-
-if $BASE16_COLOR == "monokai"
-  color base16-monokai
-end
-
-if $BASE16_COLOR == "duokai"
-  color base16-duokai
-end
-
-if $BASE16_COLOR == "ocean"
-  color base16-ocean
-end
-
-if $BASE16_COLOR == "paraiso"
-  color base16-paraiso
-end
-
-
-if $BASE16_COLOR == "solarized"
-  color base16-solarized
-end
-
-if $BASE16_COLOR == "one"
-  color base16-one
-end
-
-if $BASE16_COLOR == "monone"
-  color base16-monone
-end
-
-if $BASE16_COLOR == "tomorrow"
-  color base16-tomorrow
-end
-
+if !empty($BASE16_COLOR)
+  color base16-$BASE16_COLOR
+endif
 
 " MacVim
 if has("gui_running")
@@ -94,7 +56,7 @@ if has("gui_running")
   set gfn=*
   set guifont=Source\ Code\ Pro\ Light:h14
   " Force base16-one
-  color base16-one
+  color base16-duokai
 
 else
   " let g:indentLine_color_term = 237
