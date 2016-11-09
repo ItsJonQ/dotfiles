@@ -41,6 +41,7 @@ alias mvimrc='mvim ~/.vimrc'
 alias nvimrc='vim ~/.nvimrc'
 alias vimrc='cd ~/dotfiles/vim && vim .'
 alias vundle='vim +PluginInstall +qall'
+alias vimclr='cd ~/.vim/bundle/base16-vim/colors'
 alias vndl='vundle'
 alias vndl!='vim +PluginUpdate +qall'
 
