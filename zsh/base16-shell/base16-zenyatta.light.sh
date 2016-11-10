@@ -1,5 +1,5 @@
 #!/bin/sh
-# Base16 Ana - Shell color setup script
+# Base16 Zenyatta - Shell color setup script
 # Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then

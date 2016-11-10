@@ -1,5 +1,5 @@
 #!/bin/sh
-# Base16 Zenyatta - Shell color setup script
+# Base16 Tracer - Shell color setup script
 # Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -9,11 +9,11 @@ fi
 
 color00="14/18/20" # Base 00 - Black
 color01="b3/b3/b6" # Base 08 - Red
-color02="ff/eb/3b" # Base 0B - Green
+color02="ff/98/00" # Base 0B - Green
 color03="f8/f8/fb" # Base 0A - Yellow
-color04="ff/eb/3b" # Base 0D - Blue
+color04="ff/98/00" # Base 0D - Blue
 color05="f8/f8/fb" # Base 0E - Magenta
-color06="ff/eb/3b" # Base 0C - Cyan
+color06="f8/f8/fb" # Base 0C - Cyan
 color07="f8/f8/fb" # Base 05 - White
 color08="51/5f/6a" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
