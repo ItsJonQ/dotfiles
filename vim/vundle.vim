@@ -74,7 +74,7 @@ Plugin 'plasticboy/vim-markdown'
 " Javascript syntax
 " Plugin 'jelera/vim-javascript-syntax'
 " Plugin 'bigfish/vim-js-context-coloring'
-" Plugin 'mxw/vim-jsx'
+Plugin 'mxw/vim-jsx'
 " Plugin 'othree/javascript-libraries-syntax.vim'
 " Plugin 'othree/yajs.vim'
 " Plugin 'pangloss/vim-javascript'
