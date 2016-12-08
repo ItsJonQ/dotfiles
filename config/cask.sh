@@ -30,6 +30,7 @@ brew cask install skitch
 brew cask install spotify
 brew cask install sublime-text
 brew cask install telegram
+brew cask install vagrant
 brew cask install vlc
 
 # Cleanup!
