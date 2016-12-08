@@ -44,13 +44,13 @@ set cole=0
 " }}}
 " Directories {{{
 
-if !isdirectory(expand("~/.vim/backupdir/"))
+if !isdirectory(expand("~/.vim/backup/"))
   silent !echo "Creating backup dir..."
-  silent !mkdir -p ~/.vim/backupdir
+  silent !mkdir -p ~/.vim/backup
 endif
-if !isdirectory(expand("~/.vim/swap/"))
-  silent !echo "Creating swap dir..."
-  silent !mkdir -p ~/.vim/swap
+if !isdirectory(expand("~/.vim/tmp/"))
+  silent !echo "Creating tmp dir..."
+  silent !mkdir -p ~/.vim/tmp
 endif
 if !isdirectory(expand("~/.vim/undo/"))
   silent !echo "Creating undo dir..."
