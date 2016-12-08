@@ -14,6 +14,7 @@ brew cask update
 brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
+brew cask install appcleaner
 brew cask install divvy
 brew cask install dropbox
 brew cask install firefox
