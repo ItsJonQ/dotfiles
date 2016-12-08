@@ -25,13 +25,16 @@ brew cask install karabiner
 brew cask install onyx
 brew cask install private-internet-access
 brwe cask install screenhero
+brwe cask install slack
 brew cask install sketch
 brew cask install skitch
 brew cask install spotify
 brew cask install sublime-text
 brew cask install telegram
+brew cask install tunnelblick
 brew cask install vagrant
 brew cask install vlc
+brew cask install zoom
 
 # Cleanup!
 brew cask cleanup
