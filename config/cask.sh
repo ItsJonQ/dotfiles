@@ -12,6 +12,7 @@ brew cask update
 
 # Install apps!
 brew cask install 1password
+brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install divvy
 brew cask install dropbox
