@@ -34,6 +34,7 @@ brew cask install sublime-text
 brew cask install telegram
 brew cask install tunnelblick
 brew cask install vagrant
+brew cask install virtualbox
 brew cask install vlc
 brew cask install zoom
 
