@@ -44,6 +44,18 @@ set cole=0
 " }}}
 " Directories {{{
 
+if !isdirectory(expand("~/.vim/backupdir/"))
+  silent !echo "Creating backup dir..."
+  silent !mkdir -p ~/.vim/backupdir
+endif
+if !isdirectory(expand("~/.vim/swap/"))
+  silent !echo "Creating swap dir..."
+  silent !mkdir -p ~/.vim/swap
+endif
+if !isdirectory(expand("~/.vim/undo/"))
+  silent !echo "Creating undo dir..."
+  silent !mkdir -p ~/.vim/undo
+endif
 set directory=~/.vim/tmp//
 set backupdir=~/.vim/backup//
 set undodir=~/.vim/undo//

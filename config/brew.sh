@@ -32,6 +32,7 @@ brew install homebrew/dupes/screen
 brew install homebrew/php/php56 --with-gmp
 
 # Install brew things
+brew install bradp/vv/vv
 brew install ffmpeg
 brew install git
 brew install googler
