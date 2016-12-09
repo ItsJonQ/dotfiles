@@ -54,7 +54,7 @@ if has("gui_running")
 
   set columns=80 lines=40
   set gfn=*
-  set guifont=Menlo:h13
+  set guifont=Menlo:h14
   " Force base16-one
   color base16-one
 
