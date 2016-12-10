@@ -38,9 +38,12 @@ brew install git
 brew install googler
 brew install imagemagick --with-webp
 brew install macvim
+brew install mplayer
+brew install mpv
 brew install node
 brew install pow
 brew install rbenv
+brew install shpotify
 brew install the_silver_searcher
 brew install tree
 brew install x264
