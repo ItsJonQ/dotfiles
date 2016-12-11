@@ -11,5 +11,9 @@ for file in $HOME/dotfiles/.*; do
   fi
 done
 
+# Sync hammerspoon
+rsync -ah --no-perms .hammerspoon/ "$HOME"/
+echo Added .hammerspoon/ to "$HOME";
+
 # Prompt feedback
 # echo "Dotfiles synced."

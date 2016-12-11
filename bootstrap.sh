@@ -11,3 +11,7 @@ for file in $HOME/dotfiles/.*; do
     echo Added "$F" to "$HOME";
   fi
 done
+
+# Sync hammerspoon
+rsync -ah --no-perms .hammerspoon/ "$HOME"/
+echo Added .hammerspoon/ to "$HOME";
