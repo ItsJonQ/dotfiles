@@ -21,21 +21,18 @@ local myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", relo
 
 
 -- Reload
-hs.hotkey.bind({"cmd", "ctrl"}, "R", function()
+hs.hotkey.bind({"alt", "shift"}, "R", function()
   hs.reload()
 end)
 hs.alert.show("Hammerspoon Loaded.")
 
 
--- Vars
-local win = hs.window.focusedWindow()
-local f = win:frame()
-local screen = win:screen()
-local max = screen:frame()
-
-
 -- Window Resize: Left
-hs.hotkey.bind({"cmd", "ctrl"}, "1", function()
+hs.hotkey.bind({"alt", "shift"}, "1", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
   f.x = max.x
   f.y = max.y
   f.w = max.w / 2
@@ -45,7 +42,11 @@ end)
 
 
 -- Window Resize: Right
-hs.hotkey.bind({"cmd", "ctrl"}, "2", function()
+hs.hotkey.bind({"alt", "shift"}, "2", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
   f.x = max.x + (max.w / 2)
   f.y = max.y
   f.w = max.w / 2
@@ -55,7 +56,11 @@ end)
 
 
 -- Window Resize: Top
-hs.hotkey.bind({"cmd", "ctrl"}, "T", function()
+hs.hotkey.bind({"alt", "shift"}, "T", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
   f.x = max.x
   f.y = max.y
   f.w = max.w
@@ -65,7 +70,11 @@ end)
 
 
 -- Window Resize: Bottom
-hs.hotkey.bind({"cmd", "ctrl"}, "B", function()
+hs.hotkey.bind({"alt", "shift"}, "B", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
   f.x = max.x
   f.y = max.h * 0.2
   f.w = max.w
@@ -75,7 +84,11 @@ end)
 
 
 -- Window Resize: Fullscreen
-hs.hotkey.bind({"cmd", "ctrl"}, "F", function()
+hs.hotkey.bind({"alt", "shift"}, "F", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
   f.x = max.x
   f.y = max.y
   f.w = max.w
@@ -85,7 +98,11 @@ end)
 
 
 -- Window Resize: Center
-hs.hotkey.bind({"cmd", "ctrl"}, "C", function()
+hs.hotkey.bind({"alt", "shift"}, "C", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
   f.x = max.w * 0.15
   f.y = max.h * 0.15
   f.w = max.w * 0.7
