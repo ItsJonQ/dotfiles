@@ -21,14 +21,14 @@ local myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", relo
 
 
 -- Reload
-hs.hotkey.bind({"alt", "shift"}, "R", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "R", function()
   hs.reload()
 end)
 hs.alert.show("Hammerspoon Loaded.")
 
 
 -- Window Resize: Left
-hs.hotkey.bind({"alt", "shift"}, "1", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "1", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -42,7 +42,7 @@ end)
 
 
 -- Window Resize: Right
-hs.hotkey.bind({"alt", "shift"}, "2", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "2", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -56,7 +56,7 @@ end)
 
 
 -- Window Resize: Top
-hs.hotkey.bind({"alt", "shift"}, "T", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "T", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -70,7 +70,7 @@ end)
 
 
 -- Window Resize: Bottom
-hs.hotkey.bind({"alt", "shift"}, "B", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "B", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -84,7 +84,7 @@ end)
 
 
 -- Window Resize: Fullscreen
-hs.hotkey.bind({"alt", "shift"}, "F", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "F", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -98,7 +98,7 @@ end)
 
 
 -- Window Resize: Center
-hs.hotkey.bind({"alt", "shift"}, "C", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "C", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
