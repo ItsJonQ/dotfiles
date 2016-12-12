@@ -8,6 +8,8 @@
 sudo -v
 
 sh config/brew.sh
+sh config/cask.sh
 sh config/osx.sh
 sh config/node.sh
 sh config/ruby.sh
+sh config/vagrant.sh
