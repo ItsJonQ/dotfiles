@@ -36,6 +36,7 @@ brew install bradp/vv/vv
 brew install ffmpeg
 brew install git
 brew install googler
+brew install homebrew/php/wp-cli
 brew install imagemagick --with-webp
 brew install macvim
 brew install mplayer
