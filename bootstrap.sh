@@ -19,3 +19,6 @@ echo Added .hammerspoon/ to "$HOME";
 # Sync atom
 rsync -ah --no-perms .atom "$HOME"/
 echo Added .atom/ to "$HOME";
+
+# Setup symlinks
+sh $HOME/dotfiles/symlink.sh
