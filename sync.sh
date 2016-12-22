@@ -15,5 +15,9 @@ done
 rsync -ah --no-perms .hammerspoon "$HOME"/
 echo Added .hammerspoon/ to "$HOME";
 
+# Sync atom
+rsync -ah --no-perms .atom "$HOME"/
+echo Added .atom/ to "$HOME";
+
 # Prompt feedback
 # echo "Dotfiles synced."
