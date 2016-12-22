@@ -173,6 +173,13 @@ alias ems='ember server --ssl=false'
 # Get SSH Key
 alias ssh-copy='pbcopy < ~/.ssh/id_rsa.pub'
 
+# Setup SSH key
+# Accepts: IP Address
+# Example: 123.123.123.123
+ssh-setup() {
+  cat ~/.ssh/id_rsa.pub | ssh root@$1 "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+}
+
 
 #################################################
 # Fun Stuff
