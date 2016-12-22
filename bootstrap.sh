@@ -4,6 +4,10 @@
 # =============================================================================
 # Add dotfiles to root
 
+echo ;
+echo 💪 " "Syncing your dotfiles…
+echo ;
+
 for file in $HOME/dotfiles/.*; do
   if [[ -f $file ]]; then
     F=`basename "$file"`
@@ -22,3 +26,9 @@ echo Added .atom/ to "$HOME";
 
 # Setup symlinks
 sh $HOME/dotfiles/symlink.sh
+
+echo ;
+
+echo 👏 " "Enjoy your dotfiles!
+
+echo ;

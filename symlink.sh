@@ -5,5 +5,6 @@
 # Symlink files
 
 ln -sf $HOME/dotfiles/.atom/config.cson $HOME/.atom/config.cson
+ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
 echo Symlinked dotfiles.
