@@ -7,10 +7,10 @@
 # Ask for the administrator password upfront
 sudo -v
 
-sh config/brew.sh
-sh config/cask.sh
-sh config/osx.sh
-sh config/atom.sh
-sh config/node.sh
-sh config/ruby.sh
-sh config/vagrant.sh
+sh $HOME/dotfiles/config/brew.sh
+sh $HOME/dotfiles/config/cask.sh
+sh $HOME/dotfiles/config/osx.sh
+sh $HOME/dotfiles/config/atom.sh
+sh $HOME/dotfiles/config/node.sh
+sh $HOME/dotfiles/config/ruby.sh
+sh $HOME/dotfiles/config/vagrant.sh
