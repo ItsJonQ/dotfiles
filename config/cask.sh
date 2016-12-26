@@ -16,10 +16,12 @@ brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install appcleaner
 brew cask install atom
-brew cask install divvy
+brew cask install cloud
+brew cask install daisydisk
 brew cask install dropbox
 brew cask install firefox
 brew cask install flux
+brew cask install hammerspoon
 brew cask install insync
 brew cask install google-chrome
 brew cask install java
@@ -36,6 +38,7 @@ brew cask install skype
 brew cask install spotify
 brew cask install sublime-text
 brew cask install telegram
+brew cask install todoist
 brew cask install tunnelblick
 brew cask install vagrant
 brew cask install virtualbox
@@ -46,4 +49,3 @@ brew cask install zoom
 brew cask cleanup
 
 echo "Brew cask installation complete!"
-
