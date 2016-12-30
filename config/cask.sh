@@ -15,6 +15,7 @@ brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install appcleaner
+brew cask install arq
 brew cask install atom
 brew cask install cloud
 brew cask install daisydisk

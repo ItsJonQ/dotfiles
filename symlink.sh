@@ -12,6 +12,7 @@ for file in $HOME/dotfiles/.atom/*; do
   fi
 done
 
+ln -sf $HOME/Drive/Config/.aws $HOME/.aws
 ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
 echo Symlinked dotfiles.
