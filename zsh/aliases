@@ -35,6 +35,9 @@ alias bashprofile='vim ~/.bash_profile'
 # Go home!
 alias rt="root"
 
+# Bundle
+alias bx='bundle exec'
+
 # Vim
 alias cleanswap='rm -rfv ~/.vim/tmp/*'
 alias mvimrc='mvim ~/.vimrc'
