@@ -5,3 +5,4 @@
 
 nnoremap <silent> <c-u> <c-u>zz
 nnoremap <silent> <c-d> <c-d>zz
+nnoremap <silent> <c-f> <c-f>zz
