@@ -109,3 +109,25 @@ hs.hotkey.bind({"cmd", "ctrl"}, "C", function()
   f.h = max.h * 0.7
   win:setFrame(f)
 end)
+
+-- HJKL Rebind
+-- https://github.com/kkamdooong/hammerspoon-control-hjkl-to-arrow/blob/master/init.lua
+local function keyCode(key, modifiers)
+  modifiers = modifiers or {}
+
+  return function()
+      hs.eventtap.event.newKeyEvent(modifiers, string.lower(key), true):post()
+      hs.timer.usleep(1000)
+      hs.eventtap.event.newKeyEvent(modifiers, string.lower(key), false):post()
+  end
+end
+
+hs.hotkey.bind({'ctrl'}, 'h', keyCode('left'), nil, keyCode('left'))
+hs.hotkey.bind({'ctrl'}, 'j', keyCode('down'), nil, keyCode('down'))
+hs.hotkey.bind({'ctrl'}, 'k', keyCode('up'), nil, keyCode('up'))
+hs.hotkey.bind({'ctrl'}, 'l', keyCode('right'), nil, keyCode('right'))
+
+hs.hotkey.bind({'ctrl', 'shift'}, 'h', keyCode('left', {'shift'}), nil, keyCode('left', {'shift'}))
+hs.hotkey.bind({'ctrl', 'shift'}, 'j', keyCode('down', {'shift'}), nil, keyCode('down', {'shift'}))
+hs.hotkey.bind({'ctrl', 'shift'}, 'k', keyCode('up', {'shift'}), nil, keyCode('up', {'shift'}))
+hs.hotkey.bind({'ctrl', 'shift'}, 'l', keyCode('right', {'shift'}), nil, keyCode('right', {'shift'}))
