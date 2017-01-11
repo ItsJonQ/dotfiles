@@ -26,9 +26,9 @@ brew cask install hammerspoon
 brew cask install insync
 brew cask install google-chrome
 brew cask install java
-brew cask install karabiner
+# brew cask install karabiner
+brew cask install karabiner-elements
 brew cask install licecap
-brew cask install karabiner
 brew cask install onyx
 brew cask install private-internet-access
 brew cask install remote-play
