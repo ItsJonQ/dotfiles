@@ -12,6 +12,8 @@ for file in $HOME/dotfiles/.atom/*; do
   fi
 done
 
+ln -sf $HOME/dotfiles/.config/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json
+
 ln -sf $HOME/Drive/Config/.aws $HOME/.aws
 ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
