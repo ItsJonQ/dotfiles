@@ -64,6 +64,7 @@ set undodir=~/.vim/undo//
 " File types {{{
 
 autocmd BufNewFile,BufRead *.json set ft=javascript
+au BufRead,BufNewFile *.mjml set filetype=html
 au BufRead,BufNewFile *.tpl set filetype=html
 au BufRead,BufNewFile *.twig set filetype=html
 autocmd Filetype ruby setlocal foldmethod=indent|set nocursorline|set norelativenumber
