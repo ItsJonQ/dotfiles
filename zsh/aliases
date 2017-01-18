@@ -80,6 +80,11 @@ subl() {
   open $1 -a "Sublime Text"
 }
 
+# Notes
+br() {
+  open -a "Bear"
+}
+
 # Google Drive
 alias drive='cd ~/Drive'
 
