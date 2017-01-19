@@ -19,13 +19,13 @@ call vundle#begin()
 
 Plugin 'Konfekt/FastFold'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Yggdroot/indentLine'
+" Plugin 'Yggdroot/indentLine'
 " Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
-Plugin 'godlygeek/tabular'
+" Plugin 'godlygeek/tabular'
 " Plugin 'kshenoy/vim-signature'
-Plugin 'mattn/emmet-vim'
+" Plugin 'mattn/emmet-vim'
 Plugin 'mileszs/ack.vim'
 " Plugin 'mhinz/vim-startify'
 " Plugin 'rking/ag.vim'
@@ -44,7 +44,7 @@ Plugin 'vim-scripts/BufOnly.vim'
 " Plugin 'vim-syntastic/syntastic'
 " Plugin 'vim-scripts/JavaScript-Indent'
 " Plugin 'wincent/loupe'
-Plugin 'wincent/terminus'
+" Plugin 'wincent/terminus'
 
 " }}}
 " Themes {{{
