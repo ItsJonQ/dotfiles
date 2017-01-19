@@ -129,7 +129,7 @@ syntax sync minlines=256
 let loaded_matchparen = 1
 " set ttimeout
 " set ttimeoutlen=250
-set notimeout
+" set notimeout
 
 " }}}
 " Scrolling {{{
