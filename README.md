@@ -9,5 +9,5 @@ Follow [Github's SSH guide](https://help.github.com/articles/generating-a-new-ss
 To get setup from scratch, run this command in the Terminal:
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && git clone git@github.com:ItsJonQ/dotfiles.git ~/dotfiles
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && git clone git@github.com:ItsJonQ/dotfiles.git ~/dotfiles && cd ~/dotfiles && sh install.sh
 ```
