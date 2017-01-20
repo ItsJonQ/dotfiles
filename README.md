@@ -8,4 +8,8 @@ Follow [Github's SSH guide](https://help.github.com/articles/generating-a-new-ss
 
 To get setup from scratch, run this command in the Terminal:
 
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && git clone git@github.com:ItsJonQ/dotfiles.git ~/dotfiles && sh ~/dotfiles/install.sh`
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" && git clone git@github.com:ItsJonQ/dotfiles.git ~/dotfiles`
+
+## Vundle
+
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && vndl`
