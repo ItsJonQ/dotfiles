@@ -19,7 +19,7 @@ call vundle#begin()
 
 Plugin 'Konfekt/FastFold'
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'Yggdroot/indentLine'
+Plugin 'Yggdroot/indentLine'
 " Plugin 'airblade/vim-gitgutter'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
