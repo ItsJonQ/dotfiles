@@ -14,3 +14,5 @@ sh $HOME/dotfiles/config/atom.sh
 sh $HOME/dotfiles/config/node.sh
 sh $HOME/dotfiles/config/ruby.sh
 sh $HOME/dotfiles/config/vagrant.sh
+
+sh $HOME/dotfiles/bootstrap.sh
