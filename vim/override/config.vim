@@ -4,5 +4,4 @@
 " =============================================================================
 " Overridding configs that get set just before Vim opens
 
-set cul!
 set nocursorline
