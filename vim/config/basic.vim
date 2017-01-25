@@ -123,7 +123,7 @@ set lazyredraw
 set nocompatible
 set re=1
 set scrolljump=10
-set synmaxcol=128
+" set synmaxcol=128
 set ttyfast
 syntax sync minlines=80
 let loaded_matchparen = 1
