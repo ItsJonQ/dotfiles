@@ -8,6 +8,7 @@ vnoremap T :retab<cr>
 " Indent using spaces (Default: 2)
 nnoremap ,tt :set sw=2<cr>:set expandtab<cr>:%retab!<cr>gg=G''
 vnoremap ,tt :set sw=2<cr>:set expandtab<cr>:%retab!<cr>gg=G''
+nnoremap ,t2 :set sw=2<cr>:set expandtab<cr>:%retab!<cr>gg=G''
 nnoremap ,t4 :set sw=4<cr>:set expandtab<cr>:%retab!<cr>gg=G''
 nnoremap ,t8 :set sw=8<cr>:set expandtab<cr>:%retab!<cr>gg=G''
 " Indent using tabs (Default: 4)
