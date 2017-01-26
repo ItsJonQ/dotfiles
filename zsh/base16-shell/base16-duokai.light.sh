@@ -1,4 +1,3 @@
-
 #!/bin/sh
 # Base16 Duokai - Shell color setup script
 # Jon Q (http://jonquach.com)

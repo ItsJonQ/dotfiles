@@ -120,4 +120,3 @@ unset color21
 unset color_foreground
 unset color_background
 unset color_cursor
-
