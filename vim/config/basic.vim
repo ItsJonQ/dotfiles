@@ -117,6 +117,11 @@ endif
 set mouse=a
 
 " }}}
+" Newline {{{
+
+set noeol
+
+" }}}
 " Performance {{{
 
 set lazyredraw
