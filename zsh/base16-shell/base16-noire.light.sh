@@ -1,5 +1,5 @@
 #!/bin/sh
-# Base16 Sombra - Shell color setup script
+# Base16 Noire - Shell color setup script
 # Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -9,7 +9,7 @@ fi
 
 color00="14/18/20" # Base 00 - Black
 color01="f9/26/72" # Base 08 - Red
-color02="98/c3/79" # Base 0B - Green
+color02="a6/e2/2e" # Base 0B - Green
 color03="f8/f8/fb" # Base 0A - Yellow
 color04="f8/f8/fb" # Base 0D - Blue
 color05="f8/f8/fb" # Base 0E - Magenta
