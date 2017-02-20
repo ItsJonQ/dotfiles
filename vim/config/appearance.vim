@@ -56,7 +56,7 @@ if has("gui_running")
   set gfn=*
   set guifont=Courier:h16
   " Force base16-one
-  color base16-shadowplay
+  " color base16-shadowplay
 
 else
   " let g:indentLine_color_term = 237
