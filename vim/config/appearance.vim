@@ -70,12 +70,12 @@ else
 endif
 
 " General color enhancements
-hi IncSearch ctermbg=214 ctermfg=234
+" hi IncSearch ctermbg=214 ctermfg=234
 hi LineNr ctermbg=NONE guibg=NONE
-hi PmenuSel ctermbg=214 ctermfg=234
-hi Search ctermbg=220 ctermfg=234
-hi Visual ctermbg=27 ctermfg=234
-hi Visual ctermbg=39 ctermfg=234
+" hi PmenuSel ctermbg=214 ctermfg=234
+" hi Search ctermbg=220 ctermfg=234
+" hi Visual ctermbg=27 ctermfg=234
+" hi Visual ctermbg=39 ctermfg=234
 " hi Visual ctermbg=199 ctermfg=234
 " hi Visual ctermbg=199 ctermfg=52
 
