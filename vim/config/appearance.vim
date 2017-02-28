@@ -55,8 +55,8 @@ if has("gui_running")
   set columns=80 lines=40
   set gfn=*
   set guifont=Courier:h16
-  " Force base16-one
-  " color base16-shadowplay
+  " Force color
+  color base16-zenyatta
 
 else
   " let g:indentLine_color_term = 237
