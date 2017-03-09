@@ -6,6 +6,7 @@
 " Reset
 set nocompatible              " be iMproved, required
 filetype off                  " required
+set nocursorline              " removes cursorline
 
 let $DOTFILES_VIM = $HOME.'/dotfiles/vim'
 

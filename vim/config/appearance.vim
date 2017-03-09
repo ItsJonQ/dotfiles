@@ -78,6 +78,7 @@ hi LineNr ctermbg=NONE guibg=NONE
 " hi Visual ctermbg=39 ctermfg=234
 " hi Visual ctermbg=199 ctermfg=234
 " hi Visual ctermbg=199 ctermfg=52
+hi StatusLine ctermbg=NONE guibg=NONE
 
 " }}}
 " Hide match color

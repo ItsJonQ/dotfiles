@@ -16,7 +16,7 @@ set noshowmatch
 " Airline {{{
 
 set encoding=utf-8
-set laststatus=2
+set laststatus=0
 set cmdheight=1
 
 " }}}
@@ -128,10 +128,10 @@ set lazyredraw
 set nocompatible
 set re=1
 set scrolljump=10
-set synmaxcol=128
+set synmaxcol=256
 set ttyfast
-syntax sync minlines=80
-let loaded_matchparen = 1
+syntax sync minlines=256
+" let loaded_matchparen = 1
 " set ttimeout
 " set ttimeoutlen=250
 " set notimeout
@@ -148,7 +148,7 @@ set sidescrolloff=3
 set hlsearch
 set ignorecase
 set incsearch
-set showmatch
+" set showmatch
 set smartcase
 set switchbuf=usetab
 

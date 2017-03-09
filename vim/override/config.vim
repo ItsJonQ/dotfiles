@@ -5,3 +5,5 @@
 " Overridding configs that get set just before Vim opens
 
 set nocursorline
+set laststatus=0
+let g:netrw_cursor=0
