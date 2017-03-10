@@ -13,6 +13,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " source : https://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity/
 
 let g:ctrlp_use_caching = 0
+let g:ctrlp_show_hidden = 1
 
 " Source:
 " https://github.com/kien/ctrlp.vim/issues/174
