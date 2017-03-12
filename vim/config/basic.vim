@@ -124,14 +124,14 @@ set noeol
 " }}}
 " Performance {{{
 
-set lazyredraw
+" set lazyredraw
 set nocompatible
 set re=1
-set scrolljump=10
+" set scrolljump=10
 set synmaxcol=256
 set ttyfast
 syntax sync minlines=256
-" let loaded_matchparen = 1
+" let loaded_matchparen  1
 " set ttimeout
 " set ttimeoutlen=250
 " set notimeout
@@ -139,8 +139,8 @@ syntax sync minlines=256
 " }}}
 " Scrolling {{{
 
-set scrolloff=3
-set sidescrolloff=3
+" set scrolloff=3
+" set sidescrolloff=3
 
 " }}}
 " Searching {{{
