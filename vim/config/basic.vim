@@ -35,6 +35,9 @@ set backspace=indent,start,eol
 
 set hidden
 " set modifiable
+"" check one time after 4s of inactivity in normal mode
+set autoread
+au CursorHold * checktime
 
 " }}}
 " Concealing {{{
