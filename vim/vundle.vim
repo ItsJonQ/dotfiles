@@ -45,7 +45,7 @@ Plugin 'vim-scripts/BufOnly.vim'
 Plugin 'vim-syntastic/syntastic'
 " Plugin 'vim-scripts/JavaScript-Indent'
 " Plugin 'wincent/loupe'
-" Plugin 'wincent/terminus'
+Plugin 'wincent/terminus'
 
 " }}}
 " Themes {{{

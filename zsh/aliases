@@ -222,6 +222,7 @@ alias db='cd ~/Dropbox'
 # Personal
 alias df='cd ~/dotfiles'
 alias q='p && cd jonquach'
+alias b16='p && cd base16-builder'
 
 # Better LS
 
