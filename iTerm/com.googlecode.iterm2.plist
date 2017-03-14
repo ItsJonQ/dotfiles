@@ -1248,15 +1248,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>270 128 882 241 0 0 1152 698 </string>
+	<string>138 276 882 107 0 0 1152 698 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>266 236 620 392 0 0 1152 697 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>234 223 796 473 0 0 1152 698 </string>
+	<string>299 201 796 473 0 0 1152 698 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 119 1152 579 0 0 1152 698 </string>
+	<string>0 211 1152 487 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>297 119 570 452 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -1937,7 +1937,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>InputMonoNarrow-Regular 16</string>
+			<string>InputMonoNarrow-Light 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Open Toolbelt</key>
@@ -2218,7 +2218,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-03-05T04:31:05Z</date>
+	<date>2017-03-13T23:37:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2235,6 +2235,8 @@
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.31905800104141235</real>
+	<key>StretchTabsToFillBar</key>
+	<false/>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
@@ -2272,7 +2274,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.20170227-nightly</string>
+	<string>3.1.20170313-nightly</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
