@@ -14,8 +14,8 @@ color03="ee/ee/ee" # Base 0A - Yellow
 color04="ee/ee/ee" # Base 0D - Blue
 color05="ee/ee/ee" # Base 0E - Magenta
 color06="ee/ee/ee" # Base 0C - Cyan
-color07="cc/cc/cc" # Base 05 - White
-color08="3c/3c/3c" # Base 03 - Bright Black
+color07="aa/aa/aa" # Base 05 - White
+color08="66/66/66" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -25,13 +25,13 @@ color14=$color06 # Base 0C - Bright Cyan
 color15="ee/ee/ee" # Base 07 - Bright White
 color16="ee/ee/ee" # Base 09
 color17="ee/ee/ee" # Base 0F
-color18="14/14/14" # Base 01
-color19="28/28/28" # Base 02
-color20="bb/bb/bb" # Base 04
-color21="dd/dd/dd" # Base 06
-color_foreground="cc/cc/cc" # Base 05
+color18="22/22/22" # Base 01
+color19="44/44/44" # Base 02
+color20="99/99/99" # Base 04
+color21="cc/cc/cc" # Base 06
+color_foreground="aa/aa/aa" # Base 05
 color_background="00/00/00" # Base 00
-color_cursor="cc/cc/cc" # Base 05
+color_cursor="aa/aa/aa" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,12 +79,12 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg cccccc # forground
+  printf $printf_template_custom Pg aaaaaa # forground
   printf $printf_template_custom Ph 000000 # background
-  printf $printf_template_custom Pi cccccc # bold color
-  printf $printf_template_custom Pj 282828 # selection color
-  printf $printf_template_custom Pk cccccc # selected text color
-  printf $printf_template_custom Pl cccccc # cursor
+  printf $printf_template_custom Pi aaaaaa # bold color
+  printf $printf_template_custom Pj 444444 # selection color
+  printf $printf_template_custom Pk aaaaaa # selected text color
+  printf $printf_template_custom Pl aaaaaa # cursor
   printf $printf_template_custom Pm 000000 # cursor text
 else
   printf $printf_template_var 10 $color_foreground
