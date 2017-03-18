@@ -8,7 +8,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 
-color00="ff/79/00" # Base 00 - Black
+color00="ff/8c/00" # Base 00 - Black
 color01="00/00/00" # Base 08 - Red
 color02="00/00/00" # Base 0B - Green
 color03="00/00/00" # Base 0A - Yellow
@@ -24,20 +24,20 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="ff/bf/0c" # Base 07 - Bright White
-color16="ff/79/00" # Base 09
-color17="ff/79/00" # Base 0F
+color15="ff/8c/00" # Base 07 - Bright White
+color16="ff/8c/00" # Base 09
+color17="ff/8c/00" # Base 0F
 color18="22/22/22" # Base 01
 color19="44/44/44" # Base 02
-color20="ff/79/00" # Base 04
+color20="ff/8c/00" # Base 04
 
-color21="ff/79/00" # Base 06
+color21="ff/8c/00" # Base 06
 
 
 color_foreground="00/00/00" # Base 05
-color_background="ff/79/00" # Base 00
+color_background="ff/8c/00" # Base 00
 
-color_cursor="ff/97/00" # Base 05
+color_cursor="ff/8c/00" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -87,12 +87,12 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
   printf $printf_template_custom Pg 000000 # forground
-  printf $printf_template_custom Ph ff7900 # background
+  printf $printf_template_custom Ph ff8c00 # background
   
-  printf $printf_template_custom Pi ff9700 # bold color
+  printf $printf_template_custom Pi ff8c00 # bold color
   printf $printf_template_custom Pj 444444 # selection color
-  printf $printf_template_custom Pk ff9700 # selected text color
-  printf $printf_template_custom Pl ff9700 # cursor
+  printf $printf_template_custom Pk ff8c00 # selected text color
+  printf $printf_template_custom Pl ff8c00 # cursor
   printf $printf_template_custom Pm 000000 # cursor text
 else
   printf $printf_template_var 10 $color_foreground
