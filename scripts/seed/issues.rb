@@ -4,7 +4,7 @@ require "json"
 require "net/http"
 require "pp"
 
-uri = URI("https://api.github.com/search/repositories?q=seed+user:helpscout")
+uri = URI("https://api.github.com/search/repositories?q=seed+user:helpscout&per_page=200")
 response = JSON.parse(Net::HTTP.get(uri))
 
 repos = response["items"].inject({}) do |list, (repo)|
