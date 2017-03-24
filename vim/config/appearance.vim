@@ -57,7 +57,7 @@ if has("gui_running")
   set guifont=Input\ Mono\ Narrow:h16
   " Force color
   " color base16-zenyatta
-  color base16-solr
+  color base16-drac
 
 else
   " let g:indentLine_color_term = 237
