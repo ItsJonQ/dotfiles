@@ -100,7 +100,7 @@ alias nvim='vim -u ~/.nvimrc'
 alias ne='nvim'
 
 # Vagrant
-alias v='vagrant'
+alias va='vagrant'
 
 # YouTube CLI
 alias youtube='mpsyt'
