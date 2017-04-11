@@ -26,7 +26,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
 # Yarn!
-yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"
+# yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"
 
 ## vv
 # Source: https://github.com/bradp/vv
