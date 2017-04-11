@@ -10,7 +10,7 @@
 export TERM=xterm-256color
 # export TERM=xterm-256color-italic
 
-BASE16_DIR="$HOME/dotfiles/zsh/base16-shell"
+BASE16_DIR="$HOME/dotfiles/base16-shell"
 BASE16_CONFIG="$HOME/.base16"
 
 BASE16_COLOR="tomorrow"
