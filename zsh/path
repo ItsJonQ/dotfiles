@@ -16,7 +16,7 @@ export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-source "$NVM_DIR/nvm.sh"
+# source "$NVM_DIR/nvm.sh"
 # nvm() {
 #   source ~/.nvm/nvm.sh
 #   nvm "$@"
@@ -30,4 +30,4 @@ yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"
 
 ## vv
 # Source: https://github.com/bradp/vv
-source $( echo $(which vv)-completions)
+# source $( echo $(which vv)-completions)
