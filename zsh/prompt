@@ -4,6 +4,12 @@
 # Source: https://github.com/ItsJonQ/dotfiles
 # =============================================================================
 
+function git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "@%B$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX%b $ "
+}
+
 echo "👋  Have a great day Q!"
 
-PROMPT='🐻  %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+# PROMPT='🐻  %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+PROMPT='🐻  %c $(git_prompt_info)'
