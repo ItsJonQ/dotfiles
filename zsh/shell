@@ -6,3 +6,6 @@
 
 autoload -U colors
 colors
+
+# npm
+npm set progress=false

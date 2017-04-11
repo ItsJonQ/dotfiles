@@ -4,6 +4,8 @@
 # Source: https://github.com/ItsJonQ/dotfiles
 # =============================================================================
 
+source "$HOME/.zprofile"
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # rbenv
