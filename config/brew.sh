@@ -47,6 +47,7 @@ brew install rbenv
 brew install shpotify
 brew install the_silver_searcher
 brew install tree
+brew install yarn
 brew install x264
 
 # Remove outdated versions from the cellar.
