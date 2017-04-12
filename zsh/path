@@ -15,6 +15,7 @@ export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 #   rbenv "$@"
 # }
 
+
 # nvm
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
@@ -24,8 +25,14 @@ export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 #   nvm "$@"
 # }
 
+
+# npm
+npm set progress=false
+
+
 # Travis CI
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
 
 # Yarn!
 # yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"

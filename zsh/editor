@@ -8,3 +8,6 @@
 # export EDITOR="/usr/local/bin/vim"
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+autoload -U colors
+colors
