@@ -13,4 +13,5 @@ function git_prompt_info() {
 echo "👋  Have a great day Q!"
 
 # PROMPT='🐻  %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-PROMPT='🐻  %c$(git_prompt_info) '
+# PROMPT='🐻  %c$(git_prompt_info) '
+PROMPT='🍞  %c$(git_prompt_info) '
