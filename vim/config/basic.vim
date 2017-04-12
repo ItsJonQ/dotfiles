@@ -47,6 +47,8 @@ set cole=0
 " }}}
 " Directories {{{
 
+set autochdir
+
 if !isdirectory(expand("~/.vim/backup/"))
   silent !echo "Creating backup dir..."
   silent !mkdir -p ~/.vim/backup
