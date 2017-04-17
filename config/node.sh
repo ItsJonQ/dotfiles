@@ -22,6 +22,8 @@ npm install eslint-plugin-react -g
 npm install express -g
 npm install grunt-cli -g
 npm install gulp-cli -g
+npm install jshint -g
+npm install mocha -g
 npm install np -g
 npm install npm-check-updates -g
 npm install pm2 -g
