@@ -93,7 +93,7 @@ alias n='note'
 
 # Simulate vim
 alias :q='exit'
-alias :e='vim'
+# alias :e='vim'
 
 # Vim without vimrc
 alias nvim='vim -u ~/.nvimrc'
