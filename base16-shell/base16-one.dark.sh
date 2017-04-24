@@ -1,4 +1,3 @@
-
 #!/bin/sh
 # Base16 One - Shell color setup script
 # Jon Q (http://jonquach.com)

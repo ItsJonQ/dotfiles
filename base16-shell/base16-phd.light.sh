@@ -7,6 +7,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
 
+
 color00="06/12/29" # Base 00 - Black
 color01="d0/73/46" # Base 08 - Red
 color02="99/bf/52" # Base 0B - Green
@@ -15,6 +16,7 @@ color04="52/99/bf" # Base 0D - Blue
 color05="99/89/cc" # Base 0E - Magenta
 color06="72/b9/bf" # Base 0C - Cyan
 color07="b8/bb/c2" # Base 05 - White
+
 color08="71/78/85" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -28,10 +30,14 @@ color17="b0/80/60" # Base 0F
 color18="2a/34/48" # Base 01
 color19="4d/56/66" # Base 02
 color20="9a/99/a3" # Base 04
+
 color21="db/dd/e0" # Base 06
-color_foreground="4d/56/66" # Base 02
-color_background="ff/ff/ff" # Base 07
-color_cursor="4d/56/66" # Base 02
+
+
+color_foreground="b8/bb/c2" # Base 05
+color_background="06/12/29" # Base 00
+
+color_cursor="b8/bb/c2" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,13 +85,15 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg 4d5666 # forground
-  printf $printf_template_custom Ph ffffff # background
-  printf $printf_template_custom Pi 4d5666 # bold color
-  printf $printf_template_custom Pj b8bbc2 # selection color
-  printf $printf_template_custom Pk 4d5666 # selected text color
-  printf $printf_template_custom Pl 4d5666 # cursor
-  printf $printf_template_custom Pm ffffff # cursor text
+  
+  printf $printf_template_custom Pg b8bbc2 # forground
+  printf $printf_template_custom Ph 061229 # background
+  printf $printf_template_custom Pi b8bbc2 # bold color
+  printf $printf_template_custom Pj 4d5666 # selection color
+  printf $printf_template_custom Pk b8bbc2 # selected text color
+  printf $printf_template_custom Pl b8bbc2 # cursor
+  printf $printf_template_custom Pm 061229 # cursor text
+  
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background
