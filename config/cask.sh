@@ -24,6 +24,7 @@ brew cask install firefox
 brew cask install flux
 brew cask install hammerspoon
 brew cask install insync
+brew cask install iterm2
 brew cask install google-chrome
 brew cask install java
 # brew cask install karabiner
