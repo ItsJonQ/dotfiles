@@ -1252,7 +1252,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>266 236 620 392 0 0 1152 697 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>181 112 796 473 0 0 1152 698 </string>
+	<string>151 126 796 473 0 0 1152 698 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>65 114 592 584 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -2218,7 +2218,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-25T22:47:20Z</date>
+	<date>2017-04-28T02:57:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
