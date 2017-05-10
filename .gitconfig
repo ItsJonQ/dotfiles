@@ -55,8 +55,5 @@
 [color]
   ui = true
 
-[push]
-  default = current
-
 [url "https://github"]
   insteadOf = git://github
