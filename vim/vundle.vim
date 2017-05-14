@@ -20,7 +20,7 @@ call vundle#begin()
 Plugin 'Konfekt/FastFold'
 Plugin 'VundleVim/Vundle.vim'
 " Plugin 'Yggdroot/indentLine'
-" Plugin 'ap/vim-buftabline'
+Plugin 'ap/vim-buftabline'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
 " Plugin 'godlygeek/tabular'
