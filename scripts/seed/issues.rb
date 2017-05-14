@@ -12,7 +12,7 @@ repos = response["items"].inject({}) do |list, (repo)|
   if issues and issues > 0
     list[repo["name"]] = {
       issues: issues,
-      url: repo["html_url"],
+      url: "#{repo['html_url']}/issues",
     }
   end
   list
