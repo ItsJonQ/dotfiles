@@ -263,6 +263,9 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Disables Bluetooth audio from auto connecting
+# https://apple.stackexchange.com/questions/159548/prevent-auto-pairing-for-certain-devices-bluetooth
+defaults write /Library/Preferences/com.apple.Bluetooth.plist DontPageAudioDevices 1
 
 
 ###############################################################################
