@@ -1252,11 +1252,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>266 236 620 392 0 0 1152 697 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>165 113 796 473 0 0 1152 698 </string>
+	<string>109 117 796 473 0 0 1152 698 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>65 114 592 584 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 70 1150 628 0 0 1152 698 </string>
+	<string>0 188 1152 510 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>297 119 570 452 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -1616,7 +1616,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.91103044992469884</real>
+			<real>0.94604551016566263</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -2125,7 +2125,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.1709125564759038</real>
+			<real>1.1297204442771087</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2218,7 +2218,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-05-11T17:32:00Z</date>
+	<date>2017-05-20T01:38:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2226,7 +2226,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
