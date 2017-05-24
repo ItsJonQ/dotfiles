@@ -88,3 +88,16 @@ hs.hotkey.bind({"cmd", "ctrl"}, "C", function()
   f.h = max.h * 0.7
   win:setFrame(f)
 end)
+
+
+hs.hotkey.bind({"cmd", "ctrl"}, "V", function()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+  f.x = max.w * 0.1
+  f.y = max.h * 0.1
+  f.w = max.w * 0.8
+  f.h = max.h * 0.8
+  win:setFrame(f)
+end)
