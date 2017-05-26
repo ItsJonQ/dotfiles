@@ -47,6 +47,7 @@ Plugin 'vim-scripts/BufOnly.vim' " Deletes all other buffers
 " Plugin 'vim-scripts/JavaScript-Indent'
 " Plugin 'wincent/loupe'
 " Plugin 'wincent/terminus'
+Plugin 'zerowidth/vim-copy-as-rtf'
 
 " }}}
 " Themes {{{
