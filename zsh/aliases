@@ -53,6 +53,9 @@ alias rl='reload'
 # Git
 alias gitrc='vim ~/dotfiles/.gitconfig'
 alias g='git'
+alias git-b-purge='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias g-b-purge='git-b-purge'
+alias g-b-pu='git-b-purge'
 
 #Ctags
 alias ctags="`brew --prefix`/bin/ctags"
