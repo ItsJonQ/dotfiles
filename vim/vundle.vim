@@ -54,7 +54,7 @@ Plugin 'zerowidth/vim-copy-as-rtf'
 
 Plugin 'ItsJonQ/base16-vim'
 " Plugin 'ItsJonQ/onedark.vim'
-Plugin 'ItsJonQ/vim-airline-themes'
+" Plugin 'ItsJonQ/vim-airline-themes'
 " Plugin 'altercation/vim-colors-solarized'
 " Plugin 'chriskempson/base16-vim'
 " Plugin 'joshdick/onedark.vim'
