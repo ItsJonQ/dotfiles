@@ -5,7 +5,7 @@
 " Overridding configs that get set just before Vim opens
 
 set nocursorline
-set laststatus=0
+set laststatus=2
 let g:netrw_cursor=0
 " let g:netrw_list_hide= '.*\.swp$,.DS_Store,*/tmp/*,*.so,*.swp,*.zip,*.git,^\.\.\=/\=$'
 " syntax off
