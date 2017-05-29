@@ -14,25 +14,41 @@ let g:happyline_insert = get(g:, 'happyline_insert', '#24c267')
 " orange
 " let g:happyline_insert = get(g:, 'happyline_insert', '#fd6428')
 
-function! HappyLineResetStatusLine()
-  execute 'hi statusline guifg=#ffffff guibg=' . g:happyline_normal
+function! HappyLineInsertStatusLine()
+  execute 'hi statusline guifg=#ffffff guibg=' . g:happyline_insert
+  return ''
 endfunction
 
-function! HappyLineInsertStatusLine(mode)
+function! HappyLineResetStatusLine()
+  execute 'hi statusline guifg=#ffffff guibg=' . g:happyline_normal
+  return ''
+endfunction
+
+function! HappyLineUpdateStatusLine(mode)
+  " Insert
   if a:mode == 'i'
-    " Insert
-    execute 'hi statusline guifg=#ffffff guibg=' . g:happyline_insert
+    call HappyLineInsertStatusLine()
+  " Leave
   elseif a:mode == 'r'
-    " Leave
     call HappyLineResetStatusLine()
   else
     call HappyLineResetStatusLine()
   endif
+  return ''
 endfunction
 
-au InsertEnter * call HappyLineInsertStatusLine(v:insertmode)
-au InsertChange * call HappyLineInsertStatusLine(v:insertmode)
+function! HappyLineAddSpace()
+  return ' '
+endfunction
+
+au InsertEnter * call HappyLineUpdateStatusLine(v:insertmode)
+au InsertChange * call HappyLineUpdateStatusLine(v:insertmode)
 au InsertLeave * call HappyLineResetStatusLine()
 
 " default the statusline to green when entering Vim
 call HappyLineResetStatusLine()
+
+set statusline=\ %f
+set statusline+=\ %m
+set statusline+=%=%L,%v\ \·\ %p%%
+set statusline+=\%{HappyLineAddSpace()}

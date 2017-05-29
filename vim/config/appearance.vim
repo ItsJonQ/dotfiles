@@ -56,8 +56,6 @@ if has("gui_running")
   set gfn=*
   set guifont=Menlo\:h16
   " Force color
-  " color base16-zenyatta
-  " color base16-drac
   color base16-hana
 
 else
