@@ -56,11 +56,9 @@ function! HappyLineAddSpace()
   return ' '
 endfunction
 
-" call HappyLineNormalStatusLine()
-
-" au InsertEnter * call HappyLineUpdateStatusLine()
-" au InsertChange * call HappyLineUpdateStatusLine()
-" au InsertLeave * call HappyLineUpdateStatusLine()
+au InsertEnter * call HappyLineUpdateStatusLine()
+au InsertChange * call HappyLineUpdateStatusLine()
+au InsertLeave * call HappyLineUpdateStatusLine()
 
 call HappyLineUpdateStatusLine()
 
