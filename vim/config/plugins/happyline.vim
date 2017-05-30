@@ -8,11 +8,9 @@ let g:happyline_normal = get(g:, 'happyline_normal', '#0075c3')
 " green
 let g:happyline_insert = get(g:, 'happyline_insert', '#24c267')
 " purple
-let g:happyline_visual = get(g:, 'happyline_insert', '#672678')
-" lighter_blue
-" let g:happyline_insert = get(g:, 'happyline_insert', '#0089eb')
+let g:happyline_visual = get(g:, 'happyline_visual', '#672678')
 " orange
-" let g:happyline_insert = get(g:, 'happyline_insert', '#fd6428')
+let g:happyline_replace = get(g:, 'happyline_replace', '#cc6633')
 
 function! HappyLineNormalStatusLine()
   execute 'hi statusline guifg=#ffffff guibg=' . g:happyline_normal
@@ -24,8 +22,13 @@ function! HappyLineInsertStatusLine()
   return ''
 endfunction
 
+function! HappyLineReplaceStatusLine()
+  execute 'hi statusline guifg=#ffffff guibg=' . g:happyline_replace
+  return ''
+endfunction
+
 function! HappyLineVisualStatusLine()
-  execute 'hi statusline guifg=#ffffff guibg=#672678'
+  execute 'hi statusline guifg=#ffffff guibg=' . g:happyline_visual
   return ''
 endfunction
 
@@ -37,6 +40,9 @@ function! HappyLineUpdateStatusLine()
   " Visual
   elseif a:mode == 'v' || a:mode =~ 'V'
     call HappyLineVisualStatusLine()
+  " Replace
+  elseif a:mode == 'R'
+    call HappyLineReplaceStatusLine()
   " Insert
   elseif a:mode == 'i'
     call HappyLineInsertStatusLine()
