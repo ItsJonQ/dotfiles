@@ -38,14 +38,16 @@ function! HappyLineUpdateStatusLine()
   if a:mode == 'n'
     call HappyLineNormalStatusLine()
   " Visual
-  elseif a:mode == 'v' || a:mode =~ 'V'
-    call HappyLineVisualStatusLine()
+  " elseif a:mode == 'v' || a:mode =~ 'V'
+    " call HappyLineVisualStatusLine()
   " Replace
   elseif a:mode == 'R'
     call HappyLineReplaceStatusLine()
   " Insert
   elseif a:mode == 'i'
     call HappyLineInsertStatusLine()
+  else
+    call HappyLineNormalStatusLine()
   endif
   return ''
 endfunction
@@ -54,13 +56,13 @@ function! HappyLineAddSpace()
   return ' '
 endfunction
 
-function! SyntaxItem()
-  return synIDattr(synID(line("."),col("."),1),"name")
-endfunction
+" call HappyLineNormalStatusLine()
 
+" au InsertEnter * call HappyLineUpdateStatusLine()
+" au InsertChange * call HappyLineUpdateStatusLine()
+" au InsertLeave * call HappyLineUpdateStatusLine()
 
-call HappyLineNormalStatusLine()
-
+call HappyLineUpdateStatusLine()
 
 set statusline=
 set statusline+=\ %{mode()}
@@ -71,13 +73,13 @@ set statusline+=%=
 set statusline+=\ (%l,%v\)
 set statusline+=\ ·
 set statusline+=\ %p%%
-" set statusline+=\%{HappyLineAddSpace()}
+set statusline+=\%{HappyLineAddSpace()}
 set statusline+=\ %{HappyLineUpdateStatusLine()}
 
 
-nnoremap v v | :call HappyLineUpdateStatusLine()
-nnoremap V V | :call HappyLineUpdateStatusLine()
-inoremap <ESC> <ESC> | :call HappyLineUpdateStatusLine()
-inoremap <c-c> <c-c> | :call HappyLineUpdateStatusLine()
-vnoremap <ESC> <ESC> | :call HappyLineUpdateStatusLine()
-vnoremap <c-c> <c-c> | :call HappyLineUpdateStatusLine()
+" nnoremap v v | :call HappyLineUpdateStatusLine()
+" nnoremap V V | :call HappyLineUpdateStatusLine()
+" inoremap <ESC> <ESC> | :call HappyLineUpdateStatusLine()
+" inoremap <c-c> <c-c> | :call HappyLineUpdateStatusLine()
+" vnoremap <ESC> <ESC> | :call HappyLineUpdateStatusLine()
+" vnoremap <c-c> <c-c> | :call HappyLineUpdateStatusLine()
