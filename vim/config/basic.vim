@@ -165,6 +165,11 @@ set visualbell
 set noerrorbells
 
 " }}}
+" Spelling {{{
+
+set spell
+
+" }}}
 " Splits {{{
 
 set splitright
