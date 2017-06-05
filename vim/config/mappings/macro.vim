@@ -3,4 +3,4 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-noremap q <Nop>
+" noremap q <Nop>
