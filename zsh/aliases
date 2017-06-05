@@ -224,6 +224,9 @@ alias b16='p && cd base16-builder'
 alias vimclr='p && cd base16-vim/colors'
 alias seed-issues='ruby ~/dotfiles/scripts/seed/issues.rb'
 
+# Updating/bumping gem versions
+# gem bump --version minor
+
 # Better LS
 
 #Detect which `ls` flavor is in use
