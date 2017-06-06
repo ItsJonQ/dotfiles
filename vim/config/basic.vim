@@ -168,6 +168,7 @@ set noerrorbells
 " Spelling {{{
 
 set spell
+hi SpellBad gui=underline
 
 " }}}
 " Splits {{{
