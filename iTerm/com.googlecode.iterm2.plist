@@ -1248,15 +1248,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>261 177 880 266 0 0 1152 698 </string>
+	<string>261 257 880 132 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>266 236 620 392 0 0 1152 697 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>148 168 918 495 0 0 1152 698 </string>
+	<string>-33 200 918 498 0 0 1152 698 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>65 114 592 584 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 119 1152 579 0 0 1152 698 </string>
+	<string>0 144 1152 554 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>297 119 570 452 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -1521,7 +1521,7 @@
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
-			<real>2.8289644718170166</real>
+			<real>6.8048959622016296</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1937,7 +1937,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>FiraMono-Regular 16</string>
+			<string>Menlo-Regular 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -2107,7 +2107,7 @@
 			<key>Thin Strokes</key>
 			<integer>2</integer>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.03977440828402367</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unicode Version</key>
@@ -2129,7 +2129,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/helpscout</string>
 		</dict>
@@ -2218,7 +2218,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-01T02:32:00Z</date>
+	<date>2017-06-05T03:06:09Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
