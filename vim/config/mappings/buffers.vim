@@ -25,14 +25,16 @@ nnoremap <c-b>q :bd<cr>
 vnoremap <c-b>q :bd<cr>
 nnoremap <c-b>o :BufOnly<cr>
 vnoremap <c-b>o :BufOnly<cr>
-nnoremap <c-b>O :sba<cr>
-vnoremap <c-b>O :sba<cr>
+" nnoremap <c-b>O :sba<cr>
+" vnoremap <c-b>O :sba<cr>
 nnoremap <leader>q :bd<cr>
 vnoremap <leader>q :bd<cr>
 nnoremap <leader>[ :bp<cr>
 nnoremap <leader>] :bn<cr>
 nnoremap <leader>o :BufOnly<cr>
+" nnoremap <c-[> :bp<cr>
+" nnoremap <c-]> :bn<cr>
 nnoremap ,[ :bp<cr>
 nnoremap ,] :bn<cr>
-nnoremap ,- :sba<cr>
-nnoremap ,\ :vert sba<cr>
+" nnoremap ,- :sba<cr>
+" nnoremap ,\ :vert sba<cr>

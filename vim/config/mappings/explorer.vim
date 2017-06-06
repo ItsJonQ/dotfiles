@@ -3,4 +3,4 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-nnoremap <c-e> :e<space>
+" nnoremap <c-e> :e<space>
