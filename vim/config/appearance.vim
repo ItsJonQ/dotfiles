@@ -60,6 +60,7 @@ if has("gui_running")
   color base16-vsone
 
   set nospell
+  set transparency=4
 
 else
   " let g:indentLine_color_term = 237
