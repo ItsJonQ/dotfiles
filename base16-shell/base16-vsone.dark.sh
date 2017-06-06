@@ -8,11 +8,11 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="1e/1e/1e" # Base 00 - Black
-color01="e0/6c/75" # Base 08 - Red
-color02="98/c3/79" # Base 0B - Green
-color03="f0/c6/74" # Base 0A - Yellow
+color01="ff/ff/ff" # Base 08 - Red
+color02="d0/87/70" # Base 0B - Green
+color03="ff/ff/ff" # Base 0A - Yellow
 color04="61/af/ef" # Base 0D - Blue
-color05="c6/78/dd" # Base 0E - Magenta
+color05="61/af/ef" # Base 0E - Magenta
 color06="56/b6/c2" # Base 0C - Cyan
 color07="dd/dd/dd" # Base 05 - White
 color08="55/55/55" # Base 03 - Bright Black
@@ -23,8 +23,8 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="ff/ff/ff" # Base 07 - Bright White
-color16="d0/87/70" # Base 09
-color17="be/50/46" # Base 0F
+color16="b5/ce/a8" # Base 09
+color17="61/af/ef" # Base 0F
 color18="25/25/26" # Base 01
 color19="33/33/33" # Base 02
 color20="bb/bb/bb" # Base 04
