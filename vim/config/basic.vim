@@ -167,7 +167,11 @@ set noerrorbells
 " }}}
 " Spelling {{{
 
-set spell
+if has("gui_running")
+  set nospell
+else
+  set spell
+endif
 hi SpellBad gui=underline
 
 " }}}

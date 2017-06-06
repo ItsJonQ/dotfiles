@@ -52,11 +52,14 @@ endif
 " MacVim
 if has("gui_running")
 
-  set columns=80 lines=40
+  set columns=80 lines=30
+  " set columns=99999 lines=99999
   set gfn=*
   set guifont=Menlo\:h15
   " Force color
   color base16-vsone
+
+  set nospell
 
 else
   " let g:indentLine_color_term = 237
