@@ -1248,15 +1248,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>261 257 880 132 0 0 1280 778 </string>
+	<string>272 189 729 375 0 0 1152 698 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>266 236 620 392 0 0 1152 697 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-33 200 918 498 0 0 1152 698 </string>
+	<string>57 131 796 473 0 0 1152 698 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>65 114 592 584 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 144 1152 554 0 0 1152 698 </string>
+	<string>115 123 640 532 0 0 1152 698 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>297 119 570 452 0 0 1280 777 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -1937,7 +1937,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 15</string>
+			<string>FiraMono-Regular 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -2218,7 +2218,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-05T03:06:09Z</date>
+	<date>2017-06-07T14:34:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
