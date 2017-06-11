@@ -3,5 +3,5 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-nnoremap Q gqap
-vnoremap Q gq
+" nnoremap Q gqap
+" vnoremap Q gq

@@ -5,7 +5,7 @@
 
 nnoremap j gj
 nnoremap k gk
-nnoremap J jzz
-nnoremap K kzz
-nnoremap } }zz
-nnoremap { {zz
+" nnoremap J jzz
+" nnoremap K kzz
+" nnoremap } }zz
+" nnoremap { {zz

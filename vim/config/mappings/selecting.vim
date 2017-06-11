@@ -4,5 +4,5 @@
 " =============================================================================
 
 nnoremap <leader>a ggVG
-noremap gp `[v`]
-vnoremap u <nop>
+" noremap gp `[v`]
+" vnoremap u <nop>
