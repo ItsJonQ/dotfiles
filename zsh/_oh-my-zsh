@@ -1,8 +1,6 @@
 # _oh-my-zsh
 # .zshrc
-# Author: Q <itsjonq@gmail.com>
-# Source: https://github.com/ItsJonQ/dotfiles
-# =============================================================================
+# Author: Q <itsjonq@gmail.com> Source: https://github.com/ItsJonQ/dotfiles =============================================================================
 
 # ZSH
 export ZSH=$HOME/.oh-my-zsh
