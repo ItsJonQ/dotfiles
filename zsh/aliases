@@ -205,8 +205,8 @@ alias spa='spotify play album'
 #################################################
 
 # Notes
-# alias notes='cd ~/Dropbox/Notes/'
-alias notes='cd /Users/Q/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
+alias notes='cd ~/Dropbox/Notes/'
+# alias inotes='cd /Users/Q/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
 
 # Projects
 alias project='cd ~/Sites'
