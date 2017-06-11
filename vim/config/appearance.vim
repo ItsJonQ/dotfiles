@@ -55,9 +55,9 @@ if has("gui_running")
   set columns=80 lines=30
   " set columns=99999 lines=99999
   set gfn=*
-  set guifont=Menlo\:h15
+  set guifont=Fira\ Code\ Light\:h15
   " Force color
-  color base16-vsone
+  color base16-vs
 
   set nospell
   " set transparency=4
