@@ -3,8 +3,6 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-" nnoremap <silent> <c-u> <c-u>zz
-" nnoremap <silent> <c-d> <c-d>zz
 nnoremap <silent> <c-u> <c-u>zt
 nnoremap <silent> <c-d> <c-d>zb
 nnoremap <silent> <c-f> <c-f>zz

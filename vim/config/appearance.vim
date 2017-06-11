@@ -30,8 +30,6 @@ endif
 " }}}
 " Color scheme {{{
 
-" let g:onedark_termcolors=16
-" let g:hybrid_custom_term_colors = 1
 let base16colorspace=256
 
 color base16-one
@@ -53,36 +51,16 @@ endif
 if has("gui_running")
 
   set columns=80 lines=30
-  " set columns=99999 lines=99999
   set gfn=*
   set guifont=Fira\ Code\ Light\:h15
   " Force color
   color base16-vs
 
   set nospell
-  " set transparency=4
-
-else
-  " let g:indentLine_color_term = 237
-
-  " hi ColorColumn ctermbg=0
-  " hi FoldColumn ctermfg=242
-  " hi NonText ctermfg=237 ctermbg=None
-
-  " hi Normal ctermbg=None
-  " hi CursorLine ctermbg=8
 endif
 
 " General color enhancements
-" hi IncSearch ctermbg=214 ctermfg=234
 hi LineNr ctermbg=NONE guibg=NONE
-" hi PmenuSel ctermbg=214 ctermfg=234
-" hi Search ctermbg=220 ctermfg=234
-" hi Visual ctermbg=27 ctermfg=234
-" hi Visual ctermbg=39 ctermfg=234
-" hi Visual ctermbg=199 ctermfg=234
-" hi Visual ctermbg=199 ctermfg=52
-" hi StatusLine ctermbg=NONE guibg=NONE
 
 " }}}
 " Hide match color
@@ -90,9 +68,6 @@ hi MatchParen cterm=none ctermbg=None ctermfg=None
 
 " }}}
 " Typography {{{
-
-" Italic comments
-" highlight Comment cterm=italic
 
 set linespace=5
 

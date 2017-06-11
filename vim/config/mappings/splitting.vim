@@ -5,4 +5,3 @@
 
 nnoremap <c-w>\ :vs<cr>
 nnoremap <c-w>- :sp<cr>
-" nnoremap <leader>ss :sp<cr>

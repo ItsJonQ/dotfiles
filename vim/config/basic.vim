@@ -6,10 +6,7 @@
 " Appearance {{{
 
 set colorcolumn=80
-" let &colorcolumn=join(range(81,999),",")
-" set cursorline
 set nocursorline
-" set showmatch
 set noshowmatch
 
 " }}}
@@ -27,7 +24,6 @@ set wildmenu
 " }}}
 " Backspace {{{
 
-" set backspace=2
 set backspace=indent,start,eol
 
 " }}}
@@ -156,7 +152,6 @@ syntax sync minlines=256
 set hlsearch
 set ignorecase
 set incsearch
-" set showmatch
 set smartcase
 set switchbuf=usetab
 
