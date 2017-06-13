@@ -3,7 +3,9 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-nmap <silent> <leader>, :nohl<cr>
+nmap <silent> <leader>es <nop>
+vmap <silent> <leader>es <nop>
+nnoremap <silent> <leader>, :nohl<cr>
 nnoremap * *N
 vnoremap * y/<C-R>"<CR>N
 nnoremap c* *Ncgn
