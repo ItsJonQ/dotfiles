@@ -123,7 +123,8 @@ set mouse=a
 " }}}
 " Newline {{{
 
-set noeol
+" Enable newline. Cause of cat. 🍼
+" set noeol
 
 " }}}
 " Performance {{{
