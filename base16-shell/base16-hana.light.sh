@@ -17,19 +17,19 @@ color05="28/2c/34" # Base 0E - Magenta
 color06="28/2c/34" # Base 0C - Cyan
 color07="28/2c/34" # Base 05 - White
 
-color08="65/73/7e" # Base 03 - Bright Black
+color08="a7/ad/ba" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="ef/f1/f5" # Base 07 - Bright White
+color15="2c/32/3c" # Base 07 - Bright White
 color16="ef/f1/f5" # Base 09
 color17="ef/f1/f5" # Base 0F
-color18="2c/32/3c" # Base 01
-color19="4f/5b/66" # Base 02
-color20="a7/ad/ba" # Base 04
+color18="df/e1/e8" # Base 01
+color19="c0/c5/ce" # Base 02
+color20="65/73/7e" # Base 04
 
 color21="ef/f1/f5" # Base 06
 
@@ -37,7 +37,7 @@ color21="ef/f1/f5" # Base 06
 color_foreground="28/2c/34" # Base 05
 color_background="ef/f1/f5" # Base 00
 
-color_cursor="c0/c5/ce" # Base 05
+color_cursor="4f/5b/66" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
