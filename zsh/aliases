@@ -22,6 +22,9 @@ if which mvim >/dev/null; then
   # alias vim='mvim -v'
 fi
 
+# Gasp! Use Neovim instead of Vim
+alias vim='nvim'
+
 # Profile (ZSH)
 alias profile='vim ~/.zprofile'
 alias zrc='vim ~/.zshrc'
@@ -95,8 +98,8 @@ alias :q='exit'
 # alias :e='vim'
 
 # Vim without vimrc
-alias nvim='vim -u ~/.nvimrc'
-alias ne='nvim'
+# alias nvim='vim -u ~/.nvimrc'
+# alias ne='nvim'
 
 # Vagrant
 alias va='vagrant'

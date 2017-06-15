@@ -12,7 +12,12 @@ else
 endif
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+
+if has('nvim')
+  call vundle#begin("~/.config/nvim/bundle")
+else
+  call vundle#begin()
+endif
 
 " }}}
 " Enhancements {{{
