@@ -9,3 +9,9 @@ set laststatus=2
 let g:netrw_cursor=0
 " let g:netrw_list_hide= '.*\.swp$,.DS_Store,*/tmp/*,*.so,*.swp,*.zip,*.git,^\.\.\=/\=$'
 " syntax off
+
+" Neovim speeds
+" https://github.com/neovim/neovim/issues/2093
+set ttimeout
+set ttimeoutlen=0
+set matchtime=0
