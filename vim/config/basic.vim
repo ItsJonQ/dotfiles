@@ -175,6 +175,7 @@ hi SpellBad gui=underline
 " }}}
 " Splits {{{
 
+set splitbelow
 set splitright
 
 " }}}
