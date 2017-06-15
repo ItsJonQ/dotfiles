@@ -3,6 +3,8 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-tnoremap <esc> <c-\><c-n>
-tnoremap <c-c> <c-\><c-n>
-tnoremap <c-w> <c-\><c-n><c-w>
+if has('nvim')
+  tnoremap <esc> <c-\><c-n>
+  tnoremap <c-c> <c-\><c-n>
+  tnoremap <c-w> <c-\><c-n><c-w>
+endif
