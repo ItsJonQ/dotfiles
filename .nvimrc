@@ -2,36 +2,21 @@
 " Author: Q <itsjonq@gmail.com>
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
-" novimrc :p
-" Minimal vim setup
 
-set nocompatible
-filetype plugin on
+" Reset
+set nocompatible              " be iMproved, required
+filetype off                  " required
+set nocursorline              " removes cursorline
 
-set autoindent
-set cole=0
-set copyindent
-set expandtab
-set fdc=1
-set fdm=marker
-set foldenable
-set foldlevelstart=10
-set foldmethod=indent
-set foldnestmax=10
-set hidden
-set history=1000
-set lazyredraw
-set nobackup
-set nobackup
-set noswapfile
-set noswapfile
-set number
-set shiftwidth=2
-set smartcase
-set smarttab
-set softtabstop=2
-set synmaxcol=200
-set tabstop=2
-set title
-set ttyfast
-set undolevels=1000
+let $DOTFILES_VIM = $HOME.'/dotfiles/vim'
+
+" Vundle
+source $DOTFILES_VIM/vundle.vim
+
+" Configs
+for f in split(glob($DOTFILES_VIM.'/config/**/*.vim'), '\n')
+  exe 'source' f
+endfor
+
+" Override Configs
+source $DOTFILES_VIM/override/config.vim
