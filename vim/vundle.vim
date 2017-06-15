@@ -5,11 +5,11 @@
 
 " Setup start {{{
 
-" if has('nvim')
-"   let s:editor_root=expand("~/.nvim")
-" else
-"   let s:editor_root=expand("~/.vim")
-" endif
+if has('nvim')
+  let s:editor_root=expand("~/.nvim")
+else
+  let s:editor_root=expand("~/.vim")
+endif
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
