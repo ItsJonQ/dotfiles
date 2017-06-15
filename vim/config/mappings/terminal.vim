@@ -4,5 +4,5 @@
 " =============================================================================
 
 tnoremap <esc> <c-\><c-n>
-tnoremap <c-c> <esc>
-tnoremap <c-w> <esc><c-w>
+tnoremap <c-c> <c-\><c-n>
+tnoremap <c-w> <c-\><c-n><c-w>
