@@ -23,7 +23,7 @@ if which mvim >/dev/null; then
 fi
 
 # Gasp! Use Neovim instead of Vim
-alias vim='nvim'
+# alias vim='nvim'
 
 # Profile (ZSH)
 alias profile='vim ~/.zprofile'
