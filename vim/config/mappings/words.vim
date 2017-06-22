@@ -7,9 +7,9 @@ nnoremap B ^
 nnoremap W $
 
 " Disable join.
-nnoremap J <nop>
-vnoremap J <nop>
+" nnoremap J <nop>
+" vnoremap J <nop>
 
 " Disable capital K
-nnoremap K <nop>
-vnoremap K <nop>
+" nnoremap K <nop>
+" vnoremap K <nop>
