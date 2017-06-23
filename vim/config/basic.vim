@@ -6,6 +6,7 @@
 " Appearance {{{
 
 set colorcolumn=80
+let &colorcolumn="80,".join(range(100,999),",")
 set nocursorline
 set noshowmatch
 
