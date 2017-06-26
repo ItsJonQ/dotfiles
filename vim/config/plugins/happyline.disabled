@@ -39,7 +39,7 @@ function! HappyLineUpdateStatusLine()
     call HappyLineNormalStatusLine()
   " Visual
   elseif a:mode == 'v' || a:mode =~ 'V'
-    " call HappyLineVisualStatusLine()
+    call HappyLineVisualStatusLine()
   " Replace
   elseif a:mode == 'R'
     call HappyLineReplaceStatusLine()
@@ -75,9 +75,9 @@ set statusline+=\%{HappyLineAddSpace()}
 set statusline+=\ %{HappyLineUpdateStatusLine()}
 
 
-" nnoremap v v | :call HappyLineUpdateStatusLine()
-" nnoremap V V | :call HappyLineUpdateStatusLine()
-" vnoremap <ESC> <ESC> | :call HappyLineUpdateStatusLine()
-" vnoremap <c-c> <c-c> | :call HappyLineUpdateStatusLine()
+nnoremap v v | :call HappyLineUpdateStatusLine()
+nnoremap V V | :call HappyLineUpdateStatusLine()
+vnoremap <ESC> <ESC> | :call HappyLineUpdateStatusLine()
+vnoremap <c-c> <c-c> | :call HappyLineUpdateStatusLine()
 " inoremap <ESC> <ESC> | :call HappyLineUpdateStatusLine()
 " inoremap <c-c> <c-c> | :call HappyLineUpdateStatusLine()

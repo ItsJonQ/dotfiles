@@ -53,7 +53,7 @@ Plugin 'vim-scripts/BufOnly.vim' " Deletes all other buffers
 " Plugin 'vim-scripts/JavaScript-Indent'
 " Plugin 'wincent/loupe'
 " Plugin 'wincent/terminus'
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
 Plugin 'zerowidth/vim-copy-as-rtf'
 
 " }}}
@@ -94,6 +94,12 @@ Plugin 'mxw/vim-jsx'
 " Plugin 'othree/yajs.vim'
 
 " }}}"}}}
+
+
+" Editor Config
+Plugin 'editorconfig/editorconfig-vim'
+
+
 " Setup end {{{
 
 call vundle#end()            " required
