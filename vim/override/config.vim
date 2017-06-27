@@ -7,7 +7,7 @@
 set nocursorline
 " set cursorline
 set laststatus=2
-set showcmd!
+set noshowcmd
 let g:netrw_cursor=0
 " let g:netrw_list_hide= '.*\.swp$,.DS_Store,*/tmp/*,*.so,*.swp,*.zip,*.git,^\.\.\=/\=$'
 " syntax off
