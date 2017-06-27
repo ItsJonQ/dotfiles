@@ -1,8 +1,9 @@
 " Config :: Plugin :: Prettier
 " Author: Q <itsjonq@gmail.com>
-" Source: https://github.com/ItsJonQ/dotfiles
-" Source: https://github.com/prettier/prettier-eslint-cli
+" Source: https://github.com/prettier/prettier/tree/master/editors/vim
 " =============================================================================
 
-" autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
-" autocmd BufWritePre *.js :normal gggqG
+" print spaces between brackets
+" let g:prettier#config#bracket_spacing = 'true' 
+" let g:prettier#autoformat = 0
+" autocmd BufWritePre *.js,*.css,*.scss,*.less PrettierAsync
