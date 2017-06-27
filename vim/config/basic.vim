@@ -134,6 +134,7 @@ set mouse=a
 " Performance {{{
 
 " set lazyredraw
+set nolazyredraw
 set nocompatible
 set re=1
 " set scrolljump=10
