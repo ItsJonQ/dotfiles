@@ -70,7 +70,10 @@ au BufRead,BufNewFile *.ts set ft=javascript
 au BufRead,BufNewFile *.mjml set filetype=html
 au BufRead,BufNewFile *.tpl set filetype=html
 au BufRead,BufNewFile *.twig set filetype=html
-autocmd Filetype ruby setlocal foldmethod=indent|set nocursorline|set norelativenumber
+au BufRead,BufNewFile *.md set spell
+au BufRead,BufNewFile *.markdown set spell
+au Filetype markdown set spell
+au Filetype ruby setlocal foldmethod=indent|set nocursorline|set norelativenumber
 au FileType gitcommit set tw=0
 
 
@@ -169,8 +172,9 @@ set noerrorbells
 if has("gui_running")
   set nospell
 else
-  set spell
+  " set spell
 endif
+set nospell
 hi SpellBad gui=underline
 
 " }}}
