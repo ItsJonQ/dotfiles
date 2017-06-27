@@ -4,7 +4,9 @@
 " Plugin: https://github.com/sbdchd/neoformat
 " =============================================================================
 
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * Neoformat
-augroup END
+" let g:neoformat_enabled_javascript = ['prettier-eslint']
+
+" augroup fmt
+"   autocmd!
+"   autocmd BufWritePre * Neoformat
+" augroup END
