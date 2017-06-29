@@ -19,7 +19,7 @@ alias sync!='sync && sh config/osx.sh'
 
 # Use Macvim instead of vim by default
 if which mvim >/dev/null; then
-  alias vim='mvim -v'
+  # alias vim='mvim -v'
 fi
 
 # Gasp! Use Neovim instead of Vim
