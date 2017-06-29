@@ -5,7 +5,6 @@
 " Overridding configs that get set just before Vim opens
 
 set nocursorline
-" set cursorline
 set laststatus=2
 set noshowcmd
 let g:netrw_cursor=0
@@ -14,6 +13,6 @@ let g:netrw_cursor=0
 
 " Neovim speeds
 " https://github.com/neovim/neovim/issues/2093
-set ttimeout
-set ttimeoutlen=0
-set matchtime=0
+" set ttimeout
+" set ttimeoutlen=0
+" set matchtime=0

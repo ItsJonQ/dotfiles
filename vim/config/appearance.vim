@@ -58,8 +58,6 @@ if has("gui_running")
   " Force color
   color base16-vsplus
   " color base16-one
-
-  set nospell
 endif
 
 " General color enhancements

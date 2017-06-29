@@ -60,7 +60,7 @@ endfunction
 " au InsertChange * call HappyLineUpdateStatusLine()
 " au InsertLeave * call HappyLineUpdateStatusLine()
 
-call HappyLineUpdateStatusLine()
+" call HappyLineUpdateStatusLine()
 
 set statusline=
 set statusline+=\ %{mode()}

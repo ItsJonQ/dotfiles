@@ -33,8 +33,8 @@ set backspace=indent,start,eol
 set hidden
 " set modifiable
 "" check one time after 4s of inactivity in normal mode
-set autoread
-au CursorHold * checktime
+" set autoread
+" au CursorHold * checktime
 
 " }}}
 " Concealing {{{
@@ -90,8 +90,6 @@ set foldnestmax=10
 " }}}
 " Indentation {{{
 
-let g:gitgutter_sign_column_always = 1
-let g:indentLine_leadingSpaceEnabled = 1
 set autoindent
 set copyindent
 set expandtab
@@ -99,7 +97,6 @@ set list
 set listchars=tab:▸\ ,eol:¬,trail:·,extends:>,precedes:<
 set nojoinspaces
 set number
-" set relativenumber
 set shiftwidth=2
 set smarttab
 set softtabstop=2
@@ -123,12 +120,6 @@ endif
 " Mouse {{{
 
 set mouse=a
-
-" }}}
-" Newline {{{
-
-" Enable newline. Cause of cat. 🍼
-" set noeol
 
 " }}}
 " Performance {{{

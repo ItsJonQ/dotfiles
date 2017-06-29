@@ -30,7 +30,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
 " Plugin 'godlygeek/tabular'
 " Plugin 'jeetsukumaran/vim-filebeagle'
-Plugin 'junegunn/vim-easy-align'
+" Plugin 'junegunn/vim-easy-align'
 " Plugin 'kshenoy/vim-signature'
 " Plugin 'mattn/emmet-vim'
 Plugin 'mileszs/ack.vim'
@@ -56,7 +56,7 @@ Plugin 'vim-scripts/BufOnly.vim' " Deletes all other buffers
 " Plugin 'wincent/loupe'
 " Plugin 'wincent/terminus'
 " Plugin 'w0rp/ale'
-Plugin 'zerowidth/vim-copy-as-rtf'
+" Plugin 'zerowidth/vim-copy-as-rtf'
 
 " }}}
 " Themes {{{
@@ -100,7 +100,7 @@ Plugin 'mxw/vim-jsx'
 
 
 " Editor Config
-Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'editorconfig/editorconfig-vim'
 
 
 " Setup end {{{
