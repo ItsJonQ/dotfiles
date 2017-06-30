@@ -17,6 +17,3 @@ source $DOTFILES_VIM/vundle.vim
 for f in split(glob($DOTFILES_VIM.'/config/**/*.vim'), '\n')
   exe 'source' f
 endfor
-
-" Override Configs
-source $DOTFILES_VIM/override/config.vim
