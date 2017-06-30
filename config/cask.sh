@@ -29,6 +29,7 @@ brew cask install google-chrome
 brew cask install java
 # brew cask install karabiner
 brew cask install karabiner-elements
+brew cask install nylas-mail
 brew cask install licecap
 brew cask install onyx
 brew cask install private-internet-access
@@ -45,6 +46,7 @@ brew cask install todoist
 brew cask install tunnelblick
 brew cask install vagrant
 brew cask install virtualbox
+brew bask install visual-studio-code
 brew cask install vlc
 brew cask install zoom
 
