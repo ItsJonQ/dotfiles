@@ -26,6 +26,7 @@ npm install jshint -g
 npm install mocha -g
 npm install np -g
 npm install npm-check-updates -g
+npm install prettier -g
 npm install pm2 -g
 npm install webpack -g
 
