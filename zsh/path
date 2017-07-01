@@ -11,11 +11,13 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
-# rbenv() {
-  # eval "$(command rbenv init -)"
-  # rbenv "$@"
-# }
+rbenv() {
+  eval "$(command rbenv init -)"
+  rbenv "$@"
+}
 
+# node (via Brew)
+export PATH="/usr/local/opt/node@6/bin:$PATH"
 
 # nvm
 # export NVM_DIR="$HOME/.nvm"
