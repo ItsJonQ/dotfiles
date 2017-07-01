@@ -41,6 +41,7 @@ brew install imagemagick --with-webp
 brew install macvim
 brew install mplayer
 brew install mpv
+brew install neovim
 brew install node@6
 brew install pow
 brew install rbenv

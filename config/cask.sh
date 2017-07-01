@@ -17,7 +17,7 @@ brew cask install alfred
 brew cask install appcleaner
 brew cask install arq
 brew cask install atom
-brew cask install cloud
+brew cask install cloudapp
 brew cask install daisydisk
 brew cask install dropbox
 brew cask install firefox
