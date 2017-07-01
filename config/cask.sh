@@ -34,8 +34,9 @@ brew cask install licecap
 brew cask install onyx
 brew cask install private-internet-access
 brew cask install remote-play
-brwe cask install screenhero
-brwe cask install slack
+brew cask install screenhero
+brew cask install screenflow
+brew cask install slack
 brew cask install sketch
 brew cask install skitch
 brew cask install skype
