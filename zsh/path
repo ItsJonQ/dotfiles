@@ -40,6 +40,12 @@ npm set progress=false
 # Yarn!
 # yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"
 
+# Docker
+if ! docker-machine active >/dev/null 2>&1; then
+  docker-machine start default
+fi
+eval $(docker-machine env default)
+
 ## vv
 # Source: https://github.com/bradp/vv
 # source $( echo $(which vv)-completions)
