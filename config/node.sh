@@ -14,6 +14,7 @@ npm update -g
 npm install babel -g
 npm install babel-eslint -g
 npm install bower -g
+npm install create-react-app -g
 npm install eslint -g
 npm install eslint-config-airbnb -g
 npm install eslint-plugin-import -g
@@ -29,5 +30,6 @@ npm install npm-check-updates -g
 npm install prettier -g
 npm install pm2 -g
 npm install webpack -g
+npm install @storybook/cli -g
 
 echo "npm setup complete!"
