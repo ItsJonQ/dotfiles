@@ -7,10 +7,10 @@ echo "Starting apm setup…"
 apm update
 
 # Themes
-apm install atom-material-ui
+# apm install atom-material-ui
 # Packages
-apm install docblockr
-apm install emmet
-apm install open-in-browser
+# apm install docblockr
+# apm install emmet
+# apm install open-in-browser
 
 echo "apm setup complete!"
