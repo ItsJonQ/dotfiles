@@ -13,6 +13,7 @@ npm update -g
 # Install global npm things
 npm install babel -g
 npm install babel-eslint -g
+npm install babel-cli -g
 npm install bower -g
 npm install create-react-app -g
 npm install eslint -g
