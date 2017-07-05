@@ -41,11 +41,14 @@ npm set progress=false
 # yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"
 
 # Docker
-# if ! docker-machine active >/dev/null 2>&1; then
-#   docker-machine start default
-# fi
-# eval $(docker-machine env default)
+if type docker-machine > /dev/null; then
+  if ! docker-machine active >/dev/null 2>&1; then
+    docker-machine start default
+  fi
+  eval $(docker-machine env default)
+fi
 export SCOUT_DOCKER_MODE=true
+
 
 ## vv
 # Source: https://github.com/bradp/vv
