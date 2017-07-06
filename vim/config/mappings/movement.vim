@@ -7,14 +7,14 @@ nnoremap <s-down> :m .+1<cr>==
 nnoremap <s-up> :m .-2<cr>==
 vnoremap <s-down> :m '>+1<cr>gv=gv
 vnoremap <s-up> :m '<-2<cr>gv=gv
-nnoremap G Gzz
-
 
 " Autocenter. Milk would hate this. But it's ma vimrc.
-nnoremap j jzz
-nnoremap k kzz
-nnoremap <c-u> <c-u>zz
-nnoremap <c-d> <c-d>zz
+nnoremap G Gzz
+nnoremap gg ggzz
+" nnoremap j jzz
+" nnoremap k kzz
+" nnoremap <c-u> <c-u>zz
+" nnoremap <c-d> <c-d>zz
 
 
 " HARD MODE
