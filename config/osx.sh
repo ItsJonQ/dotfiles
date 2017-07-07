@@ -253,16 +253,12 @@ defaults delete NSGlobalDomain ApplePressAndHoldEnabled
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Adjust key repeat speed
-# Note: Might not play nicely with Vim in terminal
-# In this case, use Karabiner to tweak.
-# Set "Delay Until Repeat" to 200ms
-# defaults write NSGlobalDomain InitialKeyRepeat -int 12
-# Set "Key Repeat" to 33ms
-# defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Faster key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
-defaults write NSGlobalDomain KeyRepeat -int 1
+# defaults write NSGlobalDomain InitialKeyRepeat -int 10
+# defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
