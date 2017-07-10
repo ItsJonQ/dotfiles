@@ -1,11 +1,8 @@
 "*":
   core:
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
   editor:
+    fontSize: 16
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":

@@ -31,6 +31,7 @@ export PATH="/usr/local/opt/node@6/bin:$PATH"
 
 # npm
 npm set progress=false
+npm config set save-exact true
 
 
 # Travis CI
