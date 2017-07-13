@@ -1,5 +1,8 @@
 "*":
   core:
+    disabledPackages: [
+      "autocomplete-plus"
+    ]
     telemetryConsent: "no"
   editor:
     fontSize: 16

@@ -1,0 +1,23 @@
+{
+  "editor.codeLens": false,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.parameterHints": false,
+  "workbench.welcome.enabled": false,
+  "window.zoomLevel": 0,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": true
+  },
+  "scss.colorDecorators.enable": false,
+  "search.useIgnoreFilesByDefault": true,
+  "prettier.singleQuote": true,
+  "workbench.colorTheme": "One Dark Pro"
+}
+

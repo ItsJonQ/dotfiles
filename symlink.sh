@@ -19,4 +19,6 @@ ln -sf $HOME/dotfiles/.nvimrc $HOME/.config/nvim/init.vim
 ln -sf $HOME/Drive/Config/.aws $HOME/.aws
 ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
+ln -sf $HOME/dotfiles/.vscode/settings.json $HOME/.vscode/settings.json
+
 echo Symlinked dotfiles.
