@@ -1,7 +1,8 @@
 {
   "editor.codeLens": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.parameterHints": false,
