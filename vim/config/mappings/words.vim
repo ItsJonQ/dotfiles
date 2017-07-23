@@ -15,7 +15,7 @@ nnoremap K <nop>
 vnoremap K <nop>
 
 " Disable lower/UPPERcase
-
 nnoremap g~ <nop>
 nnoremap gU <nop>
 nnoremap gu <nop>
+vnoremap u <nop>
