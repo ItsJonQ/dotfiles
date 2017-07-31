@@ -42,11 +42,27 @@ npm config set save-exact true
 # yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"
 
 # Docker
-if type docker-machine > /dev/null; then
-  if ! docker-machine active >/dev/null 2>&1; then
-    docker-machine start default
-  fi
-  eval $(docker-machine env default)
+if which docker-machine > /dev/null; then
+  # This will set up your shell to use the docker-machine if it is running,
+  #   but will not start it automatically.
+  # When you want to start it, run: `docker-start` in your shell.
+  # If you want the docker-machine to start automatically, see below.
+  function docker-discover()
+  {
+    if docker-machine active >/dev/null 2>&1; then
+      eval $(docker-machine env default 2>/dev/null)
+    fi
+  }
+  function docker-start()
+  {
+    if ! docker-machine active >/dev/null 2>&1; then
+      docker-machine start default
+    fi
+    eval $(docker-machine env default 2>/dev/null)
+  }
+  # To make docker-machine start automatically, replace the
+  # `docker-discover` call below with `docker-start`.
+  docker-discover
 fi
 export SCOUT_DOCKER_MODE=true
 
