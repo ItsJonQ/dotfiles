@@ -5,6 +5,15 @@
 Follow [Github's SSH guide](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
 
+### Test SSH with Github
+
+Run the following command:
+
+```sh
+ssh -T git@github.com
+```
+
+
 ### Setting it up with servers
 
 Run the following command, but replace x with server IP:
