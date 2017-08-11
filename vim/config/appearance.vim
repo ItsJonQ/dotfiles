@@ -48,7 +48,7 @@ if has("gui_running")
   set guifont=Menlo\:h14
   " set guifont=Fira\ Code\ Light\:h15
   " set guifont=SF\ Mono\ Light\:h14
-  set guifont=SF\ Mono\:h14
+  " set guifont=SF\ Mono\:h14
   " Force color
   " color base16-vsplus
   " color base16-one
