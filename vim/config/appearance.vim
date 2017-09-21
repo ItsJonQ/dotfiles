@@ -25,7 +25,7 @@ endif
 
 let base16colorspace=256
 
-color base16-one
+color base16-vscode
 set background=dark
 
 if $BASE16_SHADE == "dark"
@@ -45,7 +45,7 @@ if has("gui_running")
 
   set columns=80 lines=30
   set gfn=*
-  set guifont=Menlo\:h14
+  set guifont=Menlo\:h13
   " set guifont=Fira\ Code\ Light\:h15
   " set guifont=SF\ Mono\ Light\:h14
   " set guifont=SF\ Mono\:h14
