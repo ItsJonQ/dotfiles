@@ -1,24 +1,53 @@
 {
-  "editor.codeLens": false,
-  "editor.formatOnSave": false,
-  "editor.fontSize": 14,
   "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [80,120],
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "editor.parameterHints": false,
-  "workbench.welcome.enabled": false,
-  "window.zoomLevel": 0,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "node_modules": true
+    "node_modules": true,
+    "_site": true,
+    "coverage": true
   },
   "scss.colorDecorators.enable": false,
   "search.useIgnoreFilesByDefault": true,
-  "prettier.singleQuote": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "vim.disableAnnoyingNeovimMessage": true,
+  "workbench.welcome.enabled": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background" : "#1A1A1A",
+    "statusBar.noFolderBackground" : "#212121",
+    "statusBar.debuggingBackground": "#263238"
+  },
+  "editor.parameterHints": false,
+  "editor.fontSize": 13,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.hover": false,
+  "editor.fontWeight": "Light",
+  "materialTheme.cache.workbench.settings": {
+    "themeColours": "Darker"
+  },
+  "editor.autoClosingBrackets": false,
+  "workbench.tips.enabled": false,
+  "css.colorDecorators.enable": false,
+  "less.colorDecorators.enable": false,
+  "editor.wordBasedSuggestions": false,
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "html.validate.scripts": false,
+  "html.validate.styles": false,
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false,
+  "standard.validate": [],
+  "emmet.showExpandedAbbreviation": "never",
+  "editor.colorDecorators": false,
   "workbench.colorTheme": "One Dark Pro"
 }
-
