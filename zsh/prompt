@@ -7,6 +7,7 @@
 export TERM_EMOJI_GREETING="👋"
 # export TERM_EMOJI_PROMPT="🐳 💨"
 export TERM_EMOJI_PROMPT="👻"
+export TERM_GREETING_TEXT="Have a spoopy day Q!"
 
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
@@ -14,7 +15,7 @@ function git_prompt_info() {
   echo "@%B${ref#refs/heads/}%b"
 }
 
-echo "$TERM_EMOJI_GREETING  Have a great day Q!"
+echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
 
 # PROMPT='$TERM_EMOJI_PROMPT  %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 PROMPT='$TERM_EMOJI_PROMPT  %c$(git_prompt_info) '
