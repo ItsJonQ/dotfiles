@@ -7,7 +7,9 @@
     telemetryConsent: "no"
   editor:
     autoIndent: false
+    fontSize: 13
     scrollPastEnd: true
+    scrollSensitivity: 60
     showInvisibles: true
     softWrap: true
   "exception-reporting":
