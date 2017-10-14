@@ -17,5 +17,9 @@ function git_prompt_info() {
 
 echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
 
+# Old
 # PROMPT='$TERM_EMOJI_PROMPT  %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-PROMPT='$TERM_EMOJI_PROMPT  %c$(git_prompt_info) '
+
+# New
+PROMPT='$TERM_EMOJI_PROMPT  %{$fg[green]%}%c$(git_prompt_info)%{$reset_color%} '
+# PROMPT='$TERM_EMOJI_PROMPT  %c$(git_prompt_info) '
