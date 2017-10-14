@@ -6,7 +6,7 @@
 
 export TERM_EMOJI_GREETING="👋"
 # export TERM_EMOJI_PROMPT="🐳 💨"
-export TERM_EMOJI_PROMPT="⚡️"
+export TERM_EMOJI_PROMPT="👻"
 
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
