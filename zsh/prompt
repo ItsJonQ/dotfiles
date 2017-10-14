@@ -12,7 +12,7 @@ export TERM_GREETING_TEXT="Have a spoopy day Q!"
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   # echo "%B$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX%b "
-  echo "@%B${ref#refs/heads/}%b"
+  echo "%B@${ref#refs/heads/}%b"
 }
 
 echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
@@ -21,5 +21,5 @@ echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
 # PROMPT='$TERM_EMOJI_PROMPT  %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
 # New
-PROMPT='$TERM_EMOJI_PROMPT  %{$fg[green]%}%c$(git_prompt_info)%{$reset_color%} '
+PROMPT='$TERM_EMOJI_PROMPT  %{$fg[green]%}%c%{$reset_color%}%{$fg[green]%}$(git_prompt_info)%{$reset_color%} '
 # PROMPT='$TERM_EMOJI_PROMPT  %c$(git_prompt_info) '
