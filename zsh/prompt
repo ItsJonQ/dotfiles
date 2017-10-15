@@ -7,10 +7,21 @@
 __BOLD=$(tput bold)
 __NORMAL=$(tput sgr0)
 
+
+function GIT_STATUS_PROMPT() {
+  _STS=$(git status --porcelain 2> /dev/null)
+  if [[ "$_STS" != "" ]]; then
+    git_status_prompt='🔥'
+  else
+    git_status_prompt='✨'
+  fi
+  echo "$git_status_prompt "
+}
+
 function GIT_PROMPT() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   # echo "%B$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX%b "
-  echo "·%B@${ref#refs/heads/}%b"
+  echo " ⑆ %B${ref#refs/heads/}%b $(GIT_STATUS_PROMPT)"
 }
 
 export TERM_EMOJI_GREETING="👋"
