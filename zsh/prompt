@@ -7,10 +7,10 @@
 __BOLD=$(tput bold)
 __NORMAL=$(tput sgr0)
 
-function git_prompt_info() {
+function GIT_PROMPT() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   # echo "%B$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX%b "
-  echo "%B@${ref#refs/heads/}%b"
+  echo "·%B@${ref#refs/heads/}%b"
 }
 
 export TERM_EMOJI_GREETING="👋"
@@ -20,8 +20,8 @@ export TERM_GREETING_WORD="SPOOPY"
 export TERM_GREETING_TEXT="Have a ${__BOLD}${TERM_GREETING_WORD}${__NORMAL} day Q!"
 
 TERM_CURRENT_DIR="%{$fg[green]%}%c%{$reset_color%}"
-TERM_CURRENT_BRANCH="%{$fg[green]%}$(git_prompt_info)%{$reset_color%}"
 
 # Export
 echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
-PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR$TERM_CURRENT_BRANCH '
+# PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR%{$fg[green]%}$(GIT_PROMPT)%{$reset_color%} '
+PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR$(GIT_PROMPT) '
