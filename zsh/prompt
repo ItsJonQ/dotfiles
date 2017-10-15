@@ -4,10 +4,8 @@
 # Source: https://github.com/ItsJonQ/dotfiles
 # =============================================================================
 
-export TERM_EMOJI_GREETING="👋"
-# export TERM_EMOJI_PROMPT="🐳 💨"
-export TERM_EMOJI_PROMPT="👻"
-export TERM_GREETING_TEXT="Have a spoopy day Q!"
+__BOLD=$(tput bold)
+__NORMAL=$(tput sgr0)
 
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
@@ -15,11 +13,15 @@ function git_prompt_info() {
   echo "%B@${ref#refs/heads/}%b"
 }
 
+export TERM_EMOJI_GREETING="👋"
+# export TERM_EMOJI_PROMPT="🐳 💨"
+export TERM_EMOJI_PROMPT="👻"
+export TERM_GREETING_WORD="SPOOPY"
+export TERM_GREETING_TEXT="Have a ${__BOLD}${TERM_GREETING_WORD}${__NORMAL} day Q!"
+
+TERM_CURRENT_DIR="%{$fg[green]%}%c%{$reset_color%}"
+TERM_CURRENT_BRANCH="%{$fg[green]%}$(git_prompt_info)%{$reset_color%}"
+
+# Export
 echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
-
-# Old
-# PROMPT='$TERM_EMOJI_PROMPT  %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-
-# New
-PROMPT='$TERM_EMOJI_PROMPT  %{$fg[green]%}%c%{$reset_color%}%{$fg[green]%}$(git_prompt_info)%{$reset_color%} '
-# PROMPT='$TERM_EMOJI_PROMPT  %c$(git_prompt_info) '
+PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR$TERM_CURRENT_BRANCH '
