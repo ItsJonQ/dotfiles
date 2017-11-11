@@ -26,7 +26,7 @@ function GIT_PROMPT() {
 
 export TERM_EMOJI_GREETING="👋"
 # export TERM_EMOJI_PROMPT="🐳 💨"
-export TERM_EMOJI_PROMPT="🌈"
+export TERM_EMOJI_PROMPT="⛄️"
 export TERM_GREETING_WORD="FRIENDLY"
 export TERM_GREETING_TEXT="Have a ${__BOLD}${TERM_GREETING_WORD}${__NORMAL} day Q!"
 
