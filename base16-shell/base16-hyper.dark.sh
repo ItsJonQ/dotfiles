@@ -88,7 +88,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pl ff0080 # cursor
   
   
-  printf $printf_template_custom Pl ffffff # cursor
+  printf $printf_template_custom Pm ffffff # cursor
   
 else
   printf $printf_template_var 10 $color_foreground
