@@ -11,8 +11,8 @@ vnoremap <s-up> :m '<-2<cr>gv=gv
 " Autocenter. Milk would hate this. But it's ma vimrc.
 nnoremap G Gzz
 nnoremap gg ggzz
-nnoremap j jzz
-nnoremap k kzz
+" nnoremap j jzz
+" nnoremap k kzz
 nnoremap <c-u> <c-u>zz
 nnoremap <c-d> <c-d>zz
 
