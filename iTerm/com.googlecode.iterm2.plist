@@ -1262,9 +1262,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>344 282 918 394 0 0 1280 778 </string>
+	<string>344 361 918 394 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>192 182 890 506 0 0 1280 778 </string>
+	<string>0 49 1280 729 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1943,7 +1943,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>FiraCode-Regular 13</string>
+			<string>SFMono-Light 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -2131,7 +2131,7 @@
 			<key>Use Non-ASCII Font</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.1648060993975908</real>
+			<real>1.1112598832831329</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
@@ -2224,7 +2224,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-28T06:16:37Z</date>
+	<date>2017-11-29T17:45:49Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
