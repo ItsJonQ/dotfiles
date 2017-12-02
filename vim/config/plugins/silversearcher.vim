@@ -8,7 +8,7 @@ if executable('ag')
   " set grepprg=ag\ --nogroup\ --nocolor\ --column
   " set grepformat=%f:%l:%c%m
   let g:ackprg = 'ag --vimgrep'
-  " nnoremap <c-f> :Ack<space>
+  nnoremap <leader>f :Ack<space>
 endif
 
 " optimization
