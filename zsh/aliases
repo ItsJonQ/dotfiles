@@ -229,7 +229,7 @@ alias df='cd ~/dotfiles'
 alias q='p && cd jonquach'
 alias hyper='p && cd hyper'
 alias b16='p && cd base16-builder'
-alias vimclr='p && cd base16-vim/colors'
+alias vimclr='cd ~/base16-vim/colors'
 alias seed-issues='ruby ~/dotfiles/scripts/seed/issues.rb'
 
 # Updating/bumping gem versions
