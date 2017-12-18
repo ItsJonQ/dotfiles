@@ -95,7 +95,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pl 50E3C2 # cursor
   
   
-  printf $printf_template_custom Pm eeeeee # cursor text
+  printf $printf_template_custom Pm 000000 # cursor
   
   
 else
