@@ -19,3 +19,6 @@ nnoremap g~ <nop>
 nnoremap gU <nop>
 nnoremap gu <nop>
 vnoremap u <nop>
+
+" GOYO
+nnoremap <leader>G :Goyo<cr>

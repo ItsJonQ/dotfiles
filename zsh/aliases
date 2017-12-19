@@ -228,7 +228,7 @@ alias db='cd ~/Dropbox'
 # Personal
 alias df='cd ~/dotfiles'
 alias q='p && cd jonquach'
-alias hyper='p && cd hyper'
+alias modes='p && cd modes'
 alias b16='cd ~/base16-builder'
 alias vimclr='cd ~/base16-vim/colors'
 alias seed-issues='ruby ~/dotfiles/scripts/seed/issues.rb'
