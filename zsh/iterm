@@ -1,2 +1,2 @@
 # Sets the titlebar
-printf -- $'\033]6;1;bg;red;brightness;00\a\033]6;1;bg;green;brightness;00\a\033]6;1;bg;blue;brightness;00\a'
+# printf -- $'\033]6;1;bg;red;brightness;00\a\033]6;1;bg;green;brightness;00\a\033]6;1;bg;blue;brightness;00\a'
