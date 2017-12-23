@@ -110,6 +110,37 @@ alias va='vagrant'
 alias youtube='mpsyt'
 alias yt='youtube'
 
+# Speed up video
+fastvid() {
+  filename=$(basename "$1")
+  extension="${filename##*.}"
+  filename="${filename%.*}"
+  outputFileName=$filename-fast.$extension
+
+  if [ -z "$2" ]
+    then
+      compressionSpeed="0.5"
+    else
+      compressionSpeed=$2
+  fi
+
+  ffmpeg -i $1 -filter:v "setpts=$compressionSpeed*PTS" $outputFileName
+  echo ✨  Created $outputFileName.
+}
+alias fv='fastvid'
+
+# Resize for dribbble
+dribbbly() {
+  filename=$(basename "$1")
+  extension="${filename##*.}"
+  filename="${filename%.*}"
+  outputFileName=$filename-dribbble.$extension
+
+  convert $1 -resize 800x600 $outputFileName
+  echo ✨  Created $outputFileName.
+}
+alias drb='dribbbly'
+
 
 #################################################
 # Web
