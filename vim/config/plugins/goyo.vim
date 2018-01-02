@@ -3,4 +3,4 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-autocmd BufRead,BufNewFile *.{md} Goyo
+" autocmd BufRead,BufNewFile *.{md} Goyo
