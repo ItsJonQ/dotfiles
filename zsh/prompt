@@ -26,8 +26,8 @@ function GIT_PROMPT() {
 
 export TERM_EMOJI_GREETING="👋"
 # export TERM_EMOJI_PROMPT="🐳 💨"
-export TERM_EMOJI_PROMPT="⛄️"
-export TERM_GREETING_WORD="FRIENDLY"
+export TERM_EMOJI_PROMPT="🥔"
+export TERM_GREETING_WORD="POTATO"
 export TERM_GREETING_TEXT="Have a ${__BOLD}${TERM_GREETING_WORD}${__NORMAL} day Q!"
 
 TERM_CURRENT_DIR="%{$fg[green]%}%c%{$reset_color%}"
