@@ -2,12 +2,17 @@
 # @itsjonq
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+  '-': 'tree-view:reveal-active-file'
+  '<': 'editor:outdent-selected-rows'
+  '>': 'editor:indent-selected-rows'
   'g c': 'editor:toggle-line-comments'
   'shift-up': 'editor:move-line-up'
   'shift-down': 'editor:move-line-down'
-  '>': 'editor:indent-selected-rows'
-  '<': 'editor:outdent-selected-rows'
-  '-': 'tree-view:reveal-active-file'
+  'space [': 'pane:show-previous-item'
+  'space ]': 'pane:show-next-item'
+  'space o': 'pane:close-other-items'
+  'space q': 'core:close'
 
 'atom-text-editor.vim-mode:not(.insert-mode), .tree-view':
   '-': 'tree-view:toggle'
