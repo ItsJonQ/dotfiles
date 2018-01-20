@@ -1,2 +1,20 @@
 # atom: keymap
 # @itsjonq
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'g c': 'editor:toggle-line-comments'
+  'shift-up': 'editor:move-line-up'
+  'shift-down': 'editor:move-line-down'
+  '>': 'editor:indent-selected-rows'
+  '<': 'editor:outdent-selected-rows'
+  '-': 'tree-view:reveal-active-file'
+
+'atom-text-editor.vim-mode:not(.insert-mode), .tree-view':
+  '-': 'tree-view:toggle'
+  'd': 'tree-view:add-folder'
+  'D': 'tree-view:remove'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'g f':      'open-this:here'
+  'ctrl-w f': 'open-this:split-down'
+  'ctrl-w F': 'open-this:split-right'

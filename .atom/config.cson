@@ -1,13 +1,13 @@
 "*":
   core:
-    disabledPackages: [
-      "autocomplete-plus"
-      "vim-mode-plus"
-    ]
     reopenProjectMenuCount: 14
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-dark-syntax"
+    ]
   editor:
-    autoIndent: false
+    fontFamily: "SF Mono"
     fontSize: 13
     scrollPastEnd: true
     scrollSensitivity: 60
@@ -15,5 +15,7 @@
     softWrap: true
   "exception-reporting":
     userId: "8c45499a-d18d-86ee-185a-99f7577a1790"
+  "tree-view":
+    hideIgnoredNames: true
   welcome:
     showOnStartup: false
