@@ -1,9 +1,15 @@
 # atom: keymap
 # @itsjonq
 
-'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+'.platform-darwin':
   'ctrl-p': 'fuzzy-finder:toggle-file-finder'
-  '-': 'tree-view:reveal-active-file'
+  'ctrl-w h': 'window:focus-pane-on-left'
+  'ctrl-w l': 'window:focus-pane-on-right'
+  'ctrl-\\': 'tree-view:toggle'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  # 'ctrl-p': 'fuzzy-finder:toggle-file-finder'
+  '-': 'tree-view:toggle-focus'
   '<': 'editor:outdent-selected-rows'
   '>': 'editor:indent-selected-rows'
   'g c': 'editor:toggle-line-comments'
@@ -13,11 +19,18 @@
   'space ]': 'pane:show-next-item'
   'space o': 'pane:close-other-items'
   'space q': 'core:close'
+  ', [': 'pane:show-previous-item'
+  ', ]': 'pane:show-next-item'
+  ', o': 'pane:close-other-items'
+  ', q': 'core:close'
+  'space y': 'vim-mode-plus:yank'
+  'space a': 'core:select-all'
 
 'atom-text-editor.vim-mode:not(.insert-mode), .tree-view':
   '-': 'tree-view:toggle'
   'd': 'tree-view:add-folder'
   'D': 'tree-view:remove'
+  '%': 'tree-view:add-file'
 
 'atom-text-editor.vim-mode-plus.normal-mode':
   'g f':      'open-this:here'

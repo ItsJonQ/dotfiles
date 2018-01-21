@@ -1,11 +1,8 @@
 "*":
+  "bracket-matcher": {}
   core:
     reopenProjectMenuCount: 14
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "one-dark-syntax"
-    ]
   editor:
     fontFamily: "SF Mono"
     fontSize: 13
