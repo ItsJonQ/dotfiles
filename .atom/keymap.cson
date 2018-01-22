@@ -9,8 +9,8 @@
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # 'ctrl-p': 'fuzzy-finder:toggle-file-finder'
-  '-': 'tree-view:toggle-focus'
-  '<': 'editor:outdent-selected-rows'
+  '-': 'tree-view:reveal-active-file'
+
   '>': 'editor:indent-selected-rows'
   'g c': 'editor:toggle-line-comments'
   'shift-up': 'editor:move-line-up'
@@ -19,6 +19,7 @@
   'space ]': 'pane:show-next-item'
   'space o': 'pane:close-other-items'
   'space q': 'core:close'
+  'space w': 'core:close'
   ', [': 'pane:show-previous-item'
   ', ]': 'pane:show-next-item'
   ', o': 'pane:close-other-items'
