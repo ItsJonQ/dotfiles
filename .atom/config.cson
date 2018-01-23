@@ -1,8 +1,15 @@
 "*":
   "bracket-matcher": {}
   core:
+    disabledPackages: [
+      "no-dock-arrows"
+    ]
     reopenProjectMenuCount: 14
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "atom-light-syntax"
+    ]
   editor:
     fontFamily: "SF Mono"
     fontSize: 13

@@ -5,12 +5,14 @@
   'ctrl-p': 'fuzzy-finder:toggle-file-finder'
   'ctrl-w h': 'window:focus-pane-on-left'
   'ctrl-w l': 'window:focus-pane-on-right'
+  'ctrl-w [': 'pane:show-previous-item'
+  'ctrl-w ]': 'pane:show-next-item'
   'ctrl-\\': 'tree-view:toggle'
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # 'ctrl-p': 'fuzzy-finder:toggle-file-finder'
   '-': 'tree-view:reveal-active-file'
-
+  '<': 'editor:outdent-selected-rows'
   '>': 'editor:indent-selected-rows'
   'g c': 'editor:toggle-line-comments'
   'shift-up': 'editor:move-line-up'
@@ -26,6 +28,8 @@
   ', q': 'core:close'
   'space y': 'vim-mode-plus:yank'
   'space a': 'core:select-all'
+  'ctrl-w -': 'pane:split-down-and-copy-active-item'
+  'ctrl-w \\': 'pane:split-right-and-copy-active-item'
 
 'atom-text-editor.vim-mode:not(.insert-mode), .tree-view':
   '-': 'tree-view:toggle'
@@ -37,3 +41,22 @@
   'g f':      'open-this:here'
   'ctrl-w f': 'open-this:split-down'
   'ctrl-w F': 'open-this:split-right'
+
+  # vim-surround
+  'y s': 'vim-mode-plus:surround'
+
+  'd s': 'vim-mode-plus:delete-surround-any-pair'
+  'd S': 'vim-mode-plus:delete-surround'
+
+  'c s': 'vim-mode-plus:change-surround-any-pair'
+  'c S': 'vim-mode-plus:change-surround'
+
+# operator-pending only when surround-pending
+# -------------------------
+'atom-text-editor.vim-mode-plus.operator-pending-mode.surround-pending':
+  's': 'vim-mode-plus:inner-current-line'
+
+# visual
+# -------------------------
+'atom-text-editor.vim-mode-plus.visual-mode:not(.insert-mode)':
+  'S': 'vim-mode-plus:surround'
