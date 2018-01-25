@@ -7,31 +7,31 @@ if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
 
-color00="12/16/1d" # Base 00 - Black
-color01="e5/23/69" # Base 08 - Red
-color02="99/d0/2a" # Base 0B - Green
-color03="e4/e4/e7" # Base 0A - Yellow
-color04="e4/e4/e7" # Base 0D - Blue
-color05="e4/e4/e7" # Base 0E - Magenta
-color06="e4/e4/e7" # Base 0C - Cyan
-color07="e4/e4/e7" # Base 05 - White
-color08="4b/57/62" # Base 03 - Bright Black
+color00="14/18/1f" # Base 00 - Black
+color01="f4/25/70" # Base 08 - Red
+color02="a3/dd/2d" # Base 0B - Green
+color03="f3/f3/f6" # Base 0A - Yellow
+color04="f3/f3/f6" # Base 0D - Blue
+color05="f3/f3/f6" # Base 0E - Magenta
+color06="f3/f3/f6" # Base 0C - Cyan
+color07="f3/f3/f6" # Base 05 - White
+color08="4f/5d/68" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="e5/e5/e7" # Base 07 - Bright White
-color16="e4/e4/e7" # Base 09
-color17="e4/e4/e7" # Base 0F
-color18="16/1c/25" # Base 01
-color19="36/41/4b" # Base 02
-color20="87/8d/99" # Base 04
-color21="e1/e1/e2" # Base 06
-color_foreground="e4/e4/e7" # Base 05
-color_background="12/16/1d" # Base 00
-color_cursor="e4/e4/e7" # Base 05
+color15="f4/f4/f6" # Base 07 - Bright White
+color16="f3/f3/f6" # Base 09
+color17="f3/f3/f6" # Base 0F
+color18="18/1d/27" # Base 01
+color19="3a/46/50" # Base 02
+color20="90/96/a3" # Base 04
+color21="f0/f0/f1" # Base 06
+color_foreground="f3/f3/f6" # Base 05
+color_background="14/18/1f" # Base 00
+color_cursor="f3/f3/f6" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,16 +79,16 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg e4e4e7 # forground
-  printf $printf_template_custom Ph 12161d # background
-  printf $printf_template_custom Pi e4e4e7 # bold color
-  printf $printf_template_custom Pj 36414b # selection color
-  printf $printf_template_custom Pk e4e4e7 # selected text color
+  printf $printf_template_custom Pg f3f3f6 # forground
+  printf $printf_template_custom Ph 14181f # background
+  printf $printf_template_custom Pi f3f3f6 # bold color
+  printf $printf_template_custom Pj 3a4650 # selection color
+  printf $printf_template_custom Pk f3f3f6 # selected text color
   
-  printf $printf_template_custom Pl e4e4e7 # cursor
+  printf $printf_template_custom Pl f3f3f6 # cursor
   
   
-  printf $printf_template_custom Pm 12161d # cursor text
+  printf $printf_template_custom Pm 14181f # cursor text
   
 else
   printf $printf_template_var 10 $color_foreground
