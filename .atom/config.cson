@@ -32,6 +32,10 @@
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "atom-light-syntax"
+    ]
     titleBar: "custom"
   editor:
     fontFamily: "SF Mono"
@@ -47,6 +51,13 @@
   react:
     disableAutoClose: true
     enabledForAllJavascriptFiles: true
+  "theme-switch":
+    darkProfiles: [
+      "one-dark-ui one-dark-syntax"
+    ]
+    lightProfiles: [
+      "one-light-ui atom-light-syntax"
+    ]
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
