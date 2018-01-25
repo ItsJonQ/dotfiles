@@ -8,7 +8,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 
-color00="f2/f2/f2" # Base 00 - Black
+color00="f5/f5/f5" # Base 00 - Black
 color01="1d/1d/1d" # Base 08 - Red
 color02="1d/1d/1d" # Base 0B - Green
 color03="1d/1d/1d" # Base 0A - Yellow
@@ -17,27 +17,27 @@ color05="1d/1d/1d" # Base 0E - Magenta
 color06="1d/1d/1d" # Base 0C - Cyan
 color07="1d/1d/1d" # Base 05 - White
 
-color08="b2/b2/b2" # Base 03 - Bright Black
+color08="b4/b4/b4" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="23/23/24" # Base 07 - Bright White
-color16="f2/f2/f2" # Base 09
-color17="f2/f2/f2" # Base 0F
-color18="e7/e7/e7" # Base 01
-color19="d2/d2/d2" # Base 02
-color20="51/51/51" # Base 04
+color15="24/24/24" # Base 07 - Bright White
+color16="f5/f5/f5" # Base 09
+color17="f5/f5/f5" # Base 0F
+color18="e9/e9/e9" # Base 01
+color19="d4/d4/d4" # Base 02
+color20="52/52/52" # Base 04
 
-color21="f2/f2/f2" # Base 06
+color21="f5/f5/f5" # Base 06
 
 
 color_foreground="1d/1d/1d" # Base 05
-color_background="f2/f2/f2" # Base 00
+color_background="f5/f5/f5" # Base 00
 
-color_cursor="30/30/30" # Base 05
+color_cursor="31/31/31" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -87,15 +87,15 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
   printf $printf_template_custom Pg 1d1d1d # forground
-  printf $printf_template_custom Ph f2f2f2 # background
+  printf $printf_template_custom Ph f5f5f5 # background
   printf $printf_template_custom Pi 1d1d1d # bold color
-  printf $printf_template_custom Pj d2d2d2 # selection color
+  printf $printf_template_custom Pj d4d4d4 # selection color
   printf $printf_template_custom Pk 1d1d1d # selected text color
   
   printf $printf_template_custom Pl 1d1d1d # cursor
   
   
-  printf $printf_template_custom Pm f2f2f2 # cursor text
+  printf $printf_template_custom Pm f5f5f5 # cursor text
   
   
 else

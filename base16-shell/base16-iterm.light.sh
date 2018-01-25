@@ -8,7 +8,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 
-color00="e2/e2/e2" # Base 00 - Black
+color00="e4/e4/e4" # Base 00 - Black
 color01="27/27/27" # Base 08 - Red
 color02="27/27/27" # Base 0B - Green
 color03="27/27/27" # Base 0A - Yellow
@@ -17,27 +17,27 @@ color05="27/27/27" # Base 0E - Magenta
 color06="27/27/27" # Base 0C - Cyan
 color07="27/27/27" # Base 05 - White
 
-color08="a2/a2/a2" # Base 03 - Bright Black
+color08="a3/a3/a3" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="39/39/39" # Base 07 - Bright White
-color16="e2/e2/e2" # Base 09
-color17="e2/e2/e2" # Base 0F
-color18="d2/d2/d2" # Base 01
-color19="c2/c2/c2" # Base 02
-color20="57/57/57" # Base 04
+color15="3a/3a/3a" # Base 07 - Bright White
+color16="e4/e4/e4" # Base 09
+color17="e4/e4/e4" # Base 0F
+color18="d4/d4/d4" # Base 01
+color19="c4/c4/c4" # Base 02
+color20="58/58/58" # Base 04
 
-color21="e2/e2/e2" # Base 06
+color21="e4/e4/e4" # Base 06
 
 
 color_foreground="27/27/27" # Base 05
-color_background="e2/e2/e2" # Base 00
+color_background="e4/e4/e4" # Base 00
 
-color_cursor="48/48/48" # Base 05
+color_cursor="49/49/49" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -87,9 +87,9 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
   printf $printf_template_custom Pg 272727 # forground
-  printf $printf_template_custom Ph e2e2e2 # background
+  printf $printf_template_custom Ph e4e4e4 # background
   printf $printf_template_custom Pi 272727 # bold color
-  printf $printf_template_custom Pj c2c2c2 # selection color
+  printf $printf_template_custom Pj c4c4c4 # selection color
   printf $printf_template_custom Pk 272727 # selected text color
   
   printf $printf_template_custom Pl 50E3C2 # cursor
