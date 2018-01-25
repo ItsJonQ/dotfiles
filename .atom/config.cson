@@ -1,15 +1,38 @@
 "*":
-  "bracket-matcher": {}
+  "atom-material-ui":
+    colors: {}
+    tabs:
+      compactTabs: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+      useAnimations: false
+  "autocomplete-plus":
+    autoActivationDelay: 30
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    defaultProvider: "Symbol"
+    minimumWordLength: 1
+    similarSuggestionRemoval: "textOrSnippet"
+    strictMatching: true
+  "bracket-matcher":
+    autocompleteBrackets: false
   core:
+    audioBeep: false
     disabledPackages: [
-      "no-dock-arrows"
+      "background-tips"
+      "autocomplete-css"
+      "autocomplete-atom-api"
+      "autocomplete-snippets"
+      "busy-signal"
+      "intentions"
+      "linter"
+      "linter-ui-default"
+      "autocomplete-html"
     ]
     reopenProjectMenuCount: 14
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "atom-light-syntax"
-    ]
+    titleBar: "custom"
   editor:
     fontFamily: "SF Mono"
     fontSize: 13
@@ -17,9 +40,22 @@
     scrollSensitivity: 60
     showInvisibles: true
     softWrap: true
+    zoomFontWhenCtrlScrolling: true
   "exception-reporting":
     userId: "8c45499a-d18d-86ee-185a-99f7577a1790"
+  "one-dark-ui": {}
+  react:
+    disableAutoClose: true
+    enabledForAllJavascriptFiles: true
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
+    clearMultipleCursorsOnEscapeInsertMode: true
+    useClipboardAsDefaultRegister: false
+    useSmartcaseForFind: true
+    useSmartcaseForSearch: true
+    useSmartcaseForSearchCurrentWord: true
   welcome:
     showOnStartup: false

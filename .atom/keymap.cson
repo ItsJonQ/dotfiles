@@ -8,6 +8,15 @@
   'ctrl-w [': 'pane:show-previous-item'
   'ctrl-w ]': 'pane:show-next-item'
   'ctrl-\\': 'tree-view:toggle'
+  'cmd-shift-left': 'pane:move-item-left'
+  'cmd-shift-right': 'pane:move-item-right'
+  ', [': 'pane:show-previous-item'
+  ', ]': 'pane:show-next-item'
+  ', o': 'pane:close-other-items'
+  ', q': 'core:close'
+
+# 'atom-text-editor.vim-mode-plus.insert-mode:not(.autocomplete-active)':
+#   'tab': 'autocomplete-plus:activate'
 
 'atom-text-editor.vim-mode-plus:not(.insert-mode)':
   # 'ctrl-p': 'fuzzy-finder:toggle-file-finder'
@@ -17,36 +26,44 @@
   'g c': 'editor:toggle-line-comments'
   'shift-up': 'editor:move-line-up'
   'shift-down': 'editor:move-line-down'
+  'space y': 'core:copy'
+  'space p': 'core:paste'
+  'space a': 'core:select-all'
   'space [': 'pane:show-previous-item'
   'space ]': 'pane:show-next-item'
   'space o': 'pane:close-other-items'
   'space q': 'core:close'
   'space w': 'core:close'
-  ', [': 'pane:show-previous-item'
-  ', ]': 'pane:show-next-item'
-  ', o': 'pane:close-other-items'
-  ', q': 'core:close'
-  'space y': 'vim-mode-plus:yank'
-  'space a': 'core:select-all'
   'ctrl-w -': 'pane:split-down-and-copy-active-item'
   'ctrl-w \\': 'pane:split-right-and-copy-active-item'
+  'cmd-shift-left': 'pane:move-item-left'
+  'cmd-shift-right': 'pane:move-item-right'
+  'z m': 'vim-mode-plus:fold-all'
+  'z r': 'vim-mode-plus:unfold-all'
+  'space d s': 'whitespace:remove-trailing-whitespace'
+
 
 'atom-text-editor.vim-mode:not(.insert-mode), .tree-view':
   '-': 'tree-view:toggle'
   'd': 'tree-view:add-folder'
   'D': 'tree-view:remove'
   '%': 'tree-view:add-file'
+  'R': 'tree-view:rename'
 
 'atom-text-editor.vim-mode-plus.normal-mode':
   'g f':      'open-this:here'
   'ctrl-w f': 'open-this:split-down'
   'ctrl-w F': 'open-this:split-right'
+  'd d': 'vim-mode-plus:delete-line'
+  'd ctrl-c': 'ex-mode:close'
+  'd j': 'core:move-down'
+  'd k': 'core:move-up'
 
   # vim-surround
   'y s': 'vim-mode-plus:surround'
 
-  'd s': 'vim-mode-plus:delete-surround-any-pair'
-  'd S': 'vim-mode-plus:delete-surround'
+  # 'd s': 'vim-mode-plus:delete-surround-any-pair'
+  # 'd S': 'vim-mode-plus:delete-surround'
 
   'c s': 'vim-mode-plus:change-surround-any-pair'
   'c S': 'vim-mode-plus:change-surround'
