@@ -1,5 +1,5 @@
 #!/bin/sh
-# Base16 GH - Shell color setup script
+# Base16 GHONE - Shell color setup script
 # Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -8,16 +8,16 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 
-color00="ff/ff/ff" # Base 00 - Black
+color00="ef/f1/f5" # Base 00 - Black
 color01="99/00/00" # Base 08 - Red
 color02="00/80/80" # Base 0B - Green
 color03="44/55/88" # Base 0A - Yellow
 color04="44/55/88" # Base 0D - Blue
-color05="ff/ff/ff" # Base 0E - Magenta
+color05="ef/f1/f5" # Base 0E - Magenta
 color06="60/6a/a1" # Base 0C - Cyan
 color07="4f/5b/66" # Base 05 - White
 
-color08="be/be/be" # Base 03 - Bright Black
+color08="a7/ad/ba" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -25,17 +25,17 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="2c/32/3c" # Base 07 - Bright White
-color16="ff/ff/ff" # Base 09
-color17="ff/ff/ff" # Base 0F
-color18="f2/f2/f2" # Base 01
-color19="e1/e1/e1" # Base 02
+color16="ef/f1/f5" # Base 09
+color17="ef/f1/f5" # Base 0F
+color18="df/e1/e8" # Base 01
+color19="c0/c5/ce" # Base 02
 color20="65/73/7e" # Base 04
 
 color21="2c/32/3c" # Base 06
 
 
 color_foreground="4f/5b/66" # Base 05
-color_background="ff/ff/ff" # Base 00
+color_background="ef/f1/f5" # Base 00
 
 color_cursor="4f/5b/66" # Base 05
 
@@ -87,9 +87,9 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
   printf $printf_template_custom Pg 4f5b66 # forground
-  printf $printf_template_custom Ph ffffff # background
+  printf $printf_template_custom Ph eff1f5 # background
   printf $printf_template_custom Pi 4f5b66 # bold color
-  printf $printf_template_custom Pj e1e1e1 # selection color
+  printf $printf_template_custom Pj c0c5ce # selection color
   printf $printf_template_custom Pk 4f5b66 # selected text color
   
   printf $printf_template_custom Pl 50E3C2 # cursor
