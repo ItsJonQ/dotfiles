@@ -18,6 +18,7 @@
     autocompleteBrackets: false
   core:
     audioBeep: false
+    destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
       "autocomplete-css"
