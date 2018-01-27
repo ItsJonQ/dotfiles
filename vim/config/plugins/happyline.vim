@@ -68,8 +68,8 @@ set statusline+=\ ·
 set statusline+=\ %f
 set statusline+=\ %m
 set statusline+=%=
-set statusline+=\ [%{wordCount#WordCount()}\]
-set statusline+=\ ·
+" set statusline+=\ [%{wordCount#WordCount()}\]
+" set statusline+=\ ·
 set statusline+=\ (%l,%v\)
 set statusline+=\ ·
 set statusline+=\ %p%%

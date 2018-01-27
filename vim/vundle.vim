@@ -22,7 +22,7 @@ endif
 " }}}
 " Enhancements {{{
 
-Plugin 'ChesleyTan/wordCount.vim'
+" Plugin 'ChesleyTan/wordCount.vim'
 Plugin 'Konfekt/FastFold'
 Plugin 'VundleVim/Vundle.vim'
 " Plugin 'Yggdroot/indentLine'
