@@ -21,14 +21,11 @@
     destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
-      "autocomplete-css"
       "autocomplete-atom-api"
-      "autocomplete-snippets"
       "busy-signal"
       "intentions"
       "linter"
       "linter-ui-default"
-      "autocomplete-html"
     ]
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
@@ -61,7 +58,6 @@
     ]
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     automaticallyEscapeInsertModeOnActivePaneItemChange: true
     clearMultipleCursorsOnEscapeInsertMode: true
