@@ -15,29 +15,29 @@ color03="44/55/88" # Base 0A - Yellow
 color04="44/55/88" # Base 0D - Blue
 color05="ff/ff/ff" # Base 0E - Magenta
 color06="60/6a/a1" # Base 0C - Cyan
-color07="4f/5b/66" # Base 05 - White
+color07="2c/32/3c" # Base 05 - White
 
-color08="be/be/be" # Base 03 - Bright Black
+color08="cd/cd/cd" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="2c/32/3c" # Base 07 - Bright White
+color15="28/2c/34" # Base 07 - Bright White
 color16="ff/ff/ff" # Base 09
 color17="ff/ff/ff" # Base 0F
-color18="f2/f2/f2" # Base 01
-color19="e1/e1/e1" # Base 02
-color20="65/73/7e" # Base 04
+color18="f6/f6/f6" # Base 01
+color19="e5/e5/e5" # Base 02
+color20="4f/5b/66" # Base 04
 
-color21="2c/32/3c" # Base 06
+color21="28/2c/34" # Base 06
 
 
-color_foreground="4f/5b/66" # Base 05
+color_foreground="2c/32/3c" # Base 05
 color_background="ff/ff/ff" # Base 00
 
-color_cursor="4f/5b/66" # Base 05
+color_cursor="2c/32/3c" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -86,16 +86,16 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
-  printf $printf_template_custom Pg 4f5b66 # forground
+  printf $printf_template_custom Pg 2c323c # forground
   printf $printf_template_custom Ph ffffff # background
-  printf $printf_template_custom Pi 4f5b66 # bold color
-  printf $printf_template_custom Pj e1e1e1 # selection color
-  printf $printf_template_custom Pk 4f5b66 # selected text color
+  printf $printf_template_custom Pi 2c323c # bold color
+  printf $printf_template_custom Pj e5e5e5 # selection color
+  printf $printf_template_custom Pk 2c323c # selected text color
   
   printf $printf_template_custom Pl 50E3C2 # cursor
   
   
-  printf $printf_template_custom Pm 000000 # cursor
+  printf $printf_template_custom Pm ffffff # cursor text
   
   
 else
