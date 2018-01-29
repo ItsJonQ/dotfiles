@@ -32,7 +32,7 @@
     telemetryConsent: "no"
     themes: [
       "one-light-ui"
-      "atom-dark-syntax"
+      "atom-light-syntax"
     ]
     titleBar: "custom"
   editor:
