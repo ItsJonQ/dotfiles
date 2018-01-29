@@ -9,11 +9,11 @@ fi
 
 color00="14/18/20" # Base 00 - Black
 color01="e0/6c/75" # Base 08 - Red
-color02="98/c3/79" # Base 0B - Green
+color02="50/90/90" # Base 0B - Green
 color03="c6/c5/fe" # Base 0A - Yellow
 color04="c6/c5/fe" # Base 0D - Blue
 color05="ff/ff/ff" # Base 0E - Magenta
-color06="56/b6/c2" # Base 0C - Cyan
+color06="c6/c5/fe" # Base 0C - Cyan
 color07="e5/e5/e5" # Base 05 - White
 color08="4f/5b/66" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
