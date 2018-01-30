@@ -30,10 +30,6 @@
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "atom-light-syntax"
-    ]
     titleBar: "custom"
   editor:
     fontFamily: "SF Mono"
