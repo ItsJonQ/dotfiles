@@ -4,7 +4,7 @@
 " =============================================================================
 " Overridding configs that get set just before Vim opens
 
-" set nocursorline
+set nocursorline
 set laststatus=2
 set noshowcmd
 let g:netrw_cursor=0
