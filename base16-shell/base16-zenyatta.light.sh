@@ -19,7 +19,7 @@ color06="c6/c6/c9" # Base 0C - Cyan
 color07="3b/47/52" # Base 05 - White
 
 
-color08="93/99/a6" # Base 03 - Bright Black
+color08="c4/c4/c5" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -29,8 +29,8 @@ color14=$color06 # Base 0C - Bright Cyan
 color15="18/1e/28" # Base 07 - Bright White
 color16="f8/f8/fb" # Base 09
 color17="f8/f8/fb" # Base 0F
-color18="f5/f5/f6" # Base 01
-color19="f8/f8/fb" # Base 02
+color18="f0/f0/f1" # Base 01
+color19="e5/e5/e6" # Base 02
 color20="51/5f/6a" # Base 04
 
 color21="18/1e/28" # Base 06
@@ -91,7 +91,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg 3b4752 # forground
   printf $printf_template_custom Ph f9f9fb # background
   printf $printf_template_custom Pi 3b4752 # bold color
-  printf $printf_template_custom Pj f8f8fb # selection color
+  printf $printf_template_custom Pj e5e5e6 # selection color
   printf $printf_template_custom Pk 3b4752 # selected text color
   
   printf $printf_template_custom Pl 3b4752 # cursor
