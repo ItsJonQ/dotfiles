@@ -61,5 +61,6 @@
     useSmartcaseForFind: true
     useSmartcaseForSearch: true
     useSmartcaseForSearchCurrentWord: true
+    wrapLeftRightMotion: true
   welcome:
     showOnStartup: false
