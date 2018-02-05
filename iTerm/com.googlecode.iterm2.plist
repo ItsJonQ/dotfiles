@@ -1266,7 +1266,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>342 405 796 473 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>155 94 680 512 0 0 1440 878 </string>
+	<string>216 211 1000 566 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2023,7 +2023,7 @@
 			<key>Thin Strokes</key>
 			<integer>0</integer>
 			<key>Transparency</key>
-			<real>0.049486437182741115</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unicode Version</key>
@@ -2134,7 +2134,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-01T20:32:20Z</date>
+	<date>2018-02-02T21:02:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2158,7 +2158,7 @@
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
 	<key>TabStyle</key>
-	<integer>3</integer>
+	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>

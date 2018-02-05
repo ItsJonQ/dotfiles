@@ -26,6 +26,7 @@
       "intentions"
       "linter"
       "linter-ui-default"
+      "vim-mode-plus"
     ]
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
