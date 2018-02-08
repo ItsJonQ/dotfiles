@@ -26,14 +26,14 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="28/2c/34" # Base 07 - Bright White
+color15="1e/22/2a" # Base 07 - Bright White
 color16="ff/ff/ff" # Base 09
 color17="ff/ff/ff" # Base 0F
 color18="f6/f6/f6" # Base 01
 color19="e5/e5/e5" # Base 02
 color20="4f/5b/66" # Base 04
 
-color21="28/2c/34" # Base 06
+color21="1e/22/2a" # Base 06
 
 
 color_foreground="2c/32/3c" # Base 05
