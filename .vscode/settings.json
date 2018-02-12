@@ -25,9 +25,9 @@
     // "statusBar.background" : "#1A1A1A",
     // "statusBar.noFolderBackground" : "#212121",
     // "statusBar.debuggingBackground": "#263238"
-    "editorError.foreground":   "#00000000",
-    "editorWarning.foreground": "#00000000",
-    "editorInfo.foreground":    "#00000000"
+    // "editorError.foreground":   "#ffffff99",
+    // "editorWarning.foreground": "#ffffff99",
+    // "editorInfo.foreground":    "#ffffff99"
   },
   "editor.parameterHints": false,
   "editor.fontSize": 13,
@@ -50,9 +50,12 @@
   "standard.validate": [],
   "emmet.showExpandedAbbreviation": "never",
   "editor.colorDecorators": false,
-  "workbench.colorTheme": "Aurora",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": false,
   "workbench.editor.showIcons": false,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "left",
+  "workbench.colorTheme": "One Dark Pro",
+  "javascript.validate.enable": false,
+  "php.validate.enable": false,
+  "jshint.enable": false
 }

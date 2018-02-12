@@ -52,8 +52,9 @@ if has("gui_running")
   " Force color
   " color base16-vsplus
   " color base16-one
-  set background=light
-  color base16-gh
+  color base16-fifty
+  " set background=light
+  " color base16-gh
   if !empty($BASE16_COLOR)
     if $BASE16_SHADE == "dark"
       set background=dark
