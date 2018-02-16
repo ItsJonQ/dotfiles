@@ -8,7 +8,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 
-color00="ee/ee/ee" # Base 00 - Black
+color00="f2/f2/f2" # Base 00 - Black
 color01="00/00/00" # Base 08 - Red
 color02="00/00/00" # Base 0B - Green
 color03="00/00/00" # Base 0A - Yellow
@@ -25,17 +25,17 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="10/10/10" # Base 07 - Bright White
-color16="ee/ee/ee" # Base 09
-color17="ee/ee/ee" # Base 0F
-color18="de/de/de" # Base 01
+color16="f2/f2/f2" # Base 09
+color17="f2/f2/f2" # Base 0F
+color18="e6/e6/e6" # Base 01
 color19="cc/cc/cc" # Base 02
 color20="5c/5c/5c" # Base 04
 
-color21="ee/ee/ee" # Base 06
+color21="f2/f2/f2" # Base 06
 
 
 color_foreground="00/00/00" # Base 05
-color_background="ee/ee/ee" # Base 00
+color_background="f2/f2/f2" # Base 00
 
 color_cursor="3c/3c/3c" # Base 05
 
@@ -87,7 +87,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
   printf $printf_template_custom Pg 000000 # forground
-  printf $printf_template_custom Ph eeeeee # background
+  printf $printf_template_custom Ph f2f2f2 # background
   printf $printf_template_custom Pi 000000 # bold color
   printf $printf_template_custom Pj cccccc # selection color
   printf $printf_template_custom Pk 000000 # selected text color
