@@ -1258,15 +1258,15 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>529 97 855 77 0 0 1440 878 </string>
+	<string>312 212 732 403 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 375 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>342 405 796 473 0 0 1440 878 </string>
+	<string>428 163 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>216 211 1000 566 0 0 1440 878 </string>
+	<string>144 179 1152 638 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2134,7 +2134,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-12T07:54:50Z</date>
+	<date>2018-02-15T14:43:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2150,7 +2150,7 @@
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.13046123798076925</real>
+	<real>0.22988281250000003</real>
 	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>SwitchTabModifier</key>
