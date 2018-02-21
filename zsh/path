@@ -42,6 +42,7 @@ npm config set save-exact true
 # Yarn!
 # yarn help >/dev/null 2>&1 && export PATH="$PATH:`yarn global bin`"
 
+
 # Docker
 if which docker-machine > /dev/null; then
   # This will set up your shell to use the docker-machine if it is running,
@@ -69,3 +70,7 @@ export SCOUT_DOCKER_MODE=true
 ## vv
 # Source: https://github.com/bradp/vv
 # source $( echo $(which vv)-completions)
+
+
+## composer
+export PATH="$HOME/.composer/vendor/bin:$PATH"

@@ -22,9 +22,9 @@
   "vim.disableAnnoyingNeovimMessage": true,
   "workbench.welcome.enabled": false,
   "workbench.colorCustomizations": {
-    // "statusBar.background" : "#1A1A1A",
-    // "statusBar.noFolderBackground" : "#212121",
-    // "statusBar.debuggingBackground": "#263238"
+    "statusBar.background" : "#1A1A1A",
+    "statusBar.noFolderBackground" : "#212121",
+    "statusBar.debuggingBackground": "#263238",
     // "editorError.foreground":   "#ffffff99",
     // "editorWarning.foreground": "#ffffff99",
     // "editorInfo.foreground":    "#ffffff99"
@@ -54,8 +54,9 @@
   "workbench.activityBar.visible": false,
   "workbench.editor.showIcons": false,
   "workbench.sideBar.location": "left",
-  "workbench.colorTheme": "One Dark Pro",
   "javascript.validate.enable": false,
   "php.validate.enable": false,
-  "jshint.enable": false
+  "jshint.enable": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorTheme": "Default High Contrast"
 }
