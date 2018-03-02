@@ -63,11 +63,12 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "workbench.iconTheme": null,
-  "workbench.colorTheme": "Gray Matter Light",
   "files.trimTrailingWhitespace": true,
   "editor.trimAutoWhitespace": true,
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": false,
   "workbench.statusBar.feedback.visible": false,
-  "workbench.statusBar.visible": false
+  "workbench.statusBar.visible": false,
+  "window.restoreWindows": "none",
+  "workbench.colorTheme": "Tomorrow Night Blue"
 }
