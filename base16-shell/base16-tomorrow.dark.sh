@@ -84,12 +84,16 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pi c5c8c6 # bold color
   printf $printf_template_custom Pj 373b41 # selection color
   printf $printf_template_custom Pk c5c8c6 # selected text color
+  
   printf $printf_template_custom Pl c5c8c6 # cursor
+  
+  
   printf $printf_template_custom Pm 1d1f21 # cursor text
+  
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background
-  printf $printf_template_var 12 $color_cursor
+  printf $printf_template_custom 12 ";7" # cursor (reverse video)
 fi
 
 # clean up
