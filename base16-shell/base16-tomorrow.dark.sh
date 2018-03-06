@@ -14,24 +14,24 @@ color03="eb/cb/8b" # Base 0A - Yellow
 color04="8f/a1/b3" # Base 0D - Blue
 color05="b4/8e/ad" # Base 0E - Magenta
 color06="96/b5/b4" # Base 0C - Cyan
-color07="c5/c8/c6" # Base 05 - White
-color08="65/73/7e" # Base 03 - Bright Black
+color07="db/dd/e1" # Base 05 - White
+color08="45/47/49" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="ff/ff/ff" # Base 07 - Bright White
+color15="ef/f1/f5" # Base 07 - Bright White
 color16="d0/87/70" # Base 09
 color17="ab/79/67" # Base 0F
 color18="22/24/26" # Base 01
-color19="37/3b/41" # Base 02
-color20="a7/ad/ba" # Base 04
-color21="fa/fa/fa" # Base 06
-color_foreground="c5/c8/c6" # Base 05
+color19="31/33/35" # Base 02
+color20="c7/c9/cd" # Base 04
+color21="eb/ec/f0" # Base 06
+color_foreground="db/dd/e1" # Base 05
 color_background="1d/1f/21" # Base 00
-color_cursor="c5/c8/c6" # Base 05
+color_cursor="db/dd/e1" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,13 +79,13 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg c5c8c6 # forground
+  printf $printf_template_custom Pg dbdde1 # forground
   printf $printf_template_custom Ph 1d1f21 # background
-  printf $printf_template_custom Pi c5c8c6 # bold color
-  printf $printf_template_custom Pj 373b41 # selection color
-  printf $printf_template_custom Pk c5c8c6 # selected text color
+  printf $printf_template_custom Pi dbdde1 # bold color
+  printf $printf_template_custom Pj 313335 # selection color
+  printf $printf_template_custom Pk dbdde1 # selected text color
   
-  printf $printf_template_custom Pl c5c8c6 # cursor
+  printf $printf_template_custom Pl dbdde1 # cursor
   
   
   printf $printf_template_custom Pm 1d1f21 # cursor text
