@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 Tomorrow - Shell color setup script
-# Chris Kempson (http://chriskempson.com)
+# Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -28,7 +28,7 @@ color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="22/24/26" # Base 07 - Bright White
 color16="d0/87/70" # Base 09
-color17="ab/79/67" # Base 0F
+color17="bf/61/6a" # Base 0F
 color18="eb/ec/f0" # Base 01
 color19="db/dd/e1" # Base 02
 color20="45/47/49" # Base 04
