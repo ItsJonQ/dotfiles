@@ -19,7 +19,7 @@ color06="78/91/90" # Base 0C - Cyan
 color07="5e/54/6a" # Base 05 - White
 
 
-color08="cd/b8/bd" # Base 03 - Bright Black
+color08="d7/c6/cb" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
