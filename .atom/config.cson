@@ -27,16 +27,16 @@
       "linter"
       "linter-ui-default"
       "react"
+      "vim-mode-plus"
     ]
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
-    fontFamily: "SF Mono"
-    fontSize: 13
     scrollPastEnd: true
     scrollSensitivity: 60
+    showIndentGuide: true
     showInvisibles: true
     softWrap: true
     zoomFontWhenCtrlScrolling: true

@@ -12,6 +12,8 @@
   'ctrl-\\': 'tree-view:toggle'
   'cmd-shift-left': 'pane:move-item-left'
   'cmd-shift-right': 'pane:move-item-right'
+  'alt-up': 'editor:move-line-up'
+  'alt-down': 'editor:move-line-down'
 
 # 'atom-text-editor.vim-mode-plus.insert-mode:not(.autocomplete-active)':
 #   'tab': 'autocomplete-plus:activate'
