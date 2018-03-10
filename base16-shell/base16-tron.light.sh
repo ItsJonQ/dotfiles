@@ -10,13 +10,13 @@ fi
 
 color00="fa/fa/fa" # Base 00 - Black
 
-color01="c0/9e/5d" # Base 08 - Red
+color01="c0/79/1f" # Base 08 - Red
 color02="4e/8c/bf" # Base 0B - Green
-color03="c0/9e/5d" # Base 0A - Yellow
+color03="c0/79/1f" # Base 0A - Yellow
 color04="4e/8c/bf" # Base 0D - Blue
 color05="4e/8c/bf" # Base 0E - Magenta
 color06="4e/8c/bf" # Base 0C - Cyan
-color07="1f/25/32" # Base 05 - White
+color07="20/26/33" # Base 05 - White
 
 
 color08="d4/d4/d4" # Base 03 - Bright Black
@@ -26,20 +26,20 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="15/1a/22" # Base 07 - Bright White
-color16="f0/c6/74" # Base 09
-color17="f0/c6/74" # Base 0F
+color15="16/1a/23" # Base 07 - Bright White
+color16="f0/97/27" # Base 09
+color17="f0/97/27" # Base 0F
 color18="f4/f4/f4" # Base 01
 color19="e7/e7/e7" # Base 02
 color20="25/2c/3b" # Base 04
 
-color21="15/1a/22" # Base 06
+color21="16/1a/23" # Base 06
 
 
-color_foreground="1f/25/32" # Base 05
+color_foreground="20/26/33" # Base 05
 color_background="fa/fa/fa" # Base 00
 
-color_cursor="1f/25/32" # Base 05
+color_cursor="20/26/33" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -88,13 +88,13 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
-  printf $printf_template_custom Pg 1f2532 # forground
+  printf $printf_template_custom Pg 202633 # forground
   printf $printf_template_custom Ph fafafa # background
-  printf $printf_template_custom Pi 1f2532 # bold color
+  printf $printf_template_custom Pi 202633 # bold color
   printf $printf_template_custom Pj e7e7e7 # selection color
-  printf $printf_template_custom Pk 1f2532 # selected text color
+  printf $printf_template_custom Pk 202633 # selected text color
   
-  printf $printf_template_custom Pl 1f2532 # cursor
+  printf $printf_template_custom Pl 202633 # cursor
   
   
   printf $printf_template_custom Pm fafafa # cursor text
