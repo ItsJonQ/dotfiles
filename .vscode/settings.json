@@ -69,5 +69,6 @@
   "files.insertFinalNewline": false,
   "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": false,
-  "window.restoreWindows": "none"
+  "window.restoreWindows": "none",
+  "workbench.colorTheme": "Default Light+"
 }
