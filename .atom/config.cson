@@ -34,6 +34,8 @@
     telemetryConsent: "no"
     titleBar: "custom"
   editor:
+    confirmCheckoutHeadRevision: false
+    fontFamily: "SF Mono"
     scrollPastEnd: true
     scrollSensitivity: 60
     showIndentGuide: true
