@@ -8,7 +8,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="14/18/20" # Base 00 - Black
-color01="db/db/e7" # Base 08 - Red
+color01="bd/bd/d3" # Base 08 - Red
 color02="28/9a/ff" # Base 0B - Green
 color03="db/db/e7" # Base 0A - Yellow
 color04="28/9a/ff" # Base 0D - Blue
@@ -24,7 +24,7 @@ color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="f9/f9/fb" # Base 07 - Bright White
 color16="db/db/e7" # Base 09
-color17="db/db/e7" # Base 0F
+color17="bd/bd/d3" # Base 0F
 color18="16/1a/23" # Base 01
 color19="20/26/33" # Base 02
 color20="bd/bd/d3" # Base 04
