@@ -11,7 +11,7 @@ fi
 color00="ff/ff/ff" # Base 00 - Black
 
 color01="9d/15/11" # Base 08 - Red
-color02="00/5d/00" # Base 0B - Green
+color02="00/a2/2a" # Base 0B - Green
 color03="bc/6a/00" # Base 0A - Yellow
 color04="00/00/cc" # Base 0D - Blue
 color05="b6/00/b4" # Base 0E - Magenta
