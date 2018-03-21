@@ -94,7 +94,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pj ececec # selection color
   printf $printf_template_custom Pk 2c2c2c # selected text color
   
-  printf $printf_template_custom Pl 2c2c2c # cursor
+  printf $printf_template_custom Pl 50E3C2 # cursor
   
   
   printf $printf_template_custom Pm ffffff # cursor text
