@@ -10,12 +10,12 @@ fi
 color00="00/00/00" # Base 00 - Black
 color01="c4/1a/15" # Base 08 - Red
 color02="00/74/00" # Base 0B - Green
-color03="82/6b/28" # Base 0A - Yellow
+color03="eb/85/00" # Base 0A - Yellow
 color04="00/00/ff" # Base 0D - Blue
 color05="e4/00/e1" # Base 0E - Magenta
 color06="31/84/95" # Base 0C - Cyan
-color07="dd/dd/dd" # Base 05 - White
-color08="5c/5c/5c" # Base 03 - Bright Black
+color07="e2/e2/e2" # Base 05 - White
+color08="4c/4c/4c" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -25,13 +25,13 @@ color14=$color06 # Base 0C - Bright Cyan
 color15="ff/ff/ff" # Base 07 - Bright White
 color16="e4/00/e1" # Base 09
 color17="c4/1a/15" # Base 0F
-color18="1c/1c/1c" # Base 01
-color19="3c/3c/3c" # Base 02
-color20="aa/aa/aa" # Base 04
-color21="ee/ee/ee" # Base 06
-color_foreground="dd/dd/dd" # Base 05
+color18="0c/0c/0c" # Base 01
+color19="2c/2c/2c" # Base 02
+color20="bb/bb/bb" # Base 04
+color21="f3/f3/f3" # Base 06
+color_foreground="e2/e2/e2" # Base 05
 color_background="00/00/00" # Base 00
-color_cursor="dd/dd/dd" # Base 05
+color_cursor="e2/e2/e2" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,13 +79,13 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg dddddd # forground
+  printf $printf_template_custom Pg e2e2e2 # forground
   printf $printf_template_custom Ph 000000 # background
-  printf $printf_template_custom Pi dddddd # bold color
-  printf $printf_template_custom Pj 3c3c3c # selection color
-  printf $printf_template_custom Pk dddddd # selected text color
+  printf $printf_template_custom Pi e2e2e2 # bold color
+  printf $printf_template_custom Pj 2c2c2c # selection color
+  printf $printf_template_custom Pk e2e2e2 # selected text color
   
-  printf $printf_template_custom Pl dddddd # cursor
+  printf $printf_template_custom Pl e2e2e2 # cursor
   
   
   printf $printf_template_custom Pm 000000 # cursor text
