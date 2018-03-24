@@ -10,8 +10,8 @@ fi
 
 color00="ef/f1/f5" # Base 00 - Black
 
-color01="a9/35/32" # Base 08 - Red
-color02="9c/ba/71" # Base 0B - Green
+color01="cc/48/73" # Base 08 - Red
+color02="71/a0/74" # Base 0B - Green
 color03="cc/a1/6f" # Base 0A - Yellow
 color04="68/8e/cc" # Base 0D - Blue
 color05="9f/75/bb" # Base 0E - Magenta
@@ -28,7 +28,7 @@ color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="2c/31/43" # Base 07 - Bright White
 color16="f7/8c/6c" # Base 09
-color17="d3/42/3e" # Base 0F
+color17="ff/5a/90" # Base 0F
 color18="e6/e9/ef" # Base 01
 color19="d9/dd/e7" # Base 02
 color20="5c/65/8b" # Base 04
