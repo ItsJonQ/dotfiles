@@ -31,9 +31,14 @@
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "material-palenight-syntax"
+    ]
     titleBar: "custom"
   editor:
     confirmCheckoutHeadRevision: false
+    fontSize: 24
     scrollPastEnd: true
     scrollSensitivity: 60
     showIndentGuide: true
@@ -46,8 +51,7 @@
   react:
     disableAutoClose: true
     enabledForAllJavascriptFiles: true
-  "status-bar":
-    isVisible: false
+  "status-bar": {}
   "theme-switch":
     darkProfiles: [
       "one-dark-ui one-dark-syntax"
