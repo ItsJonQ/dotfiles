@@ -38,7 +38,6 @@
     titleBar: "custom"
   editor:
     confirmCheckoutHeadRevision: false
-    fontSize: 24
     scrollPastEnd: true
     scrollSensitivity: 60
     showIndentGuide: true
