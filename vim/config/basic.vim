@@ -70,7 +70,7 @@ au BufRead,BufNewFile *.json set ft=javascript
 au BufRead,BufNewFile *.ts set ft=javascript
 au BufRead,BufNewFile *.mjml set filetype=html
 au BufRead,BufNewFile *.tpl set filetype=html
-au BufRead,BufNewFile *.twig set filetype=html
+" au BufRead,BufNewFile *.twig set filetype=html
 au BufRead,BufNewFile *.md set spell
 au BufRead,BufNewFile *.markdown set spell
 au Filetype markdown set spell
