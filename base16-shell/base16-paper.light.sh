@@ -12,10 +12,10 @@ color00="ee/ee/ee" # Base 00 - Black
 
 color01="a6/31/54" # Base 08 - Red
 color02="37/79/26" # Base 0B - Green
-color03="27/6a/77" # Base 0A - Yellow
+color03="a0/b0/cc" # Base 0A - Yellow
 color04="10/30/a4" # Base 0D - Blue
 color05="71/3d/a2" # Base 0E - Magenta
-color06="27/6a/77" # Base 0C - Cyan
+color06="a0/b0/cc" # Base 0C - Cyan
 color07="2c/2c/2c" # Base 05 - White
 
 
