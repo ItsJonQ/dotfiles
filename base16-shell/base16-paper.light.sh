@@ -14,7 +14,7 @@ color01="a6/31/54" # Base 08 - Red
 color02="37/79/26" # Base 0B - Green
 color03="27/6a/77" # Base 0A - Yellow
 color04="10/30/a4" # Base 0D - Blue
-color05="59/35/9a" # Base 0E - Magenta
+color05="b6/00/b4" # Base 0E - Magenta
 color06="27/6a/77" # Base 0C - Cyan
 color07="2c/2c/2c" # Base 05 - White
 
