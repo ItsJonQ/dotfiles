@@ -31,13 +31,10 @@
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "material-palenight-syntax"
-    ]
     titleBar: "custom"
   editor:
     confirmCheckoutHeadRevision: false
+    fontFamily: "SF Mono"
     scrollPastEnd: true
     scrollSensitivity: 60
     showIndentGuide: true
