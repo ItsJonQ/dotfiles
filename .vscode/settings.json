@@ -34,7 +34,7 @@
   },
   "editor.parameterHints": false,
   "editor.fontSize": 14,
-  "editor.fontFamily": "Menlo, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.hover": false,
   "editor.fontWeight": "Light",
   "materialTheme.cache.workbench.settings": {
@@ -54,7 +54,7 @@
   "emmet.showExpandedAbbreviation": "never",
   "editor.colorDecorators": false,
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "workbench.editor.showIcons": false,
   "workbench.sideBar.location": "left",
   "javascript.validate.enable": false,

@@ -1258,13 +1258,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>422 88 851 189 0 0 1440 878 </string>
+	<string>391 342 788 385 0 0 1920 1178 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 375 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>424 218 606 469 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>798 703 796 473 0 0 1920 1178 </string>
+	<string>202 551 796 473 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>288 245 1338 786 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -1540,7 +1540,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>0.9259812688253013</real>
+			<real>0.88270660768072307</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1861,7 +1861,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 14</string>
+			<string>SFMono-Regular 14</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -2134,7 +2134,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-20T14:48:12Z</date>
+	<date>2018-03-27T07:34:18Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>

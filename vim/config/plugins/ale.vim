@@ -12,6 +12,7 @@ nnoremap <silent> <c-g>ss :ALEToggle<Return>
 nnoremap <silent> <leader>j :ALENextWrap<Return>zz
 nnoremap <silent> <leader>k :ALEPreviousWrap<Return>zz
 nnoremap <silent> <leader>l :ALEToggle<Return>
+nnoremap <silent> ,f :ALEFix<Return>
 
 augroup FiletypeGroup
   autocmd!
@@ -19,8 +20,13 @@ augroup FiletypeGroup
   au BufNewFile,BufRead *.js set filetype=javascript.jsx
 augroup END
 
-let g:ale_sign_column_always = 1
+let g:ale_fix_on_save = 1
+" let g:ale_sign_column_always = 1
+let g:ale_lint_on_text_changed = 'never'
 " let g:ale_lint_delay = 1000
 
-let g:ale_linters = {'jsx': ['stylelint', 'eslint'],'javascript': ['stylelint', 'eslint']}
+let g:ale_linters = {'jsx': ['eslint'],'javascript': ['eslint']}
 let g:ale_linter_aliases = {'jsx': 'css'}
+
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['standard']
