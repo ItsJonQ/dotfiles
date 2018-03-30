@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 Ubuntu - Shell color setup script
-# Jon Q (http://jonquach.com)
+# Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -8,12 +8,12 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="41/19/34" # Base 00 - Black
-color01="fb/f3/f7" # Base 08 - Red
-color02="fb/f3/f7" # Base 0B - Green
-color03="fb/f3/f7" # Base 0A - Yellow
-color04="fb/f3/f7" # Base 0D - Blue
-color05="fb/f3/f7" # Base 0E - Magenta
-color06="fb/f3/f7" # Base 0C - Cyan
+color01="e4/1f/4b" # Base 08 - Red
+color02="00/ca/35" # Base 0B - Green
+color03="c8/dc/ff" # Base 0A - Yellow
+color04="32/8c/ff" # Base 0D - Blue
+color05="e4/00/e1" # Base 0E - Magenta
+color06="c8/dc/ff" # Base 0C - Cyan
 color07="ee/e9/ed" # Base 05 - White
 color08="9e/7d/96" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
@@ -23,8 +23,8 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="fb/f3/f7" # Base 07 - Bright White
-color16="fb/f3/f7" # Base 09
-color17="fb/f3/f7" # Base 0F
+color16="e4/00/e1" # Base 09
+color17="e4/1f/4b" # Base 0F
 color18="4b/23/3e" # Base 01
 color19="55/2d/48" # Base 02
 color20="bb/94/a9" # Base 04

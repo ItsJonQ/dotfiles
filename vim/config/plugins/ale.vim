@@ -20,12 +20,14 @@ augroup FiletypeGroup
   au BufNewFile,BufRead *.js set filetype=javascript.jsx
 augroup END
 
-let g:ale_fix_on_save = 1
-" let g:ale_sign_column_always = 1
+let g:ale_enabled = 0
+let g:ale_fix_on_save = 0
+let g:ale_sign_column_always = 0
 let g:ale_lint_on_text_changed = 'never'
 " let g:ale_lint_delay = 1000
 
-let g:ale_linters = {'jsx': ['eslint'],'javascript': ['eslint']}
+" let g:ale_linters = {}
+let g:ale_linters = {'jsx': ['eslint'],'javascript': ['standard']}
 let g:ale_linter_aliases = {'jsx': 'css'}
 
 let g:ale_fixers = {}
