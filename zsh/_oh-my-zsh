@@ -79,4 +79,4 @@ else
   compinit -i -d "${ZSH_COMPDUMP}"
 fi
 
-CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
