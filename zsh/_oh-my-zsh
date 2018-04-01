@@ -78,3 +78,5 @@ if [[ $ZSH_DISABLE_COMPFIX != true ]]; then
 else
   compinit -i -d "${ZSH_COMPDUMP}"
 fi
+
+CASE_SENSITIVE="true"
