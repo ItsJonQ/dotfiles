@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 VS - Shell color setup script
-# Jon Q (http://jonquach.com)
+# Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -10,12 +10,12 @@ fi
 
 color00="ff/ff/ff" # Base 00 - Black
 
-color01="45/7d/ab" # Base 08 - Red
-color02="a6/6c/5a" # Base 0B - Green
-color03="cc/cc/cc" # Base 0A - Yellow
-color04="45/7d/ab" # Base 0D - Blue
-color05="45/7d/ab" # Base 0E - Magenta
-color06="45/7d/ab" # Base 0C - Cyan
+color01="90/26/1d" # Base 08 - Red
+color02="37/79/26" # Base 0B - Green
+color03="1d/47/9e" # Base 0A - Yellow
+color04="10/30/a4" # Base 0D - Blue
+color05="71/3d/a2" # Base 0E - Magenta
+color06="1d/47/9e" # Base 0C - Cyan
 color07="33/33/33" # Base 05 - White
 
 
@@ -28,9 +28,9 @@ color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="25/25/26" # Base 07 - Bright White
 color16="ce/91/78" # Base 09
-color17="56/9c/d6" # Base 0F
+color17="c8/8c/be" # Base 0F
 color18="f3/f3/f3" # Base 01
-color19="dd/dd/dd" # Base 02
+color19="dc/dc/dc" # Base 02
 color20="55/55/55" # Base 04
 
 color21="25/25/26" # Base 06
@@ -91,13 +91,13 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg 333333 # forground
   printf $printf_template_custom Ph ffffff # background
   printf $printf_template_custom Pi 333333 # bold color
-  printf $printf_template_custom Pj dddddd # selection color
+  printf $printf_template_custom Pj dcdcdc # selection color
   printf $printf_template_custom Pk 333333 # selected text color
   
-  printf $printf_template_custom Pl 333333 # cursor
+  printf $printf_template_custom Pl 50E3C2 # cursor
   
   
-  printf $printf_template_custom Pm ffffff # cursor text
+  printf $printf_template_custom Pm 000000 # cursor
   
   
 else
