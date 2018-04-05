@@ -263,6 +263,7 @@ alias modes='p && cd modes'
 alias b16='cd ~/base16-builder'
 alias vimclr='cd ~/base16-vim/colors'
 alias seed-issues='ruby ~/dotfiles/scripts/seed/issues.rb'
+alias gaki='p && cd gaki'
 
 # Updating/bumping gem versions
 # gem bump --version minor

@@ -21,7 +21,7 @@ augroup FiletypeGroup
 augroup END
 
 let g:ale_enabled = 0
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 let g:ale_sign_column_always = 0
 let g:ale_lint_on_text_changed = 'never'
 " let g:ale_lint_delay = 1000
