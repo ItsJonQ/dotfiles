@@ -68,6 +68,6 @@
   "files.trimFinalNewlines": true,
   "files.insertFinalNewline": false,
   "workbench.statusBar.feedback.visible": false,
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": true,
   "window.restoreWindows": "none"
 }
