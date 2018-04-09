@@ -76,5 +76,10 @@ export SCOUT_DOCKER_MODE=true
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 
+## php
+export PATH="/usr/local/opt/php@7.1/bin:$PATH"
+export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
+
+
 ## AWS: HS
 export AWS_PROFILE=hs-ci
