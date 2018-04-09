@@ -37,6 +37,7 @@ brew install ffmpeg
 brew install git
 brew install googler
 brew install homebrew/php/wp-cli
+# brew install homebrew/php
 brew install imagemagick --with-webp
 brew install macvim
 brew install mplayer
@@ -50,8 +51,9 @@ brew install rbenv
 brew install shpotify
 brew install the_silver_searcher
 brew install tree
-brew install yarn
+brew install watchman
 brew install x264
+brew install yarn
 
 # Remove outdated versions from the cellar.
 brew cleanup
