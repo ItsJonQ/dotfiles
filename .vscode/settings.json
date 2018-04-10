@@ -34,7 +34,7 @@
   },
   "editor.parameterHints": false,
   "editor.fontSize": 14,
-  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
   "editor.hover": false,
   "editor.fontWeight": "Light",
   "materialTheme.cache.workbench.settings": {
@@ -69,5 +69,6 @@
   "files.insertFinalNewline": false,
   "workbench.statusBar.feedback.visible": false,
   "workbench.statusBar.visible": true,
-  "window.restoreWindows": "none"
+  "window.restoreWindows": "none",
+  "workbench.colorTheme": "Monokai"
 }

@@ -38,6 +38,13 @@ set hidden
 " au CursorHold * checktime
 
 " }}}
+" Clipboard {{{
+
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+end
+
+" }}}
 " Concealing {{{
 
 set cole=0

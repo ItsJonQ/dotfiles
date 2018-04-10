@@ -27,14 +27,19 @@
       "vim-mode-plus"
       "es6-javascript"
       "atom-typescript"
+      "docblockr"
     ]
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
     titleBar: "custom"
   editor:
     confirmCheckoutHeadRevision: false
-    fontFamily: "SF Mono"
+    fontFamily: "Menlo"
     scrollPastEnd: true
     scrollSensitivity: 60
     showIndentGuide: true
