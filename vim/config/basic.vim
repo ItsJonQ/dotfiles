@@ -41,7 +41,7 @@ set hidden
 " Clipboard {{{
 
 if has("clipboard")
-  set clipboard=unnamed " copy to the system clipboard
+  " set clipboard=unnamed " copy to the system clipboard
 end
 
 " }}}
