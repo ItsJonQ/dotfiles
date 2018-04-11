@@ -28,14 +28,14 @@
       "es6-javascript"
       "atom-typescript"
       "docblockr"
+      "ex-mode"
+      "open-this"
+      "teletype"
+      "welcome"
     ]
     reopenProjectMenuCount: 14
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
-    themes: [
-      "one-dark-ui"
-      "monokai"
-    ]
     titleBar: "custom"
   editor:
     confirmCheckoutHeadRevision: false
