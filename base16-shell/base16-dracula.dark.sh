@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 Dracula - Shell color setup script
-# Jon Q (http://jonquach.com)
+# Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -14,8 +14,8 @@ color03="f1/fa/8c" # Base 0A - Yellow
 color04="bd/93/f9" # Base 0D - Blue
 color05="ff/79/c6" # Base 0E - Magenta
 color06="8b/e9/fd" # Base 0C - Cyan
-color07="e9/e9/f4" # Base 05 - White
-color08="64/66/7c" # Base 03 - Bright Black
+color07="de/de/ef" # Base 05 - White
+color08="5a/5e/7a" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -24,14 +24,14 @@ color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="f7/f7/fb" # Base 07 - Bright White
 color16="ff/b8/6c" # Base 09
-color17="ff/55/55" # Base 0F
-color18="2d/2f/3b" # Base 01
-color19="50/52/68" # Base 02
-color20="62/d6/e8" # Base 04
-color21="f1/f2/f8" # Base 06
-color_foreground="e9/e9/f4" # Base 05
+color17="ff/79/c6" # Base 0F
+color18="2b/2e/3b" # Base 01
+color19="40/43/56" # Base 02
+color20="b5/b5/da" # Base 04
+color21="ed/ed/f6" # Base 06
+color_foreground="de/de/ef" # Base 05
 color_background="28/2a/36" # Base 00
-color_cursor="e9/e9/f4" # Base 05
+color_cursor="de/de/ef" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,13 +79,13 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg e9e9f4 # forground
+  printf $printf_template_custom Pg dedeef # forground
   printf $printf_template_custom Ph 282a36 # background
-  printf $printf_template_custom Pi e9e9f4 # bold color
-  printf $printf_template_custom Pj 505268 # selection color
-  printf $printf_template_custom Pk e9e9f4 # selected text color
+  printf $printf_template_custom Pi dedeef # bold color
+  printf $printf_template_custom Pj 404356 # selection color
+  printf $printf_template_custom Pk dedeef # selected text color
   
-  printf $printf_template_custom Pl e9e9f4 # cursor
+  printf $printf_template_custom Pl dedeef # cursor
   
   
   printf $printf_template_custom Pm 282a36 # cursor text
