@@ -13,10 +13,12 @@ for file in $HOME/dotfiles/.atom/*; do
 done
 
 ln -sf $HOME/dotfiles/.config/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json
-# ln -sf $HOME/dotfiles/vim/after $HOME/.vim/after
+ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
 ln -sf $HOME/dotfiles/.nvimrc $HOME/.config/nvim/init.vim
 
-ln -sf $HOME/Drive/Config/.aws $HOME/.aws
+ln -sf $HOME/Drive/Config/.npmrc $HOME/.npmrc
+
+ln -sf $HOME/Drive/Config/.aws $HOME
 ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
 ln -sf $HOME/dotfiles/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
