@@ -56,11 +56,11 @@ function! HappyLineAddSpace()
   return ' '
 endfunction
 
-au InsertEnter * call HappyLineUpdateStatusLine()
-au InsertChange * call HappyLineUpdateStatusLine()
-au InsertLeave * call HappyLineUpdateStatusLine()
+" au InsertEnter * call HappyLineUpdateStatusLine()
+" au InsertChange * call HappyLineUpdateStatusLine()
+" au InsertLeave * call HappyLineUpdateStatusLine()
 
-call HappyLineUpdateStatusLine()
+" call HappyLineUpdateStatusLine()
 
 set statusline=
 set statusline+=\ %{mode()}
@@ -75,7 +75,7 @@ set statusline+=\ ·
 set statusline+=\ %p%%
 set statusline+=\ ·
 set statusline+=\%{HappyLineAddSpace()}
-set statusline+=\ %{HappyLineUpdateStatusLine()}
+" set statusline+=\ %{HappyLineUpdateStatusLine()}
 
 
 " nnoremap v v | :call HappyLineUpdateStatusLine()
