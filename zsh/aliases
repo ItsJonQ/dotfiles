@@ -265,8 +265,11 @@ alias vimclr='cd ~/base16-vim/colors'
 alias seed-issues='ruby ~/dotfiles/scripts/seed/issues.rb'
 alias gaki='p && cd gaki'
 
+# Ruby
 # Updating/bumping gem versions
 # gem bump --version minor
+# Publishing
+# gem publish
 
 # Better LS
 
