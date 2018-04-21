@@ -69,5 +69,7 @@
 //   "workbench.statusBar.feedback.visible": false,
 //   "workbench.statusBar.visible": true,
   "window.restoreWindows": "none",
-  "workbench.iconTheme": null
+  "workbench.iconTheme": null,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": true
 }
