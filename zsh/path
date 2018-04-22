@@ -19,6 +19,7 @@ rbenv() {
 # node (via Brew)
 # export PATH="/usr/local/opt/node@6/bin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="$HOME/.npm-packages/bin:$PATH"
 
 # nvm
 # export NVM_DIR="$HOME/.nvm"
