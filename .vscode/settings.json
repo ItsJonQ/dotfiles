@@ -75,5 +75,9 @@
     "suppressNoRepositoryWarning": false,
     "suppressResultsExplorerNotice": false,
     "suppressShowKeyBindingsNotice": true
-  }
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.activityBar.visible": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false
 }
