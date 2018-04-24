@@ -71,5 +71,7 @@
   "window.restoreWindows": "none",
   "workbench.iconTheme": null,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.activityBar.visible": true
+  "workbench.activityBar.visible": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false
 }
