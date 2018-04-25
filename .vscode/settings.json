@@ -34,7 +34,7 @@
 //     // "editorInfo.foreground":    "#ffffff99"
   },
   "editor.parameterHints": false,
-  "editor.fontSize": 13,
+  // "editor.fontSize": 13,
   "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
 //   "editor.hover": false,
   "workbench.tips.enabled": false,

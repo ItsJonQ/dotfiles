@@ -14,7 +14,7 @@ color03="ff/ff/ff" # Base 0A - Yellow
 color04="ff/ff/ff" # Base 0D - Blue
 color05="ff/ff/ff" # Base 0E - Magenta
 color06="ff/ff/ff" # Base 0C - Cyan
-color07="cc/cc/cc" # Base 05 - White
+color07="ec/ec/ec" # Base 05 - White
 color08="5c/5c/5c" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -28,10 +28,10 @@ color17="ff/ff/ff" # Base 0F
 color18="10/10/10" # Base 01
 color19="3c/3c/3c" # Base 02
 color20="bb/bb/bb" # Base 04
-color21="f2/f2/f2" # Base 06
-color_foreground="cc/cc/cc" # Base 05
+color21="f5/f5/f5" # Base 06
+color_foreground="ec/ec/ec" # Base 05
 color_background="00/00/00" # Base 00
-color_cursor="cc/cc/cc" # Base 05
+color_cursor="ec/ec/ec" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,16 +79,16 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg cccccc # forground
+  printf $printf_template_custom Pg ececec # forground
   printf $printf_template_custom Ph 000000 # background
-  printf $printf_template_custom Pi cccccc # bold color
+  printf $printf_template_custom Pi ececec # bold color
   printf $printf_template_custom Pj 3c3c3c # selection color
-  printf $printf_template_custom Pk cccccc # selected text color
+  printf $printf_template_custom Pk ececec # selected text color
   
-  printf $printf_template_custom Pl 50E3C2 # cursor
+  printf $printf_template_custom Pl ececec # cursor
   
   
-  printf $printf_template_custom Pm 000000 # cursor
+  printf $printf_template_custom Pm 000000 # cursor text
   
 else
   printf $printf_template_var 10 $color_foreground
