@@ -34,8 +34,8 @@ color20="5c/5c/5c" # Base 04
 color21="ee/47/5f" # Base 06
 
 
-color_foreground="00/00/00" # Base 05
-color_background="ee/47/5f" # Base 00
+color_foreground="3c/3c/3c" # Base 05
+color_background="ff/ff/ff" # Base 00
 
 color_cursor="3c/3c/3c" # Base 05
 
@@ -92,10 +92,10 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pj ececec # selection color
   printf $printf_template_custom Pk 000000 # selected text color
   
-  printf $printf_template_custom Pl ffffff # cursor
+  printf $printf_template_custom Pl 3884d7 # cursor
   
   
-  printf $printf_template_custom Pm 000000 # cursor
+  printf $printf_template_custom Pm ffffff # cursor
   
   
 else
