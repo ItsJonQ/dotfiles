@@ -86,8 +86,10 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
+  
   printf $printf_template_custom Pg 494f30 # forground
   printf $printf_template_custom Ph e7f954 # background
+  
   printf $printf_template_custom Pi 494f30 # bold color
   printf $printf_template_custom Pj c9e108 # selection color
   printf $printf_template_custom Pk 494f30 # selected text color
