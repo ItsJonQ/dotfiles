@@ -36,8 +36,7 @@ color20="5c/65/8b" # Base 04
 color21="2c/31/43" # Base 06
 
 
-# vimLightText
-color_foreground="29/2d/3e" # Base 05
+color_foreground="42/48/63" # Base 05
 color_background="ef/f1/f5" # Base 00
 
 color_cursor="42/48/63" # Base 05
