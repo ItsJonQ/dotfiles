@@ -80,3 +80,7 @@ else
 fi
 
 # CASE_SENSITIVE="true"
+
+# Update automatically.
+DISABLE_UPDATE_PROMPT=true
+DISABLE_AUTO_UPDATE=true
