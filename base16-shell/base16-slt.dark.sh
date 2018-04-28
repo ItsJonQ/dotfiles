@@ -1,5 +1,5 @@
 #!/bin/sh
-# Base16 PRPL - Shell color setup script
+# Base16 SLT - Shell color setup script
 # Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -7,7 +7,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
 
-color00="2c/26/34" # Base 00 - Black
+color00="29/2d/3e" # Base 00 - Black
 color01="ff/5a/90" # Base 08 - Red
 color02="8d/c8/91" # Base 0B - Green
 color03="ff/c9/8b" # Base 0A - Yellow
@@ -15,7 +15,7 @@ color04="82/b1/ff" # Base 0D - Blue
 color05="c7/92/ea" # Base 0E - Magenta
 color06="83/90/f1" # Base 0C - Cyan
 color07="db/e1/ee" # Base 05 - White
-color08="63/56/75" # Base 03 - Bright Black
+color08="5c/65/8b" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -25,12 +25,12 @@ color14=$color06 # Base 0C - Bright Cyan
 color15="f4/f6/fa" # Base 07 - Bright White
 color16="f7/8c/6c" # Base 09
 color17="ff/5a/90" # Base 0F
-color18="30/29/38" # Base 01
-color19="46/3d/53" # Base 02
+color18="2c/31/43" # Base 01
+color19="42/48/63" # Base 02
 color20="b0/be/db" # Base 04
 color21="ea/ee/f5" # Base 06
 color_foreground="db/e1/ee" # Base 05
-color_background="2c/26/34" # Base 00
+color_background="29/2d/3e" # Base 00
 color_cursor="db/e1/ee" # Base 05
 
 if [ -n "$TMUX" ]; then
@@ -80,15 +80,15 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   printf $printf_template_custom Pg dbe1ee # forground
-  printf $printf_template_custom Ph 2c2634 # background
+  printf $printf_template_custom Ph 292d3e # background
   printf $printf_template_custom Pi dbe1ee # bold color
-  printf $printf_template_custom Pj 463d53 # selection color
+  printf $printf_template_custom Pj 424863 # selection color
   printf $printf_template_custom Pk dbe1ee # selected text color
   
   printf $printf_template_custom Pl dbe1ee # cursor
   
   
-  printf $printf_template_custom Pm 2c2634 # cursor text
+  printf $printf_template_custom Pm 292d3e # cursor text
   
 else
   printf $printf_template_var 10 $color_foreground
