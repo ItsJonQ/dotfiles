@@ -10,12 +10,12 @@ fi
 
 color00="fd/f6/e3" # Base 00 - Black
 
-color01="b0/28/26" # Base 08 - Red
-color02="6a/7a/00" # Base 0B - Green
-color03="91/6e/00" # Base 0A - Yellow
-color04="1e/6f/a8" # Base 0D - Blue
-color05="56/5a/9d" # Base 0E - Magenta
-color06="22/81/7a" # Base 0C - Cyan
+color01="cc/2d/61" # Base 08 - Red
+color02="5e/97/62" # Base 0B - Green
+color03="cc/92/50" # Base 0A - Yellow
+color04="49/7a/cc" # Base 0D - Blue
+color05="92/5b/b6" # Base 0E - Magenta
+color06="4e/5b/be" # Base 0C - Cyan
 color07="00/45/56" # Base 05 - White
 
 
@@ -27,8 +27,8 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="00/2f/3b" # Base 07 - Bright White
-color16="cb/4b/16" # Base 09
-color17="d3/36/82" # Base 0F
+color16="f7/8c/6c" # Base 09
+color17="ff/5a/90" # Base 0F
 color18="fc/f2/d6" # Base 01
 color19="fb/eb/c1" # Base 02
 color20="00/61/79" # Base 04
@@ -36,7 +36,8 @@ color20="00/61/79" # Base 04
 color21="00/2f/3b" # Base 06
 
 
-color_foreground="00/45/56" # Base 05
+# vimLightText
+color_foreground="00/2b/36" # Base 05
 color_background="fd/f6/e3" # Base 00
 
 color_cursor="00/45/56" # Base 05
