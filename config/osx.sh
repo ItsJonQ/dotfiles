@@ -55,7 +55,7 @@ defaults write NSGlobalDomain QLPanelAnimationDuration -float 0
 ###############################################################################
 
 # Set the dock icon size to 24
-defaults write com.apple.dock tilesize -int 20
+defaults write com.apple.dock tilesize -int 32
 
 # Set the dock icon's hover size
 defaults write com.apple.dock largesize -float 36
