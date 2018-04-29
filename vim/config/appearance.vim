@@ -44,7 +44,7 @@ if has("gui_running")
 
   set columns=80 lines=30
   set gfn=*
-  set guifont=Menlo\:h14
+  set guifont=Menlo\:h13
   " set guifont=Menlo\:h13
   " set guifont=SF\ Mono\:h13
   " set guifont=Fira\ Code\ Light\:h15
