@@ -39,6 +39,7 @@ brew install googler
 brew install homebrew/php/wp-cli
 # brew install homebrew/php
 brew install imagemagick --with-webp
+brew install mariadb
 brew install macvim
 brew install mplayer
 brew install mpv
@@ -46,6 +47,7 @@ brew install neovim
 # brew install node@6
 brew install node@8
 # brew install node
+brew install php
 brew install pow
 brew install rbenv
 brew install shpotify
