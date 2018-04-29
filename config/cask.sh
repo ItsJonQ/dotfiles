@@ -15,7 +15,7 @@ brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install appcleaner
-brew cask install arq
+# brew cask install arq
 brew cask install atom
 brew cask install cloudapp
 brew cask install daisydisk
@@ -29,7 +29,7 @@ brew cask install google-chrome
 brew cask install java
 # brew cask install karabiner
 brew cask install karabiner-elements
-brew cask install nylas-mail
+# brew cask install nylas-mail
 brew cask install licecap
 brew cask install onyx
 brew cask install private-internet-access
@@ -38,12 +38,12 @@ brew cask install screenhero
 brew cask install screenflow
 brew cask install slack
 brew cask install sketch
-brew cask install skitch
+# brew cask install skitch
 brew cask install skype
 brew cask install spotify
 brew cask install sublime-text
 brew cask install telegram
-brew cask install todoist
+# brew cask install todoist
 brew cask install tunnelblick
 brew cask install vagrant
 brew cask install virtualbox
