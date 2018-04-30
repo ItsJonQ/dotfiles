@@ -30,7 +30,8 @@ export TERM_EMOJI_GREETING="👋"
 export TERM_GREETING_WORD="POTATO"
 export TERM_GREETING_TEXT="Have a ${__BOLD}${TERM_GREETING_WORD}${__NORMAL} day Q!"
 
-TERM_CURRENT_DIR="%{$fg[green]%}%c%{$reset_color%}"
+# TERM_CURRENT_DIR="%{$fg[green]%}%c%{$reset_color%}"
+TERM_CURRENT_DIR="%c"
 
 # Export
 echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
