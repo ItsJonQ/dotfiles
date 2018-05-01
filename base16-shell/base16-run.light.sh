@@ -15,7 +15,7 @@ color02="45/7d/ab" # Base 0B - Green
 color03="cc/92/50" # Base 0A - Yellow
 color04="23/1e/2a" # Base 0D - Blue
 color05="89/2b/48" # Base 0E - Magenta
-color06="50/b5/ca" # Base 0C - Cyan
+color06="45/7d/ab" # Base 0C - Cyan
 color07="46/3d/53" # Base 05 - White
 
 
