@@ -21,6 +21,7 @@ ln -sf $HOME/Drive/Config/.npmrc $HOME/.npmrc
 ln -sf $HOME/Drive/Config/.aws $HOME
 ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
+ln -sf $HOME/dotfiles/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 ln -sf $HOME/dotfiles/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
 echo Symlinked dotfiles.

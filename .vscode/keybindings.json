@@ -1,0 +1,37 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+,",
+    "command": "-workbench.action.openGlobalSettings"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+, =",
+    "command": "editor.action.sortLinesAscending"
+  },
+  {
+    "key": "cmd+, w",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "cmd+k cmd+w",
+    "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "cmd+, o",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "alt+cmd+t",
+    "command": "-workbench.action.closeOtherEditors"
+  }
+]
