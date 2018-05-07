@@ -18,9 +18,12 @@ alias sync='cd ~/dotfiles && git pull && sh ~/dotfiles/bootstrap.sh'
 alias sync!='sync && sh config/osx.sh'
 
 # Use Macvim instead of vim by default
-# if which mvim >/dev/null; then
-#   alias vim='mvim -v'
-# fi
+if which mvim >/dev/null; then
+  alias vim='mvim -v'
+fi
+
+# Vim
+alias vi='vim'
 
 # Gasp! Use Neovim instead of Vim
 # if which nvim >/dev/null; then
