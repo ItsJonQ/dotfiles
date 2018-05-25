@@ -79,5 +79,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Monokai"
 }
