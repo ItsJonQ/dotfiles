@@ -1,0 +1,13 @@
+# _spaceship
+# Spaceship Prompt
+# Author: Q <itsjonq@gmail.com> Source: https://github.com/ItsJonQ/dotfiles =============================================================================
+
+# Time
+SPACESHIP_TIME_SHOW=false
+
+# Services
+SPACESHIP_PACKAGE_SHOW=false
+SPACESHIP_NODE_SHOW=false
+SPACESHIP_RUBY_SHOW=false
+SPACESHIP_ELIXIR_SHOW=false
+SPACESHIP_DOCKER_SHOW=false

@@ -1258,13 +1258,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>485 127 677 394 0 0 1280 778 </string>
+	<string>485 129 677 260 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>271 257 918 401 0 0 1280 778 </string>
+	<string>298 171 918 401 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>192 186 890 504 0 0 1280 778 </string>
+	<string>89 185 890 504 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>New Bookmarks</key>
