@@ -5,6 +5,9 @@
 # Time
 SPACESHIP_TIME_SHOW=false
 
+# Symbols
+SPACESHIP_GIT_SYMBOL='🌱  '
+
 # Services
 SPACESHIP_PACKAGE_SHOW=false
 SPACESHIP_NODE_SHOW=false
