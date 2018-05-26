@@ -16,3 +16,5 @@ sh $HOME/dotfiles/config/ruby.sh
 sh $HOME/dotfiles/config/vagrant.sh
 
 sh $HOME/dotfiles/bootstrap.sh
+
+sh $HOME/dotfiles/config/fonts.sh
