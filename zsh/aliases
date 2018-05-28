@@ -253,6 +253,10 @@ alias 750='notes && cd 750'
 alias project='cd ~/Sites'
 alias p='project'
 
+# CD alias
+alias ..='cd ../'
+alias ...='cd ../../'
+
 # Common Directories
 alias dt='cd ~/Desktop'
 alias dl='cd ~/Downloads'
