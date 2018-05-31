@@ -33,7 +33,7 @@
 //     "editorWarning.foreground": "#ffffff99",
 //     "editorInfo.foreground":    "#ffffff99"
     "activityBar.border": "#ffffff11",
-    "editorGroupHeader.tabsBorder": "#ffffff11",
+    // "editorGroupHeader.tabsBorder": "#ffffff11",
     "editorGroup.border": "#ffffff11",
     "editorOverviewRuler.border": "#ffffff22",
     "merge.border": "#ffffff11",
