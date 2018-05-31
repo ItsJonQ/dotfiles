@@ -32,6 +32,14 @@
 //     "editorError.foreground":   "#ffffff99",
 //     "editorWarning.foreground": "#ffffff99",
 //     "editorInfo.foreground":    "#ffffff99"
+    "activityBar.border": "#ffffff11",
+    "editorGroupHeader.tabsBorder": "#ffffff11",
+    "editorGroup.border": "#ffffff11",
+    "editorOverviewRuler.border": "#ffffff22",
+    "merge.border": "#ffffff11",
+    "sideBar.border": "#ffffff11",
+    "statusBar.border": "#ffffff11",
+    "panel.border": "#ffffff11"
   },
   "editor.parameterHints": false,
   // "editor.fontSize": 13,
@@ -80,5 +88,5 @@
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Palenight Theme"
+  "workbench.colorTheme": "Palenight Theme",
 }
