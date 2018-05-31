@@ -26,12 +26,12 @@
 //     "statusBar.background" : "#00000000",
 //     "statusBar.noFolderBackground" : "#00000000",
 //     "statusBar.debuggingBackground": "#00000000",
-    "statusBar.background" : "#1A1A1A",
-    "statusBar.noFolderBackground" : "#212121",
-    "statusBar.debuggingBackground": "#263238",
-//     // "editorError.foreground":   "#ffffff99",
-//     // "editorWarning.foreground": "#ffffff99",
-//     // "editorInfo.foreground":    "#ffffff99"
+//     "statusBar.background" : "#1A1A1A",
+//     "statusBar.noFolderBackground" : "#212121",
+//     "statusBar.debuggingBackground": "#263238",
+//     "editorError.foreground":   "#ffffff99",
+//     "editorWarning.foreground": "#ffffff99",
+//     "editorInfo.foreground":    "#ffffff99"
   },
   "editor.parameterHints": false,
   // "editor.fontSize": 13,
@@ -80,5 +80,5 @@
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Monokai"
+  "workbench.colorTheme": "Palenight Theme"
 }
