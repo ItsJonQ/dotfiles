@@ -20,9 +20,9 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
-//     "statusBar.background" : "#00000000",
-//     "statusBar.noFolderBackground" : "#00000000",
-//     "statusBar.debuggingBackground": "#00000000",
+    "statusBar.background" : "#00000000",
+    "statusBar.noFolderBackground" : "#00000000",
+    "statusBar.debuggingBackground": "#00000000",
 //     "statusBar.background" : "#1A1A1A",
 //     "statusBar.noFolderBackground" : "#212121",
 //     "statusBar.debuggingBackground": "#263238",
@@ -57,7 +57,7 @@
 //   "workbench.activityBar.visible": true,
 //   "workbench.editor.showIcons": false,
 //   "workbench.sideBar.location": "left",
-//   "javascript.validate.enable": false,
+  "javascript.validate.enable": false,
 //   "php.validate.enable": false,
 //   "jshint.enable": false,
 //   "explorer.confirmDragAndDrop": false,
@@ -74,5 +74,4 @@
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Palenight Theme",
 }
