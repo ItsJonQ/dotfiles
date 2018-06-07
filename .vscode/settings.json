@@ -74,5 +74,5 @@
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Dracula",
+  "prettier.eslintIntegration": true
 }

@@ -84,3 +84,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 ## AWS: HS
 export AWS_PROFILE=hs-ci
+
+## SCOUT
+export SCOUT_DOCKER_MODE=beacon-dev
