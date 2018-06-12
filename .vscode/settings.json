@@ -20,23 +20,23 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
-    "statusBar.background" : "#00000000",
-    "statusBar.noFolderBackground" : "#00000000",
-    "statusBar.debuggingBackground": "#00000000",
+    // "statusBar.background" : "#00000000",
+    // "statusBar.noFolderBackground" : "#00000000",
+    // "statusBar.debuggingBackground": "#00000000",
 //     "statusBar.background" : "#1A1A1A",
 //     "statusBar.noFolderBackground" : "#212121",
 //     "statusBar.debuggingBackground": "#263238",
 //     "editorError.foreground":   "#ffffff99",
 //     "editorWarning.foreground": "#ffffff99",
 //     "editorInfo.foreground":    "#ffffff99"
-    "activityBar.border": "#ffffff11",
-    // "editorGroupHeader.tabsBorder": "#ffffff11",
-    "editorGroup.border": "#ffffff11",
-    "editorOverviewRuler.border": "#ffffff22",
-    "merge.border": "#ffffff11",
-    "sideBar.border": "#ffffff11",
-    "statusBar.border": "#ffffff11",
-    "panel.border": "#ffffff11"
+    // "activityBar.border": "#ffffff11",
+    // // "editorGroupHeader.tabsBorder": "#ffffff11",
+    // "editorGroup.border": "#ffffff11",
+    // "editorOverviewRuler.border": "#ffffff22",
+    // "merge.border": "#ffffff11",
+    // "sideBar.border": "#ffffff11",
+    // "statusBar.border": "#ffffff11",
+    // "panel.border": "#ffffff11"
   },
   "editor.parameterHints": false,
   // "editor.fontSize": 13,
@@ -74,5 +74,6 @@
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "prettier.eslintIntegration": true
+  "prettier.eslintIntegration": true,
+  "workbench.colorTheme": "Default Light+"
 }
