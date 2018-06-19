@@ -1,6 +1,6 @@
 {
   "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.rulers": [80,120],
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
@@ -74,6 +74,5 @@
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "prettier.eslintIntegration": true,
-  "workbench.colorTheme": "Default Light+"
+  "prettier.eslintIntegration": true
 }

@@ -65,7 +65,9 @@ if which docker-machine > /dev/null; then
   # `docker-discover` call below with `docker-start`.
   docker-discover
 fi
-export SCOUT_DOCKER_MODE=true
+
+# export SCOUT_DOCKER_MODE=true
+export SCOUT_DOCKER_MODE=beacon-dev
 
 
 ## vv
@@ -84,6 +86,3 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 ## AWS: HS
 export AWS_PROFILE=hs-ci
-
-## SCOUT
-export SCOUT_DOCKER_MODE=beacon-dev
