@@ -64,6 +64,8 @@ alias g='git'
 alias git-b-purge='git fetch -p && git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias g-b-purge='git-b-purge'
 alias g-b-pu='git-b-purge'
+alias gitpurge='git-b-purge'
+alias gitprune="git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done"
 
 #Ctags
 alias ctags="`brew --prefix`/bin/ctags"

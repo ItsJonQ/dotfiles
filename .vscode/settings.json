@@ -69,10 +69,12 @@
 //   "workbench.statusBar.feedback.visible": false,
 //   "workbench.statusBar.visible": true,
   "window.restoreWindows": "none",
-  "workbench.iconTheme": null,
+  "workbench.iconTheme": "eq-material-theme-icons",
   "typescript.autoImportSuggestions.enabled": false,
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "prettier.eslintIntegration": true
+  "prettier.eslintIntegration": true,
+  "window.zoomLevel": 0,
+  "materialTheme.fixIconsRunning": false
 }

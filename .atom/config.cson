@@ -40,6 +40,7 @@
   editor:
     confirmCheckoutHeadRevision: false
     fontFamily: "Menlo"
+    fontSize: 12
     scrollPastEnd: true
     scrollSensitivity: 60
     showIndentGuide: true
