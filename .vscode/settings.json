@@ -76,7 +76,6 @@
   "explorer.confirmDelete": false,
   "prettier.eslintIntegration": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "One Dark Pro",
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
       // "variables": "#ABB2BF",
