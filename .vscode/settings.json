@@ -78,7 +78,7 @@
   "window.zoomLevel": 0,
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
-      // "variables": "#ABB2BF",
+      "variables": "#ABB2BF",
       "textMateRules": [
         {
           "name": "js variable readwrite",
@@ -102,5 +102,6 @@
         },
       ]
     },
-  }
+  },
+  "workbench.colorTheme": "One Dark Pro"
 }
