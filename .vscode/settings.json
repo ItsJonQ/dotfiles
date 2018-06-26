@@ -78,16 +78,30 @@
   "window.zoomLevel": 0,
   "workbench.colorTheme": "One Dark Pro",
   "editor.tokenColorCustomizations": {
-    // "variables": "#ABB2BF",
-    "textMateRules": [
-      {
-        "name": "js variable readwrite",
-        "scope":
-          "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
-        "settings": {
-          "foreground": "#ABB2BF"
-        }
-      },
-    ]
+    "[One Dark Pro]": {
+      // "variables": "#ABB2BF",
+      "textMateRules": [
+        {
+          "name": "js variable readwrite",
+          "scope":
+            "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+          "settings": {
+            "foreground": "#ABB2BF"
+          }
+        },
+      ]
+    },
+    "[One Dark Pro Vivid]": {
+      "textMateRules": [
+        {
+          "name": "js variable readwrite",
+          "scope":
+            "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+          "settings": {
+            "foreground": "#ABB2BF"
+          }
+        },
+      ]
+    },
   }
 }
