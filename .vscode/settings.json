@@ -1,21 +1,24 @@
 {
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80,120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "files.exclude": {
-//     "**/.git": true,
-//     "**/.svn": true,
-//     "**/.hg": true,
-//     "**/CVS": true,
-//     "**/.DS_Store": true,
-      "node_modules": true,
-      "_site": true,
-//     "coverage": true
+    //     "**/.git": true,
+    //     "**/.svn": true,
+    //     "**/.hg": true,
+    //     "**/CVS": true,
+    //     "**/.DS_Store": true,
+    "node_modules": true,
+    "_site": true,
+    //     "coverage": true
   },
   "editor.colorDecorators": false,
-//   "search.useIgnoreFilesByDefault": true,
+  //   "search.useIgnoreFilesByDefault": true,
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -23,12 +26,12 @@
     // "statusBar.background" : "#00000000",
     // "statusBar.noFolderBackground" : "#00000000",
     // "statusBar.debuggingBackground": "#00000000",
-//     "statusBar.background" : "#1A1A1A",
-//     "statusBar.noFolderBackground" : "#212121",
-//     "statusBar.debuggingBackground": "#263238",
-//     "editorError.foreground":   "#ffffff99",
-//     "editorWarning.foreground": "#ffffff99",
-//     "editorInfo.foreground":    "#ffffff99"
+    //     "statusBar.background" : "#1A1A1A",
+    //     "statusBar.noFolderBackground" : "#212121",
+    //     "statusBar.debuggingBackground": "#263238",
+    //     "editorError.foreground":   "#ffffff99",
+    //     "editorWarning.foreground": "#ffffff99",
+    //     "editorInfo.foreground":    "#ffffff99"
     // "activityBar.border": "#ffffff11",
     // // "editorGroupHeader.tabsBorder": "#ffffff11",
     // "editorGroup.border": "#ffffff11",
@@ -41,33 +44,33 @@
   "editor.parameterHints": false,
   // "editor.fontSize": 13,
   "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-//   "editor.hover": false,
+  //   "editor.hover": false,
   "workbench.tips.enabled": false,
-//   "editor.wordBasedSuggestions": false,
-//   "css.validate": false,
-//   "scss.validate": false,
-//   "less.validate": false,
-//   "html.validate.scripts": false,
-//   "html.validate.styles": false,
-//   "typescript.validate.enable": false,
-//   "standard.validate": [],
-//   "emmet.showExpandedAbbreviation": "never",
-//   "editor.colorDecorators": false,
-//   "window.zoomLevel": 0,
-//   "workbench.activityBar.visible": true,
-//   "workbench.editor.showIcons": false,
-//   "workbench.sideBar.location": "left",
+  //   "editor.wordBasedSuggestions": false,
+  //   "css.validate": false,
+  //   "scss.validate": false,
+  //   "less.validate": false,
+  //   "html.validate.scripts": false,
+  //   "html.validate.styles": false,
+  //   "typescript.validate.enable": false,
+  //   "standard.validate": [],
+  //   "emmet.showExpandedAbbreviation": "never",
+  //   "editor.colorDecorators": false,
+  //   "window.zoomLevel": 0,
+  //   "workbench.activityBar.visible": true,
+  //   "workbench.editor.showIcons": false,
+  //   "workbench.sideBar.location": "left",
   "javascript.validate.enable": false,
-//   "php.validate.enable": false,
-//   "jshint.enable": false,
-//   "explorer.confirmDragAndDrop": false,
-//   "explorer.confirmDelete": false,
+  //   "php.validate.enable": false,
+  //   "jshint.enable": false,
+  //   "explorer.confirmDragAndDrop": false,
+  //   "explorer.confirmDelete": false,
   "files.trimTrailingWhitespace": true,
-//   "editor.trimAutoWhitespace": true,
+  //   "editor.trimAutoWhitespace": true,
   // "files.trimFinalNewlines": true,
-//   "files.insertFinalNewline": false,
-//   "workbench.statusBar.feedback.visible": false,
-//   "workbench.statusBar.visible": true,
+  //   "files.insertFinalNewline": false,
+  //   "workbench.statusBar.feedback.visible": false,
+  //   "workbench.statusBar.visible": true,
   "window.restoreWindows": "none",
   "workbench.iconTheme": "eq-material-theme-icons",
   "typescript.autoImportSuggestions.enabled": false,
@@ -78,14 +81,57 @@
   "window.zoomLevel": 0,
   "editor.tokenColorCustomizations": {
     "[One Dark Pro]": {
-      "variables": "#ABB2BF",
+      "variables": "#56B6C2",
       "textMateRules": [
         {
           "name": "js variable readwrite",
-          "scope":
-            "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+          "scope": "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
           "settings": {
             "foreground": "#ABB2BF"
+          }
+        },
+        {
+          "name": "Type Name",
+          "scope": "entity.name.type",
+          "settings": {
+            "foreground": "#ABB2BF"
+          }
+        },
+        {
+          "name": "Types declaration and references",
+          "scope": [
+            "meta.return-type",
+            // "support.class",
+            "support.type",
+            "entity.name.type",
+            "entity.name.class",
+            "storage.type.numeric.go",
+            "storage.type.byte.go",
+            "storage.type.boolean.go",
+            "storage.type.string.go",
+            "storage.type.uintptr.go",
+            "storage.type.cs",
+            "storage.type.generic.cs",
+            "storage.type.modifier.cs",
+            "storage.type.variable.cs",
+            "storage.type.annotation.java",
+            "storage.type.generic.java",
+            "storage.type.java",
+            "storage.type.object.array.java",
+            "storage.type.primitive.array.java",
+            "storage.type.primitive.java",
+            "storage.type.token.java",
+            "storage.type.groovy",
+            "storage.type.annotation.groovy",
+            "storage.type.parameters.groovy",
+            "storage.type.generic.groovy",
+            "storage.type.object.array.groovy",
+            "storage.type.primitive.array.groovy",
+            "storage.type.primitive.groovy"
+          ],
+          "settings": {
+            // "foreground": "#D19A66",
+            "foreground": "#4EC9B0",
           }
         },
       ]
@@ -94,8 +140,7 @@
       "textMateRules": [
         {
           "name": "js variable readwrite",
-          "scope":
-            "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+          "scope": "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
           "settings": {
             "foreground": "#ABB2BF"
           }
