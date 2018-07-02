@@ -16,7 +16,13 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
-    "[Visual Studio Dark]": {
+    "[Default Dark+]": {
+      "statusBar.background" : "#00000000",
+      "statusBar.noFolderBackground" : "#00000000",
+      "statusBar.debuggingBackground": "#00000000",
+    },
+    "[Default Light+]": {
+      "statusBar.foreground": "#000000ff",
       "statusBar.background" : "#00000000",
       "statusBar.noFolderBackground" : "#00000000",
       "statusBar.debuggingBackground": "#00000000",
@@ -110,7 +116,6 @@
       ]
     },
   },
-  "workbench.colorTheme": "One Dark Pro",
   "search.location": "panel",
   "workbench.editor.showIcons": false,
   "workbench.iconTheme": null,
