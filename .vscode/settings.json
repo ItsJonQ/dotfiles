@@ -36,7 +36,7 @@
   "files.trimTrailingWhitespace": true,
   "window.restoreWindows": "none",
   "typescript.autoImportSuggestions.enabled": false,
-  "workbench.activityBar.visible": true,
+  "workbench.activityBar.visible": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "prettier.eslintIntegration": true,
@@ -111,4 +111,7 @@
     },
   },
   "workbench.colorTheme": "One Dark Pro",
+  "search.location": "panel",
+  "workbench.editor.showIcons": false,
+  "workbench.iconTheme": null,
 }
