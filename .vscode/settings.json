@@ -117,7 +117,5 @@
     },
   },
   "search.location": "panel",
-  "workbench.editor.showIcons": false,
-  "workbench.iconTheme": null,
   "workbench.colorTheme": "One Dark Pro",
 }
