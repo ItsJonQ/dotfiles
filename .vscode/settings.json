@@ -36,7 +36,7 @@
     "panel.border": "#ffffff11"
   },
   "editor.parameterHints": false,
-  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "IBM Plex Mono, SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "workbench.tips.enabled": false,
   "javascript.validate.enable": false,
   "files.trimTrailingWhitespace": true,
@@ -117,5 +117,6 @@
     },
   },
   "search.location": "panel",
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Night Owl",
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
