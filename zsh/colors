@@ -13,11 +13,11 @@ export TERM=xterm-256color
 BASE16_DIR="$HOME/dotfiles/base16-shell"
 BASE16_CONFIG="$HOME/.base16"
 
-BASE16_COLOR="tomorrow"
+BASE16_COLOR="one"
 BASE16_SHADE="dark"
 
 # Base16 Shell
-BASE16_SHELL="$BASE16_DIR/base16-tomorrow.dark.sh"
+BASE16_SHELL="$BASE16_DIR/base16-one.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 color() {
@@ -68,7 +68,7 @@ dark() {
     color dark "$1"
     BASE16_COLOR="$1"
   else
-    color dark tomorrow
+    color dark one
   fi
   BASE16_SHADE="dark"
 }
@@ -95,7 +95,7 @@ if [[ -s "$BASE16_CONFIG" ]]; then
   fi
 else
   # Default.
-  dark tomorrow
+  dark one
 fi
 
 export BASE16_COLOR
