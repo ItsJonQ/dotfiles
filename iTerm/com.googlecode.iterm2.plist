@@ -1001,6 +1001,8 @@
 	<integer>20</integer>
 	<key>TerminalVMargin</key>
 	<integer>20</integer>
+	<key>UseLionStyleFullscreen</key>
+	<false/>
 	<key>Window Arrangements</key>
 	<dict>
 		<key>Default</key>
