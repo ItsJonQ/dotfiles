@@ -56,11 +56,15 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>299 139 697 456 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>26 270 796 473 0 0 1280 778 </string>
+	<string>262 207 918 512 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>192 186 895 503 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>192 186 895 503 0 0 1280 778 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>173 215 615 563 0 0 1280 778 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>194 215 895 563 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -311,7 +315,7 @@
 				<real>1</real>
 			</dict>
 			<key>Blend</key>
-			<real>0.050000000000000003</real>
+			<real>0.98168319310897434</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -338,7 +342,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>80</integer>
+			<integer>120</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -751,7 +755,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>25</integer>
+			<integer>22</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -934,6 +938,8 @@
 			<string>/Users/q</string>
 		</dict>
 	</array>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
