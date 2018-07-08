@@ -1262,7 +1262,7 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>330 300 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>193 372 918 394 0 0 1280 778 </string>
+	<string>200 358 918 394 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1861,7 +1861,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>IBMPlexMono 12</string>
+			<string>IBMPlexMono-Light 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
