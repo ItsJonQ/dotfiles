@@ -14,6 +14,10 @@
 	<string>Default</string>
 	<key>Default Bookmark Guid</key>
 	<string>45FA853F-8CA2-4617-A029-3636AC9FA7B4</string>
+	<key>EnableProxyIcon</key>
+	<false/>
+	<key>HideScrollbar</key>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
@@ -53,18 +57,23 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>485 129 677 260 0 0 1280 778 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>330 300 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>299 139 697 456 0 0 1280 778 </string>
+	<string>518 182 599 459 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>262 207 918 512 0 0 1280 778 </string>
+	<string>304 243 770 429 0 0 1280 778 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>192 186 895 503 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>192 186 895 503 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>173 215 615 563 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>194 215 895 563 0 0 1280 778 </string>
+	<string>192 182 890 509 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -938,18 +947,18 @@
 			<string>/Users/q</string>
 		</dict>
 	</array>
-	<key>NoSyncHaveUsedCopyMode</key>
-	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>0CB21C69-1E2B-4701-A39D-AFA40BEA3539</string>
+	<string>F6E1A657-D46A-450B-A03E-6CE566C83A9E</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>552777924.12047195</real>
+	<real>546659074.83681703</real>
 	<key>OpenArrangementAtStartup</key>
 	<true/>
 	<key>OpenBookmark</key>
@@ -991,22 +1000,28 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/Q/dotfiles/iTerm</string>
+	<key>SUAutomaticallyUpdate</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=6</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=31</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-08T21:26:04Z</date>
+	<date>2018-07-08T19:03:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TerminalMargin</key>
 	<integer>20</integer>
 	<key>TerminalVMargin</key>
 	<integer>20</integer>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1525012864</real>
+	<key>UseBorder</key>
+	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>Window Arrangements</key>
@@ -2007,6 +2022,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.1.7</string>
+	<string>3.2.0beta6</string>
 </dict>
 </plist>
