@@ -68,6 +68,7 @@ fi
 
 # export SCOUT_DOCKER_MODE=true
 export SCOUT_DOCKER_MODE=beacon-dev
+export SCOUT_SKIP_HSAPP_BUILD=true
 
 
 ## vv
