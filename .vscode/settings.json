@@ -117,6 +117,5 @@
     },
   },
   "search.location": "panel",
-  "workbench.colorTheme": "Night Owl",
   "javascript.updateImportsOnFileMove.enabled": "always",
 }
