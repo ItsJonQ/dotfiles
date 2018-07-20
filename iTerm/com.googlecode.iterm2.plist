@@ -34,10 +34,8 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -77,17 +75,21 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>445 142 786 372 0 0 1280 778 </string>
+	<string>485 129 677 260 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>410 375 620 392 0 0 1440 878 </string>
+	<string>330 300 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>217 95 606 469 0 0 1280 778 </string>
+	<string>518 182 599 459 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>271 236 796 486 0 0 1280 778 </string>
+	<string>254 211 918 512 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 287 890 491 0 0 1280 778 </string>
+	<string>192 177 890 513 0 0 1280 778 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>192 187 894 503 0 0 1280 778 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>196 186 880 503 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4_selection</key>
@@ -965,12 +967,10 @@
 			<string>/Users/q</string>
 		</dict>
 	</array>
-	<key>NoSyncHaveUsedCopyMode</key>
-	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>3031178D-F190-4B68-A5A3-BE2DD9974893</string>
+	<string>F6E1A657-D46A-450B-A03E-6CE566C83A9E</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -978,7 +978,7 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>520554283.14269</real>
+	<real>546659074.83681703</real>
 	<key>OpenArrangementAtStartup</key>
 	<true/>
 	<key>OpenBookmark</key>
@@ -1019,7 +1019,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/q/dotfiles/iTerm</string>
+	<string>/Users/Q/dotfiles/iTerm</string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -1027,11 +1027,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=38</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=31</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-16T12:30:26Z</date>
+	<date>2018-07-20T22:34:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1051,7 +1051,7 @@
 	<key>TerminalVMargin</key>
 	<integer>25</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1530942336</real>
+	<real>1525012864</real>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
@@ -1443,7 +1443,7 @@
 												<real>0.85098052024841309</real>
 											</dict>
 											<key>Guid</key>
-											<string>5057A62F-4599-44F3-9C8F-E19EDB4BEDF2</string>
+											<string>C6CE724E-BA12-4FBE-98F6-55C7CACA2DF7</string>
 											<key>Hide After Opening</key>
 											<false/>
 											<key>Horizontal Spacing</key>
@@ -2003,7 +2003,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/Q/dotfiles</string>
+										<string>/Users/Q</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
