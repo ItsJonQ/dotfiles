@@ -36,7 +36,8 @@
     "panel.border": "#ffffff11"
   },
   "editor.parameterHints": false,
-  "editor.fontFamily": "SF Mono, IBM Plex Mono, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "IBM Plex Mono, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
   "workbench.tips.enabled": false,
   "javascript.validate.enable": false,
   "files.trimTrailingWhitespace": true,
