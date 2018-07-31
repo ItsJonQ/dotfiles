@@ -27,13 +27,13 @@
       "statusBar.noFolderBackground" : "#00000000",
       "statusBar.debuggingBackground": "#00000000",
     },
-    "activityBar.border": "#ffffff11",
-    "editorGroup.border": "#ffffff11",
-    "editorOverviewRuler.border": "#ffffff22",
-    "merge.border": "#ffffff11",
-    "sideBar.border": "#ffffff11",
-    "statusBar.border": "#ffffff11",
-    "panel.border": "#ffffff11"
+    // "activityBar.border": "#ffffff11",
+    // "editorGroup.border": "#ffffff11",
+    // "editorOverviewRuler.border": "#ffffff22",
+    // "merge.border": "#ffffff11",
+    // "sideBar.border": "#ffffff11",
+    // "statusBar.border": "#ffffff11",
+    // "panel.border": "#ffffff11"
   },
   "editor.parameterHints": false,
   "editor.fontFamily": "IBM Plex Mono, SF Mono, Menlo, Monaco, 'Courier New', monospace",
@@ -119,5 +119,4 @@
   },
   "search.location": "panel",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Ayu Mirage",
 }
