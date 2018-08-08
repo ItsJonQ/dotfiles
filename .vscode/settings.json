@@ -15,18 +15,18 @@
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorCustomizations": {
-    "[Default Dark+]": {
-      "statusBar.background" : "#00000000",
-      "statusBar.noFolderBackground" : "#00000000",
-      "statusBar.debuggingBackground": "#00000000",
-    },
-    "[Default Light+]": {
-      "statusBar.foreground": "#000000ff",
-      "statusBar.background" : "#00000000",
-      "statusBar.noFolderBackground" : "#00000000",
-      "statusBar.debuggingBackground": "#00000000",
-    },
+  // "workbench.colorCustomizations": {
+  //   "[Default Dark+]": {
+  //     "statusBar.background" : "#00000000",
+  //     "statusBar.noFolderBackground" : "#00000000",
+  //     "statusBar.debuggingBackground": "#00000000",
+  //   },
+  //   "[Default Light+]": {
+  //     "statusBar.foreground": "#000000ff",
+  //     "statusBar.background" : "#00000000",
+  //     "statusBar.noFolderBackground" : "#00000000",
+  //     "statusBar.debuggingBackground": "#00000000",
+  //   },
     // "activityBar.border": "#ffffff11",
     // "editorGroup.border": "#ffffff11",
     // "editorOverviewRuler.border": "#ffffff22",
@@ -34,7 +34,7 @@
     // "sideBar.border": "#ffffff11",
     // "statusBar.border": "#ffffff11",
     // "panel.border": "#ffffff11"
-  },
+  // },
   "editor.parameterHints": false,
   "editor.fontFamily": "IBM Plex Mono, SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13,
