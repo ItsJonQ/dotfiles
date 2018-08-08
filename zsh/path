@@ -18,18 +18,13 @@ rbenv() {
 
 # node (via Brew)
 # export PATH="/usr/local/opt/node@6/bin:$PATH"
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-export PATH="$HOME/.npm-packages/bin:$PATH"
+# export PATH="/usr/local/opt/node@8/bin:$PATH"
+# export PATH="$HOME/.npm-packages/bin:$PATH"
 
 # nvm
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-# source "$NVM_DIR/nvm.sh"
-# nvm() {
-#   source ~/.nvm/nvm.sh
-#   nvm "$@"
-# }
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # npm
 # npm set progress=false
@@ -67,8 +62,8 @@ if which docker-machine > /dev/null; then
 fi
 
 # export SCOUT_DOCKER_MODE=true
-export SCOUT_DOCKER_MODE=beacon-dev
-export SCOUT_SKIP_HSAPP_BUILD=true
+# export SCOUT_DOCKER_MODE=beacon-dev
+# export SCOUT_SKIP_HSAPP_BUILD=true
 
 
 ## vv
