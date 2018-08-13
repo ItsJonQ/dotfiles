@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 Hyper - Shell color setup script
-# Jon Q (http://jonquach.com)
+# Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -10,13 +10,13 @@ fi
 
 color00="ff/ff/ff" # Base 00 - Black
 
-color01="b3/56/5e" # Base 08 - Red
-color02="7a/9c/61" # Base 0B - Green
-color03="c0/9e/5d" # Base 0A - Yellow
-color04="4e/8c/bf" # Base 0D - Blue
-color05="9e/60/b1" # Base 0E - Magenta
-color06="45/92/9b" # Base 0C - Cyan
-color07="22/22/22" # Base 05 - White
+color01="af/45/4d" # Base 08 - Red
+color02="6f/96/53" # Base 0B - Green
+color03="be/96/48" # Base 0A - Yellow
+color04="3a/82/be" # Base 0D - Blue
+color05="97/4e/ad" # Base 0E - Magenta
+color06="38/8c/96" # Base 0C - Cyan
+color07="2c/2c/2c" # Base 05 - White
 
 
 color08="bb/bb/bb" # Base 03 - Bright Black
@@ -26,20 +26,20 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="15/15/16" # Base 07 - Bright White
+color15="0c/0c/0c" # Base 07 - Bright White
 color16="d0/87/70" # Base 09
-color17="be/50/46" # Base 0F
-color18="f3/f3/f3" # Base 01
-color19="dd/dd/dd" # Base 02
-color20="44/44/44" # Base 04
+color17="e0/6c/75" # Base 0F
+color18="f5/f5/f5" # Base 01
+color19="ec/ec/ec" # Base 02
+color20="4c/4c/4c" # Base 04
 
-color21="15/15/16" # Base 06
+color21="0c/0c/0c" # Base 06
 
 
-color_foreground="22/22/22" # Base 05
+color_foreground="2c/2c/2c" # Base 05
 color_background="ff/ff/ff" # Base 00
 
-color_cursor="22/22/22" # Base 05
+color_cursor="2c/2c/2c" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -88,11 +88,11 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
-  printf $printf_template_custom Pg 222222 # forground
+  printf $printf_template_custom Pg 2c2c2c # forground
   printf $printf_template_custom Ph ffffff # background
-  printf $printf_template_custom Pi 222222 # bold color
-  printf $printf_template_custom Pj dddddd # selection color
-  printf $printf_template_custom Pk 222222 # selected text color
+  printf $printf_template_custom Pi 2c2c2c # bold color
+  printf $printf_template_custom Pj ececec # selection color
+  printf $printf_template_custom Pk 2c2c2c # selected text color
   
   printf $printf_template_custom Pl ff0080 # cursor
   
