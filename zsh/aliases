@@ -268,6 +268,7 @@ alias db='cd ~/Dropbox'
 # Personal
 alias df='cd ~/dotfiles'
 alias q='p && cd jonquach'
+alias sup='p && cd sup'
 alias modes='p && cd modes'
 alias b16='cd ~/base16-builder'
 alias vimclr='cd ~/base16-vim/colors'
