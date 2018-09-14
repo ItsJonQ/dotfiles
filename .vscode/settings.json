@@ -119,4 +119,5 @@
   },
   "search.location": "panel",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Solarized Light",
 }
