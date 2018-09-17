@@ -36,7 +36,7 @@
     // "panel.border": "#ffffff11"
   // },
   "editor.parameterHints": false,
-  "editor.fontFamily": "IBM Plex Mono, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13,
   "workbench.tips.enabled": false,
   "javascript.validate.enable": false,
@@ -119,4 +119,5 @@
   },
   "search.location": "panel",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Solarized Light",
 }
