@@ -1,6 +1,8 @@
 # _spaceship
 # Spaceship Prompt
-# Author: Q <itsjonq@gmail.com> Source: https://github.com/ItsJonQ/dotfiles =============================================================================
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
 
 # Time
 SPACESHIP_TIME_SHOW=false
