@@ -32,15 +32,16 @@ brew install homebrew/dupes/screen
 # brew install homebrew/php/php56 --with-gmp
 
 # Install brew things
-brew install bradp/vv/vv
+# brew install bradp/vv/vv
 brew install ffmpeg
 brew install git
-brew install googler
+# brew install googler
 brew install homebrew/php/wp-cli
 # brew install homebrew/php
-brew install imagemagick --with-webp
+# brew install imagemagick --with-webp
 brew install mariadb
 brew install macvim
+brew install mongodb
 brew install mplayer
 brew install mpv
 brew install neovim
@@ -48,7 +49,7 @@ brew install neovim
 brew install node@8
 # brew install node
 brew install php
-brew install pow
+# brew install pow
 brew install rbenv
 brew install shpotify
 brew install the_silver_searcher
