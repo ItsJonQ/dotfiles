@@ -1,0 +1,11 @@
+node_modules/
+build/
+dist/
+public/
+coverage/
+
+package.json
+package-lock.json
+
+src/**/*/types.js
+src/**/*/*.types.js
