@@ -6,6 +6,7 @@
   "editor.wordWrap": "on",
   "files.exclude": {
     "node_modules": true,
+    "packages/**/node_modules": true,
     "_site": true
   },
   "editor.colorDecorators": false,
