@@ -172,5 +172,10 @@
     }
   },
   "search.location": "panel",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideTabs": false,
+  "zenMode.restore": true,
+  "zenMode.hideStatusBar": false
 }
