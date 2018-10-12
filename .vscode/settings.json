@@ -18,12 +18,13 @@
       "statusBar.background": "#00000000",
       "statusBar.noFolderBackground": "#00000000",
       "statusBar.debuggingBackground": "#00000000"
+    },
+    "[Default Light+]": {
+      "statusBar.foreground": "#000000ff",
+      "statusBar.background" : "#00000000",
+      "statusBar.noFolderBackground" : "#00000000",
+      "statusBar.debuggingBackground": "#00000000",
     }
-    //   "[Default Light+]": {
-    //     "statusBar.foreground": "#000000ff",
-    //     "statusBar.background" : "#00000000",
-    //     "statusBar.noFolderBackground" : "#00000000",
-    //     "statusBar.debuggingBackground": "#00000000",
   },
   // "activityBar.border": "#ffffff11",
   // "editorGroup.border": "#ffffff11",
@@ -177,5 +178,6 @@
   "zenMode.centerLayout": false,
   "zenMode.hideTabs": false,
   "zenMode.restore": true,
-  "zenMode.hideStatusBar": false
+  "zenMode.hideStatusBar": false,
+  "workbench.colorTheme": "Gatito Theme"
 }
