@@ -80,6 +80,27 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "L_Ctrl + [ to Esc",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "[",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
