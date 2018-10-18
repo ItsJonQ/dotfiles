@@ -67,7 +67,7 @@
                                     "key_code": "grave_accent_and_tilde",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "left_control",
                                             "left_command"
                                         ]
                                     }
