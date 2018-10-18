@@ -60,7 +60,7 @@
                         ]
                     },
                     {
-                        "description": "L_Control + ~ to Esc",
+                        "description": "L_Control + L_CMD + ~ to Esc",
                         "manipulators": [
                             {
                                 "from": {
@@ -68,6 +68,7 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "left_control"
+                                            "left_command"
                                         ]
                                     }
                                 },
