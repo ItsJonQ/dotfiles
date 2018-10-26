@@ -11,8 +11,8 @@
   },
   "editor.colorDecorators": false,
   "workbench.startupEditor": "none",
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
+  // "workbench.editor.enablePreview": false,
+  // "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
       "statusBar.background": "#00000000",
@@ -21,9 +21,9 @@
     },
     "[Default Light+]": {
       "statusBar.foreground": "#000000ff",
-      "statusBar.background" : "#00000000",
-      "statusBar.noFolderBackground" : "#00000000",
-      "statusBar.debuggingBackground": "#00000000",
+      "statusBar.background": "#00000000",
+      "statusBar.noFolderBackground": "#00000000",
+      "statusBar.debuggingBackground": "#00000000"
     }
   },
   // "activityBar.border": "#ffffff11",
@@ -34,14 +34,12 @@
   // "statusBar.border": "#ffffff11",
   // "panel.border": "#ffffff11"
   // },
-  "editor.parameterHints": false,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13,
   "workbench.tips.enabled": false,
   "javascript.validate.enable": false,
   "files.trimTrailingWhitespace": true,
   "window.restoreWindows": "none",
-  "typescript.autoImportSuggestions.enabled": false,
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -179,5 +177,7 @@
   "zenMode.hideTabs": false,
   "zenMode.restore": true,
   "zenMode.hideStatusBar": false,
-  "workbench.colorTheme": "One Dark Pro"
+  "javascript.suggest.autoImports": false,
+  "typescript.suggest.autoImports": false,
+  "editor.formatOnSave": true
 }
