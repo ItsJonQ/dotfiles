@@ -11,8 +11,8 @@
   },
   "editor.colorDecorators": false,
   "workbench.startupEditor": "none",
-  // "workbench.editor.enablePreview": false,
-  // "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
       "statusBar.background": "#00000000",
