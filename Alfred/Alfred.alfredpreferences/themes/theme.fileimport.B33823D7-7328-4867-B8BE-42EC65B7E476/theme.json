@@ -16,7 +16,7 @@
       },
       "backgroundSelected" : "#0375EFE5",
       "text" : {
-        "size" : 14,
+        "size" : 16,
         "colorSelected" : "#FCFDFFFF",
         "font" : "System Light",
         "color" : "#EFF0F2FF"
@@ -30,7 +30,7 @@
       "background" : "#00000000",
       "spacing" : 6,
       "text" : {
-        "size" : 28,
+        "size" : 30,
         "colorSelected" : "#000000FF",
         "font" : "System Light",
         "color" : "#FCFDFFF2"
