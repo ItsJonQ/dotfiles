@@ -180,5 +180,5 @@
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Gatito Theme"
+  "editor.accessibilitySupport": "off"
 }
