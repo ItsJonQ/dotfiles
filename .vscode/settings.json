@@ -13,19 +13,19 @@
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorCustomizations": {
-    "[Default Dark+]": {
-      "statusBar.background": "#00000000",
-      "statusBar.noFolderBackground": "#00000000",
-      "statusBar.debuggingBackground": "#00000000"
-    },
-    "[Default Light+]": {
-      "statusBar.foreground": "#000000ff",
-      "statusBar.background": "#00000000",
-      "statusBar.noFolderBackground": "#00000000",
-      "statusBar.debuggingBackground": "#00000000"
-    }
-  },
+  // "workbench.colorCustomizations": {
+  //   "[Default Dark+]": {
+  //     "statusBar.background": "#00000000",
+  //     "statusBar.noFolderBackground": "#00000000",
+  //     "statusBar.debuggingBackground": "#00000000"
+  //   },
+  //   "[Default Light+]": {
+  //     "statusBar.foreground": "#000000ff",
+  //     "statusBar.background": "#00000000",
+  //     "statusBar.noFolderBackground": "#00000000",
+  //     "statusBar.debuggingBackground": "#00000000"
+  //   }
+  // },
   // "activityBar.border": "#ffffff11",
   // "editorGroup.border": "#ffffff11",
   // "editorOverviewRuler.border": "#ffffff22",
@@ -37,14 +37,13 @@
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13,
   "workbench.tips.enabled": false,
-  "javascript.validate.enable": false,
+  // "javascript.validate.enable": false,
   "files.trimTrailingWhitespace": true,
   "window.restoreWindows": "none",
   "workbench.activityBar.visible": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "prettier.eslintIntegration": true,
-  "window.zoomLevel": 0,
   "editor.tokenColorCustomizations": {
     "[Aurora]": {
       "variables": "#56B6C2",
@@ -172,11 +171,6 @@
   },
   "search.location": "panel",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "zenMode.fullScreen": false,
-  "zenMode.centerLayout": false,
-  "zenMode.hideTabs": false,
-  "zenMode.restore": true,
-  "zenMode.hideStatusBar": false,
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
   "editor.formatOnSave": true,
