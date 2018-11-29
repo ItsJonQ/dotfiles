@@ -35,7 +35,7 @@
   // "panel.border": "#ffffff11"
   // },
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 13,
+  // "editor.fontSize": 13,
   "workbench.tips.enabled": false,
   // "javascript.validate.enable": false,
   "files.trimTrailingWhitespace": true,
@@ -174,5 +174,6 @@
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
   "editor.formatOnSave": true,
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "window.zoomLevel": 0
 }
