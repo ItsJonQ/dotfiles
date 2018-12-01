@@ -256,6 +256,9 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 defaults write NSGlobalDomain KeyRepeat -int 2
 
+# Increase tracking speed limit
+defaults write -g com.apple.trackpad.scaling -float 5.0
+
 # Faster key repeat
 # defaults write NSGlobalDomain InitialKeyRepeat -int 10
 # defaults write NSGlobalDomain KeyRepeat -int 1
