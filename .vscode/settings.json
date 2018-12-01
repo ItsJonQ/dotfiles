@@ -175,5 +175,6 @@
   "typescript.suggest.autoImports": false,
   "editor.formatOnSave": true,
   "editor.accessibilitySupport": "off",
-  "window.zoomLevel": 0
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "One Dark Pro"
 }
