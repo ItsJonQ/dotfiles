@@ -83,13 +83,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>217 95 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>338 335 770 420 0 0 1280 778 </string>
+	<string>756 537 918 423 0 0 1920 1178 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>192 177 890 514 0 0 1280 778 </string>
+	<string>343 174 1338 875 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>203 174 890 491 0 0 1280 778 </string>
+	<string>192 180 890 510 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>192 177 890 513 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -2671,7 +2671,7 @@
 		<array>
 			<string>session.jobName</string>
 			<string>session.id</string>
-			<string>session.tmuxStatusLeft</string>
+			<string>session.columns</string>
 			<string>session.profileName</string>
 			<string>session.name</string>
 			<string>session.terminalIconName</string>
@@ -2690,17 +2690,17 @@
 			<string>session.tmuxWindowTitle</string>
 			<string>session.autoLogId</string>
 			<string>session.tty</string>
+			<string>session.badge</string>
 			<string>session.autoName</string>
 			<string>session.terminalWindowName</string>
 			<string>iterm2</string>
+			<string>session.tmuxStatusLeft</string>
 			<string>session.autoNameFormat</string>
 			<string>session.jobPid</string>
 			<string>session.lastCommand</string>
 			<string>session.mouseReportingMode</string>
 			<string>session.pid</string>
 			<string>session.presentationName</string>
-			<string>session.columns</string>
-			<string>session.badge</string>
 		</array>
 		<key>16</key>
 		<array>
@@ -2708,7 +2708,9 @@
 			<string>currentTab.currentSession.session.columns</string>
 			<string>currentTab</string>
 			<string>currentTab.currentSession</string>
+			<string>currentTab.currentSession.session.terminalWindowName</string>
 			<string>currentTab.currentSession.session.pid</string>
+			<string>currentTab.currentSession.session.mouseReportingMode</string>
 			<string>currentTab.currentSession.session.tty</string>
 			<string>currentTab.currentSession.session.presentationName</string>
 			<string>currentTab.currentSession.session.username</string>
@@ -2717,6 +2719,7 @@
 			<string>currentTab.currentSession.session.jobName</string>
 			<string>iterm2</string>
 			<string>currentTab.currentSession.session.hostname</string>
+			<string>currentTab.currentSession.session.termid</string>
 			<string>currentTab.currentSession.session.jobPid</string>
 			<string>currentTab.currentSession.session.path</string>
 		</array>
@@ -2724,8 +2727,10 @@
 		<array>
 			<string>currentSession</string>
 			<string>titleOverride</string>
+			<string>currentSession.session.termid</string>
 			<string>currentSession.session.pid</string>
 			<string>currentSession.session.name</string>
+			<string>currentSession.session.mouseReportingMode</string>
 			<string>currentSession.session.path</string>
 			<string>currentSession.session.hostname</string>
 			<string>currentSession.session.rows</string>
@@ -2736,6 +2741,7 @@
 			<string>currentSession.session.presentationName</string>
 			<string>currentSession.session.username</string>
 			<string>currentSession.session.jobPid</string>
+			<string>currentSession.session.terminalWindowName</string>
 			<string>currentSession.session.columns</string>
 		</array>
 		<key>4</key>
@@ -2747,6 +2753,10 @@
 	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>520554283.14269</real>
+	<key>NoSyncVeryOldNightlyBuildWarning_SilenceUntil</key>
+	<real>571022238.78045905</real>
+	<key>NoSyncVeryOldNightlyBuildWarning_selection</key>
+	<integer>1</integer>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
@@ -2803,7 +2813,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-29T14:00:50Z</date>
+	<date>2019-01-09T14:06:58Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>

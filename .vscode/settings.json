@@ -35,8 +35,9 @@
   // "panel.border": "#ffffff11"
   // },
   // "editor.fontFamily": "Fira Code, SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  // "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   // "editor.fontFamily": "Operator Mono, Dank Mono, SF Mono, Menlo",
+  "editor.fontWeight": "300",
   // "editor.fontSize": 13,
   "workbench.tips.enabled": false,
   // "javascript.validate.enable": false,
@@ -175,8 +176,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.accessibilitySupport": "off",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Refined (One)"
+  "workbench.colorTheme": "Light+ (Plus)"
 }
