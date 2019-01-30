@@ -10,6 +10,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>CheckTestRelease</key>
+	<true/>
 	<key>Default Arrangement Name</key>
 	<string>Default</string>
 	<key>Default Bookmark Guid</key>
@@ -81,13 +83,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>410 375 620 392 0 0 1440 878 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>217 95 606 469 0 0 1280 778 </string>
+	<string>269 126 606 469 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>756 537 918 423 0 0 1920 1178 </string>
+	<string>232 258 814 486 0 0 1440 878 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>343 174 1338 875 0 0 1920 1178 </string>
+	<string>216 186 1002 590 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>192 180 890 510 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2671,7 +2673,7 @@
 		<array>
 			<string>session.jobName</string>
 			<string>session.id</string>
-			<string>session.columns</string>
+			<string>session.presentationName</string>
 			<string>session.profileName</string>
 			<string>session.name</string>
 			<string>session.terminalIconName</string>
@@ -2699,12 +2701,13 @@
 			<string>session.jobPid</string>
 			<string>session.lastCommand</string>
 			<string>session.mouseReportingMode</string>
+			<string>session.columns</string>
 			<string>session.pid</string>
-			<string>session.presentationName</string>
 		</array>
 		<key>16</key>
 		<array>
 			<string>titleOverride</string>
+			<string>currentTab.currentSession.session.autoNameFormat</string>
 			<string>currentTab.currentSession.session.columns</string>
 			<string>currentTab</string>
 			<string>currentTab.currentSession</string>
@@ -2712,6 +2715,7 @@
 			<string>currentTab.currentSession.session.pid</string>
 			<string>currentTab.currentSession.session.mouseReportingMode</string>
 			<string>currentTab.currentSession.session.tty</string>
+			<string>currentTab.currentSession.session.autoName</string>
 			<string>currentTab.currentSession.session.presentationName</string>
 			<string>currentTab.currentSession.session.username</string>
 			<string>currentTab.currentSession.session.name</string>
@@ -2729,8 +2733,10 @@
 			<string>titleOverride</string>
 			<string>currentSession.session.termid</string>
 			<string>currentSession.session.pid</string>
+			<string>currentSession.session.autoName</string>
 			<string>currentSession.session.name</string>
 			<string>currentSession.session.mouseReportingMode</string>
+			<string>currentSession.session.autoNameFormat</string>
 			<string>currentSession.session.path</string>
 			<string>currentSession.session.hostname</string>
 			<string>currentSession.session.rows</string>
@@ -2809,11 +2815,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=38</string>
+	<string>https://iterm2.com/appcasts/nightly.xml?shard=38</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-01-09T14:06:58Z</date>
+	<date>2019-01-23T13:26:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
