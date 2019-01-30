@@ -1,0 +1,104 @@
+# Colors
+# .zshrc
+# Author: Q <itsjonq@gmail.com>
+# Source: https://github.com/ItsJonQ/dotfiles
+# =============================================================================
+#
+# Source
+# https://github.com/wincent/wincent/tree/aa1c4a87ac246a0f400268d1f7b2783aedd4068b/roles/dotfiles/files/.zsh
+
+# Change for Terminal colouring
+# export TERM=linux
+export TERM=xterm-256color
+# export TERM=xterm-256color-italic
+
+BASE16_DIR="$HOME/dotfiles/base16-shell"
+BASE16_CONFIG="$HOME/.base16"
+
+BASE16_COLOR="one"
+BASE16_SHADE="dark"
+
+# Base16 Shell
+BASE16_SHELL="$BASE16_DIR/base16-one.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+color() {
+  BACKGROUND="$1"
+  SCHEME="$2"
+
+  if [ $# -eq 0 -a -s "$BASE16_CONFIG" ]; then
+    cat ~/.vim/.base16
+    return
+  fi
+
+  if [[ "$SCHEME" = 'help' ]]; then
+    BACKGROUND='help'
+  fi
+
+  case "$BACKGROUND" in
+  dark|light)
+    FILE="$BASE16_DIR/base16-$SCHEME.$BACKGROUND.sh"
+    if [[ -x "$FILE" ]]; then
+      echo "$SCHEME" >! "$BASE16_CONFIG"
+      echo "$BACKGROUND" >> "$BASE16_CONFIG"
+      "$FILE"
+    else
+      echo "Scheme '$SCHEME' not found in $BASE16_DIR"
+      return 1
+    fi
+    ;;
+  help)
+    echo 'color dark [tomorrow|ocean|grayscale|ashes|default|railscasts|twilight|...]'
+    echo 'color light [grayscale|harmonic16|ocean|tomorrow|twilight|...]'
+    echo
+    echo 'Available schemes:'
+    find ~/.zsh/base16-shell -name 'base16-*.sh' | \
+      sed -E 's|.+/base16-||' | \
+      sed -E 's/\.(dark|light)\.sh/ (\1)/' | \
+      column
+      ;;
+
+  *)
+    echo 'Unknown subcommand: use one of {dark,light,help}'
+    ;;
+  esac
+
+}
+
+dark() {
+  if [ "$1" ]; then
+    color dark "$1"
+    BASE16_COLOR="$1"
+  else
+    color dark one
+  fi
+  BASE16_SHADE="dark"
+}
+
+light() {
+  if [ "$1" ]; then
+    color light "$1"
+    BASE16_COLOR="$1"
+  else
+    color light ocean
+  fi
+  BASE16_SHADE="light"
+}
+
+if [[ -s "$BASE16_CONFIG" ]]; then
+  SCHEME=$(head -1 "$BASE16_CONFIG")
+  BACKGROUND=$(sed -n -e '2 p' "$BASE16_CONFIG")
+  if [ "$BACKGROUND" = 'dark' ]; then
+    dark "$SCHEME"
+  elif [ "$BACKGROUND" = 'light' ]; then
+    light "$SCHEME"
+  else
+    echo "error: unknown background type in $BASE16_CONFIG"
+  fi
+else
+  # Default.
+  dark one
+fi
+
+export BASE16_COLOR
+export BASE16_SHADE
