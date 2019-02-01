@@ -218,6 +218,8 @@ alias bx='bundle exec'
 #Ember - Server
 alias ems='ember server --ssl=false'
 
+# (Quick) Server
+alias serve='python -m SimpleHTTPServer 8000'
 
 # Get SSH Key
 alias ssh-copy='pbcopy < ~/.ssh/id_rsa.pub'

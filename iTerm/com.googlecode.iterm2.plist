@@ -85,11 +85,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>410 621 918 423 0 0 1920 1178 </string>
+	<string>232 417 918 423 0 0 1440 878 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>453 404 1130 558 0 0 1920 1178 </string>
+	<string>216 197 898 579 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>271 240 1010 513 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -774,7 +774,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>SFMono-Light 14</string>
+			<string>Menlo-Regular 14</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -942,7 +942,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
-			<integer>0</integer>
+			<integer>4</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -2662,7 +2662,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>3031178D-F190-4B68-A5A3-BE2DD9974893</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>14</integer>
+	<integer>15</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>

@@ -38,7 +38,7 @@
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   // "editor.fontFamily": "Operator Mono, Dank Mono, SF Mono, Menlo",
   "editor.fontWeight": "300",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "workbench.tips.enabled": false,
   // "javascript.validate.enable": false,
   "files.trimTrailingWhitespace": true,
