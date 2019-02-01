@@ -179,5 +179,6 @@
   "editor.formatOnSave": false,
   "editor.accessibilitySupport": "off",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Dark+ (Plus)"
+  "workbench.colorTheme": "Dark+ (Plus)",
+  "editor.largeFileOptimizations": false
 }

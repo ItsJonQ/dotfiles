@@ -8,7 +8,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 
-color00="ff/ff/ff" # Base 00 - Black
+color00="00/f7/2c" # Base 00 - Black
 
 color01="9d/15/11" # Base 08 - Red
 color02="00/a2/2a" # Base 0B - Green
@@ -37,7 +37,7 @@ color21="0c/0c/0c" # Base 06
 
 
 color_foreground="2c/2c/2c" # Base 05
-color_background="ff/ff/ff" # Base 00
+color_background="00/f7/2c" # Base 00
 
 color_cursor="2c/2c/2c" # Base 05
 
@@ -89,7 +89,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
   printf $printf_template_custom Pg 2c2c2c # forground
-  printf $printf_template_custom Ph ffffff # background
+  printf $printf_template_custom Ph 00f72c # background
   printf $printf_template_custom Pi 2c2c2c # bold color
   printf $printf_template_custom Pj ececec # selection color
   printf $printf_template_custom Pk 2c2c2c # selected text color
@@ -97,7 +97,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pl 2c2c2c # cursor
   
   
-  printf $printf_template_custom Pm ffffff # cursor text
+  printf $printf_template_custom Pm 00f72c # cursor text
   
   
 else
