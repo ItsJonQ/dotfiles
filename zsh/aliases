@@ -44,7 +44,6 @@ alias rt="root"
 alias bx='bundle exec'
 
 # Vim
-alias gv='mvim'
 alias mvi='mvim'
 alias cleanswap='rm -rfv ~/.vim/tmp/*'
 alias mvimrc='mvim ~/.vimrc'
