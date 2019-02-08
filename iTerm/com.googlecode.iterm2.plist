@@ -79,11 +79,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>591 132 508 238 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>419 393 918 452 0 0 1440 878 </string>
+	<string>419 395 918 452 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>216 203 1000 573 0 0 1440 878 </string>
+	<string>216 203 1004 579 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>216 203 1000 573 0 0 1440 878 </string>
+	<string>216 180 1130 579 0 0 1440 878 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4_selection</key>
@@ -764,7 +764,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>SFMono-Light 16</string>
+			<string>SFMono-Light 15</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -932,7 +932,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
-			<integer>4</integer>
+			<integer>0</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
