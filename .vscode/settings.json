@@ -13,27 +13,56 @@
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  // "workbench.colorCustomizations": {
-  //   "[Default Dark+]": {
-  //     "statusBar.background": "#00000000",
-  //     "statusBar.noFolderBackground": "#00000000",
-  //     "statusBar.debuggingBackground": "#00000000"
-  //   },
-  //   "[Default Light+]": {
-  //     "statusBar.foreground": "#000000ff",
-  //     "statusBar.background": "#00000000",
-  //     "statusBar.noFolderBackground": "#00000000",
-  //     "statusBar.debuggingBackground": "#00000000"
-  //   }
-  // },
-  // "activityBar.border": "#ffffff11",
-  // "editorGroup.border": "#ffffff11",
-  // "editorOverviewRuler.border": "#ffffff22",
-  // "merge.border": "#ffffff11",
-  // "sideBar.border": "#ffffff11",
-  // "statusBar.border": "#ffffff11",
-  // "panel.border": "#ffffff11"
-  // },
+  "workbench.colorCustomizations": {
+    //   "[Default Dark+]": {
+    //     "statusBar.background": "#00000000",
+    //     "statusBar.noFolderBackground": "#00000000",
+    //     "statusBar.debuggingBackground": "#00000000"
+    //   },
+    //   "[Default Light+]": {
+    //     "statusBar.foreground": "#000000ff",
+    //     "statusBar.background": "#00000000",
+    //     "statusBar.noFolderBackground": "#00000000",
+    //     "statusBar.debuggingBackground": "#00000000"
+    //   }
+    "[Gray Matter Light]": {
+      "activityBar.border": "#0000000d",
+      "editorGroup.border": "#0000000d",
+      "editorGroupHeader.tabsBorder": "#0000000d",
+      "editorOverviewRuler.border": "#00000022",
+      "editor.findMatchHighlightBackground": "#a5def3",
+      "editor.wordHighlightBackground": "#C3E8F333",
+      "editor.selectionBackground": "#C3E8F355",
+      "merge.border": "#0000000d",
+      "panel.border": "#0000000d",
+      "sideBar.border": "#0000000d",
+      "statusBar.border": "#0000000d",
+      "tab.border": "#0000000d",
+      "titleBar.border": "#0000000d"
+    },
+    "[Gray Matter Dark]": {
+      "activityBar.border": "#ffffff0d",
+      "editorGroup.border": "#ffffff0d",
+      "editorGroupHeader.tabsBorder": "#ffffff0d",
+      "editorOverviewRuler.border": "#ffffff22",
+      "editor.findMatchHighlightBackground": "#1C434D",
+      "editor.wordHighlightBackground": "#1C434D33",
+      "editor.selectionBackground": "#1C434D55",
+      "merge.border": "#ffffff0d",
+      "panel.border": "#ffffff0d",
+      "sideBar.border": "#ffffff0d",
+      "statusBar.border": "#ffffff0d",
+      "tab.border": "#ffffff0d",
+      "titleBar.border": "#ffffff0d"
+    }
+    // "activityBar.border": "#ffffff11",
+    // "editorGroup.border": "#ffffff11",
+    // "editorOverviewRuler.border": "#ffffff22",
+    // "merge.border": "#ffffff11",
+    // "sideBar.border": "#ffffff11",
+    // "statusBar.border": "#ffffff11",
+    // "panel.border": "#ffffff11"
+  },
   // "editor.fontFamily": "Fira Code, SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   // "editor.fontFamily": "Operator Mono, Dank Mono, SF Mono, Menlo",
@@ -176,9 +205,8 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
-  "editor.formatOnSave": false,
   "editor.accessibilitySupport": "off",
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Dark+ (Plus)",
-  "editor.largeFileOptimizations": false
+  "editor.largeFileOptimizations": false,
+  "workbench.colorTheme": "Ayu Mirage"
 }

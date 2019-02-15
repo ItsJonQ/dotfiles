@@ -99,6 +99,8 @@ Plugin 'mxw/vim-jsx'
 " Plugin 'othree/javascript-libraries-syntax.vim'
 " Plugin 'othree/yajs.vim'
 
+Plugin 'prettier/vim-prettier'
+
 " }}}"}}}
 
 
