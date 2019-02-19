@@ -45,6 +45,8 @@
       "editorGroup.border": "#ffffff0d",
       "editorGroupHeader.tabsBorder": "#ffffff0d",
       "editorOverviewRuler.border": "#ffffff22",
+      "editor.findRangeHighlightBackground": "#29BEEA55",
+      "editor.wordHighlightStrongBackground": "#29BEEA55",
       "editor.findMatchHighlightBackground": "#1C434D",
       "editor.wordHighlightBackground": "#1C434D33",
       "editor.selectionBackground": "#1C434D55",
@@ -63,8 +65,8 @@
     // "statusBar.border": "#ffffff11",
     // "panel.border": "#ffffff11"
   },
-  // "editor.fontFamily": "Fira Code, SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Fira Code, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   // "editor.fontFamily": "Operator Mono, Dank Mono, SF Mono, Menlo",
   "editor.fontWeight": "300",
   "editor.fontSize": 14,
@@ -208,5 +210,6 @@
   "editor.accessibilitySupport": "off",
   "window.zoomLevel": 0,
   "editor.largeFileOptimizations": false,
-  "workbench.colorTheme": "Ayu Mirage"
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "editor.formatOnSave": true
 }
