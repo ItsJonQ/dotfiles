@@ -65,8 +65,8 @@
     // "statusBar.border": "#ffffff11",
     // "panel.border": "#ffffff11"
   },
-  "editor.fontFamily": "Fira Code, SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  // "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "Fira Code, SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   // "editor.fontFamily": "Operator Mono, Dank Mono, SF Mono, Menlo",
   "editor.fontWeight": "300",
   "editor.fontSize": 14,
