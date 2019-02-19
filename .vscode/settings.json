@@ -210,6 +210,6 @@
   "editor.accessibilitySupport": "off",
   "window.zoomLevel": 0,
   "editor.largeFileOptimizations": false,
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Gray Matter Light",
   "editor.formatOnSave": true
 }
