@@ -37,7 +37,7 @@ color21="b6/a9/ff" # Base 06
 color_foreground="3e/31/a2" # Base 05
 color_background="b6/a9/ff" # Base 00
 
-color_cursor="5c/53/bd" # Base 05
+color_cursor="52/49/b3" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
