@@ -95,7 +95,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>192 112 950 579 0 0 1280 777 </string>
+	<string>128 141 1016 586 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>128 141 1016 586 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2749,9 +2749,9 @@
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
-	<integer>40</integer>
+	<integer>30</integer>
 	<key>TerminalVMargin</key>
-	<integer>40</integer>
+	<integer>30</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1525012864</real>
 	<key>UseBorder</key>
