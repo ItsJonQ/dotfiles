@@ -1,5 +1,5 @@
 #!/bin/sh
-# Base16 Commodore - Shell color setup script
+# Base16 C64 - Shell color setup script
 # Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
