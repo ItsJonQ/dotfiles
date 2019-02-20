@@ -17,7 +17,7 @@ color05="14/18/20" # Base 0E - Magenta
 color06="14/18/20" # Base 0C - Cyan
 color07="14/18/20" # Base 05 - White
 
-color08="be/be/be" # Base 03 - Bright Black
+color08="af/af/af" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -29,7 +29,7 @@ color16="ee/ee/ee" # Base 09
 color17="ee/ee/ee" # Base 0F
 color18="e7/e7/e7" # Base 01
 color19="dc/dc/dc" # Base 02
-color20="32/36/3e" # Base 04
+color20="3c/40/48" # Base 04
 
 color21="ee/ee/ee" # Base 06
 
