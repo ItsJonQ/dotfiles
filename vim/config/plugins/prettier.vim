@@ -6,3 +6,5 @@
 nnoremap <silent> <leader>r :PrettierAsync<Return>
 nnoremap <silent> <leader>e :PrettierAsync<Return>
 nnoremap <silent> <leader>w :Prettier<Return>:w<Return>
+nnoremap <silent> <leader>ww :Prettier<Return>:w<Return>
+nnoremap <silent> <leader>wq :Prettier<Return>:wq<Return>
