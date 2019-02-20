@@ -91,11 +91,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>518 182 599 459 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>222 329 1018 447 0 0 1280 777 </string>
+	<string>222 324 918 452 0 0 1280 777 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>128 141 1016 586 0 0 1280 777 </string>
+	<string>192 194 888 497 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>128 141 1016 586 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -950,7 +950,7 @@
 			<key>Thin Strokes</key>
 			<integer>0</integer>
 			<key>Transparency</key>
-			<real>0.051949159263959391</real>
+			<real>0.0</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unicode Version</key>
