@@ -91,13 +91,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>518 182 599 459 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>222 290 796 486 0 0 1280 777 </string>
+	<string>222 329 1018 447 0 0 1280 777 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>192 204 896 487 0 0 1280 777 </string>
+	<string>192 112 950 579 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>216 205 1002 571 0 0 1440 877 </string>
+	<string>128 141 1016 586 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>196 186 880 503 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -2749,9 +2749,9 @@
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
-	<integer>25</integer>
+	<integer>40</integer>
 	<key>TerminalVMargin</key>
-	<integer>25</integer>
+	<integer>40</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1525012864</real>
 	<key>UseBorder</key>
