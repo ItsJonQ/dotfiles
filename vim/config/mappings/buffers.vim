@@ -29,8 +29,8 @@ vnoremap <c-b>o :BufOnly<cr>
 " vnoremap <c-b>O :sba<cr>
 nnoremap <leader>q :bd<cr>
 vnoremap <leader>q :bd<cr>
-nnoremap <leader>w :bd<cr>
-vnoremap <leader>w :bd<cr>
+" nnoremap <leader>w :bd<cr>
+" vnoremap <leader>w :bd<cr>
 nnoremap <leader>[ :bp<cr>
 nnoremap <leader>] :bn<cr>
 nnoremap <leader>o :BufOnly<cr>
