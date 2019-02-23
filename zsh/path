@@ -24,6 +24,7 @@ rbenv() {
 
 
 # nvm
+# https://github.com/creationix/nvm/issues/539#issuecomment-403661578
 ## Install zsh-async if it’s not present
 if [[ ! -a ~/.zsh-async ]]; then
   git clone git@github.com:mafredri/zsh-async.git ~/.zsh-async
