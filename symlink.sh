@@ -13,6 +13,7 @@ for file in $HOME/dotfiles/.atom/*; do
 done
 
 ln -sf $HOME/dotfiles/.config/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json
+ln -sf $HOME/dotfiles/.config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
 ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
 # ln -sf $HOME/dotfiles/.nvimrc $HOME/.config/nvim/init.vim
 
