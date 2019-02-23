@@ -11,8 +11,7 @@ let g:netrw_cursor=0
 " let g:netrw_list_hide= '.*\.swp$,.DS_Store,*/tmp/*,*.so,*.swp,*.zip,*.git,^\.\.\=/\=$'
 syntax off
 
-set noerrorbells
-set novisualbell
+set noeb vb t_vb=
 
 set lazyredraw
 set ttyfast

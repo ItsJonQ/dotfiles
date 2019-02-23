@@ -10,8 +10,12 @@ set colorcolumn=80
 " set cursorline
 set nocursorline
 set noshowmatch
+
 set noerrorbells
 set novisualbell
+
+set noeb vb t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 " }}}
 " Airline {{{
