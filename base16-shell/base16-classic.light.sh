@@ -17,19 +17,19 @@ color05="00/00/00" # Base 0E - Magenta
 color06="00/00/00" # Base 0C - Cyan
 color07="00/00/00" # Base 05 - White
 
-color08="31/f6/5c" # Base 03 - Bright Black
+color08="cf/cf/cf" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="1c/1c/1c" # Base 07 - Bright White
+color15="11/11/11" # Base 07 - Bright White
 color16="31/f6/5c" # Base 09
 color17="31/f6/5c" # Base 0F
-color18="31/f6/5c" # Base 01
-color19="31/f6/5c" # Base 02
-color20="5c/5c/5c" # Base 04
+color18="f7/f7/f7" # Base 01
+color19="ec/ec/ec" # Base 02
+color20="33/33/33" # Base 04
 
 color21="31/f6/5c" # Base 06
 
@@ -37,7 +37,7 @@ color21="31/f6/5c" # Base 06
 color_foreground="00/00/00" # Base 05
 color_background="31/f6/5c" # Base 00
 
-color_cursor="3c/3c/3c" # Base 05
+color_cursor="22/22/22" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -91,7 +91,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Ph 31f65c # background
   
   printf $printf_template_custom Pi 000000 # bold color
-  printf $printf_template_custom Pj 31f65c # selection color
+  printf $printf_template_custom Pj ececec # selection color
   printf $printf_template_custom Pk 000000 # selected text color
   
   printf $printf_template_custom Pl 000000 # cursor
