@@ -85,11 +85,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>518 182 599 459 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>272 228 918 423 0 0 1280 777 </string>
+	<string>272 285 770 429 0 0 1280 777 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>192 218 802 473 0 0 1280 777 </string>
+	<string>192 178 850 513 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>128 141 1016 586 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2739,7 +2739,7 @@
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>0</integer>
+	<integer>4</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>TerminalMargin</key>
