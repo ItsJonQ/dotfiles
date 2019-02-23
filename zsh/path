@@ -16,19 +16,35 @@ rbenv() {
   rbenv "$@"
 }
 
+
 # node (via Brew)
 # export PATH="/usr/local/opt/node@6/bin:$PATH"
 # export PATH="/usr/local/opt/node@8/bin:$PATH"
 # export PATH="$HOME/.npm-packages/bin:$PATH"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# npm
-# npm set progress=false
-# npm config set save-exact true
+# nvm
+## Install zsh-async if it’s not present
+if [[ ! -a ~/.zsh-async ]]; then
+  git clone git@github.com:mafredri/zsh-async.git ~/.zsh-async
+fi
+source ~/.zsh-async/async.zsh
+
+export NVM_DIR="$HOME/.nvm"
+function load_nvm() {
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+}
+
+# Initialize worker
+async_start_worker nvm_worker -n
+async_register_callback nvm_worker load_nvm
+async_job nvm_worker sleep 0.1
+
+# nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
 # Travis CI
