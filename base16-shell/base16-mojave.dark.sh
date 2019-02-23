@@ -1,37 +1,37 @@
 #!/bin/sh
-# Base16 Slate - Shell color setup script
-# Jon Q (https://jonquach.com)
+# Base16 Mojave - Shell color setup script
+# Jon Q (http://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
     return 2>/dev/null || exit 0
 fi
 
-color00="14/18/20" # Base 00 - Black
+color00="1b/1b/1b" # Base 00 - Black
 color01="e0/6c/75" # Base 08 - Red
 color02="98/c3/79" # Base 0B - Green
-color03="ff/ff/ff" # Base 0A - Yellow
-color04="ff/ff/ff" # Base 0D - Blue
-color05="ff/ff/ff" # Base 0E - Magenta
-color06="ff/ff/ff" # Base 0C - Cyan
-color07="ec/ec/ec" # Base 05 - White
-color08="3c/40/48" # Base 03 - Bright Black
+color03="ee/ee/ee" # Base 0A - Yellow
+color04="ee/ee/ee" # Base 0D - Blue
+color05="ee/ee/ee" # Base 0E - Magenta
+color06="ee/ee/ee" # Base 0C - Cyan
+color07="cc/cc/cc" # Base 05 - White
+color08="4c/4c/4c" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="ff/ff/ff" # Base 07 - Bright White
-color16="ff/ff/ff" # Base 09
-color17="ff/ff/ff" # Base 0F
-color18="19/1d/25" # Base 01
-color19="28/2c/34" # Base 02
-color20="cf/cf/cf" # Base 04
-color21="f7/f7/f7" # Base 06
-color_foreground="ec/ec/ec" # Base 05
-color_background="14/18/20" # Base 00
-color_cursor="ec/ec/ec" # Base 05
+color15="ee/ee/ee" # Base 07 - Bright White
+color16="ee/ee/ee" # Base 09
+color17="ee/ee/ee" # Base 0F
+color18="28/28/28" # Base 01
+color19="3c/3c/3c" # Base 02
+color20="aa/aa/aa" # Base 04
+color21="dd/dd/dd" # Base 06
+color_foreground="cc/cc/cc" # Base 05
+color_background="1b/1b/1b" # Base 00
+color_cursor="cc/cc/cc" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,13 +79,13 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg ececec # forground
-  printf $printf_template_custom Ph 141820 # background
-  printf $printf_template_custom Pi ececec # bold color
-  printf $printf_template_custom Pj 282c34 # selection color
-  printf $printf_template_custom Pk ececec # selected text color
+  printf $printf_template_custom Pg cccccc # forground
+  printf $printf_template_custom Ph 1b1b1b # background
+  printf $printf_template_custom Pi cccccc # bold color
+  printf $printf_template_custom Pj 3c3c3c # selection color
+  printf $printf_template_custom Pk cccccc # selected text color
   
-  printf $printf_template_custom Pl 289aff # cursor
+  printf $printf_template_custom Pl 50E3C2 # cursor
   
   
   printf $printf_template_custom Pm 000000 # cursor
