@@ -10,6 +10,8 @@ set colorcolumn=80
 " set cursorline
 set nocursorline
 set noshowmatch
+set noerrorbells
+set novisualbell
 
 " }}}
 " Airline {{{
