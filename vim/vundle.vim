@@ -30,7 +30,7 @@ Plug 'ervandew/supertab'
 " Plug 'mattn/emmet-vim'
 Plug 'mileszs/ack.vim'
 " Plug 'mhinz/vim-startify'
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Plug 'reedes/vim-pencil'
 " Plug 'rking/ag.vim'
 " Plug 'sbdchd/neoformat'
