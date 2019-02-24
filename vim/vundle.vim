@@ -4,100 +4,88 @@
 " =============================================================================
 
 " Setup start {{{
-
-if has('nvim')
-  let s:editor_root=expand("~/.nvim")
-else
-  let s:editor_root=expand("~/.vim")
+"
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-
-if has('nvim')
-  call vundle#begin("~/.config/nvim/bundle")
-else
-  call vundle#begin()
-endif
+call plug#begin('~/.vim/plugged')
 
 " }}}
 " Enhancements {{{
 
-" Plugin 'ChesleyTan/wordCount.vim'
-Plugin 'Konfekt/FastFold'
-Plugin 'VundleVim/Vundle.vim'
-" Plugin 'Yggdroot/indentLine'
-Plugin 'ap/vim-buftabline'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ervandew/supertab'
-" Plugin 'godlygeek/tabular'
-" Plugin 'jeetsukumaran/vim-filebeagle'
-" Plugin 'junegunn/vim-easy-align'
-" Plugin 'kshenoy/vim-signature'
-" Plugin 'mattn/emmet-vim'
-Plugin 'mileszs/ack.vim'
-" Plugin 'mhinz/vim-startify'
-Plugin 'prettier/vim-prettier'
-" Plugin 'reedes/vim-pencil'
-" Plugin 'rking/ag.vim'
-" Plugin 'sbdchd/neoformat'
-Plugin 'tpope/vim-commentary'
-" Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-sleuth'
-Plugin 'tpope/vim-surround'
-" Plugin 'tpope/vim-unimpaired'
-" Plugin 'tpope/vim-vinegar'
-Plugin 'manasthakur/vim-vinegar'
-" Plugin 'vim-airline/vim-airline'
-" Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'vim-ruby/vim-ruby'
-Plugin 'vim-scripts/BufOnly.vim' " Deletes all other buffers
-" Plugin 'vim-syntastic/syntastic'
-" Plugin 'vim-scripts/JavaScript-Indent'
-" Plugin 'wincent/loupe'
-" Plugin 'wincent/terminus'
-" Plugin 'w0rp/ale'
-" Plugin 'zerowidth/vim-copy-as-rtf'
+" Plug 'ChesleyTan/wordCount.vim'
+Plug 'Konfekt/FastFold'
+Plug 'VundleVim/Vundle.vim'
+" Plug 'Yggdroot/indentLine'
+Plug 'ap/vim-buftabline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ervandew/supertab'
+" Plug 'godlygeek/tabular'
+" Plug 'jeetsukumaran/vim-filebeagle'
+" Plug 'junegunn/vim-easy-align'
+" Plug 'kshenoy/vim-signature'
+" Plug 'mattn/emmet-vim'
+Plug 'mileszs/ack.vim'
+" Plug 'mhinz/vim-startify'
+Plug 'prettier/vim-prettier'
+" Plug 'reedes/vim-pencil'
+" Plug 'rking/ag.vim'
+" Plug 'sbdchd/neoformat'
+Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-surround'
+" Plug 'tpope/vim-unimpaired'
+" Plug 'tpope/vim-vinegar'
+Plug 'manasthakur/vim-vinegar'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/BufOnly.vim' " Deletes all other buffers
+" Plug 'vim-syntastic/syntastic'
+" Plug 'vim-scripts/JavaScript-Indent'
+" Plug 'wincent/loupe'
+" Plug 'wincent/terminus'
+" Plug 'w0rp/ale'
+" Plug 'zerowidth/vim-copy-as-rtf'
 
 " }}}
 " Themes {{{
 
-Plugin 'ItsJonQ/base16-vim'
-" Plugin 'ItsJonQ/onedark.vim'
-" Plugin 'ItsJonQ/vim-airline-themes'
-" Plugin 'altercation/vim-colors-solarized'
-" Plugin 'chriskempson/base16-vim'
-" Plugin 'joshdick/onedark.vim'
-" Plugin 'joshdick/airline-onedark.vim'
-" Plugin 'pbrisbin/vim-colors-off'
-" Plugin 'sbdchd/neoformat'
-" Plugin 'rakr/vim-one'
-" Plugin 'tomasr/molokai'
-" Plugin 'w0ng/vim-hybrid'
+Plug 'ItsJonQ/base16-vim'
+" Plug 'ItsJonQ/onedark.vim'
+" Plug 'ItsJonQ/vim-airline-themes'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'chriskempson/base16-vim'
+" Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/airline-onedark.vim'
+" Plug 'pbrisbin/vim-colors-off'
+" Plug 'sbdchd/neoformat'
+" Plug 'rakr/vim-one'
+" Plug 'tomasr/molokai'
+" Plug 'w0ng/vim-hybrid'
 
 " }}}
 " Syntax highlighting {{{"{{{
-" Plugin 'StanAngeloff/php.vim'
-" Plugin 'cakebaker/scss-syntax.vim'
-" Plugin 'evidens/vim-twig'
-" Plugin 'leafgarland/typescript-vim'
-" Plugin 'mustache/vim-mustache-handlebars'
-" Plugin 'plasticboy/vim-markdown'
-" Plugin 'pangloss/vim-javascript'
-" Plugin 'mxw/vim-jsx'
+" Plug 'StanAngeloff/php.vim'
+" Plug 'cakebaker/scss-syntax.vim'
+" Plug 'evidens/vim-twig'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'mustache/vim-mustache-handlebars'
+" Plug 'plasticboy/vim-markdown'
+" Plug 'pangloss/vim-javascript'
+" Plug 'mxw/vim-jsx'
 
 
 " }}}"}}}
 
 
 " Editor Config
-" Plugin 'editorconfig/editorconfig-vim'
+" Plug 'editorconfig/editorconfig-vim'
 
-
-" Setup end {{{
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" }}}
+call plug#end()
