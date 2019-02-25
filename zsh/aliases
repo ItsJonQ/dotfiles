@@ -249,6 +249,9 @@ alias spa='spotify play album'
 # Directories & Files
 #################################################
 
+# Clipboard
+alias cpwd="pwd | tr -d '\n' | pbcopy"
+
 # Notes
 # alias inotes='cd /Users/Q/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
 alias notes='cd ~/Drive/notes/'
