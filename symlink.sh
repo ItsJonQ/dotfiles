@@ -14,13 +14,13 @@ done
 
 ln -sf $HOME/dotfiles/.config/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json
 ln -sf $HOME/dotfiles/.config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf
+ln -sf $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
 # ln -sf $HOME/dotfiles/.nvimrc $HOME/.config/nvim/init.vim
 
 ln -sf $HOME/Drive/Config/.npmrc $HOME/.npmrc
 
 # ln -sf $HOME/Drive/Config/.aws $HOME
-ln -sf $HOME/Drive/Config/.tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
 ln -sf $HOME/dotfiles/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
