@@ -1,6 +1,7 @@
+
 {
   "backgroundColor": "#000000",
-  "fontColor": "#0ccfff",
+  "fontColor": "#cc66ff",
   "flickering": 0,
   "horizontalSync": 0,
   "staticNoise": 0.0673,
@@ -20,6 +21,6 @@
   "fontName": "TERMINUS_SCALED",
   "fontWidth": 1,
   "margin": 1,
-  "name": "Blue",
+  "name": "Purple",
   "version": 2
 }
