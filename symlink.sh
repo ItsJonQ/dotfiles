@@ -19,7 +19,8 @@ ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
 
 ln -sf $HOME/Drive/Config/.npmrc $HOME/.npmrc
 
-ln -sf $HOME/Drive/Config/.aws $HOME
+# ln -sf $HOME/Drive/Config/.aws $HOME
+ln -sf $HOME/Drive/Config/.tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
 
 ln -sf $HOME/dotfiles/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
