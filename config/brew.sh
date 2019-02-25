@@ -54,6 +54,7 @@ brew install rbenv
 brew install shpotify
 brew install the_silver_searcher
 brew install tree
+brew install tmux
 brew install watchman
 brew install x264
 brew install yarn

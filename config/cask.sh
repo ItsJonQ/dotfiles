@@ -15,12 +15,11 @@ brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install appcleaner
-brew cask install atom
 brew cask install cloudapp
+brew cask install cool-retro-term
 brew cask install daisydisk
 brew cask install dropbox
 brew cask install firefox
-brew cask install flux
 brew cask install hammerspoon
 brew cask install insync
 brew cask install iterm2
@@ -33,7 +32,6 @@ brew cask install onyx
 brew cask install private-internet-access
 brew cask install remote-play
 brew cask install robo-3t
-brew cask install screenhero
 brew cask install screenflow
 brew cask install slack
 brew cask install sketch
