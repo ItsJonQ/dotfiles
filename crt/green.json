@@ -1,7 +1,6 @@
 {
   "backgroundColor": "#000000",
   "fontColor": "#0ccc68",
-  "fontColor": "#ff8100",
   "flickering": 0,
   "horizontalSync": 0,
   "staticNoise": 0.0673,
@@ -21,6 +20,6 @@
   "fontName": "TERMINUS_SCALED",
   "fontWidth": 1,
   "margin": 1,
-  "name": "Orange",
+  "name": "Green",
   "version": 2
 }
