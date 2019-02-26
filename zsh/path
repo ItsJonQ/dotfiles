@@ -4,7 +4,7 @@
 # Source: https://github.com/ItsJonQ/dotfiles
 # =============================================================================
 
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
 
 source "$HOME/.zprofile"
 
