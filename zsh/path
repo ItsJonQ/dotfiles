@@ -4,8 +4,6 @@
 # Source: https://github.com/ItsJonQ/dotfiles
 # =============================================================================
 
-# if [ "$TMUX" = "" ]; then tmux; fi
-
 source "$HOME/.zprofile"
 
 export PATH="/usr/local/sbin:$PATH"

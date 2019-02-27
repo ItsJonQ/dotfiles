@@ -12,6 +12,10 @@ if $TERM == "xterm-256color"
   set t_Co=256
 endif
 
+if $TMUX
+  set term=screen-256color
+endif
+
 if (has("nvim"))
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif

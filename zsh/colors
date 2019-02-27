@@ -9,7 +9,14 @@
 
 # Change for Terminal colouring
 # export TERM=linux
-export TERM=xterm-256color
+
+# if "$TMUX";
+# then
+#   export TERM=screen-256color
+# else
+#   export TERM=xterm-256color
+# endif
+
 # export TERM=xterm-256color-italic
 
 BASE16_DIR="$HOME/dotfiles/base16-shell"
