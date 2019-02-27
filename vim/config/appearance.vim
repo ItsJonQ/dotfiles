@@ -24,6 +24,8 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+set t_ut=
+
 " }}}
 " Color scheme {{{
 
