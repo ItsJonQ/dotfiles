@@ -4,13 +4,12 @@
 # =============================================================================
 
 [user]
-  name = Jon Q
+	name = Jon Q
   email = hello@jonquach.com
 
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
-  ignoreCase = false
 
 [alias]
   a = add
@@ -30,8 +29,8 @@
   fp = fetch -p
   h = help
   hist = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  l = log
   last = log -1 --pretty=%B
+  l = log
   lol = log --graph --pretty=oneline
   m = merge
   nb = checkout -b
