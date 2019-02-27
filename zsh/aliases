@@ -98,6 +98,9 @@ br() {
   open -a "Bear"
 }
 
+# Sup
+alias s='sup'
+
 # Google Drive
 alias drive='cd ~/Drive'
 
