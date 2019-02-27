@@ -71,6 +71,8 @@ alias gitpurge='git-b-purge'
 alias gitprune='git fetch -p && for branch in `git branch -vv | grep ": gone]" | awk "{print $1}"`; do git branch -D $branch; done'
 alias git-purge="gitpurge"
 alias git-prune="gitprune"
+alias git-last='git last | pbcopy'
+alias g-last='git-last'
 
 #Ctags
 alias ctags="`brew --prefix`/bin/ctags"
