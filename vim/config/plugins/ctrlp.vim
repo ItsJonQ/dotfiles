@@ -23,7 +23,8 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
   " Use ag in CtrlP for listing files. Lightning fast, respects .gitignore
   " and .agignore. Ignores hidden files by default.
-  let g:ctrlp_user_command = 'ag %s -l --nocolor --nofollow -g ""'
+  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor --nofollow -g ""'
+  " let g:ctrlp_user_command = 'ag %s -l --nocolor --nofollow -g ""'
 else
   "ctrl+p ignore files in .gitignore
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard','find %s -type f']
