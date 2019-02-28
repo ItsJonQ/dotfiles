@@ -20,6 +20,7 @@ Plug 'Konfekt/FastFold'
 Plug 'ap/vim-buftabline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
+" Plug 'matze/vim-move'
 Plug 'mileszs/ack.vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
