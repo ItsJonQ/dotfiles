@@ -3,8 +3,8 @@
 " Source: https://github.com/prettier/prettier/tree/master/editors/vim
 " =============================================================================
 
-nnoremap <silent> <leader>r :PrettierAsync<Return>
-nnoremap <silent> <leader>e :PrettierAsync<Return>
+nnoremap <silent> <leader>r :Prettier<Return>
+nnoremap <silent> <leader>e :Prettier<Return>
 nnoremap <silent> <leader>w :w<Return>
 " nnoremap <silent> <leader>ww :Prettier<Return>:w<Return>
 " nnoremap <silent> <leader>wq :Prettier<Return>:wq<Return>

@@ -38,6 +38,8 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 1</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -79,13 +81,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>632 101 1015 302 0 0 1920 1178 </string>
+	<string>667 130 1000 394 0 0 1920 1178 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>736 475 916 423 0 0 1920 1178 </string>
+	<string>735 727 918 423 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>288 254 1211 777 0 0 1920 1178 </string>
+	<string>0 0 1920 1178 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>107 99 960 589 0 0 1280 778 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
@@ -449,7 +451,7 @@
 			<key>Hide After Opening</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<real>0.97068547628012047</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -770,7 +772,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 15</string>
+			<string>Menlo-Regular 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -938,7 +940,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Thin Strokes</key>
-			<integer>4</integer>
+			<integer>3</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Triggers</key>
@@ -2717,7 +2719,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-27T23:50:40Z</date>
+	<date>2019-02-28T23:50:41Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
