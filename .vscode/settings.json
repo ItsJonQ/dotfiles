@@ -208,8 +208,8 @@
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
   "editor.accessibilitySupport": "off",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "editor.largeFileOptimizations": false,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Dark+ (Plus)"
+  "workbench.colorTheme": "Light+ (Plus)"
 }
