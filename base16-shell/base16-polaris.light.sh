@@ -10,7 +10,7 @@ fi
 
 color00="ff/ff/ff" # Base 00 - Black
 
-color01="c3/76/35" # Base 08 - Red
+color01="cc/46/1b" # Base 08 - Red
 color02="40/93/30" # Base 0B - Green
 color03="00/03/3d" # Base 0A - Yellow
 color04="00/03/3d" # Base 0D - Blue
