@@ -29,7 +29,7 @@ color14=$color06 # Base 0C - Bright Cyan
 color15="13/18/42" # Base 07 - Bright White
 color16="ff/ff/ff" # Base 09
 color17="ff/ff/ff" # Base 0F
-color18="ef/f1/ff" # Base 01
+color18="ff/ff/ff" # Base 01
 color19="db/dd/f3" # Base 02
 color20="3b/40/6a" # Base 04
 
