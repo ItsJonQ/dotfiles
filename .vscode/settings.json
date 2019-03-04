@@ -211,5 +211,5 @@
   "window.zoomLevel": 1,
   "editor.largeFileOptimizations": false,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Light+ (Plus)"
+  "workbench.colorTheme": "Dark+ (Plus)"
 }
