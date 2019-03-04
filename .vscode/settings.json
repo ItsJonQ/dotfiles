@@ -210,6 +210,5 @@
   "editor.accessibilitySupport": "off",
   "window.zoomLevel": 1,
   "editor.largeFileOptimizations": false,
-  "editor.formatOnSave": true,
-  "workbench.colorTheme": "Dark+ (Plus)"
+  "editor.formatOnSave": true
 }
