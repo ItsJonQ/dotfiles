@@ -95,6 +95,12 @@ subl() {
   open $1 -a "Sublime Text"
 }
 
+
+# TextEdit
+edit() {
+  open $1 -a "TextEdit"
+}
+
 # Notes
 br() {
   open -a "Bear"
