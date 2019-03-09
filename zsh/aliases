@@ -80,6 +80,9 @@ alias ctags="`brew --prefix`/bin/ctags"
 # Silver Searcher
 alias ag='ag --path-to-ignore ~/.agignore'
 
+# Zero
+alias dev='zero'
+
 
 #################################################
 # Applications
