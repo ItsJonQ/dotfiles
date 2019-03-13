@@ -87,9 +87,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>735 727 918 423 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1178 0 0 1920 1178 </string>
+	<string>0 45 1920 1133 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>107 99 960 589 0 0 1280 778 </string>
+	<string>660 280 1050 601 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4_selection</key>
@@ -772,7 +772,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<false/>
 			<key>Normal Font</key>
-			<string>Menlo-Regular 16</string>
+			<string>Menlo-Regular 18</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -2719,7 +2719,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-02-28T23:50:41Z</date>
+	<date>2019-03-07T15:48:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>

@@ -227,7 +227,9 @@ alias bx='bundle exec'
 alias ems='ember server --ssl=false'
 
 # (Quick) Server
-alias serve='python -m SimpleHTTPServer 8000'
+srv() {
+  php -S localhost:8080 -t $1
+}
 
 # Get SSH Key
 alias ssh-copy='pbcopy < ~/.ssh/id_rsa.pub'
