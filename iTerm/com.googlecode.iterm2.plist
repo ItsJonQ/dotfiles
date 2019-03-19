@@ -39,7 +39,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 1</string>
+	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/dotfiles/iTerm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -81,23 +81,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>414 178 612 94 0 0 1152 697 </string>
-	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>412 537 616 174 0 0 1440 877 </string>
+	<string>652 144 1000 260 0 0 1920 1178 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 298 620 392 0 0 1280 778 </string>
+	<string>650 511 620 392 0 0 1920 1058 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>299 139 697 456 0 0 1280 778 </string>
+	<string>269 126 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>160 242 918 452 0 0 1152 697 </string>
+	<string>733 588 918 423 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2 44 1150 645 0 0 1152 697 </string>
+	<string>288 234 1337 694 0 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>192 186 895 503 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 2</key>
-	<string>173 275 895 503 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 3</key>
-	<string>194 215 895 563 0 0 1280 778 </string>
+	<string>288 293 1150 645 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_45FA853F-8CA2-4617-A029-3636AC9FA7B4_selection</key>
@@ -2666,7 +2660,7 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>0CB21C69-1E2B-4701-A39D-AFA40BEA3539</string>
+	<string>2C551A7C-A3F3-4304-B3F4-A14C0BDE6DB6</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2674,7 +2668,7 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>552777924.12047195</real>
+	<real>571089006.24834895</real>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
 	<key>OpenBookmark</key>
@@ -2727,11 +2721,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=6</string>
+	<string>https://iterm2.com/appcasts/testing.xml?shard=29</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-03-17T14:30:00Z</date>
+	<date>2019-03-19T13:09:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
