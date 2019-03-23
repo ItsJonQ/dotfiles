@@ -21,7 +21,7 @@ if (has("nvim"))
 endif
 
 if (has("termguicolors"))
-  set termguicolors
+  " set termguicolors
 endif
 
 set t_ut=
@@ -50,7 +50,7 @@ if has("gui_running")
 
   set columns=80 lines=30
   set gfn=*
-  set guifont=Menlo\:h13
+  set guifont=Menlo\:h16
   " set guifont=Menlo\:h13
   " set guifont=SF\ Mono\:h13
   " set guifont=Fira\ Code\ Light\:h15
@@ -59,7 +59,7 @@ if has("gui_running")
   " Force color
   " color base16-vsplus
   " color base16-one
-  color base16-fifty
+  color base16-ayu
   " set background=light
   " color base16-gh
   if !empty($BASE16_COLOR)
