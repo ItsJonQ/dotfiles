@@ -8,18 +8,12 @@
   },
   {
     "type": "staticButton",
-    "width": 164,
+    "width": 134,
     "bordered": false,
     "align": "center",
     "title": ""
   },
-  {
-    "type": "staticButton",
-    "width": 64,
-    "bordered": false,
-    "align": "center",
-    "title": "✌️ Q!"
-  },
+  { "type": "weather", "refreshInterval": 1800, "width": 64, "align": "center", "api_key": "b61a972176062e8cb65572109884d904", "bordered": false },
   { "type": "previous", "width": 44, "align": "right" },
   { "type": "play", "width": 64, "align": "right" },
   { "type": "next", "width": 44, "align": "right" },
@@ -30,6 +24,13 @@
     "align": "right",
     "title": ""
   },
-  { "type": "mute", "width": 44, "align": "right" },
+  { "type": "staticButton", "width": 44, "align": "right", "title": "🔈", "bordered": false },
   { "type": "volume", "width": 140, "align": "right" },
+    {
+    "type": "staticButton",
+    "width": 64,
+    "bordered": false,
+    "align": "right",
+    "title": "👋 Q"
+  }
 ]
