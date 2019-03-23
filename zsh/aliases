@@ -339,3 +339,5 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && 
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 alias fixaudio="sudo killall -9 coreaudiod"
+
+alias mtmr="vim ~/Library/Application\ Support/MTMR/items.json"

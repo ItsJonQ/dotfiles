@@ -1,0 +1,35 @@
+[
+  { "type": "escape", "align": "left" },
+  { "type": "brightnessDown", "width": 44, "align": "left" },
+  {
+    "type": "brightness",
+    "width": 140,
+    "align": "left"
+  },
+  {
+    "type": "staticButton",
+    "width": 164,
+    "bordered": false,
+    "align": "center",
+    "title": ""
+  },
+  {
+    "type": "staticButton",
+    "width": 64,
+    "bordered": false,
+    "align": "center",
+    "title": "✌️ Q!"
+  },
+  { "type": "previous", "width": 44, "align": "right" },
+  { "type": "play", "width": 64, "align": "right" },
+  { "type": "next", "width": 44, "align": "right" },
+  {
+    "type": "staticButton",
+    "width": 22,
+    "bordered": false,
+    "align": "right",
+    "title": ""
+  },
+  { "type": "mute", "width": 44, "align": "right" },
+  { "type": "volume", "width": 140, "align": "right" },
+]
