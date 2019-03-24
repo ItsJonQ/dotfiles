@@ -19,12 +19,14 @@ ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
 # ln -sf $HOME/dotfiles/.nvimrc $HOME/.config/nvim/init.vim
 
-ln -sf $HOME/Drive/Config/.npmrc $HOME/.npmrc
+ln -sf $HOME/Drive/config/.base16 $HOME/.base16
 
-# ln -sf $HOME/Drive/Config/.aws $HOME
-ln -sf $HOME/Drive/Config/.zprofile $HOME/.zprofile
+ln -sf $HOME/Drive/config/.npmrc $HOME/.npmrc
 
-ln -sf $HOME/Drive/Config/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-ln -sf $HOME/Drive/Config/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+# ln -sf $HOME/Drive/config/.aws $HOME
+ln -sf $HOME/Drive/config/.zprofile $HOME/.zprofile
+
+ln -sf $HOME/Drive/config/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+ln -sf $HOME/Drive/config/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
 echo Symlinked dotfiles.
