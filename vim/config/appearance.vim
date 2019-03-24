@@ -21,7 +21,7 @@ if (has("nvim"))
 endif
 
 if (has("termguicolors"))
-  " set termguicolors
+  set termguicolors
 endif
 
 set t_ut=
