@@ -25,7 +25,8 @@ function GIT_PROMPT() {
   echo " [${ref#refs/heads/}] $(GIT_STATUS_PROMPT)"
 }
 
-export TERM_EMOJI_GREETING="👋"
+export TERM_EMOJI_GREETING="🦄"
+# export TERM_EMOJI_GREETING="👋"
 # export TERM_EMOJI_PROMPT="🐳 💨"
 # export TERM_EMOJI_PROMPT="🥔"
 export TERM_GREETING_WORD="POTATO"
