@@ -56,6 +56,8 @@ alias vimrc='cd ~/dotfiles/vim && vim .'
 alias vundle='vim +PlugInstall +qall'
 alias vndl='vundle'
 alias vndl!='vim +PlugUpdate +qall'
+alias vr='ranger'
+alias vf='ranger'
 
 # Reload
 alias reload='. ~/.zshrc && . ~/.zprofile && echo "ZSH config reloaded from ~/.zshrc"'
