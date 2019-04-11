@@ -50,6 +50,7 @@ brew install node@8
 # brew install node
 brew install php
 # brew install pow
+brew install ranger
 brew install rbenv
 brew install shpotify
 brew install the_silver_searcher
