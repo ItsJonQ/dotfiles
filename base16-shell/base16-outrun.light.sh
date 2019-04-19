@@ -13,7 +13,7 @@ color00="ef/f1/f5" # Base 00 - Black
 color01="c6/05/a6" # Base 08 - Red
 color02="24/b5/b8" # Base 0B - Green
 color03="c7/a0/0b" # Base 0A - Yellow
-color04="10/40/cc" # Base 0D - Blue
+color04="10/78/cc" # Base 0D - Blue
 color05="c5/01/7e" # Base 0E - Magenta
 color06="24/b5/b8" # Base 0C - Cyan
 color07="2d/20/3f" # Base 05 - White
@@ -26,14 +26,14 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="19/0c/2b" # Base 07 - Bright White
+color15="14/08/28" # Base 07 - Bright White
 color16="ff/6c/11" # Base 09
 color17="d4/00/78" # Base 0F
 color18="e6/e9/ef" # Base 01
 color19="d9/dd/e7" # Base 02
-color20="41/34/49" # Base 04
+color20="37/2a/3f" # Base 04
 
-color21="19/0c/2b" # Base 06
+color21="14/08/28" # Base 06
 
 
 color_foreground="2d/20/3f" # Base 05
