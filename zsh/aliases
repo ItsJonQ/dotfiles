@@ -241,6 +241,10 @@ alias ems='ember server --ssl=false'
 srv() {
   php -S localhost:8080 -t $1
 }
+serve() {
+  php -S localhost:8080 -t $1
+}
+
 
 # Get SSH Key
 alias ssh-copy='pbcopy < ~/.ssh/id_rsa.pub'
