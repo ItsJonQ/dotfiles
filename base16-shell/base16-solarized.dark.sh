@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 Solarized - Shell color setup script
-# Ethan Schoonover (http://ethanschoonover.com/solarized)
+# Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -8,14 +8,14 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="00/2b/36" # Base 00 - Black
-color01="dc/32/2f" # Base 08 - Red
-color02="85/99/00" # Base 0B - Green
-color03="b5/89/00" # Base 0A - Yellow
-color04="26/8b/d2" # Base 0D - Blue
-color05="6c/71/c4" # Base 0E - Magenta
-color06="2a/a1/98" # Base 0C - Cyan
-color07="93/a1/a1" # Base 05 - White
-color08="65/7b/83" # Base 03 - Bright Black
+color01="ff/5a/90" # Base 08 - Red
+color02="8d/c8/91" # Base 0B - Green
+color03="ff/c9/8b" # Base 0A - Yellow
+color04="82/b1/ff" # Base 0D - Blue
+color05="c7/92/ea" # Base 0E - Magenta
+color06="83/90/f1" # Base 0C - Cyan
+color07="fb/eb/c1" # Base 05 - White
+color08="00/61/79" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -23,15 +23,15 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="fd/f6/e3" # Base 07 - Bright White
-color16="cb/4b/16" # Base 09
-color17="d3/36/82" # Base 0F
-color18="07/36/42" # Base 01
-color19="58/6e/75" # Base 02
-color20="83/94/96" # Base 04
-color21="ee/e8/d5" # Base 06
-color_foreground="93/a1/a1" # Base 05
+color16="f7/8c/6c" # Base 09
+color17="ff/5a/90" # Base 0F
+color18="00/2f/3b" # Base 01
+color19="00/45/56" # Base 02
+color20="f7/d9/89" # Base 04
+color21="fc/f2/d6" # Base 06
+color_foreground="fb/eb/c1" # Base 05
 color_background="00/2b/36" # Base 00
-color_cursor="93/a1/a1" # Base 05
+color_cursor="fb/eb/c1" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,17 +79,21 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg 93a1a1 # forground
+  printf $printf_template_custom Pg fbebc1 # forground
   printf $printf_template_custom Ph 002b36 # background
-  printf $printf_template_custom Pi 93a1a1 # bold color
-  printf $printf_template_custom Pj 586e75 # selection color
-  printf $printf_template_custom Pk 93a1a1 # selected text color
-  printf $printf_template_custom Pl 93a1a1 # cursor
+  printf $printf_template_custom Pi fbebc1 # bold color
+  printf $printf_template_custom Pj 004556 # selection color
+  printf $printf_template_custom Pk fbebc1 # selected text color
+  
+  printf $printf_template_custom Pl fbebc1 # cursor
+  
+  
   printf $printf_template_custom Pm 002b36 # cursor text
+  
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background
-  printf $printf_template_var 12 $color_cursor
+  printf $printf_template_custom 12 ";7" # cursor (reverse video)
 fi
 
 # clean up
