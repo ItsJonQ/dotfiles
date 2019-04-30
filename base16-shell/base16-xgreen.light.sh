@@ -29,7 +29,7 @@ color16="31/f6/5c" # Base 09
 color17="31/f6/5c" # Base 0F
 color18="31/f6/5c" # Base 01
 color19="31/f6/5c" # Base 02
-color20="33/33/33" # Base 04
+color20="44/44/44" # Base 04
 
 color21="31/f6/5c" # Base 06
 

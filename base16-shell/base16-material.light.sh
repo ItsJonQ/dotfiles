@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 Material - Shell color setup script
-# Jon Q (http://jonquach.com)
+# Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -10,36 +10,36 @@ fi
 
 color00="ef/f1/f5" # Base 00 - Black
 
-color01="b3/56/5e" # Base 08 - Red
-color02="7a/9c/61" # Base 0B - Green
-color03="c0/9e/5d" # Base 0A - Yellow
-color04="4e/8c/bf" # Base 0D - Blue
-color05="9e/60/b1" # Base 0E - Magenta
-color06="45/92/9b" # Base 0C - Cyan
-color07="4f/5c/6b" # Base 05 - White
+color01="cc/2d/61" # Base 08 - Red
+color02="5e/97/62" # Base 0B - Green
+color03="cc/92/50" # Base 0A - Yellow
+color04="49/7a/cc" # Base 0D - Blue
+color05="92/5b/b6" # Base 0E - Magenta
+color06="4e/5b/be" # Base 0C - Cyan
+color07="3e/50/58" # Base 05 - White
 
 
-color08="a7/b3/c2" # Base 03 - Bright Black
+color08="b3/bd/d0" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="2c/38/46" # Base 07 - Bright White
-color16="d0/87/70" # Base 09
-color17="be/50/46" # Base 0F
-color18="df/e1/e8" # Base 01
-color19="c0/c8/d7" # Base 02
-color20="65/72/81" # Base 04
+color15="2a/36/3c" # Base 07 - Bright White
+color16="f7/8c/6c" # Base 09
+color17="ff/5a/90" # Base 0F
+color18="e6/e9/ef" # Base 01
+color19="d9/dd/e7" # Base 02
+color20="58/71/7c" # Base 04
 
-color21="2c/38/46" # Base 06
+color21="2a/36/3c" # Base 06
 
 
-color_foreground="4f/5c/6b" # Base 05
+color_foreground="3e/50/58" # Base 05
 color_background="ef/f1/f5" # Base 00
 
-color_cursor="4f/5c/6b" # Base 05
+color_cursor="3e/50/58" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -88,13 +88,13 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
-  printf $printf_template_custom Pg 4f5c6b # forground
+  printf $printf_template_custom Pg 3e5058 # forground
   printf $printf_template_custom Ph eff1f5 # background
-  printf $printf_template_custom Pi 4f5c6b # bold color
-  printf $printf_template_custom Pj c0c8d7 # selection color
-  printf $printf_template_custom Pk 4f5c6b # selected text color
+  printf $printf_template_custom Pi 3e5058 # bold color
+  printf $printf_template_custom Pj d9dde7 # selection color
+  printf $printf_template_custom Pk 3e5058 # selected text color
   
-  printf $printf_template_custom Pl 4f5c6b # cursor
+  printf $printf_template_custom Pl 3e5058 # cursor
   
   
   printf $printf_template_custom Pm eff1f5 # cursor text
