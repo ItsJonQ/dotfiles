@@ -112,7 +112,7 @@ br() {
 }
 
 # Sup
-alias s='sup'
+# alias s='sup'
 
 # Google Drive
 alias drive='cd ~/Drive'
