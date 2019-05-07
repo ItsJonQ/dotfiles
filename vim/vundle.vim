@@ -39,14 +39,14 @@ Plug 'ItsJonQ/base16-vim'
 " }}}
 " Syntax highlighting {{{"{{{
 
-" Plug 'StanAngeloff/php.vim'
-" Plug 'cakebaker/scss-syntax.vim'
-" Plug 'evidens/vim-twig'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'mustache/vim-mustache-handlebars'
-" Plug 'plasticboy/vim-markdown'
-" Plug 'pangloss/vim-javascript'
-" Plug 'mxw/vim-jsx'
+Plug 'StanAngeloff/php.vim'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'evidens/vim-twig'
+Plug 'leafgarland/typescript-vim'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'plasticboy/vim-markdown'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 " }}}"}}}
 

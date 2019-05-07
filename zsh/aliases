@@ -100,6 +100,8 @@ subl() {
   open $1 -a "Sublime Text"
 }
 
+alias bs="browser-sync"
+
 
 # TextEdit
 edit() {
