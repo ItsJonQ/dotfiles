@@ -32,8 +32,8 @@ npm install npm-check-updates -g
 npm install prettier -g
 npm install @prettier/plugin-php
 npm install pm2 -g
+npm install pure -g
 # npm install serverless -g
-npm install spaceship-prompt -g
 # npm install surge -g
 npm install webpack -g
 npm install @storybook/cli -g
