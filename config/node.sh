@@ -32,7 +32,7 @@ npm install npm-check-updates -g
 npm install prettier -g
 npm install @prettier/plugin-php
 npm install pm2 -g
-npm install pure -g
+npm install pure-prompt -g
 # npm install serverless -g
 # npm install surge -g
 npm install webpack -g
