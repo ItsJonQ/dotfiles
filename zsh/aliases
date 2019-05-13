@@ -73,8 +73,9 @@ alias gitpurge='git-b-purge'
 alias gitprune='git fetch -p && for branch in `git branch -vv | grep ": gone]" | awk "{print $1}"`; do git branch -D $branch; done'
 alias git-purge="gitpurge"
 alias git-prune="gitprune"
-alias git-last='git last | pbcopy'
+alias git-last='git last'
 alias g-last='git-last'
+alias g-cp='git-last | pbcopy | echo "Copied latest git commit message."'
 
 #Ctags
 alias ctags="`brew --prefix`/bin/ctags"
@@ -203,6 +204,11 @@ alias t4='tree -L 4'
 # Activity
 alias cpu="top -o cpu"
 alias ram="top -o rsize"
+
+# Images
+resize() {
+  convert $1 -resize $2^^ -gravity center -extent $2 resized-$1
+}
 
 
 #################################################

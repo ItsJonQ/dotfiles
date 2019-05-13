@@ -102,3 +102,6 @@ export AWS_PROFILE=hs-ci
 
 ## Github: Hub
 eval "$(hub alias -s)"
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
