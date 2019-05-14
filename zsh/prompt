@@ -41,3 +41,8 @@ echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
 # PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR%{$fg[green]%}$(GIT_PROMPT)%{$reset_color%} '
 # PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR$(GIT_PROMPT) '
 PROMPT='$TERM_CURRENT_DIR$(GIT_PROMPT) '
+
+
+# Set custom prompt
+autoload -U promptinit; promptinit
+prompt pure
