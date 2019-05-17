@@ -23,8 +23,8 @@ Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Plug 'matze/vim-move'
-Plug 'mileszs/ack.vim'
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+" Plug 'mileszs/ack.vim'
+" Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
