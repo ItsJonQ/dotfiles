@@ -1,8 +1,11 @@
-" Config :: Mappings :: Scrolling
+" Config :: Plugin :: Ale
 " Author: Q <itsjonq@gmail.com>
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-" nnoremap <silent> <c-u> <c-u>zt
-" nnoremap <silent> <c-d> <c-d>zb
-" nnoremap <silent> <c-f> <c-f>zz
+let b:ale_fixers = ['prettier', 'eslint']
+let g:ale_fix_on_save = 1
+
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+

@@ -34,6 +34,7 @@ brew install homebrew/dupes/screen
 # Install brew things
 # brew install bradp/vv/vv
 brew install ffmpeg
+brew install fzf
 brew install git
 # brew install googler
 brew install homebrew/php/wp-cli
@@ -52,6 +53,7 @@ brew install php
 # brew install pow
 brew install ranger
 brew install rbenv
+brew install ripgrep
 brew install shpotify
 brew install the_silver_searcher
 brew install tree
