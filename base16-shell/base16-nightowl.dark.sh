@@ -26,7 +26,7 @@ color15="ef/f1/f5" # Base 07 - Bright White
 color16="f7/8c/6c" # Base 09
 color17="ff/5a/90" # Base 0F
 color18="01/1e/36" # Base 01
-color19="02/2c/4f" # Base 02
+color19="02/2f/54" # Base 02
 color20="b3/bd/d0" # Base 04
 color21="e6/e9/ef" # Base 06
 color_foreground="d9/dd/e7" # Base 05
@@ -82,7 +82,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg d9dde7 # forground
   printf $printf_template_custom Ph 011627 # background
   printf $printf_template_custom Pi d9dde7 # bold color
-  printf $printf_template_custom Pj 022c4f # selection color
+  printf $printf_template_custom Pj 022f54 # selection color
   printf $printf_template_custom Pk d9dde7 # selected text color
   
   printf $printf_template_custom Pl d9dde7 # cursor
