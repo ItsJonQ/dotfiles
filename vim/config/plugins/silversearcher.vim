@@ -3,13 +3,13 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-if executable('ag')
-  " note we extract the column as well as the file and line number
-  " set grepprg=ag\ --nogroup\ --nocolor\ --column
-  " set grepformat=%f:%l:%c%m
-  let g:ackprg = 'ag --vimgrep'
-  nnoremap <leader>f :Ack<space>
-endif
+" if executable('ag')
+"   " note we extract the column as well as the file and line number
+"   " set grepprg=ag\ --nogroup\ --nocolor\ --column
+"   " set grepformat=%f:%l:%c%m
+"   let g:ackprg = 'ag --vimgrep'
+"   nnoremap <leader>f :Ack<space>
+" endif
 
 " optimization
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
