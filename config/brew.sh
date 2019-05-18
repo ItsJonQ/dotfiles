@@ -46,9 +46,6 @@ brew install mongodb
 brew install mplayer
 brew install mpv
 brew install neovim
-# brew install node@6
-brew install node@8
-# brew install node
 brew install php
 # brew install pow
 brew install ranger
