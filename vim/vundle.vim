@@ -19,7 +19,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Konfekt/FastFold'
 Plug 'ap/vim-buftabline'
 " Plug 'ctrlpvim/ctrlp.vim'
-" Plug 'ervandew/supertab'
+Plug 'ervandew/supertab'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Plug 'matze/vim-move'

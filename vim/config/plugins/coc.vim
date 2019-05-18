@@ -132,3 +132,9 @@ nnoremap <silent> <leader>j  :<C-u>CocNext<CR>
 nnoremap <silent> <leader>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+au BufNewFile,BufRead,FileType *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md :CocDisable
+
+
+let b:SuperTabDisabled = 1
+au BufNewFile,BufRead,FileType *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md let b:SuperTabDisabled = 0
