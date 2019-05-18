@@ -31,7 +31,6 @@ set shortmess+=c
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
-      \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 
 function! s:check_back_space() abort
@@ -133,8 +132,4 @@ nnoremap <silent> <leader>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-au BufNewFile,BufRead,FileType *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md :CocDisable
-
-
-let b:SuperTabDisabled = 1
-au BufNewFile,BufRead,FileType *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md let b:SuperTabDisabled = 0
+au BufNewFile,BufRead,FileType *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md,COMMIT_EDITMSG :CocDisable
