@@ -1,6 +1,6 @@
 #!/bin/sh
 # Base16 Default - Shell color setup script
-# Chris Kempson (http://chriskempson.com)
+# Jon Q (https://jonquach.com)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
@@ -16,7 +16,7 @@ color03="c6/a2/6d" # Base 0A - Yellow
 color04="63/8c/9b" # Base 0D - Blue
 color05="95/6f/8c" # Base 0E - Magenta
 color06="6b/9a/94" # Base 0C - Cyan
-color07="38/38/38" # Base 05 - White
+color07="28/28/28" # Base 05 - White
 
 
 color08="b8/b8/b8" # Base 03 - Bright Black
@@ -26,20 +26,20 @@ color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="28/28/28" # Base 07 - Bright White
+color15="1d/1d/1d" # Base 07 - Bright White
 color16="dc/96/56" # Base 09
 color17="a1/69/46" # Base 0F
-color18="e8/e8/e8" # Base 01
-color19="d8/d8/d8" # Base 02
-color20="58/58/58" # Base 04
+color18="f2/f2/f2" # Base 01
+color19="e8/e8/e8" # Base 02
+color20="48/48/48" # Base 04
 
-color21="28/28/28" # Base 06
+color21="1d/1d/1d" # Base 06
 
 
-color_foreground="38/38/38" # Base 05
+color_foreground="28/28/28" # Base 05
 color_background="f8/f8/f8" # Base 00
 
-color_cursor="38/38/38" # Base 05
+color_cursor="28/28/28" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -88,13 +88,13 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
-  printf $printf_template_custom Pg 383838 # forground
+  printf $printf_template_custom Pg 282828 # forground
   printf $printf_template_custom Ph f8f8f8 # background
-  printf $printf_template_custom Pi 383838 # bold color
-  printf $printf_template_custom Pj d8d8d8 # selection color
-  printf $printf_template_custom Pk 383838 # selected text color
+  printf $printf_template_custom Pi 282828 # bold color
+  printf $printf_template_custom Pj e8e8e8 # selection color
+  printf $printf_template_custom Pk 282828 # selected text color
   
-  printf $printf_template_custom Pl 383838 # cursor
+  printf $printf_template_custom Pl 282828 # cursor
   
   
   printf $printf_template_custom Pm f8f8f8 # cursor text
