@@ -25,6 +25,7 @@ Plug 'junegunn/fzf.vim'
 " Plug 'matze/vim-move'
 " Plug 'mileszs/ack.vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
