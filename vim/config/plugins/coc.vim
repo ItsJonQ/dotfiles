@@ -29,8 +29,12 @@ set shortmess+=c
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? coc#_select_confirm() :
+"       \ coc#refresh()
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
+      \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 
 function! s:check_back_space() abort
