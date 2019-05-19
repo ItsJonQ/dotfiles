@@ -29,4 +29,6 @@ ln -sf $HOME/Drive/config/.zprofile $HOME/.zprofile
 ln -sf $HOME/Drive/config/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 ln -sf $HOME/Drive/config/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
+ln -sf $HOME/Drive/config/.vim/coc-settings.json $HOME/.vim/coc-settings.json
+
 echo Symlinked dotfiles.
