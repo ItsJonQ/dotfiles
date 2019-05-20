@@ -136,4 +136,4 @@ nnoremap <silent> <leader>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-au BufNewFile,BufRead,FileType *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md,COMMIT_EDITMSG :CocDisable
+" au BufNewFile,BufRead,FileType *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md,COMMIT_EDITMSG :CocDisable
