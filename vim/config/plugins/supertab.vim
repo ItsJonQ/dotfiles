@@ -3,7 +3,7 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-let b:SuperTabDisabled = 1
+" let b:SuperTabDisabled = 1
 
 " Only enable Super Tab for markdown files.
 " Otherwise, CoC will handle tab completion
