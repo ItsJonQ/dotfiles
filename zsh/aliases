@@ -247,10 +247,10 @@ alias ems='ember server --ssl=false'
 
 # (Quick) Server
 srv() {
-  php -S localhost:8080 -t $1
+  php -S localhost:4422 -t $1
 }
 serve() {
-  php -S localhost:8080 -t $1
+  php -S localhost:4422 -t $1
 }
 
 
@@ -355,3 +355,5 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias fixaudio="sudo killall -9 coreaudiod"
 
 alias mtmr="vim ~/Library/Application\ Support/MTMR/items.json"
+
+alias intensifies="sh ~/Drive/scripts/intensifies.sh"
