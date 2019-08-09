@@ -19,20 +19,23 @@ call plug#begin('~/.vim/plugged')
 Plug 'Konfekt/FastFold'
 Plug 'ap/vim-buftabline'
 Plug 'ervandew/supertab'
+Plug 'itsjonq/vim-vinegar'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+" Plug 'justinmk/vim-dirvish'
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 " Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
-Plug 'manasthakur/vim-vinegar'
+" Plug 'tpope/vim-vinegar'
+" Plug 'manasthakur/vim-vinegar'
 Plug 'vim-scripts/BufOnly.vim' " Deletes all other buffers
 " Plug 'w0rp/ale'
 
