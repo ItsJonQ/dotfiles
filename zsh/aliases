@@ -308,6 +308,7 @@ alias db='cd ~/Dropbox'
 
 # Personal
 alias df='cd ~/dotfiles'
+alias jq='p && cd @itsjonq'
 alias q='p && cd jonquach'
 alias modes='p && cd modes'
 alias b16='cd ~/base16-builder'
