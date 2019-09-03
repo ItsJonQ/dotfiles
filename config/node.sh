@@ -11,31 +11,31 @@ npm set progress=false
 npm update -g
 
 # Install global npm things
-npm install babel -g
-npm install babel-eslint -g
-npm install babel-cli -g
+npm install @babel/cli -g
 # npm install bower -g
-npm install create-react-app -g
+# npm install create-react-app -g
 npm install eslint -g
 # npm install eslint-config-airbnb -g
 # npm install eslint-plugin-import -g
 # npm install eslint-plugin-jsx-a11y -g
 # npm install eslint-plugin-react -g
 # npm install express -g
-npm install grunt-cli -g
+npm install gatsby-cli -g
+# npm install grunt-cli -g
 npm install gulp-cli -g
 npm install jest -g
 # npm install jshint -g
 # npm install mocha -g
 npm install np -g
-npm install npm-check-updates -g
+npm install now -g
+# npm install npm-check-updates -g
 npm install prettier -g
 npm install @prettier/plugin-php
 npm install pm2 -g
 npm install pure-prompt -g
 # npm install serverless -g
 # npm install surge -g
-npm install webpack -g
-npm install @storybook/cli -g
+# npm install webpack -g
+# npm install @storybook/cli -g
 
 echo "npm setup complete!"
