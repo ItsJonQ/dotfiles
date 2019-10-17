@@ -25,6 +25,9 @@ fi
 # Vim
 alias vi='vim'
 
+# Code
+alias code='code --ignore-gpu-blacklist'
+
 # TMUX
 alias tmux="TERM=screen-256color-bce tmux"
 # alias tmux='tmux -2'
