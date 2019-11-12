@@ -79,8 +79,8 @@ set undodir=~/.vim/undo//
 " }}}
 " File types {{{
 
-au BufRead,BufNewFile *.json set ft=javascript
-au BufRead,BufNewFile *.ts set ft=javascript
+" au BufRead,BufNewFile *.json set ft=javascript
+" au BufRead,BufNewFile *.ts set ft=javascript
 au BufRead,BufNewFile *.mjml set filetype=html
 au BufRead,BufNewFile *.tpl set filetype=html
 " au BufRead,BufNewFile *.twig set filetype=html
