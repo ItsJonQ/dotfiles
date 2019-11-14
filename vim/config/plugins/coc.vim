@@ -18,7 +18,7 @@ set nobackup
 set nowritebackup
 
 " Better display for messages
-set cmdheight=2
+" set cmdheight=2
 
 " Smaller updatetime for CursorHold & CursorHoldI
 set updatetime=300
@@ -140,4 +140,4 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Resume latest coc list
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-au BufNewFile,BufRead,FileType *.vim,*.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md,COMMIT_EDITMSG :CocDisable
+au BufNewFile,BufRead,FileType *.vim,*.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md,COMMIT_EDITMSG :silent :CocDisable
