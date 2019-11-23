@@ -19,7 +19,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Konfekt/FastFold'
 Plug 'ap/vim-buftabline'
 " Plug 'ervandew/supertab'
-Plug 'itsjonq/vim-vinegar'
+" Plug 'itsjonq/vim-vinegar'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Plug 'justinmk/vim-dirvish'
@@ -39,7 +39,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
-" Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-vinegar'
 " Plug 'manasthakur/vim-vinegar'
 Plug 'vim-scripts/BufOnly.vim' " Deletes all other buffers
 " Plug 'w0rp/ale'
