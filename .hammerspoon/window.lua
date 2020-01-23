@@ -77,7 +77,7 @@ end)
 
 
 -- Window Resize: Center
-hs.hotkey.bind({"cmd", "ctrl"}, "X", function()
+hs.hotkey.bind({"cmd", "ctrl"}, "D", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
