@@ -82,9 +82,9 @@ hs.hotkey.bind({"cmd", "ctrl"}, "D", function()
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
-  f.x = max.w * 0.25
+  f.x = max.w * 0.26
   f.y = max.h * 0.2
-  f.w = max.w * 0.5
+  f.w = max.w * 0.54
   f.h = max.h * 0.6
   win:setFrame(f)
 end)
