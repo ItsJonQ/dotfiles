@@ -322,6 +322,7 @@ alias vimclr='cd ~/base16-vim/colors'
 alias seed-issues='ruby ~/dotfiles/scripts/seed/issues.rb'
 alias gaki='p && cd gaki'
 alias aeon='p && cd aeonjs'
+alias tinynote='jq && cd tinynote'
 
 # Ruby
 # Updating/bumping gem versions

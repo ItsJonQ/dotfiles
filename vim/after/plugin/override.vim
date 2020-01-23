@@ -25,4 +25,4 @@ endif
 " set ttimeoutlen=0
 " set matchtime=0
 
-" set foldmethod=manual
+set foldmethod=manual
