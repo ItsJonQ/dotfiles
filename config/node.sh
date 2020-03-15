@@ -20,7 +20,7 @@ npm install eslint -g
 # npm install eslint-plugin-jsx-a11y -g
 # npm install eslint-plugin-react -g
 # npm install express -g
-npm install gatsby-cli -g
+# npm install gatsby-cli -g
 # npm install grunt-cli -g
 npm install gulp-cli -g
 npm install jest -g
