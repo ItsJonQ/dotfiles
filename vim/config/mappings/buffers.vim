@@ -3,6 +3,9 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
+" Closes directories in buffers when navigating
+let g:netrw_fastbrowse=0
+
 nnoremap gbb :ls<cr>:buffer<space>
 nnoremap gb- :ls<cr>:sb<space>
 nnoremap gb\ :ls<cr>:vert sb<space>
