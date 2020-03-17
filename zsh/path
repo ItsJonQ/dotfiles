@@ -101,6 +101,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export AWS_PROFILE=hs-ci
 
 ## Github: Hub
+# https://github.com/github/hub#aliasing
 eval "$(hub alias -s)"
 
 # https://github.com/github/hub/tree/master/etc
