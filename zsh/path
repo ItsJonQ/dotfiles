@@ -103,6 +103,10 @@ export AWS_PROFILE=hs-ci
 ## Github: Hub
 eval "$(hub alias -s)"
 
+# https://github.com/github/hub/tree/master/etc
+fpath=(~/.zsh/completions $fpath)
+autoload -U compinit && compinit
+
 # if [ -d "$HOME/.asdf" ]; then
 #   . $HOME/.asdf/asdf.sh
 #   . $HOME/.asdf/completions/asdf.bash
