@@ -281,9 +281,25 @@ weather() {
   say $WEATHER
 }
 
-alias sp='spotify'
-alias spa='spotify play album'
+quit() {
+  pkill -x $1
+}
 
+start-day() {
+  echo "✊  Have a great day!";
+  open -a Slack;
+  open -a Calendar;
+  open -a Mail;
+  open -a Things3;
+}
+
+end-day() {
+  echo "✌️  Have a wonderful evening!";
+  quit Slack;
+  quit Calendar;
+  quit Mail;
+  quit Things3;
+}
 
 #################################################
 # Directories & Files
