@@ -81,7 +81,7 @@ alias g-last='git-last'
 alias g-cp='git-last | pbcopy | echo "Copied latest git commit message."'
 
 # npm / lerna / yarn
-alias nib='echo "Installing dependencies & bootstraping..." && npm i && lerna bootstrap'
+alias nib='echo "Installing dependencies & bootstrapping..." && npm i && lerna bootstrap'
 
 #Ctags
 alias ctags="`brew --prefix`/bin/ctags"
