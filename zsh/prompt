@@ -46,3 +46,7 @@ PROMPT='$TERM_CURRENT_DIR$(GIT_PROMPT) '
 # Set custom prompt
 autoload -U promptinit; promptinit
 prompt pure
+
+# Customize pure prompt colours
+# https://github.com/sindresorhus/pure
+zstyle :prompt:pure:git:branch color green
