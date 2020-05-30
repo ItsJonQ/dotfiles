@@ -33,9 +33,9 @@ alias tmux="TERM=screen-256color-bce tmux"
 # alias tmux='tmux -2'
 
 # Gasp! Use Neovim instead of Vim
-# if which nvim >/dev/null; then
-#   alias vim='nvim'
-# fi
+if which nvim >/dev/null; then
+  alias vim='nvim'
+fi
 
 # Profile (ZSH)
 alias profile='vim ~/.zprofile'
