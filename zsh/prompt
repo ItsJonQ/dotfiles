@@ -50,3 +50,4 @@ prompt pure
 # Customize pure prompt colours
 # https://github.com/sindresorhus/pure
 zstyle :prompt:pure:git:branch color green
+PURE_PROMPT_SYMBOL='🦄  ❯'
