@@ -17,7 +17,8 @@ ln -sf $HOME/dotfiles/.config/karabiner/karabiner.json $HOME/.config/karabiner/k
 ln -sf $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
-# ln -sf $HOME/dotfiles/.nvimrc $HOME/.config/nvim/init.vim
+ln -sf $HOME/dotfiles/.config/nvim/init.vim $HOME/.config/nvim/init.vim
+ln -sf $HOME/dotfiles/.config/nvim/coc-settings.json $HOME/.config/nvim/coc-settings.json
 
 ln -sf $HOME/Drive/config/.base16 $HOME/.base16
 
