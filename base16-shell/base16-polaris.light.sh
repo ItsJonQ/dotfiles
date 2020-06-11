@@ -36,7 +36,8 @@ color20="3b/40/6a" # Base 04
 color21="13/18/42" # Base 06
 
 
-color_foreground="27/2c/56" # Base 05
+# vimLightText
+color_foreground="09/0e/38" # Base 05
 color_background="ff/ff/ff" # Base 00
 
 color_cursor="27/2c/56" # Base 05
@@ -94,10 +95,10 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pj dbddf3 # selection color
   printf $printf_template_custom Pk 272c56 # selected text color
   
-  printf $printf_template_custom Pl 272c56 # cursor
+  printf $printf_template_custom Pl 7D46FC # cursor
   
   
-  printf $printf_template_custom Pm ffffff # cursor text
+  printf $printf_template_custom Pm FFFFFF # cursor
   
   
 else
