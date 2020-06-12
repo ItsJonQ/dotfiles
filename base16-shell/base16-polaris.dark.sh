@@ -8,8 +8,8 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="09/0e/38" # Base 00 - Black
-color01="ff/00/32" # Base 08 - Red
-color02="00/ff/68" # Base 0B - Green
+color01="ff/57/22" # Base 08 - Red
+color02="50/b8/3c" # Base 0B - Green
 color03="ff/ff/ff" # Base 0A - Yellow
 color04="ff/ff/ff" # Base 0D - Blue
 color05="ff/ff/ff" # Base 0E - Magenta
@@ -85,10 +85,10 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pj 272c56 # selection color
   printf $printf_template_custom Pk dbddf3 # selected text color
   
-  printf $printf_template_custom Pl 7D46FC # cursor
+  printf $printf_template_custom Pl dbddf3 # cursor
   
   
-  printf $printf_template_custom Pm FFFFFF # cursor
+  printf $printf_template_custom Pm 090e38 # cursor text
   
 else
   printf $printf_template_var 10 $color_foreground

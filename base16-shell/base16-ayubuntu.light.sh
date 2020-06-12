@@ -8,14 +8,16 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 
-color00="e4/8c/7d" # Base 00 - Black
-color01="41/19/34" # Base 08 - Red
-color02="41/19/34" # Base 0B - Green
-color03="41/19/34" # Base 0A - Yellow
-color04="41/19/34" # Base 0D - Blue
-color05="41/19/34" # Base 0E - Magenta
-color06="41/19/34" # Base 0C - Cyan
-color07="41/19/34" # Base 05 - White
+color00="ff/ff/ff" # Base 00 - Black
+
+color01="af/45/4d" # Base 08 - Red
+color02="6f/96/53" # Base 0B - Green
+color03="be/96/48" # Base 0A - Yellow
+color04="3a/82/be" # Base 0D - Blue
+color05="97/4e/ad" # Base 0E - Magenta
+color06="38/8c/96" # Base 0C - Cyan
+color07="55/2d/48" # Base 05 - White
+
 
 color08="bb/94/a9" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
@@ -31,11 +33,11 @@ color18="ff/ff/ff" # Base 01
 color19="ee/e9/ed" # Base 02
 color20="9e/7d/96" # Base 04
 
-color21="e4/8c/7d" # Base 06
+color21="4b/23/3e" # Base 06
 
 
-color_foreground="41/19/34" # Base 05
-color_background="e4/8c/7d" # Base 00
+color_foreground="55/2d/48" # Base 05
+color_background="ff/ff/ff" # Base 00
 
 color_cursor="55/2d/48" # Base 05
 
@@ -86,18 +88,16 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   
-  
-  printf $printf_template_custom Pg 411934 # forground
-  printf $printf_template_custom Ph e48c7d # background
-  
-  printf $printf_template_custom Pi 411934 # bold color
+  printf $printf_template_custom Pg 552d48 # forground
+  printf $printf_template_custom Ph ffffff # background
+  printf $printf_template_custom Pi 552d48 # bold color
   printf $printf_template_custom Pj eee9ed # selection color
-  printf $printf_template_custom Pk 411934 # selected text color
+  printf $printf_template_custom Pk 552d48 # selected text color
   
-  printf $printf_template_custom Pl 411934 # cursor
+  printf $printf_template_custom Pl 552d48 # cursor
   
   
-  printf $printf_template_custom Pm e48c7d # cursor text
+  printf $printf_template_custom Pm ffffff # cursor text
   
   
 else
