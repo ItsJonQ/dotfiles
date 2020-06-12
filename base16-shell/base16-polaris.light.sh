@@ -10,12 +10,12 @@ fi
 
 color00="ff/ff/ff" # Base 00 - Black
 
-color01="cc/46/1b" # Base 08 - Red
-color02="40/93/30" # Base 0B - Green
-color03="00/03/3d" # Base 0A - Yellow
-color04="00/03/3d" # Base 0D - Blue
-color05="00/03/3d" # Base 0E - Magenta
-color06="00/03/3d" # Base 0C - Cyan
+color01="cc/00/28" # Base 08 - Red
+color02="15/9d/20" # Base 0B - Green
+color03="00/00/00" # Base 0A - Yellow
+color04="00/00/00" # Base 0D - Blue
+color05="00/00/00" # Base 0E - Magenta
+color06="00/00/00" # Base 0C - Cyan
 color07="27/2c/56" # Base 05 - White
 
 
@@ -36,7 +36,8 @@ color20="3b/40/6a" # Base 04
 color21="13/18/42" # Base 06
 
 
-color_foreground="27/2c/56" # Base 05
+# vimLightText
+color_foreground="09/0e/38" # Base 05
 color_background="ff/ff/ff" # Base 00
 
 color_cursor="27/2c/56" # Base 05
@@ -94,10 +95,10 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pj dbddf3 # selection color
   printf $printf_template_custom Pk 272c56 # selected text color
   
-  printf $printf_template_custom Pl 272c56 # cursor
+  printf $printf_template_custom Pl 7D46FC # cursor
   
   
-  printf $printf_template_custom Pm ffffff # cursor text
+  printf $printf_template_custom Pm FFFFFF # cursor
   
   
 else
