@@ -22,7 +22,7 @@ Plug 'ap/vim-buftabline'
 " Plug 'itsjonq/vim-vinegar'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'justinmk/vim-dirvish'
+" Plug 'justinmk/vim-dirvish'
 "
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
