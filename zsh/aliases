@@ -120,6 +120,15 @@ br() {
   open -a "Bear"
 }
 
+# XO
+x() {
+  bash $HOME/dotfiles/scripts/x "$@"
+}
+o() {
+  bash $HOME/dotfiles/scripts/o "$@"
+}
+
+
 # Sup
 # alias s='sup'
 
