@@ -41,7 +41,7 @@ echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
 # PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR%{$fg[green]%}$(GIT_PROMPT)%{$reset_color%} '
 # PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR$(GIT_PROMPT) '
 # PROMPT="$TERM_CURRENT_DIR$(GIT_PROMPT) '
-PROMPT=$'\n'"%~"$'\n'"❯ "
+# PROMPT=$'\n'"%~"$'\n'"❯ "
 
 
 # Set custom prompt
@@ -52,3 +52,25 @@ PROMPT=$'\n'"%~"$'\n'"❯ "
 # https://github.com/sindresorhus/pure
 # zstyle :prompt:pure:git:branch color green
 # PURE_PROMPT_SYMBOL='🦄  ❯'
+
+
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%b'
+ 
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%F{8}%b%f'
+ 
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT=$'\n''${PWD/#$HOME/~} ${vcs_info_msg_0_}'$'\n'"%F{5}❯%f "
