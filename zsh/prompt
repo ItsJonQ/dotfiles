@@ -40,14 +40,15 @@ TERM_CURRENT_DIR="%B%c%b"
 echo "$TERM_EMOJI_GREETING  $TERM_GREETING_TEXT"
 # PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR%{$fg[green]%}$(GIT_PROMPT)%{$reset_color%} '
 # PROMPT='$TERM_EMOJI_PROMPT  $TERM_CURRENT_DIR$(GIT_PROMPT) '
-PROMPT='$TERM_CURRENT_DIR$(GIT_PROMPT) '
+# PROMPT="$TERM_CURRENT_DIR$(GIT_PROMPT) '
+PROMPT=$'\n'"%~"$'\n'"❯ "
 
 
 # Set custom prompt
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # Customize pure prompt colours
 # https://github.com/sindresorhus/pure
-zstyle :prompt:pure:git:branch color green
+# zstyle :prompt:pure:git:branch color green
 # PURE_PROMPT_SYMBOL='🦄  ❯'

@@ -127,6 +127,8 @@ x() {
 o() {
   bash $HOME/dotfiles/scripts/o "$@"
 }
+alias xc='x -p | pbcopy'
+alias oo='x -p'
 
 
 # Sup
