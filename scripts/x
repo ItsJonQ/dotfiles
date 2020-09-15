@@ -94,12 +94,13 @@ print_list() {
 
 archive_list() {
 	local last_date dst
-	last_date=$(tail -1 "$X_LOG" | cut -d' ' -f1)
+	last_date=$(date "+%Y-%m-%d")
 	dst=$(parse_date "%Y-%m-%d" "$last_date" "$X_ARCHIVE_TEMPLATE")
-	if [ -f "$dst" ]; then
-		echo "$dst: file already exists"
-		exit 1
-	fi
+	# if [ -f "$dst" ]; then
+	# 	echo "$dst: file already exists"
+	# 	exit 1
+	# fi
+	touch "$dst"
 	cat <(echo "== $last_date ==") <(cat "$X_LOG") > "$dst"
 	echo Archived to "$dst"
 }
