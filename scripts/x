@@ -73,14 +73,14 @@ mark_open_item() {
 	tmp=$(mktemp)
 	old_task=$(grep -F '[ ]' "$X_LOG" | fzf) || exit 1
 	new_task=${old_task//\[ \]/[X]}
-	cat <(grep -Fv "$old_task" "$X_LOG") <(echo -n "$new_task") <(date "+ [%H:%M]") > "$tmp"
+	cat <(grep -Fv "$old_task" "$X_LOG") <(echo -n "$new_task") > "$tmp"
 	mv "$tmp" "$X_LOG"
 }
 
 add_item() {
 	local mark
 	[[ "$CMD" == "x" ]] && mark="[X]" || mark="[ ]"
-	echo "$(date "+%Y-%m-%d %H:%M")" "$mark" "$@" >> "$X_LOG"
+	echo "$mark" "$@" >> "$X_LOG"
 	exit 0
 }
 
