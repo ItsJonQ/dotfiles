@@ -128,6 +128,7 @@ o() {
   bash $HOME/dotfiles/scripts/o "$@"
 }
 alias xc='x -p | pbcopy'
+alias xp='x -p | pbcopy'
 alias oo='x -p'
 
 
