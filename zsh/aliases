@@ -127,8 +127,7 @@ x() {
 o() {
   bash $HOME/dotfiles/scripts/o "$@"
 }
-alias xc='x -p | pbcopy'
-alias xp='x -p | pbcopy'
+alias xp='x -p | sed "s/^\[X\]/•/g" | pbcopy'
 alias oo='x -p'
 
 
