@@ -203,7 +203,6 @@
       ]
     }
   },
-  "search.location": "panel",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,

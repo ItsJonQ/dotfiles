@@ -9,4 +9,7 @@ local Window = require 'window'
 local Remap = require 'remap'
 -- local FKey = require 'fkey'
 
+-- Disable animations
+hs.window.animationDuration=0
+
 hs.alert.show("Hammerspoon Loaded.")
