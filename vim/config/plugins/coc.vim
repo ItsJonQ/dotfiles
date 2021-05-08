@@ -61,16 +61,17 @@ nmap <silent> <leader>k <Plug>(coc-diagnostic-next)
 "nmap <silent> gi <Plug>(coc-implementation)
 "nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window
+" Show documentation in preview window
+" nnoremap <silent> <leader>t :call <SID>show_documentation()<CR>
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-"function! s:show_documentation()
-"  if (index(['vim','help'], &filetype) >= 0)
-"    execute 'h '.expand('<cword>')
-"  else
-"    call CocAction('doHover')
-"  endif
-"endfunction
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -139,3 +140,27 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 au BufNewFile,BufRead,FileType *.vim,*.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md,COMMIT_EDITMSG :silent :CocDisable
+
+
+" instead of having ~/.vim/coc-settings.json
+let s:LSP_CONFIG = {
+\  'flow': {
+\    'command': exepath('flow'),
+\    'args': ['lsp'],
+\    'filetypes': ['javascript', 'javascriptreact'],
+\    'initializationOptions': {},
+\    'requireRootPattern': 1,
+\    'settings': {},
+\    'rootPatterns': ['.flowconfig']
+\  }
+\}
+
+let s:languageservers = {}
+for [lsp, config] in items(s:LSP_CONFIG)
+  let s:not_empty_cmd = !empty(get(config, 'command'))
+  if s:not_empty_cmd | let s:languageservers[lsp] = config | endif
+endfor
+
+if !empty(s:languageservers)
+  call coc#config('languageserver', s:languageservers)
+  endif

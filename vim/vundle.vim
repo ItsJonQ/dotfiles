@@ -45,7 +45,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 " Plug 'manasthakur/vim-vinegar'
 Plug 'vim-scripts/BufOnly.vim' " Deletes all other buffers
-" Plug 'w0rp/ale'
+Plug 'w0rp/ale'
 
 " }}}
 " Themes {{{
