@@ -3,11 +3,15 @@
 " Source: https://github.com/ItsJonQ/dotfiles
 " =============================================================================
 
-let g:fzf_command_prefix = 'Fzf'
+" let g:fzf_command_prefix = 'Fzf'
 
-nnoremap <C-p> :FzfGitFiles --exclude-standard --others --cached<CR>
+" nnoremap <C-p> :FzfGitFiles --exclude-standard --others --cached<CR>
 " nnoremap <C-f> :FzfAg<CR>
-nnoremap <C-f> :FzfRg<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <C-f> :Rg<CR>
+
+let g:fzf_layout = { 'down': '40%' }
+let g:fzf_preview_window = []
 
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
