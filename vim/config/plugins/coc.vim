@@ -143,24 +143,24 @@ au BufNewFile,BufRead,FileType *.vim,*.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md
 
 
 " instead of having ~/.vim/coc-settings.json
-let s:LSP_CONFIG = {
-\  'flow': {
-\    'command': exepath('flow'),
-\    'args': ['lsp'],
-\    'filetypes': ['javascript', 'javascriptreact'],
-\    'initializationOptions': {},
-\    'requireRootPattern': 1,
-\    'settings': {},
-\    'rootPatterns': ['.flowconfig']
-\  }
-\}
+" let s:LSP_CONFIG = {
+" \  'flow': {
+" \    'command': exepath('flow'),
+" \    'args': ['lsp'],
+" \    'filetypes': ['javascript', 'javascriptreact'],
+" \    'initializationOptions': {},
+" \    'requireRootPattern': 1,
+" \    'settings': {},
+" \    'rootPatterns': ['.flowconfig']
+" \  }
+" \}
 
-let s:languageservers = {}
-for [lsp, config] in items(s:LSP_CONFIG)
-  let s:not_empty_cmd = !empty(get(config, 'command'))
-  if s:not_empty_cmd | let s:languageservers[lsp] = config | endif
-endfor
+" let s:languageservers = {}
+" for [lsp, config] in items(s:LSP_CONFIG)
+"   let s:not_empty_cmd = !empty(get(config, 'command'))
+"   if s:not_empty_cmd | let s:languageservers[lsp] = config | endif
+" endfor
 
-if !empty(s:languageservers)
-  call coc#config('languageserver', s:languageservers)
-  endif
+" if !empty(s:languageservers)
+"   call coc#config('languageserver', s:languageservers)
+"   endif
