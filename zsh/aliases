@@ -137,6 +137,9 @@ alias oo='x -p'
 # Google Drive
 alias drive='cd ~/Drive'
 
+# iCloud Drive
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+
 # Simplenote
 # alias note='notes && :e .'
 # alias n='note'
@@ -324,6 +327,7 @@ alias cpwd="pwd | tr -d '\n' | pbcopy"
 # Notes
 # alias inotes='cd /Users/Q/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
 alias notes='cd ~/Drive/notes/'
+alias obsidian='icloud && cd notes/obsidian'
 # alias n='notes'
 alias 750='notes && cd 750'
 
