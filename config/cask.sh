@@ -5,44 +5,40 @@
 echo "Starting brew cask install…"
 
 # Add cask to brew
-brew tap caskroom/cask
+# brew tap caskroom/cask
 
 # Update firest
-brew cask update
+# brew cask update
 
 # Install apps!
-brew cask install 1password
-brew cask install alfred
-brew cask install appcleaner
-brew cask install cloudapp
-brew cask install cool-retro-term
-brew cask install daisydisk
-brew cask install firefox
-brew cask install hammerspoon
-brew cask install insync
-brew cask install iterm2
-brew cask install google-chrome
-brew cask install java
-brew cask install karabiner-elements
-brew cask install kitty
-brew cask install licecap
-brew cask install onyx
-brew cask install private-internet-access
-brew cask install remote-play
-brew cask install robo-3t
-brew cask install screenflow
-brew cask install slack
-brew cask install sketch
-brew cask install skype
-brew cask install spotify
-brew cask install sublime-text
-brew cask install telegram
-brew cask install tunnelblick
-brew cask install vagrant
-brew cask install virtualbox
-brew bask install visual-studio-code
-brew cask install vlc
-brew cask install zoom
+brew install 1password
+brew install alfred
+brew install firefox
+brew install hammerspoon
+# brew install insync
+# brew install iterm2
+# brew install google-chrome
+# brew install java
+brew install karabiner-elements
+# brew install kitty
+brew install licecap
+# brew install onyx
+# brew install private-internet-access
+# brew install remote-play
+# brew install robo-3t
+# brew install screenflow
+brew install slack
+# brew install sketch
+# brew install skype
+brew install spotify
+brew install sublime-text
+brew install telegram
+# brew install tunnelblick
+# brew install vagrant
+# brew install virtualbox
+brew install visual-studio-code
+brew install vlc
+brew install zoom
 
 # Cleanup!
 brew cask cleanup
