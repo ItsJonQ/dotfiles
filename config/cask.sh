@@ -15,6 +15,7 @@ brew install 1password
 brew install alfred
 brew install firefox
 brew install hammerspoon
+brew install hub
 # brew install insync
 # brew install iterm2
 # brew install google-chrome
