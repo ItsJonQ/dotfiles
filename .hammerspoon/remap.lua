@@ -56,13 +56,13 @@ hs.hotkey.bind({'ctrl', 'cmd', 'alt'}, 'k', keyCode('up', {'cmd', 'alt'}), nil, 
 hs.hotkey.bind({'ctrl', 'cmd', 'alt'}, 'l', keyCode('right', {'cmd', 'alt'}), nil, keyCode('right', {'cmd', 'alt'}))
 
 
-layoutWatcher = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, function(e)
-  local flags = e:getFlags()
-  local keyCode = e:getKeyCode()
-  if flags.cmd and not (flags.alt or flags.shift or flags.ctrl or flags.fn) then
-    -- Rebind Right CMD -> Escape
-    if keyCode == 0x36 then
-      hs.eventtap.event.newKeyEvent(nil, string.lower('escape'), true):post()
-    end
-  end
-end):start()
+-- layoutWatcher = hs.eventtap.new({hs.eventtap.event.types.flagsChanged}, function(e)
+--   local flags = e:getFlags()
+--   local keyCode = e:getKeyCode()
+--   if flags.cmd and not (flags.alt or flags.shift or flags.ctrl or flags.fn) then
+--     -- Rebind Right CMD -> Escape
+--     if keyCode == 0x36 then
+--       hs.eventtap.event.newKeyEvent(nil, string.lower('escape'), true):post()
+--     end
+--   end
+-- end):start()
