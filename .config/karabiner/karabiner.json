@@ -21,7 +21,9 @@
 								"from": {
 									"key_code": "grave_accent_and_tilde",
 									"modifiers": {
-										"mandatory": ["right_command"]
+										"mandatory": [
+											"right_command"
+										]
 									}
 								},
 								"to": [
@@ -40,7 +42,9 @@
 								"from": {
 									"key_code": "grave_accent_and_tilde",
 									"modifiers": {
-										"mandatory": ["left_control"]
+										"mandatory": [
+											"left_control"
+										]
 									}
 								},
 								"to": [
@@ -59,13 +63,17 @@
 								"from": {
 									"key_code": "escape",
 									"modifiers": {
-										"mandatory": ["left_shift"]
+										"mandatory": [
+											"left_shift"
+										]
 									}
 								},
 								"to": [
 									{
 										"key_code": "grave_accent_and_tilde",
-										"modifiers": ["left_shift"]
+										"modifiers": [
+											"left_shift"
+										]
 									}
 								],
 								"type": "basic"
@@ -101,7 +109,9 @@
 								"from": {
 									"key_code": "open_bracket",
 									"modifiers": {
-										"mandatory": ["left_control"]
+										"mandatory": [
+											"left_control"
+										]
 									}
 								},
 								"to": [
@@ -120,7 +130,9 @@
 								"from": {
 									"key_code": "grave_accent_and_tilde",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -134,7 +146,9 @@
 								"from": {
 									"key_code": "1",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -148,7 +162,9 @@
 								"from": {
 									"key_code": "2",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -162,7 +178,9 @@
 								"from": {
 									"key_code": "3",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -176,7 +194,9 @@
 								"from": {
 									"key_code": "4",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -190,7 +210,9 @@
 								"from": {
 									"key_code": "5",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -204,7 +226,9 @@
 								"from": {
 									"key_code": "6",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -218,7 +242,9 @@
 								"from": {
 									"key_code": "7",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -232,7 +258,9 @@
 								"from": {
 									"key_code": "8",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -246,7 +274,9 @@
 								"from": {
 									"key_code": "9",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -260,7 +290,9 @@
 								"from": {
 									"key_code": "0",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -274,7 +306,9 @@
 								"from": {
 									"key_code": "hyphen",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
@@ -288,12 +322,211 @@
 								"from": {
 									"key_code": "equal_sign",
 									"modifiers": {
-										"mandatory": ["fn"]
+										"mandatory": [
+											"fn"
+										]
 									}
 								},
 								"to": [
 									{
 										"key_code": "f12"
+									}
+								],
+								"type": "basic"
+							}
+						]
+					},
+					{
+						"description": "Right CMD + Number row to F keys",
+						"manipulators": [
+							{
+								"from": {
+									"key_code": "1",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "display_brightness_decrement"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "2",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "display_brightness_increment"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "3",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "mission_control"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "4",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "launchpad"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "5",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "illumination_decrement"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "6",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "illumination_increment"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "7",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "rewind"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "8",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "play_or_pause"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "9",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "fastforward"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "0",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "mute"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "hyphen",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "volume_decrement"
+									}
+								],
+								"type": "basic"
+							},
+							{
+								"from": {
+									"key_code": "equal_sign",
+									"modifiers": {
+										"mandatory": [
+											"right_command"
+										]
+									}
+								},
+								"to": [
+									{
+										"key_code": "volume_increment"
 									}
 								],
 								"type": "basic"
