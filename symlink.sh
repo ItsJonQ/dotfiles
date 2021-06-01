@@ -4,11 +4,26 @@
 # =============================================================================
 # Symlink files
 
+# Create directories
+mkdir -p $HOME/.atom
+mkdir -p $HOME/.config
+mkdir -p $HOME/.config/karabiner
+mkdir -p $HOME/.config/nvim
+mkdir -p $HOME/.hammerspoon
+
 # Symlink atom files
 for file in $HOME/dotfiles/.atom/*; do
   if [[ -f $file ]]; then
     F=`basename "$file"`
     ln -sf $HOME/dotfiles/.atom/$F $HOME/.atom/$F
+  fi
+done
+
+# Symlink hammerspoon files
+for file in $HOME/dotfiles/.hammerspoon/*; do
+  if [[ -f $file ]]; then
+    F=`basename "$file"`
+    ln -sf $HOME/dotfiles/.hammerspoon/$F $HOME/.hammerspoon/$F
   fi
 done
 
