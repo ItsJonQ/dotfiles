@@ -331,6 +331,7 @@ alias obsidian-format='obsidian && npx prettier --write "./**/*.md" && cd -'
 alias notes='obsidian && cd main'
 alias obsi='obsidian'
 alias obsif='obsidian-format'
+alias obsib='notes && git add . && git commit -m "Backup" && git push'
 # alias n='notes'
 alias 750='notes && cd 750'
 
