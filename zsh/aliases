@@ -326,7 +326,8 @@ alias cpwd="pwd | tr -d '\n' | pbcopy"
 
 # Notes
 # alias inotes='cd /Users/Q/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
-alias obsidian='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents'
+# alias obsidian='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents'
+alias obsidian='cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/notes'
 alias obsidian-format='obsidian && npx prettier --write "./**/*.md" && cd -'
 alias notes='obsidian && cd main'
 alias obsi='obsidian'
