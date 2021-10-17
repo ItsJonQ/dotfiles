@@ -151,7 +151,7 @@ todo() {
   then
     todoist sync && todoist list --filter '(today)'
   else
-    todoist add "$@"
+    todoist quick "$@"
   fi
 }
 
