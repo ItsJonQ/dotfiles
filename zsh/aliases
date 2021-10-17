@@ -144,6 +144,17 @@ alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 # alias note='notes && :e .'
 # alias n='note'
 
+# Todoist
+alias td='todoist'
+todo() {
+  if [ -z "$@" ]
+  then
+    todoist sync && todoist list --filter '(today)'
+  else
+    todoist add "$@"
+  fi
+}
+
 # Simulate vim
 alias :q='exit'
 # alias :e='vim'
