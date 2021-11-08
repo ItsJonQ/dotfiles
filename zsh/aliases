@@ -345,6 +345,7 @@ alias obsi='obsidian'
 alias obsif='obsidian-format'
 alias obsib='notes && git add . && git commit -m "Backup" && git push'
 alias ob='obsib'
+alias ob-count='obsidian && find . -type f -not -path "*/\.*" | wc -l'
 # alias n='notes'
 alias 750='notes && cd 750'
 
