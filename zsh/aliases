@@ -79,6 +79,7 @@ alias git-prune="gitprune"
 alias git-last='git last'
 alias g-last='git-last'
 alias g-cp='git-last | pbcopy | echo "Copied latest git commit message."'
+alias g-tidy='git removed-branches --prune'
 
 # npm / lerna / yarn
 alias nib='echo "Installing dependencies & bootstrapping..." && npm i && lerna bootstrap'
@@ -339,7 +340,7 @@ alias cpwd="pwd | tr -d '\n' | pbcopy"
 # alias inotes='cd /Users/Q/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
 # alias obsidian='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents'
 alias obsidian='cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/notes'
-alias obsidian-format='obsidian && npx prettier --write "./**/*.md" && cd -'
+alias obsidian-format='obsidian && npx prettier --write "./**/*.md" --loglevel silent && cd -'
 alias notes='obsidian && cd main'
 alias obsi='obsidian'
 alias obsif='obsidian-format'
