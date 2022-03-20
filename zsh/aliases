@@ -116,11 +116,6 @@ edit() {
   open $1 -a "TextEdit"
 }
 
-# Notes
-br() {
-  open -a "Bear"
-}
-
 # XO
 x() {
   bash $HOME/dotfiles/scripts/x "$@"
@@ -140,10 +135,6 @@ alias drive='cd ~/Drive'
 
 # iCloud Drive
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
-
-# Simplenote
-# alias note='notes && :e .'
-# alias n='note'
 
 # Todoist
 alias td='todoist'
@@ -346,14 +337,13 @@ indent() {
 alias obsidian-icloud='cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/notes/main'
 alias obsidian='p && cd @itsjonq/obsi'
 alias obsidian-format='obsidian && npx prettier --write "./**/*.md" --loglevel silent && cd -'
-alias notes='obsidian'
 alias obsi='obsidian'
 
 alias obsif='obsidian-format'
 
 alias obsib-start='echo "\n🟣 Preparing to sync Obsidian...\n"'
 alias obsib-git-cmd='git add . | indent && git commit -m "Backup" | indent && git push | indent; echo "\n"'
-alias obsib-git='echo "📦 Backing up notes on Github..." && notes; obsib-git-cmd'
+alias obsib-git='echo "📦 Backing up notes on Github..." && obsidian; obsib-git-cmd'
 alias obsib-icloud-cmd='git clean -f -d | indent && git checkout . | indent && git fetch | indent && git pull | indent; echo "\n"'
 alias obsib-icloud='echo "☁️  Syncing notes on iCloud..." && obsidian-icloud; obsib-icloud-cmd'
 alias obsib-success='echo "✅ Obsidian synced!" && obsidian'
@@ -361,8 +351,8 @@ alias obsib='obsib-start; obsib-git; obsib-icloud; obsib-success'
 
 alias ob='obsib'
 # alias ob-count='obsidian && find . -type f -not -path "*/\.*" | wc -l'
+alias notes='obsib && open -a Obsidian'
 alias n='notes'
-alias 750='notes && cd 750'
 
 # Projects
 alias project='cd ~/Sites'
