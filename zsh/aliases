@@ -342,7 +342,7 @@ alias obsi='obsidian'
 alias obsif='obsidian-format'
 
 alias obsib-start='echo "\n🟣 Preparing to sync Obsidian...\n"'
-alias obsib-git-cmd='git add . | indent && git commit -m "Backup" | indent && git push | indent; echo "\n"'
+alias obsib-git-cmd='git fetch | indent && git pull | indent | git add . | indent && git commit -m "Backup" | indent && git push | indent; echo "\n"'
 alias obsib-git='echo "📦 Backing up notes on Github..." && obsidian; obsib-git-cmd'
 alias obsib-icloud-cmd='git clean -f -d | indent && git checkout . | indent && git fetch | indent && git pull | indent; echo "\n"'
 alias obsib-icloud='echo "☁️  Syncing notes on iCloud..." && obsidian-icloud; obsib-icloud-cmd'
