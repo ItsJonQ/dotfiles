@@ -347,12 +347,15 @@ alias obsib-git='echo "📦 Backing up notes on Github..." && obsidian; obsib-gi
 alias obsib-icloud-cmd='git clean -f -d | indent && git checkout . | indent && git fetch | indent && git pull | indent; echo "\n"'
 alias obsib-icloud='echo "☁️  Syncing notes on iCloud..." && obsidian-icloud; obsib-icloud-cmd'
 alias obsib-success='echo "✅ Obsidian synced!" && obsidian'
+alias obsib-git-only='obsib-start; obsib-git; obsib-success'
 alias obsib='obsib-start; obsib-git; obsib-icloud; obsib-success'
 
-alias ob='obsib'
+alias ob='obsib-git-only'
+alias oba='obsib'
 # alias ob-count='obsidian && find . -type f -not -path "*/\.*" | wc -l'
-alias notes='obsib && open -a Obsidian'
+alias notes='obsib-git-only && open -a Obsidian'
 alias n='notes'
+alias nb='obsib && open -a Obsidian'
 
 # Projects
 alias project='cd ~/Sites'
@@ -421,3 +424,8 @@ alias fixaudio="sudo killall -9 coreaudiod"
 alias mtmr="vim ~/Library/Application\ Support/MTMR/items.json"
 
 alias intensifies="sh ~/Drive/scripts/intensifies.sh"
+
+transcribe() {
+  cat "$@" | sed -e 's/[/[0-9]\{2\}\:[0-9]\{2\}:[0-9]\{2\} //g'| perl -pe 's/\n/ /' >| $HOME/Desktop/transcription.txt
+}
+
