@@ -96,10 +96,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # export PATH="/usr/local/opt/php@7.0/bin:$PATH"
 # export PATH="/usr/local/opt/php@7.0/sbin:$PATH"
 
-
-## AWS: HS
-export AWS_PROFILE=hs-ci
-
 ## Github: Hub
 # https://github.com/github/hub#aliasing
 eval "$(hub alias -s)"
