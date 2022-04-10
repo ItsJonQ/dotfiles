@@ -1,20 +1,25 @@
 {
-	"prettier.requireConfig": true,
-
-	"javascript.validate.enable": false,
-	"tslint.enable": true,
-	"tslint.autoFixOnSave": true,
-	"tsserver.enableJavascript": false,
-
-	"coc.preferences.formatOnSaveFiletypes": [
-		"css",
-		"markdown",
-		"Markdown",
-		"javascript",
-		"javascriptreact",
-		"json",
-		"typescript",
-		"typescriptreact"
-	]
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
+  ],
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•",
+  "prettier.requireConfig": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "typescript",
+    "typescriptreact"
+  ]
 }
 
