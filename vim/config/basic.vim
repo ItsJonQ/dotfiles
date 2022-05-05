@@ -141,7 +141,7 @@ set mouse=a
 " set lazyredraw
 set nolazyredraw
 set nocompatible
-set re=1
+set re=0
 " set scrolljump=10
 set synmaxcol=256
 set ttyfast
