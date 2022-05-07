@@ -335,7 +335,7 @@ indent() {
 # alias inotes='cd /Users/Q/Library/Mobile\ Documents/27N4MQEA55~pro~writer/Documents'
 # alias obsidian='cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents'
 alias obsidian-icloud='cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/notes/main'
-alias obsidian='drive && cd notes/obsi'
+alias obsidian='drive && cd 07\ System/notes/obsi'
 alias obsidian-format='obsidian && npx prettier --write "./**/*.md" --loglevel silent && cd -'
 alias obsi='obsidian'
 
@@ -423,7 +423,7 @@ alias fixaudio="sudo killall -9 coreaudiod"
 
 alias mtmr="vim ~/Library/Application\ Support/MTMR/items.json"
 
-alias intensifies="sh ~/Drive/scripts/intensifies.sh"
+alias intensifies="sh ~/Drive/09\ Software/09.04\ Scripts/intensifies.sh"
 
 transcribe() {
   cat "$@" | sed -e 's/[/[0-9]\{2\}\:[0-9]\{2\}:[0-9]\{2\} //g'| perl -pe 's/\n/ /' >| $HOME/Desktop/transcription.txt

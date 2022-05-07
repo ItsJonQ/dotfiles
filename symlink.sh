@@ -35,7 +35,7 @@ ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
 ln -sf $HOME/dotfiles/.config/nvim/init.vim $HOME/.config/nvim/init.vim
 ln -sf $HOME/dotfiles/.config/nvim/coc-settings.json $HOME/.config/nvim/coc-settings.json
 
-ln -sf $HOME/Drive/config/.base16 $HOME/.base16
+ln -sf $HOME/Drive/07\ System/config/.base16 $HOME/.base16
 
 ln -sf $HOME/Drive/config/.npmrc $HOME/.npmrc
 
