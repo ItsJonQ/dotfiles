@@ -423,7 +423,7 @@ alias fixaudio="sudo killall -9 coreaudiod"
 
 alias mtmr="vim ~/Library/Application\ Support/MTMR/items.json"
 
-alias intensifies="sh ~/Drive/09\ Software/09.04\ Scripts/intensifies.sh"
+alias intensifies="sh ~/Drive/07\ System/07.04\ Scripts/intensifies.sh"
 
 transcribe() {
   cat "$@" | sed -e 's/[/[0-9]\{2\}\:[0-9]\{2\}:[0-9]\{2\} //g'| perl -pe 's/\n/ /' >| $HOME/Desktop/transcription.txt
