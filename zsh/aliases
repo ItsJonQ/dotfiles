@@ -133,6 +133,14 @@ alias oo='x -p'
 # Google Drive
 alias drive='cd ~/Drive'
 
+# https://johnnydecimal.com
+cjdfunction() {
+	pushd ~/Drive/*/*/${1}*
+}
+
+alias cjd='cjdfunction'
+
+
 # iCloud Drive
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
