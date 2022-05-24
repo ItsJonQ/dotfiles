@@ -365,6 +365,8 @@ alias notes='obsib-git-only && open -a Obsidian'
 alias n='notes'
 alias nb='obsib && open -a Obsidian'
 
+alias museum='drive && cd 50-59\ Learning/51\ Museum'
+
 # Projects
 alias project='cd ~/Sites'
 alias p='project'
