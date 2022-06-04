@@ -16,7 +16,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "1", function()
   f.y = max.y
   f.w = max.w / 2
   f.h = max.h
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 
@@ -30,7 +30,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "2", function()
   f.y = max.y
   f.w = max.w / 2
   f.h = max.h
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 
@@ -44,7 +44,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "T", function()
   f.y = max.y
   f.w = max.w
   f.h = max.h * 0.8
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 
@@ -58,7 +58,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "B", function()
   f.y = max.h * 0.2
   f.w = max.w
   f.h = max.h * 0.8
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 
@@ -72,7 +72,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "F", function()
   f.y = max.y
   f.w = max.w
   f.h = max.h
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 
@@ -86,7 +86,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "D", function()
   f.y = max.h * 0.2
   f.w = max.w * 0.54
   f.h = max.h * 0.6
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 hs.hotkey.bind({"cmd", "ctrl"}, "C", function()
@@ -98,7 +98,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "C", function()
   f.y = max.h * 0.15
   f.w = max.w * 0.7
   f.h = max.h * 0.7
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 
@@ -111,7 +111,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "V", function()
   f.y = max.h * 0.1
   f.w = max.w * 0.8
   f.h = max.h * 0.8
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 
@@ -125,7 +125,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "Q", function()
   f.y = max.y
   f.w = max.w * 0.7
   f.h = max.h
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 -- Window Resize: 1/4 Right
@@ -138,7 +138,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "W", function()
   f.y = max.y
   f.w = max.w * 0.3
   f.h = max.h
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 -- Window Resize: 3/4 Top
@@ -151,7 +151,7 @@ hs.hotkey.bind({"cmd", "ctrl"}, "A", function()
   f.y = max.y
   f.w = max.w
   f.h = max.h * 0.7
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
 
 -- Window Resize: 1/4 Bottom
@@ -164,5 +164,5 @@ hs.hotkey.bind({"cmd", "ctrl"}, "S", function()
   f.y = max.y + (max.h * 0.7)
   f.w = max.w
   f.h = max.h * 0.3
-  win:setFrame(f)
+  win:setFrame(f, 0)
 end)
