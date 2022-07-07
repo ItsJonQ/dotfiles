@@ -266,9 +266,9 @@ alias lamp="curl -L -o 'install.sh' http://bit.ly/1hBfq57 && curl -L -o 'Vagrant
 
 # NPM
 # Clear Cache
-alias nom='rm -rf node_modules && npm cache clear && npm i'
+alias bankruptcy='rm -rf node_modules'
 #Bower - Clear Cache
-alias bom="rm -rf bower_components/* && bower cache clean && bower install"
+# alias bom="rm -rf bower_components/* && bower cache clean && bower install"
 
 
 #Bundle
