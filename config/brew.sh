@@ -37,8 +37,9 @@ brew install ffmpeg
 brew install fzf
 brew install git
 # brew install googler
-brew install homebrew/php/wp-cli
+# brew install homebrew/php/wp-cli
 # brew install homebrew/php
+brew install hub
 # brew install imagemagick --with-webp
 # brew install mariadb
 brew install macvim
