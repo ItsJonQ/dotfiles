@@ -24,17 +24,24 @@ Plug 'ap/vim-buftabline'
 " Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" LSP for Neovim
+" @see https://jose-elias-alvarez.medium.com/configuring-neovims-lsp-client-for-typescript-development-5789d58ea9c
+Plug 'neovim/nvim-lspconfig'
+Plug 'jose-elias-alvarez/null-ls.nvim'
+Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+
 " Plug 'justinmk/vim-dirvish'
 "
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+" Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 
 " Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-emmet', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 "
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-commentary'
