@@ -4,8 +4,8 @@
 # =============================================================================
 
 [user]
-	name = Q
-  email = hello@jonquach.com
+  name = Q
+  email = hi@itsjonq.com
 
 [core]
   excludesfile = ~/.gitignore_global
