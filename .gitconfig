@@ -41,6 +41,7 @@
   r = reset
   rb = rebase
   rm = clean
+  rp = repack -a -d --depth=250 --window=250
   redo = commit --amend --no-edit
   s = status
   ss = status --short --branch
