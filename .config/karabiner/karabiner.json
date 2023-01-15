@@ -470,6 +470,81 @@
 										]
 									}
 								]
+							},
+							{
+								"from": {
+									"key_code": "7"
+								},
+								"to": [
+									{
+										"key_code": "f7",
+										"modifiers": [
+											"left_command",
+											"left_shift"
+										]
+									}
+								],
+								"type": "basic",
+								"conditions": [
+									{
+										"type": "device_if",
+										"identifiers": [
+											{
+												"vendor_id": 1155
+											}
+										]
+									}
+								]
+							},
+							{
+								"from": {
+									"key_code": "8"
+								},
+								"to": [
+									{
+										"key_code": "f8",
+										"modifiers": [
+											"left_command",
+											"left_shift"
+										]
+									}
+								],
+								"type": "basic",
+								"conditions": [
+									{
+										"type": "device_if",
+										"identifiers": [
+											{
+												"vendor_id": 1155
+											}
+										]
+									}
+								]
+							},
+							{
+								"from": {
+									"key_code": "9"
+								},
+								"to": [
+									{
+										"key_code": "f9",
+										"modifiers": [
+											"left_command",
+											"left_shift"
+										]
+									}
+								],
+								"type": "basic",
+								"conditions": [
+									{
+										"type": "device_if",
+										"identifiers": [
+											{
+												"vendor_id": 1155
+											}
+										]
+									}
+								]
 							}
 						]
 					}
