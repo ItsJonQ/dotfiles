@@ -348,7 +348,9 @@ alias obsidian-format='obsidian && npx prettier --write "./**/*.md" --loglevel s
 alias obsi='obsidian'
 
 # Look through Obsidian vault using fzf
-alias oz='obsidian && fzf --preview="less {}"'
+alias oz='obsidian && fzf --preview="less {}" -m --print0 | xargs -0 -o open'
+alias ozk='obsidian && fzf --preview="less {}" -m --print0 | xargs -0 -o yake -i'
+alias voz='obsidian && vim . -c "Rg"'
 
 alias obsif='obsidian-format'
 
