@@ -349,8 +349,8 @@ alias obsi='obsidian'
 
 # Look through Obsidian vault using fzf
 alias oz='obsidian && fzf --preview="less {}" -m --print0 | xargs -0 -o open'
+alias voz='obsidian && vim . -c "Rg" -c "syntax off"'
 alias ozk='obsidian && fzf --preview="less {}" -m --print0 | xargs -0 -o yake -i'
-alias voz='obsidian && vim . -c "Rg"'
 
 alias obsif='obsidian-format'
 
