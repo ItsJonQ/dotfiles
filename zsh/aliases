@@ -347,6 +347,9 @@ alias obsidian='cd $HOME/obsi'
 alias obsidian-format='obsidian && npx prettier --write "./**/*.md" --loglevel silent && cd -'
 alias obsi='obsidian'
 
+# Look through Obsidian vault using fzf
+alias oz='obsidian && fzf --preview="less {}"'
+
 alias obsif='obsidian-format'
 
 alias obsib-start='echo "\n🟣 Preparing to sync Obsidian...\n"'
