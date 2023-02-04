@@ -133,6 +133,7 @@ alias oo='x -p'
 
 # Google Drive
 alias drive='cd ~/Drive'
+alias stuff='cd ~/Drive/07\ System/07.07\ Stuff && vrg'
 
 # https://johnnydecimal.com
 cjdfunction() {
