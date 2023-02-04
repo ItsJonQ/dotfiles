@@ -24,6 +24,7 @@ fi
 
 # Vim
 alias vi='vim'
+alias vrg='vim . -c "Rg" -c "syntax off"'
 
 # Code
 # alias code='code --ignore-gpu-blacklist'

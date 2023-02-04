@@ -11,7 +11,7 @@ nnoremap <C-p> :Files<CR>
 nnoremap <C-f> :Rg<CR>
 
 let g:fzf_layout = { 'down': '100%' }
-let g:fzf_preview_window = ['right,50%', 'ctrl-/']
+let g:fzf_preview_window = ['right,60%', 'ctrl-/']
 " let g:fzf_preview_window = ['hidden,right,50%,<70(up,40%)', 'ctrl-/']
 " let g:fzf_preview_window = []
 
