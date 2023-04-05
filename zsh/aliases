@@ -81,6 +81,7 @@ alias git-last='git last'
 alias g-last='git-last'
 alias g-cp='git-last | pbcopy | echo "Copied latest git commit message."'
 alias g-tidy='git removed-branches --prune'
+alias gco='git checkout $(git for-each-ref refs/heads/ --format="%(refname:short)" --sort=-committerdate | fzf)'
 
 # npm / lerna / yarn
 alias nib='echo "Installing dependencies & bootstrapping..." && npm i && lerna bootstrap'
