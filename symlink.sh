@@ -35,15 +35,15 @@ ln -sf $HOME/dotfiles/vim/after $HOME/.vim/
 ln -sf $HOME/dotfiles/.config/nvim/init.vim $HOME/.config/nvim/init.vim
 ln -sf $HOME/dotfiles/.config/nvim/coc-settings.json $HOME/.config/nvim/coc-settings.json
 
-ln -sf $HOME/Drive/07\ System/config/.base16 $HOME/.base16
+ln -sf $HOME/Drive/04\ System/config/.base16 $HOME/.base16
 
-ln -sf $HOME/Drive/07\ System/config/.npmrc $HOME/.npmrc
+ln -sf $HOME/Drive/04\ System/config/.npmrc $HOME/.npmrc
 
-ln -sf $HOME/Drive/07\ System/config/.zprofile $HOME/.zprofile
+ln -sf $HOME/Drive/04\ System/config/.zprofile $HOME/.zprofile
 
-ln -sf $HOME/Drive/07\ System/config/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-ln -sf $HOME/Drive/07\ System/config/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+ln -sf $HOME/Drive/04\ System/config/.vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+ln -sf $HOME/Drive/04\ System/config/.vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 
-ln -sf $HOME/Drive/07\ System/config/.vim/coc-settings.json $HOME/.vim/coc-settings.json
+ln -sf $HOME/Drive/04\ System/config/.vim/coc-settings.json $HOME/.vim/coc-settings.json
 
 echo Symlinked dotfiles.
