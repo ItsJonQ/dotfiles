@@ -225,15 +225,14 @@ alias cleands='cleanDS'
 alias dsa='cleanDS'
 alias cleanrb="find . -type f -name 'config.rb' -ls -delete"
 
-# Tree
-alias t='tree -L 1'
-alias tt='tree -L 2'
-alias ttt='tree -L 3'
-
-alias t1='tree -L 1'
-alias t2='tree -L 2'
-alias t3='tree -L 3'
-alias t4='tree -L 4'
+# Todo
+export TODO_DIR=/Users/q/Library/Mobile\ Documents/com~apple~CloudDocs/Todos/todo.txt
+alias t='todo.sh'
+ta() {
+  todo.sh a "$@"
+}
+alias tl='todo.sh ls'
+alias to='subl $TODO_DIR'
 
 # Activity
 alias cpu="top -o cpu"
