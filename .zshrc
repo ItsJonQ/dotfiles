@@ -10,3 +10,5 @@ if [ -d "$DOTFILES_ZSH" ]; then
     source $file
   done
 fi
+
+export PATH="$HOME/.local/bin:$PATH"
