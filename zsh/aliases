@@ -364,6 +364,7 @@ alias obsib-icloud='echo "☁️  Syncing notes on iCloud..." && obsidian-icloud
 alias obsib-success='echo "✅ Obsidian synced!" && obsidian'
 alias obsib-git-only='obsib-start; obsib-git; obsib-success'
 alias obsib='obsib-start; obsib-git; obsib-icloud; obsib-success'
+alias obn='node $HOME/Drive/__scripts/notion-obsidian-sync'
 
 alias ob='obsib-git-only'
 alias oba='obsib'
