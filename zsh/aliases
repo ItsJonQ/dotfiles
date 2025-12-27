@@ -366,7 +366,11 @@ alias obsib-git-only='obsib-start; obsib-git; obsib-success'
 alias obsib='obsib-start; obsib-git; obsib-success'
 alias obn='node $HOME/Drive/__scripts/notion-obsidian-sync'
 
-alias ob='obsib-git-only'
+# Sync Obsidian vault to D1 database
+alias obsib-d1='echo "🔮 Syncing to D1..." && cd ~/Sites/@itsjonq/jarvis && npx tsx scripts/sync-vault-to-d1.ts'
+# Updated ob to include D1 sync
+alias ob='obsib-start; obsib-git; obsib-d1; obsib-success'
+
 alias oba='obsib'
 # alias ob-count='obsidian && find . -type f -not -path "*/\.*" | wc -l'
 alias notes='obsib-git-only && open -a Obsidian'
