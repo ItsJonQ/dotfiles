@@ -367,9 +367,9 @@ alias obsib='obsib-start; obsib-git; obsib-success'
 alias obn='node $HOME/Drive/__scripts/notion-obsidian-sync'
 
 # Sync Obsidian vault to D1 database
-alias obsib-d1='echo "🔮 Syncing to D1..." && cd ~/Sites/@itsjonq/jarvis && npx tsx scripts/sync-vault-to-d1.ts'
-# Updated ob to include D1 sync
-alias ob='obsib-start; obsib-git; obsib-d1; obsib-success'
+alias obsib-d1='echo "🔮 Syncing to D1..." && cd ~/Sites/@itsjonq/jarvis && npx tsx scripts/sync-vault-to-d1.ts && cd ~/obsi'
+# Updated ob to include D1 sync BEFORE git
+alias ob='obsib-start; obsib-d1; obsib-git; obsib-success'
 
 alias oba='obsib'
 # alias ob-count='obsidian && find . -type f -not -path "*/\.*" | wc -l'
@@ -396,6 +396,7 @@ alias db='cd ~/Dropbox'
 # Personal
 alias df='cd ~/dotfiles'
 alias jq='p && cd @itsjonq'
+alias jarvis='p && cd @itsjonq/jarvis'
 alias q='p && cd jonquach'
 alias zk='jq && cd scribe && npm run zk && code .'
 alias modes='p && cd modes'
